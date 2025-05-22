@@ -1,0 +1,379 @@
+{
+  "update_date": "2026.10 更新",
+  "update_date_en": "2026.10 Updated",
+  "update_date_de": "2026.10 Aktualisiert",
+  "update_date_es": "2026.10 Actualizado",
+  "date_range": "20260909 - 20261006",
+  "zh-Hant": [
+    {
+      "title": "車用鈉電池 (SIB) 致命缺點解析：電壓硬傷與安全隱患",
+      "url": "/2026/sodium-ion-battery-analysis.html",
+      "image": "/images/sodium-battery-analysis.webp",
+      "views": 202
+    },
+    {
+      "title": "機車 ISG 電推系統解析：運作原理、改裝鋰鐵電池的性能提升與物理極限",
+      "url": "/2026/motorcycle-isg-boost-explained.html",
+      "image": "/images/isg-motorcycle-system.webp",
+      "views": 175
+    },
+    {
+      "title": "車用鈦酸鋰 (LTO) 致命缺點解析：為何 5 串過充、6 串充不飽？",
+      "url": "/2025/lto-analysis.html",
+      "image": "/images/mobile01-73a3f73994754009670d4e7b1e13c046.webp",
+      "views": 165
+    },
+    {
+      "title": "機車用JASO MB認證 vs 汽車用API及車廠認證",
+      "url": "/2026/api-vs-jaso-mb-comparison.html",
+      "image": "/images/mobile01-4354e3784c5b7a8a13113354d8a13b2f.webp",
+      "views": 66
+    },
+    {
+      "title": "輪胎標籤對照(歐盟、日本、台灣）濕抓與節能等級對照表 & 胎壓換算",
+      "url": "/2021/tyre-label.html",
+      "image": "/images/mobile01-03938a4db5623e33ffa69c10d48dc387.webp",
+      "views": 65
+    },
+    {
+      "title": "API SQ 機油認證詳解：與 SP/SN/SM 規格比較表",
+      "url": "/2025/api-compare.html",
+      "image": "/images/20251007_122034.webp",
+      "views": 57
+    },
+    {
+      "title": "為何換了輕量化鋁圈，高速更耗油還跑不快？",
+      "url": "/2026/wheel-lug-pattern.html",
+      "image": "/images/pirelli-motorsport-car-Formula1.webp",
+      "views": 52
+    },
+    {
+      "title": "汽車電池不斷電更換教學：OBD 記憶保存器使用須知與 DIY 注意事項",
+      "url": "/2025/memory-saving-battery.html",
+      "image": "https://img.youtube.com/vi/JV2daotkZhc/maxresdefault.jpg",
+      "views": 51
+    },
+    {
+      "title": "國道服務區加油站資訊總整理",
+      "url": "/2026/service-area-gas-info.html",
+      "image": "/images/service-area-gas-info.webp",
+      "views": 39
+    },
+    {
+      "title": "MG HS 更換弘毅鋰鐵電池 LN2",
+      "url": "/2025/hongy-hs.html",
+      "image": "/images/LN2_HY_Install2.webp",
+      "views": 35
+    }
+  ],
+  "en": [
+    {
+      "title": "Analysis of Fatal Flaws in Automotive Sodium-Ion Batteries (SIB): Voltage Limitations and High-Temperature Safety Hazards",
+      "url": "/en/2026/sodium-ion-battery-analysis.html",
+      "image": "/images/sodium-battery-analysis.webp",
+      "views": 202
+    },
+    {
+      "title": "Analysis of Motorcycle ISG Electric Boost System: How It Works, Performance Gains with LiFePO4 Battery Upgrades, and Physical Limits",
+      "url": "/en/2026/motorcycle-isg-boost-explained.html",
+      "image": "/images/isg-motorcycle-system.webp",
+      "views": 175
+    },
+    {
+      "title": "Analysis of Fatal Flaws in Automotive LTO Batteries: Why 5S Overcharges and 6S Undercharges?",
+      "url": "/en/2025/lto-analysis.html",
+      "image": "/images/mobile01-73a3f73994754009670d4e7b1e13c046.webp",
+      "views": 165
+    },
+    {
+      "title": "JASO MB for Motorcycles vs. API & OEM Approvals for Cars",
+      "url": "/en/2026/api-vs-jaso-mb-comparison.html",
+      "image": "/images/mobile01-4354e3784c5b7a8a13113354d8a13b2f.webp",
+      "views": 66
+    },
+    {
+      "title": "Tire Label Comparison (EU, Japan, Taiwan) | Wet Grip, Fuel Efficiency Ratings & Pressure Conversion",
+      "url": "/en/2021/tyre-label.html",
+      "image": "/images/mobile01-03938a4db5623e33ffa69c10d48dc387.webp",
+      "views": 65
+    },
+    {
+      "title": "Deep Dive into API SQ Certification: Comparison Chart with SP, SN, and SM",
+      "url": "/en/2025/api-compare.html",
+      "image": "/images/20251007_122034.webp",
+      "views": 57
+    },
+    {
+      "title": "Why Do Lightweight Alloy Wheels Make Your Car Consume More Gas and Run Slower at High Speeds?",
+      "url": "/en/2026/wheel-lug-pattern.html",
+      "image": "/images/pirelli-motorsport-car-Formula1.webp",
+      "views": 52
+    },
+    {
+      "title": "Car Battery Memory Saver Guide: OBD-II Memory Saver Usage and DIY Precautions",
+      "url": "/en/2025/memory-saving-battery.html",
+      "image": "https://img.youtube.com/vi/JV2daotkZhc/maxresdefault.jpg",
+      "views": 51
+    },
+    {
+      "title": "Taiwan Freeway Service Area Gas Station Guide: Freeway 1 & 3",
+      "url": "/en/2026/service-area-gas-info.html",
+      "image": "/images/service-area-gas-info.webp",
+      "views": 39
+    },
+    {
+      "title": "MG HS Battery Replacement: Upgrading to Houny LN2 LiFePO4",
+      "url": "/en/2025/hongy-hs.html",
+      "image": "/images/LN2_HY_Install2.webp",
+      "views": 35
+    }
+  ],
+  "ja": [
+    {
+      "title": "車載用ナトリウムイオン (SIB) 始動バッテリーの致命的欠陥解析：電圧の弱点と高温下の安全リスク",
+      "url": "/ja/2026/sodium-ion-battery-analysis.html",
+      "image": "/images/sodium-battery-analysis.webp",
+      "views": 202
+    },
+    {
+      "title": "バイク用 ISG アシストシステム解析：動作原理、リチウムイオン（リン酸鉄）バッテリーへの換装による性能向上と物理的限界",
+      "url": "/ja/2026/motorcycle-isg-boost-explained.html",
+      "image": "/images/isg-motorcycle-system.webp",
+      "views": 175
+    },
+    {
+      "title": "「車載用チタン酸リチウム (LTO) の致命的な欠点を解析：なぜ5Sは過充電、6Sは満充電にならないのか？」",
+      "url": "/ja/2025/lto-analysis.html",
+      "image": "/images/mobile01-73a3f73994754009670d4e7b1e13c046.webp",
+      "views": 165
+    },
+    {
+      "title": "スクーター用のJASO MB認証 vs 自動車用APIおよびメーカー認証",
+      "url": "/ja/2026/api-vs-jaso-mb-comparison.html",
+      "image": "/images/mobile01-4354e3784c5b7a8a13113354d8a13b2f.webp",
+      "views": 66
+    },
+    {
+      "title": "タイヤラベル比較（EU、日本、台湾）ウェットグリップおよび燃費クラス比較表＆空気圧換算",
+      "url": "/ja/2021/tyre-label.html",
+      "image": "/images/mobile01-03938a4db5623e33ffa69c10d48dc387.webp",
+      "views": 65
+    },
+    {
+      "title": "API SQ エンジンオイル認証の詳細解説：SP/SN/SM規格との比較表",
+      "url": "/ja/2025/api-compare.html",
+      "image": "/images/20251007_122034.webp",
+      "views": 57
+    },
+    {
+      "title": "軽量なアルミホイールに交換したら、なぜ高速で燃費が悪くなり、スピードも出ないのか？",
+      "url": "/ja/2026/wheel-lug-pattern.html",
+      "image": "/images/pirelli-motorsport-car-Formula1.webp",
+      "views": 52
+    },
+    {
+      "title": "車載バッテリーの放電なし交換方法：OBDメモリーキーパーの使用ガイドとDIY注意事項",
+      "url": "/ja/2025/memory-saving-battery.html",
+      "image": "https://img.youtube.com/vi/JV2daotkZhc/maxresdefault.jpg",
+      "views": 51
+    },
+    {
+      "title": "「国道サービスエリアのガソリンスタンド情報まとめ」",
+      "url": "/ja/2026/service-area-gas-info.html",
+      "image": "/images/service-area-gas-info.webp",
+      "views": 39
+    },
+    {
+      "title": "MG HS 弘毅（Houny）リチウム鉄バッテリーLN2への交換",
+      "url": "/ja/2025/hongy-hs.html",
+      "image": "/images/LN2_HY_Install2.webp",
+      "views": 35
+    }
+  ],
+  "de": [
+    {
+      "title": "Analyse der fatalen Schwachstellen von Natrium-Ionen-Starterbatterien (SIB) für Autos: Spannungsdefizit und Sicherheitsrisiken bei hohen Temperaturen",
+      "url": "/de/2026/sodium-ion-battery-analysis.html",
+      "image": "/images/sodium-battery-analysis.webp",
+      "views": 202
+    },
+    {
+      "title": "Analyse des ISG-Elektrobooster-Systems bei Motorrädern: Funktionsweise, Leistungssteigerung durch LiFePO4-Batterien und physikalische Grenzen",
+      "url": "/de/2026/motorcycle-isg-boost-explained.html",
+      "image": "/images/isg-motorcycle-system.webp",
+      "views": 175
+    },
+    {
+      "title": "Analyse der fatalen Schwächen von LTO-Autobatterien: Warum 5S überladen und 6S nicht voll werden?",
+      "url": "/de/2025/lto-analysis.html",
+      "image": "/images/mobile01-73a3f73994754009670d4e7b1e13c046.webp",
+      "views": 165
+    },
+    {
+      "title": "Motorrad-zertifizierte JASO MB-Öle versus Auto-zertifizierte API und Herstellerzertifikate",
+      "url": "/de/2026/api-vs-jaso-mb-comparison.html",
+      "image": "/images/mobile01-4354e3784c5b7a8a13113354d8a13b2f.webp",
+      "views": 66
+    },
+    {
+      "title": "Reifenbeschriftungsübersicht (EU, Japan, Taiwan): Feuchtreibhaftigkeit und Energieeffizienz sowie Reifendruckumrechnungstabelle",
+      "url": "/de/2021/tyre-label.html",
+      "image": "/images/mobile01-03938a4db5623e33ffa69c10d48dc387.webp",
+      "views": 65
+    },
+    {
+      "title": "Detaillierte Erklärung der API-SQ-Öl-Zertifizierung: Vergleichstabelle mit den Spezifikationen SP/SN/SM",
+      "url": "/de/2025/api-compare.html",
+      "image": "/images/20251007_122034.webp",
+      "views": 57
+    },
+    {
+      "title": "Warum verbraucht der Fahrzeug nach dem Wechsel auf leichte Aluminiumfelgen bei hohen Geschwindigkeiten mehr Kraftstoff und fährt nicht schneller?",
+      "url": "/de/2026/wheel-lug-pattern.html",
+      "image": "/images/pirelli-motorsport-car-Formula1.webp",
+      "views": 52
+    },
+    {
+      "title": "Automobilbatterie-Wechselanleitung ohne Stromunterbrechung: Hinweise zur Nutzung von OBD-Speichern und wichtige Tipps für den Heimwerker.",
+      "url": "/de/2025/memory-saving-battery.html",
+      "image": "https://img.youtube.com/vi/JV2daotkZhc/maxresdefault.jpg",
+      "views": 51
+    },
+    {
+      "title": "Ganzheitliche Zusammenstellung der Informationen zu Tankstellen an Autobahn-Rastplätzen",
+      "url": "/de/2026/service-area-gas-info.html",
+      "image": "/images/service-area-gas-info.webp",
+      "views": 39
+    },
+    {
+      "title": "MG HS Austausch von Hongyi Lithium-Ionen-Batterie LN2",
+      "url": "/de/2025/hongy-hs.html",
+      "image": "/images/LN2_HY_Install2.webp",
+      "views": 35
+    }
+  ],
+  "es": [
+    {
+      "title": "Análisis de los defectos fatales de las baterías de arranque de ion de sodio (SIB) para automóviles: problemas de voltaje y riesgos de seguridad a alta temperatura",
+      "url": "/es/2026/sodium-ion-battery-analysis.html",
+      "image": "/images/sodium-battery-analysis.webp",
+      "views": 202
+    },
+    {
+      "title": "Análisis del sistema de asistencia eléctrica ISG en motocicletas: funcionamiento, mejora del rendimiento con baterías de litio-ferrofosfato y límites físicos",
+      "url": "/es/2026/motorcycle-isg-boost-explained.html",
+      "image": "/images/isg-motorcycle-system.webp",
+      "views": 175
+    },
+    {
+      "title": "Análisis de los defectos fatales de las baterías LTO para automóviles: ¿Por qué 5S se sobrecarga y 6S no se carga por completo?",
+      "url": "/es/2025/lto-analysis.html",
+      "image": "/images/mobile01-73a3f73994754009670d4e7b1e13c046.webp",
+      "views": 165
+    },
+    {
+      "title": "Certificación JASO MB para motocicletas versus certificación API y de fabricantes para automóviles",
+      "url": "/es/2026/api-vs-jaso-mb-comparison.html",
+      "image": "/images/mobile01-4354e3784c5b7a8a13113354d8a13b2f.webp",
+      "views": 66
+    },
+    {
+      "title": "Etiquetas de neumáticos: tablas comparativas (UE, Japón, Taiwán) para clasificación de adherencia húmeda y eficiencia energética; conversión de presión de aire.",
+      "url": "/es/2021/tyre-label.html",
+      "image": "/images/mobile01-03938a4db5623e33ffa69c10d48dc387.webp",
+      "views": 65
+    },
+    {
+      "title": "Explicación detallada de la certificación API SQ para aceites: tabla comparativa con las especificaciones SP/SN/SM",
+      "url": "/es/2025/api-compare.html",
+      "image": "/images/20251007_122034.webp",
+      "views": 57
+    },
+    {
+      "title": "¿Por qué al cambiar por llantas de aleación más ligeras se consume más combustible a alta velocidad y no va más rápido?",
+      "url": "/es/2026/wheel-lug-pattern.html",
+      "image": "/images/pirelli-motorsport-car-Formula1.webp",
+      "views": 52
+    },
+    {
+      "title": "Guía de reemplazo sin desconexión del auto: notas sobre el uso de la memoria OBD y precauciones para hacer el trabajo en casa.",
+      "url": "/es/2025/memory-saving-battery.html",
+      "image": "https://img.youtube.com/vi/JV2daotkZhc/maxresdefault.jpg",
+      "views": 51
+    },
+    {
+      "title": "Guía completa de información sobre estaciones de servicio en los servicios nacionales",
+      "url": "/es/2026/service-area-gas-info.html",
+      "image": "/images/service-area-gas-info.webp",
+      "views": 39
+    },
+    {
+      "title": "Cambio de batería Li-ion Hongyi LN2 en MG HS",
+      "url": "/es/2025/hongy-hs.html",
+      "image": "/images/LN2_HY_Install2.webp",
+      "views": 35
+    }
+  ],
+  "posts": [
+    {
+      "title": "車用鈉電池 (SIB) 致命缺點解析：電壓硬傷與安全隱患",
+      "url": "/2026/sodium-ion-battery-analysis.html",
+      "image": "/images/sodium-battery-analysis.webp",
+      "views": 202
+    },
+    {
+      "title": "機車 ISG 電推系統解析：運作原理、改裝鋰鐵電池的性能提升與物理極限",
+      "url": "/2026/motorcycle-isg-boost-explained.html",
+      "image": "/images/isg-motorcycle-system.webp",
+      "views": 175
+    },
+    {
+      "title": "車用鈦酸鋰 (LTO) 致命缺點解析：為何 5 串過充、6 串充不飽？",
+      "url": "/2025/lto-analysis.html",
+      "image": "/images/mobile01-73a3f73994754009670d4e7b1e13c046.webp",
+      "views": 165
+    },
+    {
+      "title": "機車用JASO MB認證 vs 汽車用API及車廠認證",
+      "url": "/2026/api-vs-jaso-mb-comparison.html",
+      "image": "/images/mobile01-4354e3784c5b7a8a13113354d8a13b2f.webp",
+      "views": 66
+    },
+    {
+      "title": "輪胎標籤對照(歐盟、日本、台灣）濕抓與節能等級對照表 & 胎壓換算",
+      "url": "/2021/tyre-label.html",
+      "image": "/images/mobile01-03938a4db5623e33ffa69c10d48dc387.webp",
+      "views": 65
+    },
+    {
+      "title": "API SQ 機油認證詳解：與 SP/SN/SM 規格比較表",
+      "url": "/2025/api-compare.html",
+      "image": "/images/20251007_122034.webp",
+      "views": 57
+    },
+    {
+      "title": "為何換了輕量化鋁圈，高速更耗油還跑不快？",
+      "url": "/2026/wheel-lug-pattern.html",
+      "image": "/images/pirelli-motorsport-car-Formula1.webp",
+      "views": 52
+    },
+    {
+      "title": "汽車電池不斷電更換教學：OBD 記憶保存器使用須知與 DIY 注意事項",
+      "url": "/2025/memory-saving-battery.html",
+      "image": "https://img.youtube.com/vi/JV2daotkZhc/maxresdefault.jpg",
+      "views": 51
+    },
+    {
+      "title": "國道服務區加油站資訊總整理",
+      "url": "/2026/service-area-gas-info.html",
+      "image": "/images/service-area-gas-info.webp",
+      "views": 39
+    },
+    {
+      "title": "MG HS 更換弘毅鋰鐵電池 LN2",
+      "url": "/2025/hongy-hs.html",
+      "image": "/images/LN2_HY_Install2.webp",
+      "views": 35
+    }
+  ]
+}
