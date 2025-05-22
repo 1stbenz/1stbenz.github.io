@@ -1,0 +1,49 @@
+---
+layout: default
+lang: zh-Hant
+---
+
+<div class="home">
+  <div style="text-align: right; margin-bottom: 20px;">
+    <a href="{{ '/en/' | relative_url }}" style="font-size: 0.9em; color: #58a6ff;">English Version</a>
+  </div>
+
+  <h1 class="page-heading">文章列表</h1>
+
+  <ul class="post-list" style="list-style: none; padding: 0;">
+    {% assign zh_posts = site.posts | where: "lang", "zh-Hant" %}
+    
+    {% for post in zh_posts %}
+      <li style="margin-bottom: 50px; border-bottom: 1px solid #30363d; padding-bottom: 30px;">
+        <span class="post-meta" style="color: #8b949e; font-size: 0.9em;">{{ post.date | date: "%Y/%m/%d" }}</span>
+
+        <h2 style="margin-top: 10px; margin-bottom: 15px;">
+          <a class="post-link" href="{{ post.url | relative_url }}" style="color: #c9d1d9; text-decoration: none;">{{ post.title }}</a>
+        </h2>
+
+        {% if post.image %}
+        <div class="post-image" style="margin: 20px 0;">
+          <a href="{{ post.url | relative_url }}">
+            <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" style="max-width: 100%; height: auto; max-height: 400px; object-fit: cover; border-radius: 12px; border: 1px solid #30363d;">
+          </a>
+        </div>
+        {% endif %}
+
+        <div class="post-excerpt" style="color: #8b949e; line-height: 1.8; font-size: 1.05em;">
+          {% if post.description %}
+            {{ post.description }}
+          {% else %}
+            {{ post.excerpt | strip_html | truncate: 80 }}
+          {% endif %}
+          <p style="margin-top: 15px;">
+            <a href="{{ post.url | relative_url }}" style="color: #58a6ff; font-weight: 500;">閱讀更多 &raquo;</a>
+          </p>
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe" style="border-top: 1px solid #30363d; padding-top: 20px;">
+    透過 <a href="{{ '/feed.xml' | relative_url }}">RSS</a> 訂閱
+  </p>
+</div>
