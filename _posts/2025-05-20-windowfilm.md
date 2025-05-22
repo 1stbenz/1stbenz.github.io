@@ -130,11 +130,6 @@ categories: jekyll update
 
 ---
 
-## 透光度與行車安全
-- **公路總局報告：透光度與交通事故無正相關**
-- **限制透光度的國家**：
-  - 以 **溫帶、極權、合法擁槍國家** 居多 ([參考資料](https://attach.mobile01.com/attach/202310/mobile01-179a5ec7b684e5ba3dc941dc4b18ae83.jpg))
-- **外面看進去一片黑 ≠ 低透光度**
-  - 這是光學物理現象 ([詳解](https://www.mobile01.com/topicdetail.php?f=264&t=6968353&p=1&uid=3456173))
-- **行車安全的關鍵：遵守交通規則**
-  - [行車安全詳解](https://www.mobile01.com/topicdetail.php?f=294&t=6789306&uid=3456173)
+## 其他參數表達方式
+- **SC (Shading Coefficient)** → SC = (TSER - 1) ÷ 0.86
+- **SHGC (Solar Heat Gain Coefficient)** → SHGC = 1 - TSER
