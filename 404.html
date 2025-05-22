@@ -1,0 +1,153 @@
+---
+layout: default
+title: "404 - Page Not Found"
+permalink: /404.html
+---
+
+<div class="not-found-container" style="text-align: center; padding: 60px 15px; max-width: 680px; margin: 0 auto;">
+  <div style="font-size: 76px; font-weight: 800; line-height: 1; color: var(--brand-color, #04384c); margin-bottom: 12px; letter-spacing: -2px;">
+    404
+  </div>
+
+  <div id="nf-content" style="margin-top: 10px;">
+    <!-- Default / Fallback: Traditional Chinese -->
+    <h1 id="nf-title" style="font-size: 26px; margin-bottom: 14px; font-weight: 700;">找不到此頁面</h1>
+    <p id="nf-desc" style="font-size: 16px; color: #64748b; line-height: 1.6; margin-bottom: 30px;">
+      很抱歉，您造訪的頁面不存在、已被移除或網址有誤。
+    </p>
+
+    <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
+      <a id="nf-btn-home" href="{{ '/' | relative_url }}" class="nf-btn" style="display: inline-block; padding: 10px 24px; background: #04384c; color: #ffffff; text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 15px; transition: opacity 0.2s;">
+        返回首頁
+      </a>
+      <a href="javascript:history.back()" class="nf-btn-secondary" style="display: inline-block; padding: 10px 22px; background: #f1f5f9; color: #334155; text-decoration: none; border-radius: 6px; font-weight: 600; font-size: 15px; border: 1px solid #cbd5e1; transition: background 0.2s;">
+        返回上一頁
+      </a>
+    </div>
+  </div>
+
+  <!-- Multilingual Fast Switcher -->
+  <div style="margin-top: 50px; padding-top: 25px; border-top: 1px solid #e2e8f0; font-size: 14px; color: #64748b;">
+    <p style="margin-bottom: 10px;">各語言版本首頁 / Homepages:</p>
+    <div style="display: flex; gap: 14px; justify-content: center; flex-wrap: wrap;">
+      <a href="{{ '/' | relative_url }}" style="color: #1176d4; text-decoration: none;">繁體中文</a>
+      <span style="color: #cbd5e1;">|</span>
+      <a href="{{ '/ja/' | relative_url }}" style="color: #1176d4; text-decoration: none;">日本語</a>
+      <span style="color: #cbd5e1;">|</span>
+      <a href="{{ '/en/' | relative_url }}" style="color: #1176d4; text-decoration: none;">English</a>
+      <span style="color: #cbd5e1;">|</span>
+      <a href="{{ '/de/' | relative_url }}" style="color: #1176d4; text-decoration: none;">Deutsch</a>
+      <span style="color: #cbd5e1;">|</span>
+      <a href="{{ '/es/' | relative_url }}" style="color: #1176d4; text-decoration: none;">Español</a>
+    </div>
+  </div>
+</div>
+
+<script>
+  (function() {
+    var i18n = {
+      'zh-Hant': {
+        title: '找不到此頁面',
+        desc: '很抱歉，您造訪的頁面不存在、已被移除或網址有誤。',
+        btnHome: '返回首頁',
+        btnBack: '返回上一頁',
+        homeUrl: '{{ "/" | relative_url }}'
+      },
+      'ja': {
+        title: 'ページが見つかりませんでした',
+        desc: 'アクセスしたページは削除されたか、URLが変更された可能性があります。',
+        btnHome: 'ホームへ戻る',
+        btnBack: '前のページへ戻る',
+        homeUrl: '{{ "/ja/" | relative_url }}'
+      },
+      'en': {
+        title: 'Page Not Found',
+        desc: 'Sorry, the page you are looking for does not exist or has been moved.',
+        btnHome: 'Back to Home',
+        btnBack: 'Go Back',
+        homeUrl: '{{ "/en/" | relative_url }}'
+      },
+      'de': {
+        title: 'Seite nicht gefunden',
+        desc: 'Die von Ihnen angeforderte Seite existiert leider nicht oder wurde verschoben.',
+        btnHome: 'Zur Startseite',
+        btnBack: 'Zurück',
+        homeUrl: '{{ "/de/" | relative_url }}'
+      },
+      'es': {
+        title: 'Página no encontrada',
+        desc: 'Lo sentimos, la página que buscas no existe o ha sido movida.',
+        btnHome: 'Volver al Inicio',
+        btnBack: 'Volver',
+        homeUrl: '{{ "/es/" | relative_url }}'
+      }
+    };
+
+    // 1. 優先從 URL 路徑判定訪問者原本所在的語系（例如 /ja/xxx 或 /en/xxx）
+    var path = window.location.pathname || '';
+    var detectedLang = null;
+
+    if (path.indexOf('/ja/') !== -1 || path === '/ja') {
+      detectedLang = 'ja';
+    } else if (path.indexOf('/en/') !== -1 || path === '/en') {
+      detectedLang = 'en';
+    } else if (path.indexOf('/de/') !== -1 || path === '/de') {
+      detectedLang = 'de';
+    } else if (path.indexOf('/es/') !== -1 || path === '/es') {
+      detectedLang = 'es';
+    }
+
+    // 2. 若路徑看不出語系，檢查 localStorage 儲存的偏好語系
+    if (!detectedLang) {
+      try {
+        var stored = localStorage.getItem('preferred_lang');
+        if (stored && i18n[stored]) {
+          detectedLang = stored;
+        }
+      } catch (e) {}
+    }
+
+    // 3. 若仍無，檢查瀏覽器語系 navigator.languages
+    if (!detectedLang) {
+      var userLangs = navigator.languages || [navigator.language || ''];
+      for (var i = 0; i < userLangs.length; i++) {
+        var l = (userLangs[i] || '').toLowerCase();
+        if (l.indexOf('ja') === 0) {
+          detectedLang = 'ja';
+          break;
+        } else if (l.indexOf('zh') === 0) {
+          detectedLang = 'zh-Hant';
+          break;
+        } else if (l.indexOf('de') === 0) {
+          detectedLang = 'de';
+          break;
+        } else if (l.indexOf('es') === 0) {
+          detectedLang = 'es';
+          break;
+        } else if (l.indexOf('en') === 0) {
+          detectedLang = 'en';
+          break;
+        }
+      }
+    }
+
+    // 預設為繁體中文
+    var data = i18n[detectedLang] || i18n['zh-Hant'];
+
+    var titleEl = document.getElementById('nf-title');
+    var descEl = document.getElementById('nf-desc');
+    var btnHomeEl = document.getElementById('nf-btn-home');
+    var btnBackEl = document.querySelector('.nf-btn-secondary');
+
+    if (titleEl) titleEl.textContent = data.title;
+    if (descEl) descEl.textContent = data.desc;
+    if (btnHomeEl) {
+      btnHomeEl.textContent = data.btnHome;
+      btnHomeEl.href = data.homeUrl;
+    }
+    if (btnBackEl) {
+      btnBackEl.textContent = data.btnBack;
+    }
+    document.title = '404 - ' + data.title + ' | {{ site.title }}';
+  })();
+</script>
