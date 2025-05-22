@@ -1,0 +1,24 @@
+# Site settings
+title: 中年阿賓の玩具
+email: 1stbenz@github.com
+description: > 
+  過去繳了很多學費，將經驗整理成筆記分享，希望能幫助正在尋找相關資訊的你。
+
+# URL settings
+baseurl: "" # 建議改為空字串，通常根目錄網站設為 "" 比 "/" 更安全，避免雙斜線問題
+url: "https://1stbenz.github.io" # SEO 強烈建議：將 http 改為 https
+
+# Language & Author (SEO 插件會讀取這些資訊)
+lang: zh-Hant # 設定網站主要語言為繁體中文
+author: 
+  name: 中年阿賓
+  email: 1stbenz@github.com
+
+# Build settings
+markdown: kramdown
+permalink: /:year/:title:output_ext
+
+# Plugins (新增部分：啟用 SEO 與 Sitemap 功能)
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap

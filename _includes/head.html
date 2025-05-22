@@ -1,0 +1,78 @@
+<head>
+  <!-- 1. Google Analytics (保留你的設定) -->
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MQWC1X6ENW"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-MQWC1X6ENW');
+  </script>
+
+  <!-- 2. 基本設定 -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme-color" content="#0b57d0">
+
+  <!-- 3. 動態標題與 SEO 核心 (修正重點) -->
+  <title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+
+  <!-- 描述邏輯：優先用文章的 description > 其次用文章摘要 > 最後用網站全域描述 -->
+  {% assign description = page.description | default: page.excerpt | default: site.description | strip_html | strip_newlines | truncate: 160 %}
+  <meta name="description" content="{{ description }}">
+
+  <!-- 關鍵字：讀取文章設定的 keywords -->
+  {% if page.keywords %}
+  <meta name="keywords" content="{{ page.keywords }}">
+  {% endif %}
+
+  <!-- 標準網址 -->
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+
+  <!-- 4. 社群分享設定 (Open Graph / Twitter Card) - 讓 FB/Line 抓到圖片 -->
+  <meta property="og:site_name" content="{{ site.title }}">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+  <meta property="og:description" content="{{ description }}">
+  <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+
+  {% if page.image %}
+  {% if page.image contains 'http' %}
+    <!-- 外部圖片 (例如 YouTube、Imgur) -->
+    <meta property="og:image" content="{{ page.image }}">
+    <meta name="twitter:image" content="{{ page.image }}">
+  {% else %}
+    <!-- 站內圖片 (例如 /images/xxx.webp) -->
+    <meta property="og:image" content="{{ page.image | prepend: site.url }}">
+    <meta name="twitter:image" content="{{ page.image | prepend: site.url }}">
+  {% endif %}
+{% else %}
+  <!-- 預設縮圖 -->
+  <meta property="og:image" content="{{ site.url }}/images/default-social.webp"> 
+{% endif %}
+
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+  <meta name="twitter:description" content="{{ description }}">
+  {% if page.image %}
+    <meta name="twitter:image" content="{{ page.image | prepend: site.url }}">
+  {% endif %}
+
+  <!-- 5. 樣式與圖示 (保留你的設定) -->
+  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+  
+  <link rel="icon" href="/icon/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/icon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/icon/favicon-16x16.png">
+  <link rel="apple-touch-icon" href="/icon/apple-touch-icon.png">
+  <link rel="manifest" href="/icon/site.webmanifest">
+
+  <!-- 字體 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700&display=swap" rel="stylesheet">
+
+</head>
