@@ -1,0 +1,233 @@
+{% assign current_lang = page.lang | default: "zh-Hant" %}
+{% assign url_parts = page.url | split: '/' %}
+{% assign first_part = url_parts[1] %}
+{% if first_part == "en" or first_part == "de" or first_part == "es" or first_part == "ja" %}
+  {% assign prefix_to_remove = '/' | append: first_part %}
+  {% assign clean_path = page.url | replace_first: prefix_to_remove, '' %}
+{% else %}
+  {% assign clean_path = page.url %}
+{% endif %}
+
+{% if clean_path == "" or clean_path == "/" %}
+  {% assign clean_path = "/" %}
+{% endif %}
+
+{% if current_lang == "zh-Hant" %}
+  {% assign home_url = '/' %}
+{% else %}
+  {% assign home_url = '/' | append: current_lang | append: '/' %}
+{% endif %}
+
+<!-- Language Suggestion Banner (Non-intrusive) -->
+<div id="lang-suggestion-banner" class="lang-suggestion-banner" style="display: none;">
+  <div class="wrapper lang-banner-content">
+    <div class="lang-banner-info">
+      <svg class="globe-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+      <span id="lang-banner-text"></span>
+    </div>
+    <div class="lang-banner-actions">
+      <a id="lang-banner-btn" class="lang-banner-btn" href="#"></a>
+      <button id="lang-banner-close" class="lang-banner-close" aria-label="Close language suggestion">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+    </div>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="wrapper">
+    <a class="site-title" rel="author" href="{{ home_url | relative_url }}">
+      {% if current_lang == "en" %}
+        {{ site.title_en | default: site.title }}
+      {% elsif current_lang == "de" %}
+        {{ site.title_de | default: site.title }}
+      {% elsif current_lang == "es" %}
+        {{ site.title_es | default: site.title }}
+      {% elsif current_lang == "ja" %}
+        {{ site.title_ja | default: site.title }}
+      {% else %}
+        {{ site.title_zh | default: site.title }}
+      {% endif %}
+    </a>
+
+    <nav class="site-nav">
+      <input type="checkbox" id="nav-trigger" class="nav-trigger" style="display:none;" />
+      
+      <label for="nav-trigger">
+        <span class="menu-icon">
+          <svg viewBox="0 0 18 15" width="18px" height="15px">
+            <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+          </svg>
+        </span>
+      </label>
+
+      <div class="trigger">
+        {% assign navigation = site.nav_links[current_lang] %}
+
+        {% for link in navigation %}
+          <a class="page-link" href="{{ link.url | relative_url }}">{{ link.title }}</a>
+        {% endfor %}
+
+        <!-- Desktop Custom Dropdown -->
+        <div class="lang-dropdown">
+          <button class="lang-dropdown-btn" aria-label="Language Select">
+            <svg class="globe-icon" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+            <span>
+              {% if current_lang == 'zh-Hant' %}ZH{% elsif current_lang == 'en' %}EN{% elsif current_lang == 'de' %}DE{% elsif current_lang == 'es' %}ES{% elsif current_lang == 'ja' %}JA{% endif %}
+            </span>
+            <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 10 10"><polygon points="0,2 10,2 5,7" fill="currentColor"/></svg>
+          </button>
+          <ul class="lang-dropdown-menu">
+            <li><a href="{{ clean_path | relative_url }}" data-lang="zh-Hant" {% if current_lang == 'zh-Hant' %}class="active"{% endif %}>中文 (繁體)</a></li>
+            <li><a href="{{ '/en' | append: clean_path | relative_url }}" data-lang="en" {% if current_lang == 'en' %}class="active"{% endif %}>English</a></li>
+            <li><a href="{{ '/de' | append: clean_path | relative_url }}" data-lang="de" {% if current_lang == 'de' %}class="active"{% endif %}>Deutsch</a></li>
+            <li><a href="{{ '/es' | append: clean_path | relative_url }}" data-lang="es" {% if current_lang == 'es' %}class="active"{% endif %}>Español</a></li>
+            <li><a href="{{ '/ja' | append: clean_path | relative_url }}" data-lang="ja" {% if current_lang == 'ja' %}class="active"{% endif %}>日本語</a></li>
+          </ul>
+        </div>
+
+        <!-- Mobile Language List -->
+        <div class="lang-mobile-list">
+          <div class="lang-mobile-label">
+            <svg class="globe-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1 4-10z"></path></svg>
+            <span>語言 / Language:</span>
+          </div>
+          <div class="lang-mobile-links">
+            <a href="{{ clean_path | relative_url }}" data-lang="zh-Hant" {% if current_lang == 'zh-Hant' %}class="active"{% endif %}>繁中</a>
+            <a href="{{ '/en' | append: clean_path | relative_url }}" data-lang="en" {% if current_lang == 'en' %}class="active"{% endif %}>EN</a>
+            <a href="{{ '/de' | append: clean_path | relative_url }}" data-lang="de" {% if current_lang == 'de' %}class="active"{% endif %}>DE</a>
+            <a href="{{ '/es' | append: clean_path | relative_url }}" data-lang="es" {% if current_lang == 'es' %}class="active"{% endif %}>ES</a>
+            <a href="{{ '/ja' | append: clean_path | relative_url }}" data-lang="ja" {% if current_lang == 'ja' %}class="active"{% endif %}>JA</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<script>
+  // 記錄使用者手動選取的語言偏好，避免回到首頁時重複提示
+  document.addEventListener('click', function(e) {
+    var langLink = e.target.closest('.lang-dropdown-menu a, .lang-mobile-links a, #lang-banner-btn');
+    if (langLink) {
+      var lang = langLink.getAttribute('data-lang');
+      if (lang) {
+        try {
+          localStorage.setItem('preferred_lang', lang);
+        } catch (err) {}
+      }
+    }
+  });
+
+  // 非侵入式語言建議橫幅（不重新導向，完全相容 SEO 與 Googlebot）
+  (function() {
+    try {
+      if (sessionStorage.getItem('dismiss_lang_banner') === 'true') {
+        return;
+      }
+
+      var currentLang = '{{ current_lang }}';
+      var storedLang = localStorage.getItem('preferred_lang');
+
+      // 若使用者先前選擇過且與當前頁面語言相同，則不顯示
+      if (storedLang && (storedLang === currentLang || (storedLang === 'zh' && currentLang === 'zh-Hant'))) {
+        return;
+      }
+
+      var langUrls = {
+        'zh-Hant': '{{ clean_path | relative_url }}',
+        'en': '{{ "/en" | append: clean_path | relative_url }}',
+        'de': '{{ "/de" | append: clean_path | relative_url }}',
+        'es': '{{ "/es" | append: clean_path | relative_url }}',
+        'ja': '{{ "/ja" | append: clean_path | relative_url }}'
+      };
+
+      var langMessages = {
+        'en': {
+          text: 'Would you like to view this page in English?',
+          btn: 'Switch to English'
+        },
+        'ja': {
+          text: 'このページを日本語で表示しますか？',
+          btn: '日本語に切り替え'
+        },
+        'de': {
+          text: 'Möchten Sie diese Seite auf Deutsch anzeigen?',
+          btn: 'Auf Deutsch anzeigen'
+        },
+        'es': {
+          text: '¿Deseas ver esta página en español?',
+          btn: 'Ver en español'
+        },
+        'zh-Hant': {
+          text: '是否切換為繁體中文版本？',
+          btn: '切換為繁體中文'
+        }
+      };
+
+      var targetLang = null;
+      if (storedLang && langUrls[storedLang] && storedLang !== currentLang) {
+        targetLang = storedLang;
+      } else {
+        var userLangs = navigator.languages || [navigator.language || navigator.userLanguage || ''];
+        for (var i = 0; i < userLangs.length; i++) {
+          var l = (userLangs[i] || '').toLowerCase();
+          if (l.indexOf('zh') === 0) {
+            targetLang = 'zh-Hant';
+            break;
+          } else if (l.indexOf('ja') === 0) {
+            targetLang = 'ja';
+            break;
+          } else if (l.indexOf('de') === 0) {
+            targetLang = 'de';
+            break;
+          } else if (l.indexOf('es') === 0) {
+            targetLang = 'es';
+            break;
+          } else if (l.indexOf('en') === 0) {
+            targetLang = 'en';
+            break;
+          }
+        }
+      }
+
+      // 若未匹配或目標語系與當前相同，則不顯示橫幅
+      if (!targetLang || targetLang === currentLang || (targetLang === 'zh' && currentLang === 'zh-Hant')) {
+        return;
+      }
+
+      var msg = langMessages[targetLang];
+      var destUrl = langUrls[targetLang];
+      if (!msg || !destUrl) return;
+
+      var initBanner = function() {
+        var banner = document.getElementById('lang-suggestion-banner');
+        var textEl = document.getElementById('lang-banner-text');
+        var btnEl = document.getElementById('lang-banner-btn');
+        var closeEl = document.getElementById('lang-banner-close');
+
+        if (!banner || !textEl || !btnEl || !closeEl) return;
+
+        textEl.textContent = msg.text;
+        btnEl.textContent = msg.btn;
+        btnEl.href = destUrl;
+        btnEl.setAttribute('data-lang', targetLang);
+
+        closeEl.addEventListener('click', function() {
+          banner.style.display = 'none';
+          try {
+            sessionStorage.setItem('dismiss_lang_banner', 'true');
+          } catch (err) {}
+        });
+
+        banner.style.display = 'block';
+      };
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initBanner);
+      } else {
+        initBanner();
+      }
+    } catch (e) {}
+  })();
+</script>
