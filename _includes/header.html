@@ -1,0 +1,90 @@
+<header class="site-header">
+  <div class="wrapper">
+    {% assign current_lang = page.lang | default: "zh-Hant" %}
+    {% if current_lang == "zh-Hant" %}
+      {% assign home_url = '/' %}
+    {% else %}
+      {% assign home_url = '/' | append: current_lang | append: '/' %}
+    {% endif %}
+
+    <a class="site-title" rel="author" href="{{ home_url | relative_url }}">
+      {% if current_lang == "en" %}
+        {{ site.title_en | default: site.title }}
+      {% elsif current_lang == "de" %}
+        {{ site.title_de | default: site.title }}
+      {% elsif current_lang == "es" %}
+        {{ site.title_es | default: site.title }}
+      {% elsif current_lang == "ja" %}
+        {{ site.title_ja | default: site.title }}
+      {% else %}
+        {{ site.title_zh | default: site.title }}
+      {% endif %}
+    </a>
+
+    <nav class="site-nav">
+      <input type="checkbox" id="nav-trigger" class="nav-trigger" style="display:none;" />
+      
+      <label for="nav-trigger">
+        <span class="menu-icon">
+          <svg viewBox="0 0 18 15" width="18px" height="15px">
+            <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+          </svg>
+        </span>
+      </label>
+
+      <div class="trigger">
+        {% assign navigation = site.nav_links[current_lang] %}
+
+        {% for link in navigation %}
+          <a class="page-link" href="{{ link.url | relative_url }}">{{ link.title }}</a>
+        {% endfor %}
+
+        {% assign url_parts = page.url | split: '/' %}
+        {% assign first_part = url_parts[1] %}
+        {% if first_part == "en" or first_part == "de" or first_part == "es" or first_part == "ja" %}
+          {% assign prefix_to_remove = '/' | append: first_part %}
+          {% assign clean_path = page.url | replace_first: prefix_to_remove, '' %}
+        {% else %}
+          {% assign clean_path = page.url %}
+        {% endif %}
+        
+        {% if clean_path == "" or clean_path == "/" %}
+          {% assign clean_path = "/" %}
+        {% endif %}
+
+        <!-- Desktop Custom Dropdown -->
+        <div class="lang-dropdown">
+          <button class="lang-dropdown-btn" aria-label="Language Select">
+            <svg class="globe-icon" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+            <span>
+              {% if current_lang == 'zh-Hant' %}ZH{% elsif current_lang == 'en' %}EN{% elsif current_lang == 'de' %}DE{% elsif current_lang == 'es' %}ES{% elsif current_lang == 'ja' %}JA{% endif %}
+            </span>
+            <svg class="arrow-icon" xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 10 10"><polygon points="0,2 10,2 5,7" fill="currentColor"/></svg>
+          </button>
+          <ul class="lang-dropdown-menu">
+            <li><a href="{{ clean_path | relative_url }}" {% if current_lang == 'zh-Hant' %}class="active"{% endif %}>中文 (繁體)</a></li>
+            <li><a href="{{ '/en' | append: clean_path | relative_url }}" {% if current_lang == 'en' %}class="active"{% endif %}>English</a></li>
+            <li><a href="{{ '/de' | append: clean_path | relative_url }}" {% if current_lang == 'de' %}class="active"{% endif %}>Deutsch</a></li>
+            <li><a href="{{ '/es' | append: clean_path | relative_url }}" {% if current_lang == 'es' %}class="active"{% endif %}>Español</a></li>
+            <li><a href="{{ '/ja' | append: clean_path | relative_url }}" {% if current_lang == 'ja' %}class="active"{% endif %}>日本語</a></li>
+          </ul>
+        </div>
+
+        <!-- Mobile Language List -->
+        <div class="lang-mobile-list">
+          <div class="lang-mobile-label">
+            <svg class="globe-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+            <span>語言 / Language:</span>
+          </div>
+          <div class="lang-mobile-links">
+            <a href="{{ clean_path | relative_url }}" {% if current_lang == 'zh-Hant' %}class="active"{% endif %}>繁中</a>
+            <a href="{{ '/en' | append: clean_path | relative_url }}" {% if current_lang == 'en' %}class="active"{% endif %}>EN</a>
+            <a href="{{ '/de' | append: clean_path | relative_url }}" {% if current_lang == 'de' %}class="active"{% endif %}>DE</a>
+            <a href="{{ '/es' | append: clean_path | relative_url }}" {% if current_lang == 'es' %}class="active"{% endif %}>ES</a>
+            <a href="{{ '/ja' | append: clean_path | relative_url }}" {% if current_lang == 'ja' %}class="active"{% endif %}>JA</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
