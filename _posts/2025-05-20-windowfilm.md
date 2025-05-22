@@ -56,8 +56,10 @@ categories: jekyll update
     - 代理：明鑫有限公司
 - **SMITH 史密斯** (韓國 **스미스클럽**) 
     - 代理：協芯信有限公司 ([韓媒分類等級](https://kin-phinf.pstatic.net/20230103_15/1672721802851WebVX_JPEG/%EC%8D%AC%ED%8C%85_%EB%B8%8C%EB%9E%9C%EB%93%9C_%EA%B3%84%EA%B8%89.jpg))
-- **南亞** (南亞塑膠自有品牌)
-- **Uplus** (億高應材自有品牌，股東由英屬維京群島公司轉投資)
+- **南亞** 
+  - 南亞塑膠自有品牌
+- **Uplus** 
+  - 億高應材自有品牌，股東由英屬維京群島公司轉投資
 - **FSK** 
     - 代理：新泰 (高階採購日本 **LINTEC / MADICO**)
 - **GAMA 翠光** 
@@ -131,5 +133,7 @@ categories: jekyll update
 ---
 
 ## 其他參數表達方式
-- **SC (Shading Coefficient)** → SC = (TSER - 1) ÷ 0.86
-- **SHGC (Solar Heat Gain Coefficient)** → SHGC = 1 - TSER
+- **SC (Shading Coefficient)** 
+  - SC = (TSER - 1) ÷ 0.86
+- **SHGC (Solar Heat Gain Coefficient)** 
+  - SHGC = 1 - TSER
