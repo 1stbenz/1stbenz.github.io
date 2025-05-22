@@ -1,0 +1,251 @@
+/**
+ * Reset some basic elements
+ */
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/**
+ * Basic styling
+ */
+body {
+    font-family: $base-font-family;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+    font-weight: 300;
+    color: $text-color;
+    background-color: $background-color;
+    -webkit-text-size-adjust: 100%;
+
+    /* --- 新增以下這段 --- */
+    @include media-query($on-palm) {
+        line-height: 1.75; /* 將行距加大 (原本是 1.5) */
+         font-size: 17px;   /* 選用：手機上字體稍微大一點點也會比較好讀 */
+    }
+}
+
+
+
+/**
+ * Set `margin-bottom` to maintain vertical rhythm
+ */
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+ul, ol, dl, figure,
+%vertical-rhythm {
+    margin-bottom: $spacing-unit / 2;
+}
+
+
+
+/**
+ * Images
+ */
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%; /* 修改：從 80% 改為 100%，讓圖片在手機上能滿版顯示 */
+    height: auto;    /* 新增：確保圖片比例不變 */
+
+    /* 如果你希望桌面版維持 80%，可以保留原本設定並加上這段： */
+    @include media-query($on-laptop) {
+        max-width: 100%;
+    }
+}
+
+/**
+ * Tables
+ * 手機上表格容易破版，加入 overflow-x 讓表格可以左右滑動
+ */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    display: block;       /* 新增：讓表格變成區塊元素以便滑動 */
+    overflow-x: auto;     /* 新增：內容過寬時出現卷軸 */
+    -webkit-overflow-scrolling: touch; /* 新增：iOS 滑動更順暢 */
+    word-wrap: normal;    /* 修改：避免文字在不該斷的地方斷行 */
+    word-break: normal;
+}
+
+th, td {
+    border: 1px solid #fdfdfd;
+    text-align: center;
+    padding: 4px;
+}
+
+
+/**
+ * Figures
+ */
+figure > img {
+    display: block;
+}
+
+figcaption {
+    font-size: $small-font-size;
+}
+
+
+
+/**
+ * Lists
+ */
+ul, ol {
+    margin-left: $spacing-unit;
+}
+
+li {
+    > ul,
+    > ol {
+         margin-bottom: 0;
+    }
+}
+
+
+
+/**
+ * Headings
+ */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
+}
+
+
+
+/**
+ * Links
+ */
+a {
+    color: $brand-color;
+    text-decoration: none;
+
+    &:visited {
+        color: darken($brand-color, 15%);
+    }
+
+    &:hover {
+        color: $text-color;
+        text-decoration: underline;
+    }
+}
+
+
+
+/**
+ * Blockquotes
+ */
+blockquote {
+    color: $grey-color;
+    border-left: 4px solid $grey-color-light;
+    padding-left: $spacing-unit / 2;
+    font-size: 18px;
+    letter-spacing: -1px;
+    font-style: italic;
+
+    > :last-child {
+        margin-bottom: 0;
+    }
+}
+
+
+
+/**
+ * Code formatting
+ */
+pre,
+code {
+    font-size: 15px;
+    border: 1px solid $grey-color-light;
+    border-radius: 3px;
+    background-color: #eef;
+}
+
+code {
+    padding: 1px 5px;
+}
+
+pre {
+    padding: 8px 12px;
+    overflow-x: scroll;
+
+    > code {
+        border: 0;
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+
+
+/**
+ * Wrapper
+ */
+.wrapper {
+    max-width: -webkit-calc(800px - (#{$spacing-unit} * 2));
+    max-width:         calc(800px - (#{$spacing-unit} * 2));
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: $spacing-unit;
+    padding-left: $spacing-unit;
+    @extend %clearfix;
+
+    @include media-query($on-laptop) {
+        max-width: -webkit-calc(800px - (#{$spacing-unit}));
+        max-width:         calc(800px - (#{$spacing-unit}));
+        padding-right: $spacing-unit / 2;
+        padding-left: $spacing-unit / 2;
+    }
+
+    /* 新增：針對手機版 ($on-palm) 再縮小邊距，爭取更多閱讀空間 */
+    @include media-query($on-palm) {
+        padding-right: 15px; 
+        padding-left: 15px;
+    }
+}
+
+
+/**
+ * Clearfix
+ */
+%clearfix {
+
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+
+
+/**
+ * Icons
+ */
+.icon {
+
+    > svg {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        vertical-align: middle;
+
+        path {
+            fill: $grey-color;
+        }
+    }
+}
+
+iframe[src*="youtube"] {
+    display: block;
+    width: 100%;           /* 寬度隨螢幕縮放 */
+    max-width: 100%;       /* 確保不超出容器 */
+    height: auto;          /* 覆寫原本的高度設定 */
+    aspect-ratio: 16 / 9;  /* 強制維持 16:9 的影片比例 */
+    margin-bottom: 30px;   /* 保持垂直韻律 */
+}
