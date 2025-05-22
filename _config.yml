@@ -1,0 +1,55 @@
+# 基本設定
+title_zh: "中年阿賓の玩具"
+title_en: "1stBenz's Toys"
+# 這裡的 title 建議留一個作為全站預設（通常給 SEO 插件看）
+title: "中年阿賓の玩具"
+url: "https://1stbenz.github.io"
+baseurl: ""
+
+# 預設語系 (全站最頂層預設)
+lang: zh-Hant
+author: 
+  name: 中年阿賓
+  email: 1stbenz@github.com
+
+# 核心：自動根據資料夾路徑分配語言與 URL 前綴
+defaults:
+  # 1. 處理 zh 文章
+  - scope:
+      path: "_posts/zh"
+    values:
+      layout: "post"
+      lang: "zh-Hant"
+      permalink: /:year/:title:output_ext
+
+  # 2. 處理 en 文章
+  - scope:
+      path: "_posts/en"
+    values:
+      layout: "post"
+      lang: "en"
+      permalink: /en/:year/:title:output_ext
+
+  # 3. 處理 en 資料夾內的所有頁面 (讓 en/index.html 自動變英文)
+  - scope:
+      path: "en"
+    values:
+      lang: "en"
+
+# 雙語導覽列 (與 header.html 邏輯對應)
+nav_links:
+  zh-Hant:
+    - { title: "首頁", url: "/" }
+    - { title: "關於", url: "/about/" }
+  en:
+    - { title: "Home", url: "/en/" }
+    - { title: "About", url: "/en/about/" }
+
+# 編譯與外掛
+markdown: kramdown
+kramdown:
+  math_engine: mathjax
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
