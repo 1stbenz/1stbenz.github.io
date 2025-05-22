@@ -5,8 +5,6 @@ date:   2025-04-17 12:58:29
 categories: Auto
 ---
 
-## 變速箱油路及濾網筆記
-
 [![變速箱油循環動畫](https://img.youtube.com/vi/zcwG97VMOVk/0.jpg)](https://www.youtube.com/watch?v=zcwG97VMOVk&t=410)
 
 上面這個動畫清楚地展示了變速箱油如何循環：
