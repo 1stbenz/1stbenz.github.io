@@ -1,0 +1,289 @@
+/**
+ * Site header
+ */
+ .site-header {
+    // border-top: 5px solid $grey-color-dark; // 建議註解掉或刪除這行
+    border-bottom: none; // 移除底部線條，改用陰影
+    min-height: 56px;
+    position: relative;
+    background-color: rgba($background-color, 0.95); // 稍微透明
+    backdrop-filter: blur(5px); // 磨砂玻璃效果 (現代瀏覽器支援)
+    box-shadow: 0 1px 10px rgba(0,0,0,0.5); // 增加底部陰影
+    
+    // 讓 Header 在手機版更乾淨
+    @include media-query($on-palm) {
+        position: sticky; // 讓選單黏在頂部 (選用)
+        top: 0;
+        z-index: 1000;
+    }
+}
+
+.site-title {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 56px;
+    letter-spacing: -1px;
+    margin-bottom: 0;
+    float: left;
+
+    &,
+    &:visited {
+        color: $grey-color;
+    }
+
+    /* 新增：手機上若標題太長，稍微縮小字體 */
+    @include media-query($on-palm) {
+        font-size: 22px;
+        margin-right: 10px; /* 避免跟漢堡選單重疊 */
+    }
+}
+
+.site-nav {
+    float: right;
+    line-height: 56px;
+
+    /* ... (中間 .menu-icon 等代碼保持不變) ... */
+
+    @include media-query($on-palm) {
+        position: absolute;
+        top: 9px;
+        right: 15px; /* 修改：配合 wrapper 的 padding 調整 */
+        background-color: $background-color;
+        border: 1px solid $grey-color-light;
+        border-radius: 5px;
+        text-align: right;
+        z-index: 999; /* 新增：確保選單浮在最上層 */
+
+        .menu-icon {
+            display: block;
+            float: right;
+            width: 36px;
+            height: 26px;
+            line-height: 0;
+            padding-top: 10px;
+            text-align: center;
+            cursor: pointer; /* 新增：增加點擊手感提示 */
+
+            > svg {
+                width: 18px;
+                height: 15px;
+                path {
+                    fill: $grey-color-dark;
+                }
+            }
+        }
+
+        .trigger {
+            clear: both;
+            display: none;
+        }
+
+        /* 
+         * 注意：原本的代碼使用 :hover 來顯示選單。
+         * 在手機上 :hover 體驗不佳，但如果沒有 JavaScript，
+         * 這是純 CSS 的妥協做法。建議將 padding 加大以便點擊。
+         */
+        &:hover .trigger {
+            display: block;
+            padding-bottom: 5px;
+        }
+
+        .page-link {
+            display: block;
+            padding: 10px 20px; /* 修改：加大點擊範圍 */
+            margin-left: 0; /* 重置 margin */
+            
+            &:not(:first-child) {
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+
+/**
+ * Site footer
+ */
+.site-footer {
+    border-top: 1px solid $grey-color-light;
+    padding: $spacing-unit 0;
+}
+
+.footer-heading {
+    font-size: 18px;
+    margin-bottom: $spacing-unit / 2;
+}
+
+.contact-list,
+.social-media-list {
+    list-style: none;
+    margin-left: 0;
+}
+
+.footer-col-wrapper {
+    font-size: 15px;
+    color: $grey-color;
+    margin-left: -$spacing-unit / 2;
+    @extend %clearfix;
+}
+
+.footer-col {
+    float: left;
+    margin-bottom: $spacing-unit / 2;
+    padding-left: $spacing-unit / 2;
+}
+
+.footer-col-1 {
+    width: -webkit-calc(35% - (#{$spacing-unit} / 2));
+    width:         calc(35% - (#{$spacing-unit} / 2));
+}
+
+.footer-col-2 {
+    width: -webkit-calc(20% - (#{$spacing-unit} / 2));
+    width:         calc(20% - (#{$spacing-unit} / 2));
+}
+
+.footer-col-3 {
+    width: -webkit-calc(45% - (#{$spacing-unit} / 2));
+    width:         calc(45% - (#{$spacing-unit} / 2));
+}
+
+@include media-query($on-laptop) {
+    .footer-col-1,
+    .footer-col-2 {
+        width: -webkit-calc(50% - (#{$spacing-unit} / 2));
+        width:         calc(50% - (#{$spacing-unit} / 2));
+    }
+
+    .footer-col-3 {
+        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
+        width:         calc(100% - (#{$spacing-unit} / 2));
+    }
+}
+
+@include media-query($on-palm) {
+    .footer-col {
+        float: none;
+        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
+        width:         calc(100% - (#{$spacing-unit} / 2));
+    }
+}
+
+
+
+/**
+ * Page content
+ */
+.page-content {
+    padding: $spacing-unit 0;
+}
+
+.page-heading {
+    font-size: 20px;
+}
+
+.post-list {
+    margin-left: 0;
+    list-style: none;
+
+    > li {
+        margin-bottom: $spacing-unit;
+        
+        /* --- 新增卡片樣式 --- */
+        background-color: $card-bg-color; // 使用剛剛新增的變數 (若未新增可直接寫 #2d2d30)
+        padding: 25px;
+        border-radius: 12px; // 圓角
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); // 陰影增加立體感
+        transition: transform 0.2s ease, box-shadow 0.2s ease; // 動畫過渡
+        border: 1px solid lighten($background-color, 10%); // 微妙的邊框
+
+        // 滑鼠懸停效果
+        &:hover {
+            transform: translateY(-5px); // 稍微浮起
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.4);
+            border-color: $brand-color; // 懸停時邊框變色
+        }
+    }
+
+    /* 調整卡片內的標題與日期 */
+    h2 {
+        margin-top: 5px;
+        font-size: 24px;
+        a {
+            color: #fff;
+            text-decoration: none;
+            &:hover { color: $brand-color; }
+        }
+    }
+}
+
+.post-meta {
+    font-size: 14px;
+    color: $grey-color;
+    text-transform: uppercase; // 日期改為全大寫看起來較整齊
+    letter-spacing: 1px;
+}
+
+.post-link {
+    display: block;
+    font-size: 24px;
+}
+
+
+
+/**
+ * Posts
+ */
+.post-header {
+    margin-bottom: $spacing-unit;
+}
+
+.post-title {
+    font-size: 42px;
+    letter-spacing: -1px;
+    line-height: 1;
+
+    @include media-query($on-laptop) {
+        font-size: 36px;
+    }
+    
+    /* 新增：手機版標題再縮小一點，避免斷行太嚴重 */
+    @include media-query($on-palm) {
+        font-size: 28px;
+    }
+}
+
+.post-content {
+    margin-bottom: $spacing-unit;
+
+    // 針對所有標題 (h1~h6) 增加上方距離，區分段落層級
+    h2, h3, h4, h5, h6 {
+        margin-top: 40px; // 標題上方留白
+        margin-bottom: 20px;
+        font-weight: 700;
+        line-height: 1.4;
+        color: #fff; // 標題用全白，與內文灰白區隔
+    }
+
+    // 針對段落 p
+    p {
+        margin-bottom: 28px; // 段落之間距離加大
+        text-align: justify; // 左右對齊 (讓右邊緣整齊，不會參差不齊)
+        text-justify: inter-ideograph; // 針對中文字的對齊優化
+    }
+
+    // 針對列表
+    ul, ol {
+        margin-bottom: 25px;
+        li {
+            margin-bottom: 10px; // 列表項目之間也要有點距離
+            line-height: 1.7;
+        }
+    }
+    
+    // 強調文字 (Bold)
+    strong {
+        color: #fff; // 強調文字變亮白
+        font-weight: 700;
+    }
+}

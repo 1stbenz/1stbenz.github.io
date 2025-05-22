@@ -1,0 +1,49 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  <h1 class="page-heading">Posts</h1>
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li style="margin-bottom: 40px;"> <!-- 增加間距，讓文章區隔更明顯 -->
+        
+        <!-- 1. 日期 -->
+        <span class="post-meta">
+          {{ post.date | date: "%Y/%m/%d" }}
+        </span>
+
+        <!-- 2. 標題 -->
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+
+        <!-- 3. 圖片 (如果有設定 image 就顯示) -->
+        {% if post.image %}
+        <div class="post-image" style="margin: 10px 0;">
+          <a href="{{ post.url | prepend: site.baseurl }}">
+            <!-- 設定 max-width 確保圖片不會爆版，並加上圓角增加質感 -->
+            <img src="{{ post.image }}" alt="{{ post.title }}" style="max-width: 100%; height: auto; max-height: 300px; object-fit: cover; border-radius: 8px;">
+          </a>
+        </div>
+        {% endif %}
+
+        <!-- 4. 描述 (優先顯示 description，沒有則顯示摘要) -->
+        <div class="post-excerpt" style="color: #444; line-height: 1.6;">
+          {% if post.description %}
+            {{ post.description }}
+          {% else %}
+            {{ post.excerpt | strip_html | truncatewords: 50 }}
+          {% endif %}
+          <a href="{{ post.url | prepend: site.baseurl }}" style="font-size: 0.9em; text-decoration: underline; margin-left: 5px;">閱讀更多</a>
+        </div>
+
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>

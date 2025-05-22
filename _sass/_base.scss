@@ -1,0 +1,269 @@
+/**
+ * Reset some basic elements
+ */
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/**
+ * Basic styling
+ */
+ body {
+    font-family: $base-font-family;
+    font-size: 17px; // 建議將基礎字體從 16px 提升到 17px，中文看起來更清楚
+    line-height: 1.8; // 中文建議使用 1.7 ~ 1.8 (英文通常是 1.5)
+    font-weight: 400; // 確保字體有足夠的粗細，深色背景下太細會看不清楚
+    color: $text-color;
+    background-color: $background-color;
+    -webkit-text-size-adjust: 100%;
+    
+    /* 新增：微調字距，讓中文字不要黏在一起 */
+    letter-spacing: 0.03em; 
+    
+    /* 新增：優化文字渲染，讓字體在 Mac/iOS 上更清晰 */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    @include media-query($on-palm) {
+        font-size: 16px; // 手機版稍微縮小一點點
+        line-height: 1.75;
+    }
+}
+
+
+
+
+/**
+ * Set `margin-bottom` to maintain vertical rhythm
+ */
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+ul, ol, dl, figure,
+%vertical-rhythm {
+    margin-bottom: $spacing-unit / 2;
+}
+
+
+
+/**
+ * Images
+ */
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%; /* 修改：從 80% 改為 100%，讓圖片在手機上能滿版顯示 */
+    height: auto;    /* 新增：確保圖片比例不變 */
+
+    /* 如果你希望桌面版維持 80%，可以保留原本設定並加上這段： */
+    @include media-query($on-laptop) {
+        max-width: 100%;
+    }
+}
+
+/**
+ * Tables
+ * 手機上表格容易破版，加入 overflow-x 讓表格可以左右滑動
+ */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    display: block;       /* 新增：讓表格變成區塊元素以便滑動 */
+    overflow-x: auto;     /* 新增：內容過寬時出現卷軸 */
+    -webkit-overflow-scrolling: touch; /* 新增：iOS 滑動更順暢 */
+    word-wrap: normal;    /* 修改：避免文字在不該斷的地方斷行 */
+    word-break: normal;
+}
+
+th, td {
+    border: 1px solid #fdfdfd;
+    text-align: center;
+    padding: 4px;
+}
+
+
+/**
+ * Figures
+ */
+figure > img {
+    display: block;
+}
+
+figcaption {
+    font-size: $small-font-size;
+}
+
+
+
+/**
+ * Lists
+ */
+ul, ol {
+    margin-left: $spacing-unit;
+}
+
+li {
+    > ul,
+    > ol {
+         margin-bottom: 0;
+    }
+}
+
+
+
+/**
+ * Headings
+ */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 300;
+}
+
+
+
+/**
+ * Links
+ */
+ a {
+    color: $brand-color;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out; // 新增平滑過渡
+
+    &:visited {
+        color: lighten($brand-color, 5%); // 稍微調亮，不要變太暗
+    }
+
+    &:hover {
+        color: lighten($brand-color, 20%); // 懸停時變亮
+        text-decoration: none; // 去除底線，看起來較乾淨 (視個人喜好)
+    }
+}
+
+
+
+
+/**
+ * Blockquotes
+ */
+ blockquote {
+    color: lighten($grey-color, 10%);
+    border-left: 4px solid $brand-color; // 左側邊框改用品牌色
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 30px;
+    background-color: rgba(255, 255, 255, 0.05); // 淡淡的背景色
+    border-radius: 0 5px 5px 0;
+    
+    font-size: 16px; // 字體稍小
+    font-style: normal; // 重點：取消斜體！
+    letter-spacing: 0.03em;
+    
+    > :last-child {
+        margin-bottom: 0;
+    }
+}
+
+/**
+ * Code formatting
+ */
+ pre,
+ code {
+     font-family: "Menlo", "Consolas", "Monaco", monospace; // 程式碼專用字體
+     font-size: 15px;
+     border-radius: 6px; // 圓角
+     border: 1px solid #444; // 深色邊框
+     background-color: #2b2b2b; // 改為深色背景
+     color: #f8f8f2; // 程式碼預設文字改為淺色
+ }
+ 
+ code {
+     padding: 2px 6px;
+ }
+ 
+ pre {
+     padding: 15px;
+     overflow-x: auto;
+     box-shadow: inset 0 0 10px rgba(0,0,0,0.3); // 內部陰影增加層次
+ 
+     > code {
+         border: 0;
+         padding-right: 0;
+         padding-left: 0;
+         background-color: transparent; // 避免雙重背景
+     }
+ }
+ 
+
+
+
+/**
+ * Wrapper
+ */
+.wrapper {
+    max-width: -webkit-calc(800px - (#{$spacing-unit} * 2));
+    max-width:         calc(800px - (#{$spacing-unit} * 2));
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: $spacing-unit;
+    padding-left: $spacing-unit;
+    @extend %clearfix;
+
+    @include media-query($on-laptop) {
+        max-width: -webkit-calc(800px - (#{$spacing-unit}));
+        max-width:         calc(800px - (#{$spacing-unit}));
+        padding-right: $spacing-unit / 2;
+        padding-left: $spacing-unit / 2;
+    }
+
+    /* 新增：針對手機版 ($on-palm) 再縮小邊距，爭取更多閱讀空間 */
+    @include media-query($on-palm) {
+        padding-right: 15px; 
+        padding-left: 15px;
+    }
+}
+
+
+/**
+ * Clearfix
+ */
+%clearfix {
+
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+
+
+/**
+ * Icons
+ */
+.icon {
+
+    > svg {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        vertical-align: middle;
+
+        path {
+            fill: $grey-color;
+        }
+    }
+}
+
+iframe[src*="youtube"] {
+    display: block;
+    width: 100%;           /* 寬度隨螢幕縮放 */
+    max-width: 100%;       /* 確保不超出容器 */
+    height: auto;          /* 覆寫原本的高度設定 */
+    aspect-ratio: 16 / 9;  /* 強制維持 16:9 的影片比例 */
+    margin-bottom: 30px;   /* 保持垂直韻律 */
+}
