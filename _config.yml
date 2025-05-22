@@ -1,0 +1,12 @@
+# Site settings
+title: 中年阿賓の玩具
+email: 1stbenz@github.com
+description: > # this means to ignore newlines until "baseurl:"
+  過去踩坑無數，將經驗整理成相關筆記分享，希望能幫助正在尋找相關資訊的你。
+baseurl: "/" # the subpath of your site, e.g. /blog/
+url: "http://1stbenz.github.io" # the base hostname & protocol for your site
+
+# github_username:  1stbenz # the username of your GitHub account
+# Build settings
+markdown: kramdown
+permalink: /:year/:title:output_ext
