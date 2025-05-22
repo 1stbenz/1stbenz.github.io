@@ -1,0 +1,131 @@
+---
+layout: default
+lang: en
+---
+
+<div class="home">
+  <div class="home-layout">
+    
+    <!-- Left Column: Posts List -->
+    <div class="post-list-column">
+      <h1 class="page-heading">Latest Posts</h1>
+
+      <ul class="post-list">
+        {% assign en_posts = site.posts | where: "lang", "en" %}
+        
+        {% for post in en_posts %}
+          <li class="post-card" data-tags="{{ post.tags | join: ',' }}">
+            <span class="post-meta">{{ post.date | date: "%B %-d, %Y" }}</span>
+
+            <h2>
+              <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+            </h2>
+
+            {% if post.image %}
+            <div class="post-image">
+              <a href="{{ post.url | relative_url }}">
+                <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" 
+                     {% if forloop.first %}fetchpriority="high"{% else %}loading="lazy"{% endif %}>
+              </a>
+            </div>
+            {% endif %}
+
+            <div class="post-excerpt">
+              {% if post.description %}
+                <p>{{ post.description }}</p>
+              {% else %}
+                <p>{{ post.excerpt | strip_html | truncatewords: 35 }}</p>
+              {% endif %}
+              <p style="margin-top: 15px;">
+                <a href="{{ post.url | relative_url }}" style="color: #00e5ff; font-weight: 500;">Read More &raquo;</a>
+              </p>
+            </div>
+          </li>
+        {% endfor %}
+      </ul>
+
+      <p class="rss-subscribe" style="border-top: 1px solid #222a3a; padding-top: 20px; margin-top: 40px;">
+        subscribe <a href="{{ '/feed.xml' | relative_url }}">via RSS</a>
+      </p>
+    </div>
+
+    <!-- Right Column: Sidebar Tags -->
+    <div class="sidebar">
+      <div class="tags-container">
+        <h3>Popular Topics</h3>
+        
+        {% comment %} Automatically extract unique tags from English posts {% endcomment %}
+        {% assign all_tags = "" %}
+        {% for post in en_posts %}
+          {% for tag in post.tags %}
+            {% capture all_tags %}{{ all_tags }}{{ tag }}|{% endcapture %}
+          {% endfor %}
+        {% endfor %}
+        {% assign tag_array = all_tags | split: "|" | uniq | sort | reverse %}
+
+        <ul class="tags-list">
+          <li>
+            <a class="tag-badge active" data-tag="all">All Posts</a>
+          </li>
+          {% for tag in tag_array %}
+            {% if tag != "" %}
+              <li>
+                <a class="tag-badge" data-tag="{{ tag }}">{{ tag }}</a>
+              </li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const tags = document.querySelectorAll('.tag-badge');
+  const posts = document.querySelectorAll('.post-card');
+
+  function filterPosts(tag) {
+    // Toggle active class in tag buttons
+    tags.forEach(t => t.classList.remove('active'));
+    const activeTag = document.querySelector(`.tag-badge[data-tag="${tag}"]`) || document.querySelector('.tag-badge[data-tag="all"]');
+    if (activeTag) activeTag.classList.add('active');
+
+    posts.forEach(post => {
+      const postTags = post.getAttribute('data-tags').split(',');
+      if (tag === 'all' || postTags.includes(tag)) {
+        post.style.display = 'block';
+        // Add a smooth fade-in transition
+        post.style.opacity = 0;
+        setTimeout(() => {
+          post.style.opacity = 1;
+          post.style.transition = 'opacity 0.2s ease';
+        }, 10);
+      } else {
+        post.style.display = 'none';
+      }
+    });
+  }
+
+  tags.forEach(tagBtn => {
+    tagBtn.addEventListener('click', function(e) {
+      e.preventDefault();
+      const selectedTag = this.getAttribute('data-tag');
+      filterPosts(selectedTag);
+      // Update URL hash
+      if (selectedTag === 'all') {
+        history.pushState("", document.title, window.location.pathname + window.location.search);
+      } else {
+        window.location.hash = encodeURIComponent(selectedTag);
+      }
+    });
+  });
+
+  // Check URL hash on load
+  const hash = decodeURIComponent(window.location.hash.substring(1));
+  if (hash) {
+    filterPosts(hash);
+  }
+});
+</script>
