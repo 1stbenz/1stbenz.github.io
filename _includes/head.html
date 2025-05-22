@@ -1,0 +1,79 @@
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MQWC1X6ENW"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-MQWC1X6ENW');
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme-color" content="#0b57d0">
+
+  <title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+
+  {% assign description = page.description | default: page.excerpt | default: site.description | strip_html | strip_newlines | truncate: 160 %}
+  <meta name="description" content="{{ description }}">
+
+  {% if page.keywords %}
+  <meta name="keywords" content="{{ page.keywords }}">
+  {% endif %}
+
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+
+  {% assign url_parts = page.url | split: '/' %}
+  {% assign first_part = url_parts[1] %}
+  {% if first_part == "en" or first_part == "de" or first_part == "es" or first_part == "ja" %}
+    {% assign prefix_to_remove = '/' | append: first_part %}
+    {% assign clean_path = page.url | replace_first: prefix_to_remove, '' %}
+  {% else %}
+    {% assign clean_path = page.url %}
+  {% endif %}
+  {% assign cn_url = clean_path | absolute_url %}
+  {% assign en_url = '/en' | append: clean_path | absolute_url %}
+  {% assign de_url = '/de' | append: clean_path | absolute_url %}
+  {% assign es_url = '/es' | append: clean_path | absolute_url %}
+  {% assign ja_url = '/ja' | append: clean_path | absolute_url %}
+  <link rel="alternate" hreflang="zh-Hant" href="{{ cn_url }}" />
+  <link rel="alternate" hreflang="en" href="{{ en_url }}" />
+  <link rel="alternate" hreflang="de" href="{{ de_url }}" />
+  <link rel="alternate" hreflang="es" href="{{ es_url }}" />
+  <link rel="alternate" hreflang="ja" href="{{ ja_url }}" />
+  <link rel="alternate" hreflang="x-default" href="{{ en_url }}" />
+  <meta property="og:site_name" content="{{ site.title }}">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+  <meta property="og:description" content="{{ description }}">
+  <meta property="og:url" content="{{ page.url | replace:'index.html','' | absolute_url }}">
+
+  {% if page.image %}
+    {% if page.image contains 'http' %}
+      <meta property="og:image" content="{{ page.image }}">
+      <meta name="twitter:image" content="{{ page.image }}">
+    {% else %}
+      <meta property="og:image" content="{{ page.image | absolute_url }}">
+      <meta name="twitter:image" content="{{ page.image | absolute_url }}">
+    {% endif %}
+  {% else %}
+    <meta property="og:image" content="{{ '/images/default-social.webp' | absolute_url }}"> 
+  {% endif %}
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+  <meta name="twitter:description" content="{{ description }}">
+
+  <link rel="stylesheet" href="{{ "/css/main.css" | relative_url }}">
+  
+  <link rel="icon" href="/icon/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/icon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/icon/favicon-16x16.png">
+  <link rel="apple-touch-icon" href="/icon/apple-touch-icon.png">
+  <link rel="manifest" href="/icon/site.webmanifest">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700&family=Outfit:wght@300;400;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
