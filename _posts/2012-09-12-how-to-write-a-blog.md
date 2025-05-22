@@ -1,6 +1,8 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title: "我的文章標題"
+date: 2012-09-12
+categories: blog
 ---
 # Welcome
  
