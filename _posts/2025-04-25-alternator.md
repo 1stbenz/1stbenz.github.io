@@ -61,5 +61,16 @@ categories: Auto
 
 有人問到，充電效能極佳的 **鈦酸鋰電池** 是否值得入手。根據 [東芝 SCiB 官方規格表](https://www.global.toshiba/ww/products-solutions/battery/scib/product-next/product/cell/high-energy.html)，整理如下：
 
-![鈦酸鋰電池技術](https://attach.mobile01.com/attach/202505/mobile01-2fd84b5d0678545af2b7bb8b82d1469d.png)
+| 尺寸LN3 | 鉛酸 | 鈉酸鋰 | 鋰鐵 |
+| --- | --- | --- | --- |
+| 容量 | 70Ah | 46Ah | 80Ah |
+| 充電效能 | 7A(0.1C) | 920A(20C) | 160A(2C) |
+| 放電效能 | 6C | 20C | 50-80C |
+| 耐壓 | 16.2V | 13.5V(5串) | 14.6V |
+| 循環壽命 | 1000次 | 理想20000次<br>x容量0.57 <br>x二手耗損0.8 <br>x長期過充0.8 <br>=7300次 | 5000次 |
+| 電芯 | 全新 | 二手拆機 | 全新 |
+| 生產商 | 正規工廠 | 地下工廠 | 正規工廠 |
+| 價格 | 低 | 高 | 中 |
+| 歐系車發電機 | 190A | | |
+| 日系車發電機 | 120A | | |
 
