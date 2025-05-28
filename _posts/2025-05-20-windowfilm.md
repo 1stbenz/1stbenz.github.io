@@ -2,10 +2,10 @@
 layout: post
 title:  "隔熱紙挑選筆記"
 date:   2025-05-20 12:58:29
-categories: jekyll update
+categories: Auto
 ---
 
-![太陽熱能組成](https://attach.mobile01.com/attach/202401/mobile01-f399ed6b775373389192ea6c2e592f0b.png#pic_center){width=400 height=auto}
+![太陽熱能組成](https://attach.mobile01.com/attach/202401/mobile01-f399ed6b775373389192ea6c2e592f0b.png#pic_center){:height="50%" width="50%"}
 
 **太陽熱能組成**：
 - 紅外線 **53%**
