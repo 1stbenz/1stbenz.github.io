@@ -7,7 +7,7 @@ baseurl: "/" # the subpath of your site, e.g. /blog/
 url: "http://1stbenz.github.io" # the base hostname & protocol for your site
 
 github_username:  1stbenz # the username of your GitHub account
-
+google_analytics: G-MQWC1X6ENW
 # Build settings
 markdown: kramdown
 permalink: /:year/:title:output_ext
