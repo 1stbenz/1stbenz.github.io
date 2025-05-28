@@ -5,7 +5,7 @@ date:   2025-05-20 12:58:29
 categories: Auto
 ---
 
-![太陽熱能組成](https://attach.mobile01.com/attach/202401/mobile01-f399ed6b775373389192ea6c2e592f0b.png#pic_center){:height="auto" width="640px"}
+![太陽熱能組成](https://attach.mobile01.com/attach/202401/mobile01-f399ed6b775373389192ea6c2e592f0b.png#pic_center){:width="640"}
 
 **太陽熱能組成**：
 - 紅外線 **53%**
@@ -92,7 +92,7 @@ categories: Auto
 
 ## 隔熱紙參數整理 {#guideline}
 
-![隔熱紙參數](https://attach.mobile01.com/attach/202401/mobile01-f2b6c9636483aacf4bbb1c6b500c8370.png){:height="auto" width="640px"}
+![隔熱紙參數](https://attach.mobile01.com/attach/202401/mobile01-f2b6c9636483aacf4bbb1c6b500c8370.png){:width="640"}
 
 ### 主要參數分析
 - **總熱能阻隔 (TSER, Total Solar Energy Rejection)**
