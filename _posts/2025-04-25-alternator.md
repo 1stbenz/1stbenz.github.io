@@ -60,7 +60,7 @@ categories: Auto
 ## 鈦酸鋰電池的價值
 
 有人問到，充電效能極佳的 **鈦酸鋰電池** 是否值得入手。根據 [東芝 SCiB 官方規格表](https://www.global.toshiba/ww/products-solutions/battery/scib/product-next/product/cell/high-energy.html)，整理如下：
-
+<br>
 | 尺寸LN3 | 鉛酸 | 鈉酸鋰 | 鋰鐵 |
 | --- | --- | --- | --- |
 | 容量 | 70Ah | 46Ah | 80Ah |
