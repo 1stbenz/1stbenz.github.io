@@ -48,8 +48,8 @@ categories: Auto
 ## 【相同認證】機油比較指標
 
 - **Flash Point**：機油閃燃點，越高越好
-- **100 度 C 黏度**：同認證同黏度號數，低的為佳
-- **40 度 C 黏度**：越低越好
+- **100°C黏度**：同認證同黏度號數，低的為佳
+- **40°C黏度**：越低越好
 - **Noack**：機油揮發率，低的為佳，建議挑10以下
 - **HTHS**：越高越耐高轉，越低越省油，依照駕駛模式挑選，2.9以上為佳
 - **TBN**：機油耐用度，8以上為佳
@@ -61,7 +61,7 @@ categories: Auto
 ## 基礎油種類
 
 - **多元酯**：頂級，耐高轉，潤滑性好，衰退極快，紅外線峰值 1710>2
-- **烷基萘 ANs**：頂級，少見，取代酯類加入PAO做調製劑，紅外線峰值 740-890
+- **烷基萘ANs**：頂級，少見，取代酯類加入PAO做調製劑，紅外線峰值 740-890
 - **PAO**：頂級，通常會加少量酯類以融入添加劑，紅外線峰值 720>1
 - **GTL**：頂級，天然氣經F-T化學合成，性能接近PAO，紅外線峰值 720<=1
 - **XTL**：煤、有機物轉換為天然氣，再走F-T合成潤滑油
@@ -100,7 +100,7 @@ categories: Auto
 
 ### **避開**
 - 本土混油、找國外小廠代工品牌
-- 沒看過的品牌，到 [Bevo](https://bevo.mercedes-benz.com/bevolisten/bevo-sheets-sort1.html) 輸入品牌英文搜尋，Count 欄位加起來超過 10 以上再買。
+- 沒看過的品牌，到 [Bevo](https://bevo.mercedes-benz.com/bevolisten/bevo-sheets-sort1.html) 輸入品牌英文搜尋，Count欄位加起來超過10以上再買。
 
 ## **推薦閱讀**
 - [法拉利論壇：技術 QA 精華](https://www.ferrarichat.com/forum/threads/motor-oil-all-chapters-inclusive-copy-and-save-this.136052/)
