@@ -44,7 +44,7 @@ categories: Auto
 | 柴油 Disel | < 1% |
 | 煤油 Paraffin | < 0.2% |
 | 去漬油 Cleaning Naphtha | < 0.05% |
-| 2L : 0.5L : 0.1L (D:P:C)  |
+| 2L : 0.5L : 0.1L (D:P:C)  ||
 
 ### Pre-Mix 比例
 | Usage ratio |
