@@ -6,49 +6,53 @@ categories: Auto
 ---
 
 ## RedLine SI-1 紅線 SI-1
-
 ### Initial Usage
-| Usage Ratio         |
-|---------------------|
-| 15oz in 20 Gallon  |
-| = 15oz in 2560 oz  |
-| = 0.005859375      |
-| = 0.6%             |
-| **25 L : 150 ml**  |
+| Usage Ratio |  
+| --- |
+| 15oz in 20 Gallon |  
+| = 15oz in 2560 oz |  
+| = 0.005859375 |  
+| = 0.6% |  
+| **25 L : 150 ml** |  
 
 ### Maintenance
-| Usage Ratio        |
-|--------------------|
-| **25 L : 75 ml**  |
+維護用量為一半
+|   Usage Ratio |
+| --- | 
+| **25 L : 75 ml** |  
 
 ## Chevron Techron Concentrate Plus 好市多版本
-| Usage Ratio        |
-|--------------------|
-| 1 oz in 1 Gallon  |
-| = 1 oz in 128 oz  |
-| = 0.0078125       |
-| = 0.8%            |
-| **25 L : 200 ml** |
+好市多目前已停售
+|  Usage Ratio |
+| --- | 
+| 1 oz in 1 Gallon |  
+| = 1 oz in 128 oz |  
+| = 0.0078125 |  
+| = 0.8% |  
+| **25 L : 200 ml** |  
 
 ## IPA (Proximity 3M Formula) 拔水劑
-| Usage Ratio       |
-|-------------------|
-| 8 oz in 17 Gallon |
-| = 8 oz in 2176 oz |
-| = 0.00367647058   |
-| = 0.37%          |
-| **25 L : 92 ml** |
+化學材料行購買之99%IPA
+|  Usage Ratio |
+| --- | 
+| 8 oz in 17 Gallon |  
+| = 8 oz in 2176 oz |  
+| = 0.00367647058 |  
+| = 0.37% |  
+| **25 L : 92 ml** |  
 
 ## DPC Mix (Proximity 3M Formula)
-| Ingredient               | Usage Ratio  |
-|--------------------------|--------------|
-| 柴油 Diesel              | < 1%         |
-| 煤油 Paraffin            | < 0.2%       |
-| 去漬油 Cleaning Naphtha  | < 0.05%      |
-| **2L : 0.5L : 0.1L (D:P:C)** |          |
+混油社團配方
+| Ingredient | Usage Ratio |
+| --- | --- |
+| 柴油 Disel | < 1% |
+| 煤油 Paraffin | < 0.2% |
+| 去漬油 Cleaning Naphtha | < 0.05% |
+| 2L : 0.5L : 0.1L (D:P:C)  ||
 
 ### DCP Pre-Mix Ratio
-| Usage Ratio          |
-|----------------------|
-| **25L : 300ml**     |
-| **27L : 325ml**     |
+每次加油需要用量
+| Usage Ratio |
+| --- | 
+| **25L : 300ml** |  
+| **27L : 325ml** |  
