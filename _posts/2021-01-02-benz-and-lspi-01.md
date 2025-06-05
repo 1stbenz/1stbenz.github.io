@@ -12,7 +12,7 @@ W205 汽油車首選還是**229.5 及 229.6**兩種認證，TBN 較高。
 ### **LSPI（低速預燃）問題與機油選擇**
 W205 因為缸內直噴，會有**LSPI（低速預燃）造成活塞破損**的問題，為了預防 LSPI，除了：
 - **高檔位低轉速時，先降檔再踩大腳油門**
-- 機油選擇也很重要：除了 **[低鈣配方 (<2000ppm)](https://1stbenz.github.io/2021/oil-parameter.html)**，找有**要求通過 LSPI 測試（Sequence IX）**的機油更重要。
+- 機油選擇也很重要：除了**[低鈣配方 (<2000ppm)](https://1stbenz.github.io/2021/oil-parameter.html)**，找有**要求通過LSPI測試（Sequence IX）**的機油更重要。
 
 ### **相關機油認證**
 - **DEXOS1 GEN 2**：要求 *通過 LSPI 測試**
