@@ -8,7 +8,7 @@ categories: Auto
 
 ![機油選擇](https://attach.mobile01.com/attach/202104/mobile01-4354e3784c5b7a8a13113354d8a13b2f.jpg)
 
-接續 [上篇](https://1stbenz.blogspot.com/2020/12/w205.html) 的候選機油，0W 暫時不列入，原因如下：
+接續 [上篇](https://1stbenz.github.io/2021/benz-and-lspi-01.html) 的候選機油，0W 暫時不列入，原因如下：
 - **Shell 0W40**雖然在**極低溫流動性**比5W30好，但在40°C黏度反而比5W30高，在台灣氣候下，**啟動保護性**不如5W30。
 - **Ravenol SSV**在台灣通路的製造年份過老，因此剔除。
 
@@ -19,7 +19,7 @@ categories: Auto
 4. **Castrol Edge M** 5W-30
 
 這幾支機油均符合**229.5 及 229.52 認證**。  
-[根據認證標準](https://1stbenz.blogspot.com/2021/03/w205-6.html)，引擎磨耗標準是相同的，因此**相同認證下的油才有意義去比較參數**。
+[根據認證標準](https://1stbenz.github.io/2021/benz-approval.html)，引擎磨耗標準是相同的，因此**相同認證下的油才有意義去比較參數**。
 
 ---
 
@@ -56,7 +56,7 @@ categories: Auto
 
 - **TBN（總鹼值）**  
   指機油的**耐用度**，影響換油週期。  
-  根據 [油商推薦](https://1stbenz.blogspot.com/2020/11/w205_23.html)，229.5**換油週期可達25,000KM**，而 229.51/52 **僅15,000KM**。
+  根據 [油商推薦](https://1stbenz.github.io/2020/oil-finder.html)，229.5**換油週期可達25,000KM**，而 229.51/52 **僅15,000KM**。
 
 - **Pour Point（流動點）**  
   機油能流動的最低溫度，在台灣亞熱帶地區**無實際意義**。
