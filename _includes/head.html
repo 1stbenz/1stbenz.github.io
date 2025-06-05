@@ -1,36 +1,20 @@
 <head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MQWC1X6ENW"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MQWC1X6ENW"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-    gtag('config', 'G-MQWC1X6ENW');
-  </script>
-
-  <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width initial-scale=1" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-  <meta name="description" content="{{ site.description }}">
-  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-  <link rel="stylesheet" href="{{ " /css/main.css" | prepend: site.baseurl }}">
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-
-  <script>
-    const gitalk = new Gitalk({
-        // 这个需要在github上申请一个OAuth application
-        clientID: 'Ov23liKhbDrjPFYZxlp4',   // GitHub Application Client ID
-        clientSecret: '451b78f814de8dfa0de5ece5a4cdf6af1382a6fe',   // GitHub Application Client Secret
-        repo: '1stbenz.github.io', // //存储你评论 issue 的 Github 仓库名
-        owner: '1stbenz',
-        admin: ['1stbenz'],    // 这个仓库的管理员
-        distractionFreeMode: true,  // 是否添加全屏遮罩
-        id: window.location.pathname    // 页面的唯一标识，gitalk 会根据这个标识自动创建的issue的标签,我们使用页面的相对路径作为标识
-    })
-    gitalk.render('gitalk-container');    // 渲染Gitalk评论组件
+  gtag('config', 'G-MQWC1X6ENW');
 </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <meta name="description" content="{{ site.description }}">
+
+    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 </head>
