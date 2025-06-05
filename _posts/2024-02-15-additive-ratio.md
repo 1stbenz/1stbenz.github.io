@@ -8,7 +8,7 @@ categories: Auto
 ## RedLine SI-1 紅線 SI-1
 
 | Usage ratio |  
-| --- |
+| :--- |
 | 15oz in 20 Gallon |  
 | = 15oz in 2560 oz |  
 | = 0.005859375 |  
@@ -18,7 +18,7 @@ categories: Auto
 ### Maintenance
 
 |   Usage ratio |
-| --- | 
+| :--- | 
 | **25 L : 75 ml** |  
 
 <br>
@@ -28,7 +28,7 @@ categories: Auto
 ## Chevron Techron Concentrate Plus
 
 |  Usage ratio |
-| --- | 
+| :--- | 
 | 1 oz in 1 Gallon |  
 | = 1 oz in 128 oz |  
 | = 0.0078125 |  
@@ -42,7 +42,7 @@ categories: Auto
 ## IPA (Proximity 3M Formula) 拔水劑
 
 |  Usage ratio |
-| --- | 
+| :--- | 
 | 8 oz in 17 Gallon |  
 | = 8 oz in 2176 oz |  
 | = 0.00367647058 |  
@@ -56,7 +56,7 @@ categories: Auto
 ## DPC Mix (Proximity 3M Formula)
 
 | ingredient | Usage ratio |
-| --- | --- |
+| :--- | :--- |
 | 柴油 Disel | < 1% |
 | 煤油 Paraffin | < 0.2% |
 | 去漬油 Cleaning Naphtha | < 0.05% |
@@ -65,6 +65,6 @@ categories: Auto
 ### Pre-Mix 比例
 
 | Usage ratio |
-| --- | 
+| :--- | 
 | **25L : 300ml** |  
 | **27L : 325ml** |  
