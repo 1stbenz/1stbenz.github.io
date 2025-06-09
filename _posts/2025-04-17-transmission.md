@@ -7,8 +7,7 @@ categories: Auto
 <iframe width="560" height="315" src="https://www.youtube.com/embed/zcwG97VMOVk?si=svbJ4WHcnP2I0Zgr&amp;start=410" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 上面這個動畫清楚地展示了變速箱油如何循環：
-- **油泵**抽取油底殼的油，先經過**濾芯**
-- 之後分成兩條流路：
+- **油泵**抽取油底殼的油，先經過**濾芯**，之後分成兩條流路：
   - **一路往扭力轉換器**
   - **一路往變速機構及閥體**
 - 在閥體與變速機構來回循環，最後**回流至油底殼**
@@ -19,7 +18,7 @@ categories: Auto
 這種設計與**機油在引擎內流動的路線**類似：
 - **油泵抽取機油後，第一步先經過濾芯**
 - 一般**紙濾芯過濾密度約20-30微米(μm)**(JIS標準)
-- 在濾網**未失效之前**，變速機構及閥體中的油**保持乾淨**
+- 在濾網**未失效之前**，變速機構及閥體中的油都是**雜質很少的乾淨油**
 - 清潔過後的油最終回流至油底殼，因此**油底殼髒不代表變速機構及閥體內的油也髒**
 
 ---
