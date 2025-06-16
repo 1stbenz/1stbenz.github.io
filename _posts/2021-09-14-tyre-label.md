@@ -5,6 +5,8 @@ date:   2021-09-14 12:58:29
 categories: Auto
 ---
 
+![Giti H2](https://attach.mobile01.com/attach/202506/mobile01-03938a4db5623e33ffa69c10d48dc387.png)
+
 ## 查胎標
 
 - **歐標**：[https://eprel.ec.europa.eu/screen/product/tyres](https://eprel.ec.europa.eu/screen/product/tyres)
