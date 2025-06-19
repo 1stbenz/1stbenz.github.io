@@ -5,7 +5,7 @@ date:   2025-05-20 12:58:29
 categories: Auto
 ---
 
-![太陽熱能組成](https://attach.mobile01.com/attach/202401/mobile01-f399ed6b775373389192ea6c2e592f0b.png#pic_center){:width="640"}
+![太陽熱能組成](https://attach.mobile01.com/attach/202401/mobile01-f399ed6b775373389192ea6c2e592f0b.png#pic_center)
 
 **太陽熱能組成**：
 - 紅外線**53%**
@@ -16,10 +16,10 @@ categories: Auto
 
 ## 寫在最前面
 
-國際窗膜協會**IWFA** ([成員名單](https://iwfa.com/manufacturers/)) 包含歐美與中國的品牌。選擇該協會內的大品牌較為保險，因為：
+國際窗膜協會**IWFA** ([成員名單](https://iwfa.com/manufacturers/)) 包含歐美與中國的品牌。選擇協會內的大品牌較為保險，因為：
 - 小品牌可能**虛構數據**，一般消費者無法判斷真偽
-- **數據真實性不明**，**製造商無從查證**
-- [高溫曝曬是否含致癌物](https://solargard.com.tw/news_detail.php?id=85) 無法得知
+- **製造商無從查證**，是否合格材料生產無從得知
+- [高溫曝曬是否含致癌物](https://solargard.com.tw/news_detail.php?id=85)無法得知
 
 若預算許可，建議選擇大品牌。我在挑選隔熱紙時整理了一些筆記，希望能對大家有所幫助。
 
@@ -92,7 +92,7 @@ categories: Auto
 
 ## 隔熱紙參數整理 {#guideline}
 
-![隔熱紙參數](https://attach.mobile01.com/attach/202401/mobile01-f2b6c9636483aacf4bbb1c6b500c8370.png){:width="640"}
+![隔熱紙參數](https://attach.mobile01.com/attach/202401/mobile01-f2b6c9636483aacf4bbb1c6b500c8370.png)
 
 ### 主要參數分析
 - **總熱能阻隔(TSER, Total Solar Energy Rejection)**
