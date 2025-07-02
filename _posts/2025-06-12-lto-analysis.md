@@ -42,6 +42,5 @@ categories: Auto
 ### ⚠️ 鈦酸鋰量出來的CCA超高，這CCA是真的嗎？
 
 - 假的：  
-  - 東芝鈦酸鋰官方規格，放電倍率最高只有20C
-  - 市面儀器量測CCA/内阻只適用鉛酸電池
-  - 鋰電池的内阻不等於放電能力，請參考這篇：[為何測量鋰電池的CCA毫無意義](https://1stbenz.github.io/2025/about-cca.html) 
+  - 東芝鈦酸鋰官方規格，放電倍率只有20C
+  - 鋰電池的内阻不等於放電能力，可參考：[為何測量鋰電池的CCA毫無意義](https://1stbenz.github.io/2025/about-cca.html) 
