@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "鈦酸鋰的串數及電壓問題"
+title:  "關於鈦酸鋰的串數及電壓問題"
 date:   2025-06-12 10:00:29
 categories: Auto
 ---
