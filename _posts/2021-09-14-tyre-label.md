@@ -20,7 +20,7 @@ categories: Auto
 價差不大的時候，可把**節能指標**列入考量，否則無需考慮節能指標，因輪胎壽命內無法回本。除非油價又到了**35元**，再去考慮節能指標。  
 **考量優先序建議**：濕抓 > 噪音 > 節能。
 
-![濕抓等級之間，相對剎車距離](https://attach.mobile01.com/attach/202111/mobile01-34f1c798b33cf5c6f4c428cde076425c.png)
+![濕抓等級之間，相對剎車距離](https://attach.mobile01.com/attach/202507/mobile01-1e245a3ac8d082974c6b38239840089d.jpg)
 
 ## 濕抓分級
 
