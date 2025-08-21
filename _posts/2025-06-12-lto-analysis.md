@@ -51,4 +51,4 @@ categories: Auto
 
 ### ⚡ 比較目前市場常見電池
 
-![Supercap](https://attach.mobile01.com/attach/202508/mobile01-91703a9c4f062af8440d97a6f951b1fe.png)
+![Supercap](https://attach.mobile01.com/attach/202508/mobile01-8a472a87c74577abc721c7de1ff91f62.png)
