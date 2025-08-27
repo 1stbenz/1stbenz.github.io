@@ -5,6 +5,10 @@
     <h2 class="footer-heading">{{ site.title }}</h2>
 
     <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-4">
+        <h3>熱門文章</h3>
+        <ul id="popular-posts"></ul>
+      </div>
       <div class="footer-col  footer-col-1">
         <ul class="contact-list">
           <li>{{ site.title }}</li>
@@ -53,3 +57,19 @@
   </div>
 
 </footer>
+<script>
+  fetch('/popular-posts.json')
+    .then(response => response.json())
+    .then(posts => {
+      const list = document.getElementById('popular-posts');
+      posts.forEach(post => {
+        const li = document.createElement('li');
+        const a = document.createElement('a');
+        a.href = post.url;
+        a.textContent = post.title;
+        li.appendChild(a);
+        list.appendChild(li);
+      });
+    });
+  </script>
+  
