@@ -21,4 +21,4 @@ categories: Auto
 - 如果沒有寫明PIR，也可以用洗車精標示的**兩桶水方法**來計算
 - 例如**Meguiars Gold Class**寫**1oz : 1 gallon**，那PIR就是**0.6%**
 
-![示意圖](https://attach.mobile01.com/attach/202404/mobile01-0e1b9c7a4802eb77ff910d07e666e195.jpg)
+![示意圖](/images/mobile01-0e1b9c7a4802eb77ff910d07e666e195.jpg)

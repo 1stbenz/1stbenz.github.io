@@ -42,7 +42,7 @@ categories: Auto
 
 ### 🔻 結果可能造成：
 
-- [**可用容量僅 30% ⬇️**](https://attach.mobile01.com/attach/202507/mobile01-f1b4345d1112dee159b1baa62a8da6ef.png)
+- [**可用容量僅 30% ⬇️**](/images/mobile01-f1b4345d1112dee159b1baa62a8da6ef.png)
 - 極化現象加重
 
 ---
@@ -58,7 +58,7 @@ categories: Auto
 
 ## ⚡ 比較目前市場常見電池
 
-![Supercap](https://attach.mobile01.com/attach/202508/mobile01-73a3f73994754009670d4e7b1e13c046.png)
+![Supercap](/images/mobile01-73a3f73994754009670d4e7b1e13c046.png)
 
 ---
 

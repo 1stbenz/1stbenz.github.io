@@ -13,7 +13,7 @@ categories: Auto
 | 鋰鐵電池（LiFePO₄） | 低   | < 10ms               | 材料瞬時反應快     |
 | 鉛酸電池（Lead-Acid） | 高   | 100–500ms            | 化學反應較慢       |
 
-![鋰鐵電池運作示意圖](https://attach.mobile01.com/attach/202507/mobile01-9498f82ae67716e6d44ae48621090886.png)
+![鋰鐵電池運作示意圖](/images/mobile01-9498f82ae67716e6d44ae48621090886.png)
 
 ---
 

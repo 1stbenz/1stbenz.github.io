@@ -105,4 +105,4 @@ categories: Auto
 ## **推薦閱讀**
 - [法拉利論壇：技術 QA 精華](https://www.ferrarichat.com/forum/threads/motor-oil-all-chapters-inclusive-copy-and-save-this.136052/)
 
-![機油相關圖示](https://attach.mobile01.com/attach/202102/mobile01-6c9f3d5e1626b191b75230bf6dd0eda6.jpg)
+![機油相關圖示](/images/mobile01-6c9f3d5e1626b191b75230bf6dd0eda6.jpg)

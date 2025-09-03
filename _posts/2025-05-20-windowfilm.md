@@ -5,7 +5,7 @@ date:   2025-05-20 12:58:29
 categories: Auto
 ---
 
-![太陽熱能組成](https://attach.mobile01.com/attach/202401/mobile01-f399ed6b775373389192ea6c2e592f0b.png#pic_center)
+![太陽熱能組成](/images/mobile01-f399ed6b775373389192ea6c2e592f0b.png#pic_center)
 
 **太陽熱能組成**：
 - 紅外線**53%**
@@ -55,7 +55,7 @@ categories: Auto
 - **GREENWAY 格菱威**(新加坡**FILMTACK**子品牌) 
     - 代理：**明鑫有限公司**
 - **SMITH 史密斯**(韓國**스미스클럽**) 
-    - 代理：**協芯信有限公司** ([韓媒分類等級](https://kin-phinf.pstatic.net/20230103_15/1672721802851WebVX_JPEG/%EC%8D%AC%ED%8C%85_%EB%B8%8C%EB%9E%9C%EB%93%9C_%EA%B3%84%EA%B8%89.jpg))
+    - 代理：**協芯信有限公司** ([韓媒分類等級](/images/mobile01-fb339849047573cf9bacfddeae35684.jpg))
 - **南亞** 
   - **南亞塑膠**自有品牌
 - **Uplus** 
@@ -84,7 +84,7 @@ categories: Auto
     - 代理：**國保汽車大樓隔熱紙**
 
 ### **查無公司營業登記**
-- **VNW亮炫隔熱紙**([前身：路易士隔熱紙](https://attach.mobile01.com/attach/202409/mobile01-84fcfca5d205ed72d7429eeff961d05f.jpg))
+- **VNW亮炫隔熱紙**([前身：路易士隔熱紙](/images/mobile01-84fcfca5d205ed72d7429eeff961d05f.jpg))
   - 商標登記於**個人名下**
   - 網頁聯絡地址為**彰化民宅**
 
@@ -92,7 +92,7 @@ categories: Auto
 
 ## 隔熱紙參數整理 {#guideline}
 
-![隔熱紙參數](https://attach.mobile01.com/attach/202401/mobile01-f2b6c9636483aacf4bbb1c6b500c8370.png)
+![隔熱紙參數](/images/mobile01-f2b6c9636483aacf4bbb1c6b500c8370.png)
 
 ### 主要參數分析
 - **總熱能阻隔(TSER, Total Solar Energy Rejection)**

@@ -13,7 +13,7 @@ categories: Auto
 - 在閥體與變速機構來回循環，最後**回流至油底殼**
 
 ### 變速箱油路示意圖
-![變速箱油路](https://attach.mobile01.com/attach/202502/mobile01-2184f900065b464d41adf967eb5723e8.jpg) ![變速箱閥體](https://attach.mobile01.com/attach/202502/mobile01-bd17f9c8a652dbbb59fb89067d6ca294.jpg)
+![變速箱油路](/images/mobile01-2184f900065b464d41adf967eb5723e8.jpg) ![變速箱閥體](/images/mobile01-bd17f9c8a652dbbb59fb89067d6ca294.jpg)
 
 這種設計與**機油在引擎內流動的路線**類似：
 - **油泵抽取機油後，第一步先經過濾芯**
@@ -34,14 +34,14 @@ categories: Auto
 2. **紙濾芯**(位於較方便更換的位置)
 
 ### 金屬+紙雙濾型
-![雙濾芯變速箱](https://attach.mobile01.com/attach/202502/mobile01-3fd95a5f3a129a88d6fdbbfc9ea8396d.png)
+![雙濾芯變速箱](/images/mobile01-3fd95a5f3a129a88d6fdbbfc9ea8396d.png)
 
 這種設計使得：
 - **金屬濾網的清潔優先度降低**
 - **紙濾芯的更換成為維持變速箱油乾淨的關鍵**
 
 ### 金屬濾網示意圖
-![金屬濾網](https://attach.mobile01.com/attach/202502/mobile01-21e8e4f40dc64b8edd20b5e08dae00ba.png)
+![金屬濾網](/images/mobile01-21e8e4f40dc64b8edd20b5e08dae00ba.jpg)
 
 ---
 
@@ -60,4 +60,4 @@ categories: Auto
 這種設計屬於**計畫性報廢**，車主最終必須更換變速箱。
 
 #### 無法更換濾網的變速箱
-![無法更換濾網的變速箱](https://attach.mobile01.com/attach/202502/mobile01-322a0f6835b2b694a952ddccbb1f8b7e.jpg)
+![無法更換濾網的變速箱](/images/mobile01-322a0f6835b2b694a952ddccbb1f8b7e.jpg)

@@ -9,7 +9,7 @@ categories: Auto
 本文件整理了機車與汽車在啟動階段的主要電力元件耗電量，並以安培 × 秒數（Ax秒）表示瞬時電流負載，最終換算為安時（Ah）以利電池容量與回充效率評估。
 
 
-![啓動相關的電系元件](https://attach.mobile01.com/attach/202508/mobile01-8d165a281b4f677c157cefce5a8597ce.jpg)
+![啓動相關的電系元件](/images/mobile01-8d165a281b4f677c157cefce5a8597ce.jpg)
 
 
 ---

@@ -6,7 +6,7 @@ categories: Auto
 ---
 ## 機油選擇與比較
 
-![機油選擇](https://attach.mobile01.com/attach/202104/mobile01-4354e3784c5b7a8a13113354d8a13b2f.jpg)
+![機油選擇](/images/mobile01-4354e3784c5b7a8a13113354d8a13b2f.jpg)
 
 接續 [上篇](https://1stbenz.github.io/2021/benz-and-lspi-01.html) 的候選機油，0W 暫時不列入，原因如下：
 - **Shell 0W40**雖然在**極低溫流動性**比5W30好，但在40°C黏度反而比5W30高，在台灣氣候下，**啟動保護性**不如5W30。
