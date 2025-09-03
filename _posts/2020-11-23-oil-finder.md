@@ -9,7 +9,7 @@ categories: Auto
 
 例如目前正在駕駛的W205，是德國賓士公司生產，因此我從德國油商的網站之中，找油商推薦的機油。
 
-找油之前可以先到[LastVIN.com](https://www.lastvin.com)輸入VIN碼，查詢自己的[車型版本、引擎版本代碼](https://attach.mobile01.com/attach/202301/mobile01-b8d448cb6873a80e73a77d05ef3ffd4f.png)。
+找油之前可以先到[LastVIN.com](https://www.lastvin.com)輸入VIN碼，查詢自己的[車型版本、引擎版本代碼](/images/mobile01-b8d448cb6873a80e73a77d05ef3ffd4f.png)。
 
 待會適用油品搜尋時，有機會用到。
 
