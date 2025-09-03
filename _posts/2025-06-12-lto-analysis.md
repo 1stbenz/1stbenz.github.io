@@ -52,7 +52,7 @@ categories: Auto
 - ❌ 假的：
   - [東芝鈦酸鋰官方規格表](https://www.global.toshiba/ww/products-solutions/battery/scib/product-next/product/cell/high-energy.html)：放電倍率只有 20C
   - 鋰電池的內阻不等於放電能力  
-  - 可參考：[為何測量鋰電池的 CCA 毫無意義](https://1stbenz.github.io/2025/about-cca.html)
+  - 可參考：[為何測量鋰電池的 CCA 毫無意義](/2025/about-cca.html)
 
 ---
 
