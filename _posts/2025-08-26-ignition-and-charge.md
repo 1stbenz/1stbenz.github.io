@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "汽車啟動耗電與回充時間分析"
+title:  "電池啟動耗電與回充分析"
 date:   2025-08-26 11:00:29
 categories: Auto
 ---
