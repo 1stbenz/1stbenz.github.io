@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "API SM、SN、SP、SQ認證比較"
+title:  "API SQ與舊認證比較"
 date:   2025-10-05 09:00:30
 categories: Auto
 ---
