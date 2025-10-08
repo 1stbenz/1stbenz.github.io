@@ -32,3 +32,6 @@ categories: Auto
 - **API SM → SN**：引入 VH、IVB 測試，提升磨損與沉積物控制。
 - **SN → SP**：新增 LSPI、渦輪沉積物測試，全面支援 GDI 渦輪引擎。
 - **SP → SQ**：強化所有測試門檻，支援 E85、GPF/DPF、混合動力車，對應 ILSAC GF-7。
+
+
+![SQ機油](/images/mobile01-bdcd0398015144b90240dd50446d80a4.jpg)
