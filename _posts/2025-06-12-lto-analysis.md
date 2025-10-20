@@ -58,7 +58,7 @@ categories: Auto
 
 ## ⚡ 比較目前市場常見電池
 
-![Supercap](/images/mobile01-73a3f73994754009670d4e7b1e13c046.png)
+![LTO Compare](/images/mobile01-73a3f73994754009670d4e7b1e13c046.png)
 
 ---
 
