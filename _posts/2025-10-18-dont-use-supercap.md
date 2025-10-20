@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "鋰鐵電池 vs. 超級電容：把錢花在刀口上，該如何選擇？"
+title:  "鋰鐵電池 vs. 超級電容：該如何選擇？"
 date:   2025-10-18 10:08:30
 categories: Auto
 ---
