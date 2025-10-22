@@ -13,7 +13,7 @@ categories: Auto
 
 **直接告訴你答案：選擇超級電容，不光是昂貴的彎路，甚至是帶來反效果的「負升級」。**
 
-![超級電容模組](/images/supercap_module.jpg#pic_center)
+![小老婆實測結果](/images/supercap_module.png#pic_center)
 
   
 ## ⚡ 原因一：鋰鐵電池本身就是性能猛獸
