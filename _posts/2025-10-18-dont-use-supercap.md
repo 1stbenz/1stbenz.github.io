@@ -44,7 +44,7 @@ categories: Auto
 
 引擎室常年 **50–80°C**，夏季更高。  
 
-- **超級電容**：在 **65°C** 僅約 [**1000 小時**](https://abracon.com/uploads/resources/CN/Supercapacitor-Lifetime-Explained-Chinese.pdf)，高溫加速電解液揮發，內阻升高、容量衰退，壽命大幅縮短。  
+- **超級電容**：在 **65°C** 壽命僅 [**1000 小時**](https://abracon.com/uploads/resources/CN/Supercapacitor-Lifetime-Explained-Chinese.pdf)，高溫加速電解液揮發，內阻升高、容量衰退，壽命大幅縮短。  
 - **鋰鐵電池**：於 **45–60°C** 仍可維持 **數千次循環**，壽命以「年」計算，耐熱性明顯優勢。  
 
 
