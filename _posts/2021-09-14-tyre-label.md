@@ -42,6 +42,7 @@ categories: Auto
 | 9.1 ≤ RRC ≤ 10.5 | D | B | - |
 | RRC ≥ 10.6 | E | C | - |
 
+## 胎壓對照
 ![胎壓對照表(PSI to kPa)](/images/mobile01-3a413ceba6594710aed045a9e2d333d6.png)
 
 ## 相關規範文件
