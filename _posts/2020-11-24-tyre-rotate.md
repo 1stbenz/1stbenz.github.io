@@ -14,7 +14,7 @@ categories: Auto
 
 ---
 ## 前輪驅動
-![輪胎調換示意圖](/images/mobile01-2e1893169f4c34081d996c1dca417758.png)
+![輪胎調換方向示意圖](/images/mobile01-2e1893169f4c34081d996c1dca417758.png)
 
 ## 後輪驅動
-![調換方向示意](/images/mobile01-655ab00dedfbbd50600b92d27169eddd.png)
+![輪胎調換方向示意圖](/images/mobile01-655ab00dedfbbd50600b92d27169eddd.png)

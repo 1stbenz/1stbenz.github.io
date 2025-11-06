@@ -8,6 +8,7 @@ categories: Auto
 
 ### API 認證
 - **SN Plus/SP**：要求通過 LSPI 測試
+- **SQ (ILSAC GF-7)**：2025年新標準，強化 LSPI 防護、正時鏈條耐磨性、燃油經濟性，並限制硫酸鹽灰分 ≤0.9%，保護 GPF
 
 ### 車廠認證
 
@@ -28,8 +29,8 @@ categories: Auto
 ## 認證可疊加
 
 - **229.5**：抗磨損標準高，但沒有防LSPI的測試
-- **API SP**：抗磨損標準低，但有防LSPI的測試
-- **同時具有 229.5 及 API SP 認證** → 抗磨損佳，且有防LSPI
+- **API SP/SQ**：抗磨損標準低，但有防LSPI的測試
+- **同時具有 229.5 及 API SP/SQ 認證** → 抗磨損佳，且有防LSPI
 - **認證疊加可參考**：[Lubrizol 八邊形](https://online.lubrizol.com/relperftool/pc.html)
 
 ## 認證標示的文字遊戲
@@ -69,7 +70,7 @@ categories: Auto
 
 ## 添加劑成份
 
-- **鈣 (Ca)**：清潔劑，易誘發LSPI，通過SP認證通常小於 2000ppm
+- **鈣 (Ca)**：清潔劑，易誘發LSPI，通過SP/SQ認證通常小於 2000ppm
 - **鎂 (Mg)**：清潔劑，取代易誘發LSPI的鈣
 - **鉬 (Mo)**：抗研磨劑
 - **磷 (P)**：抗研磨劑
