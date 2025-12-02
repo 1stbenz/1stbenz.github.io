@@ -1,15 +1,15 @@
 ---
 layout: post
-title:  "不斷電更換電池(記憶保護)注意事項"
+title:  "不斷電更換電池(記憶保存)注意事項"
 date:   2025-09-17 15:20:00
 categories: Auto
 ---
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/JV2daotkZhc?si=mTYzAfOcJv2IveAX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-# 更換電池時保持供電（記憶保護）
+# 更換電池時保持供電（記憶保存）
 
-在 Toyota 或 Honda 上，斷電通常只是需要重新設定時鐘。 但在 Benz 或 BMW 上，斷電可能需要回原廠重置感測器、重新校正車窗，節氣門與變速箱需要重新學習，某些車種斷電-復電後，甚至會損壞某些模組。這就是為什麼在這些車輛上，更換電池時使用<記憶保護器>是標準程序。如果你不確定你的車，是否需要不斷電更換，建議**用不斷電更換，再重置電腦中的BMS**。
+在 Toyota 或 Honda 上，斷電通常只是需要重新設定時鐘。 但在 Benz 或 BMW 上，斷電可能需要回原廠重置感測器、重新校正車窗，節氣門與變速箱需要重新學習，某些車種斷電-復電後，甚至會損壞某些模組。這就是為什麼在這些車輛上，更換電池時使用<記憶保存器>是標準程序。如果你不確定你的車，是否需要不斷電更換，建議**用不斷電更換，再重置電腦中的BMS**。
 
 ---
 
