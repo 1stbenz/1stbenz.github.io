@@ -1,7 +1,6 @@
-
 ---
 layout: post
-title:  "不斷電更換電池注意事項"
+title:  "不斷電更換電池(記憶保護)注意事項"
 date:   2025-09-17 15:20:00
 categories: Auto
 ---
