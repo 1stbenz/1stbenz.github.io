@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "不斷電更換電池(記憶保存)注意事項"
+title:  "用記憶保存器(不斷電)更換電池須知"
 date:   2025-09-17 15:20:00
 categories: Auto
 ---
