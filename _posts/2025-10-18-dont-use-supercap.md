@@ -90,7 +90,13 @@ categories: Auto
 ### ⚠️ 並聯公式、分流原理，科學不會說謊
 
 根據並聯公式：
-$$ R_{總} = \frac{R_{電池} \times R_{電容}}{R_{電池} + R_{電容}} $$
+<p>
+  R<sub>總</sub> = 
+  <span style="display: inline-block; vertical-align: middle; text-align: center;">
+    <span style="display: block; border-bottom: 1px solid currentColor; padding: 0 2px;">R<sub>電池</sub> × R<sub>電容</sub></span>
+    <span style="display: block; padding: 0 2px;">R<sub>電池</sub> + R<sub>電容</sub></span>
+  </span>
+</p>
 
 帶入鋰鐵電池的直流內阻約 **2–3 mΩ**，而市售電容模組內阻約 [**20–50 mΩ**](/images/supercap_ir.webp)。
 計算結果顯示，總內阻只降低了微乎其微的 **0.2mΩ**（這點差異甚至可能被接線阻抗抵消）。
