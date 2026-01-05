@@ -42,11 +42,11 @@ categories: Auto
 ## ⚠️ 原因三：電容的高自放電
 
 超級電容除了容量小之外，還存在「自放電快」的問題。
-即使不使用，它仍會[持續漏電](https://passive-components.eu/wp-content/uploads/2025/10/6_3_Vishay-How-to-Manage-Leakage-Current-and-Self-Discharge-of-EDLC-Capacitors.pdf)，自放電等級：(1mA = 1000μA)
+即使不使用，它仍會[持續漏電](https://passive-components.eu/wp-content/uploads/2025/10/6_3_Vishay-How-to-Manage-Leakage-Current-and-Self-Discharge-of-EDLC-Capacitors.pdf)，自放電等級：
 
 - 超級電容： **幾 mA 到數十 mA**
 - 鋰鐵電池的： **僅數十 μA**
-
+(1mA = 1000μA)
 車輛只要停放幾天，超級電容的電壓就會顯著下降，成為電池的額外負擔
 
 ## 🌡️ 原因四：高溫壽命驟減  
