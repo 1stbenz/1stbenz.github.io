@@ -16,7 +16,30 @@ categories: Auto
 
 ![小老婆實測結果](/images/supercap_module.webp#pic_center)
 
-  
+---
+
+## 🧠 基本電學原理：並聯公式與分流效應
+
+在討論之前，先回顧兩個關鍵概念：
+
+### 1. 並聯公式  
+並聯電阻的總阻抗公式為：
+<p>
+  R<sub>總</sub> = 
+  <span style="display: inline-block; vertical-align: middle; text-align: center;">
+    <span style="display: block; border-bottom: 1px solid currentColor; padding: 0 2px;">R<sub>電池</sub> × R<sub>電容</sub></span>
+    <span style="display: block; padding: 0 2px;">R<sub>電池</sub> + R<sub>電容</sub></span>
+  </span>
+</p>
+
+這意味著：若其中一個元件的阻抗遠低於另一個，總阻抗的改善幅度非常有限。
+
+### 2. 分流原理  
+電流會優先走阻抗最小的路徑。  
+因此在高電流需求下，真正承擔輸出的，永遠是**內阻最低的元件**。
+
+---
+
 ## ⚡ 原因一：鋰鐵電池本身就是性能猛獸
 
 超級電容的設計初衷，是為了彌補傳統鉛酸電池「[內阻高、反應慢](/2025/lithium-vs-lead-analysis.html)」的缺陷，就像在慢速硬碟前加一個快取。
@@ -86,23 +109,17 @@ categories: Auto
 -   結構穩定
 -   即便故障也僅是膨脹，幾乎不會起火
 
-## 🧠 原因八：鋰鐵加超級電容更是「智商稅」
+## 🧠 原因八：鋰鐵並聯超級電容，效果微乎其微
 
-### ⚠️ 並聯公式、分流原理：科學不會說謊
+回到前面提到的並聯公式與分流原理：
 
-根據並聯公式：
-<p>
-  R<sub>總</sub> = 
-  <span style="display: inline-block; vertical-align: middle; text-align: center;">
-    <span style="display: block; border-bottom: 1px solid currentColor; padding: 0 2px;">R<sub>電池</sub> × R<sub>電容</sub></span>
-    <span style="display: block; padding: 0 2px;">R<sub>電池</sub> + R<sub>電容</sub></span>
-  </span>
-</p>
+- 鋰鐵電池直流內阻：約 **2–3 mΩ**  
+- 市售電容模組內阻：約 [**20–50 mΩ**](/images/supercap_ir.webp)
 
-公式帶入鋰鐵電池的直流內阻約 **2–3 mΩ**，而市售電容模組內阻約 [**20–50 mΩ**](/images/supercap_ir.webp)。
-計算結果顯示，總內阻只降低了微乎其微的 **0.2mΩ**（還可能被接線阻抗抵消）。
+計算結果顯示，總內阻只降低了 **約 0.2mΩ**，甚至可能被接線阻抗抵消。  
+依照分流原理，電流仍主要由鋰鐵電池承擔，電容幾乎派不上用場。
 
-依照**分流原理**，電流會走阻抗最小的路。因此當車輛需要大電流時，仍是由**內阻極低的鋰鐵電池**承擔絕大部分輸出，電容幾乎派不上用場。
+👉 所謂「鋰鐵 + 超級電容」的組合，本質上就是**智商稅**。
 
 > 💡 某品牌 Facebook 的超級電容裝機文，只展示「鉛酸並聯」的效果，總避開「鋰鐵並聯」前後數據，正是為了掩蓋這種**無效升級**的事實。
 
