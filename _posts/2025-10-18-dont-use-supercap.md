@@ -25,10 +25,10 @@ categories: Auto
 ### 1. 並聯公式  
 並聯電阻的總阻抗公式為：
 <p>
-  R<sub>總</sub> = 
+  R<sub>總阻抗</sub> = 
   <span style="display: inline-block; vertical-align: middle; text-align: center;">
-    <span style="display: block; border-bottom: 1px solid currentColor; padding: 0 2px;">R<sub>電池</sub> × R<sub>電容</sub></span>
-    <span style="display: block; padding: 0 2px;">R<sub>電池</sub> + R<sub>電容</sub></span>
+    <span style="display: block; border-bottom: 1px solid currentColor; padding: 0 2px;">R<sub>電池內阻</sub> × R<sub>電容內阻</sub></span>
+    <span style="display: block; padding: 0 2px;">R<sub>電池內阻</sub> + R<sub>電容內阻</sub></span>
   </span>
 </p>
 
@@ -117,7 +117,7 @@ categories: Auto
 - 市售電容模組內阻：約 [**20–50 mΩ**](/images/supercap_ir.webp)
 
 計算結果顯示，總內阻只降低了 **約 0.2mΩ**，甚至可能被接線阻抗抵消。  
-依照分流原理，電流仍主要由鋰鐵電池承擔，電容幾乎派不上用場。
+依照分流原理，電流主要由低內阻的鋰鐵電池承擔，電容幾乎派不上用場。
 
 👉 所謂「鋰鐵 + 超級電容」的組合，本質上就是**智商稅**。
 
@@ -130,5 +130,5 @@ categories: Auto
 -   效益有限
 -   風險更高
 
-👉 預算要花在效果有限的外掛電容，不如直接投資一顆品質優良、容量充足的鋰鐵電池。  
-這才是**最直接、最有效、最經濟的升級之道**。
+👉 與其把預算花在效果有限的外掛電容，不如直接投資一顆品質優良、容量充足的鋰鐵電池。  
+這才是**最直接有效的升級之道**。
