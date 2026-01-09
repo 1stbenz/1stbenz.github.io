@@ -114,7 +114,6 @@ categories: Auto
 - [![GreenRun 1.93mΩ](/images/greenrun_ir.webp)](/images/greenrun_ir.webp)
 - 市售電容模組內阻：約 **20–30 mΩ**
   - [![Eaton 22mΩ](/images/supercap_ir.webp)](/images/supercap_ir.webp)
-  - [![RCE 20.7mΩ](/images/rce_supercap_ir.webp)](/images/rce_supercap_ir.webp)
 
 用公式計算，GR鋰鐵並聯Eaton超級電容，總內阻只能降低 **約 0.15mΩ**，甚至可能被接線阻抗抵消。  
 依照分流原理，電流主要由低內阻的鋰鐵電池承擔，電容幾乎派不上用場。
