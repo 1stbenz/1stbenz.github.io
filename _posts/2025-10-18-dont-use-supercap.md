@@ -21,7 +21,7 @@ categories: Auto
 在討論之前，先回顧兩個關鍵概念：
 
 ### 1. 並聯公式  
-並聯電阻的總阻抗公式為：
+並聯電阻的總阻抗公式為：（[並聯內阻計算機](/2026/ir-caculator.html)）
 <p>
   R<sub>總阻抗</sub> = 
   <span style="display: inline-block; vertical-align: middle; text-align: center;">
