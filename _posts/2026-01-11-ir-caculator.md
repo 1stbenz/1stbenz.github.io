@@ -76,8 +76,7 @@ categories: Auto
       }
 
       var rCap = (rTot * rBat) / (rBat - rTot);
-      rCap = Number(rCap.toFixed(2));
-
+      rCap = Number.isInteger(rCap) ? rCap : rCap.toFixed(2);
       elRes.value = rCap; 
     }
   </script>
