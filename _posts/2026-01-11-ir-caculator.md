@@ -75,11 +75,8 @@ categories: Auto
         return;
       }
 
-      // 計算公式
       var rCap = (rTot * rBat) / (rBat - rTot);
-
-      // 修正浮點數誤差 (保留12位有效數字後轉回數字，去除尾端0)
-      rCap = parseFloat(rCap.toPrecision(12));
+      rCap = Number(rCap.toFixed(2));
 
       elRes.value = rCap; 
     }
