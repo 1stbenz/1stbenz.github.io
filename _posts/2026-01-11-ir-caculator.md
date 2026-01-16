@@ -7,9 +7,9 @@ categories: Auto
 
 在上篇指出[超級電容是智商稅](/2025/dont-use-supercap.html)之後，有車友私訊我詢問：有沒有快速計算超級電容內阻的方式。
 
-觀察大部分超級電容裝機文，店家會拍攝兩個數據：**「原始電池內阻」** 以及加裝超級電容後的 **「並聯總內阻」**。通常超級電容並聯鋰鐵就不會拍了，不然會露餡。
+觀察大部分超級電容裝機文，店家會拍攝兩個數據：**「原始電池內阻」** 以及加裝超級電容後的 **「並聯總內阻」**。
 
-透過這兩個已知數據，我們可以利用並聯電路公式，反推算出那顆超級電容**實際的內阻值**。
+透過這兩個已知數據，就能利用並聯電路公式，反推算出那顆超級電容**實際的內阻值**。
 
 <div id="supercap-calculator" style="max-width: 500px; margin: 20px auto; background: #fff; padding: 25px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); font-family: sans-serif; border: 1px solid #eee; color: #333;">
 
