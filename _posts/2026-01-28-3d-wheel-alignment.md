@@ -6,9 +6,11 @@ categories: Auto
 tags: [輪胎, 四輪定位, 車輛維修, 底盤, Camber, Toe, Caster, ADAS]
 description: "深入解析 3D 四輪定位機的數學原理、光學設計與誤差修正，換輪胎或底盤維修前必看！"
 keywords: "四輪定位, 3D 定位機, 車輛維修, Camber, Toe, Caster, ADAS 校正, 車輪旋轉軸, Run-out Compensation, 車輛底盤, 輪胎保養"
-image: /images/3d-wheel.webp
+image: https://img.youtube.com/vi/QhTqc0znzWQ/maxresdefault.jpg
 ---
-![四輪定位](/images/3d-wheel.webp)
+
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=Ktp5RiYqaO4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 3D 四輪定位機之所以精準，是因為它不信任物理安裝的完美性（夾具會歪、鋁圈會變形），而是利用電腦視覺捕捉動態軌跡，再透過幾何數學還原出看不見的「物理旋轉軸」。
 
 ## 1. 核心數學原理：尋找唯一的「旋轉軸」
