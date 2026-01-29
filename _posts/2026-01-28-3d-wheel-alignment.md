@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "3D 四輪定位機原理筆記"
+title:  "3D 四輪定位機（Wheel Alignment Machine）原理筆記"
 date:   2026-01-28 10:28:29
 categories: Auto
 tags: [輪胎, 四輪定位, 車輛維修, 底盤, Camber, Toe, Caster, ADAS]
@@ -12,7 +12,7 @@ image: /images/3d-wheel.webp
 3D 四輪定位機之所以精準，是因為它不信任物理安裝的完美性（夾具會歪、鋁圈會變形），而是利用電腦視覺捕捉動態軌跡，再透過幾何數學還原出看不見的「物理旋轉軸」。
 
 ## 1. 核心數學原理：尋找唯一的「旋轉軸」
-3D 定位機的終極目標並非測量「輪圈平面」，而是確立車輪的**「物理旋轉軸（Spindle Axis）」**。
+3D 定位機的終極目標並非測量「輪圈平面」，而是確立車輪的 **「物理旋轉軸（Spindle Axis）」**。
 
 *   **軌跡擬合（Trajectory Fitting）：**
     當進行推車補償（Run-out Compensation）時，相機並非單純拍攝靜態平面，而是連續捕捉反光板上特徵點在空間中的移動路徑。
@@ -54,7 +54,7 @@ image: /images/3d-wheel.webp
     系統內建原廠設定值（Camber, Caster, Toe），測量結果會即時比對公差範圍，並以圖形化介面引導技師調整。
 *   **ADAS 校正整合（Advanced Driver Assistance Systems）：**
     這是現代定位機的關鍵功能。
-    *   車輛的雷達（ACC）與攝影機（車道維持）必須以車輛的**「推力線（Thrust Line）」**為基準進行校正。
+    *   車輛的雷達（ACC）與攝影機（車道維持）必須以車輛的 **「推力線（Thrust Line）」**為基準進行校正。
     *   3D 定位機測算出後輪形成的推力角後，能引導放置 ADAS 校正靶板，確保輔助駕駛系統的視線與車輛實際行進方向一致。
 
 ---
