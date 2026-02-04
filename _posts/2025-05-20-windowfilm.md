@@ -18,7 +18,7 @@ image: /images/mobile01-f399ed6b775373389192ea6c2e592f0b.webp
 > 國際窗膜協會 IWFA 成員 [歐美中國都有](https://iwfa.com/manufacturers/)，建議預算許可下，**盡量挑選大品牌**。
 >
 > ⚠️ **小品牌風險：**
-> 一般消費者無從判斷數據是否虛構、**製造商無從查證**，且 [高溫曝曬有無致癌物](https://solargard.com.tw/news_detail.php?id=85) 也無從得知。
+> 一般消費者無從判斷數據是否虛構、**製造商無從查證**， **高溫曝曬有無致癌物**也無從得知。
 
 ---
 
