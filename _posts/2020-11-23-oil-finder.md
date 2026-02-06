@@ -30,6 +30,7 @@ image: /images/mobile01-b8d448cb6873a80e73a77d05ef3ffd4f.webp
 *   **Castrol (BP集團)** → [Oil Finder](https://www.castrol.com/de_de/germany/home/car-engine-oil-and-fluids/motor-oil-and-fluids-finder.html?customerType=retail)
 *   **TotalEnergies (Total)** → [Oil Finder](https://totalenergies.co.uk/lub-advisor)
 *   **Petronas (賓士原廠合作夥伴)** → [Oil Finder](https://global.pli-petronas.com/lubricants)
+*   **Chevron(Havoline)** → [Oil Finder](https://www.chevronlubricants.com/en_us/home/chevron-products-selector.html)
 
 ### 歐洲大型油商
 *   **FUCHS (德國最大獨立油商)** → [Oil Finder](https://www.fuchs.com/de/en/products/search-find/oil-chooser/)
@@ -42,6 +43,8 @@ image: /images/mobile01-b8d448cb6873a80e73a77d05ef3ffd4f.webp
 ### 美國性能品牌
 *   **Red Line** → [Oil Finder](https://www.redlineoil.com/find-products-for-my-vehicle)
 *   **AMSOIL** → [Oil Finder](https://www.amsoil.com/lookup/auto-and-light-truck/)
+*   **Pennzoil(殼牌旗下)** → [Oil Finder](https://www.pennzoil.com/en_us/oil-selector.html)
+*   **Quaker State(殼牌旗下)** → [Oil Finder](https://www.quakerstate.com/en_us/oil-selector.html)
 
 ### 德國本土中型品牌
 *   **RAVENOL** → [Oil Finder](https://oilguide.ravenol.de/?lang=en)
