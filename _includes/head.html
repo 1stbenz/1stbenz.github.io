@@ -30,28 +30,27 @@
   <!-- 標準網址 -->
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
-  <!-- 4. 社群分享設定 (Open Graph / Twitter Card) - 讓 FB/Line 抓到圖片 -->
-  <meta property="og:site_name" content="{{ site.title }}">
-  <meta property="og:type" content="article">
-  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-  <meta property="og:description" content="{{ description }}">
-  <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+<!-- 4. 社群分享設定 (Open Graph / Twitter Card) -->
+<meta property="og:site_name" content="{{ site.title }}">
+<meta property="og:type" content="article">
+<meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+<meta property="og:description" content="{{ description }}">
+<meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
-  <!-- 圖片邏輯：有設定 image 就用，沒有就用預設圖 -->
-  {% if page.image %}
-    <meta property="og:image" content="{{ page.image | prepend: site.url }}">
-  {% else %}
-    <!-- 建議準備一張預設圖放在這個路徑，以免沒圖時很醜 -->
-    <meta property="og:image" content="{{ site.url }}/images/default-social.webp"> 
-  {% endif %}
+{% if page.image %}
+  <meta property="og:image" content="{{ page.image }}">
+{% else %}
+  <meta property="og:image" content="{{ site.url }}/images/default-social.webp"> 
+{% endif %}
 
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-  <meta name="twitter:description" content="{{ description }}">
-  {% if page.image %}
-    <meta name="twitter:image" content="{{ page.image | prepend: site.url }}">
-  {% endif %}
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+<meta name="twitter:description" content="{{ description }}">
+{% if page.image %}
+  <meta name="twitter:image" content="{{ page.image }}">
+{% endif %}
+
 
   <!-- 5. 樣式與圖示 (保留你的設定) -->
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
