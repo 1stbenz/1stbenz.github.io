@@ -36,7 +36,6 @@ image: /images/mobile01-b8d448cb6873a80e73a77d05ef3ffd4f.webp
 *   **FUCHS (德國最大獨立油商)** → [Oil Finder](https://www.fuchs.com/de/en/products/search-find/oil-chooser/)
 *   **LIQUI MOLY (德國知名品牌)** → [Oil Finder](https://www.liqui-moly.com/en/service/oil-guide.html)
 *   **MOTUL (法國高端品牌)** → [Oil Finder](https://www.oelberater.de/home)
-*   **Valvoline (美國老牌，歐洲銷售)** → [Oil Finder](https://valvoline-eu.lubricantadvisor.com/en)
 *   **Eni (義大利，前Agip)** → [Oil Finder](https://oilproducts.eni.com/en_GB/)
 *   **Millers Oils (英國)** → [Oil Finder](https://www.millersoils.co.uk/which-oil/)
 
