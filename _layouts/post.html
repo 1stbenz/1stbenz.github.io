@@ -12,18 +12,6 @@ layout: default
     {{ content }}
   </article>
   {% if page.faq %}
-  <section class="faq">
-    <h2>常見問題 (FAQ)</h2>
-    <ul>
-      {% for item in page.faq %}
-      <li>
-        <strong>Q: {{ item.question }}</strong><br>
-        A: {{ item.answer }}
-      </li>
-      {% endfor %}
-    </ul>
-  </section>
-
   <!-- JSON-LD FAQ Schema -->
   <script type="application/ld+json">
   {
