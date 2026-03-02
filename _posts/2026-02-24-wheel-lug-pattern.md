@@ -7,6 +7,13 @@ tags: [Aerodynamics, Speed, Wheel Design, Fuel Efficiency, Car Modification, F1 
 description: "許多人認為改裝輕量化鋁圈能省油加速快，但在高速公路上，空氣阻力才是關鍵。本文結合 PTT 專業討論與 F1 賽車空氣力學原理，揭開為何「偷輕」反而可能導致耗油與極速下降的物理真相，並解釋為何原廠框與電動車輪圈往往設計得較為封閉。"
 keywords: "鋁圈改裝, 輕量化鋁圈, 油耗, 風阻, 空氣力學, 簧下重量, F1輪圈蓋, 鍛造框, 通風阻力"
 image: /images/pirelli-motorsport-car-Formula1.webp
+faq:
+  - question: "換輕量化鋁圈能省油嗎？"
+    answer: "在市區低速時可能有幫助，但高速時風阻才是主要因素。"
+  - question: "為什麼原廠鋁圈設計比較封閉？"
+    answer: "因為封閉設計能降低高速風阻，提升油耗表現。"
+  - question: "高速油耗主要受什麼影響？"
+    answer: "超過 100km/h 後，風阻佔比可達 50–80%，是決定油耗的最大因素。"
 ---
 
 在改裝界流傳著一句金科玉律：「簧下一公斤，簧上十公斤」。因此，許多車主為了提升性能與油耗，第一步往往是換上昂貴的輕量化鍛造鋁圈（如 BBS RI-D 等神物）。

@@ -11,5 +11,37 @@ layout: default
   <article class="post-content">
     {{ content }}
   </article>
+  {% if page.faq %}
+  <section class="faq">
+    <h2>常見問題 (FAQ)</h2>
+    <ul>
+      {% for item in page.faq %}
+      <li>
+        <strong>Q: {{ item.question }}</strong><br>
+        A: {{ item.answer }}
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
 
+  <!-- JSON-LD FAQ Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {% for item in page.faq %}
+      {
+        "@type": "Question",
+        "name": "{{ item.question | escape }}",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "{{ item.answer | escape }}"
+        }
+      }{% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    ]
+  }
+  </script>
+  {% endif %}
 </div>
