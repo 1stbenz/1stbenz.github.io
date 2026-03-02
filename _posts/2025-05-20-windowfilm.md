@@ -7,6 +7,23 @@ tags: [隔熱紙, 汽車隔熱紙, TSER, 金屬紙, 陶瓷紙, 舒熱佳, V-KOOL
 description: "隔熱紙只看紅外線阻隔率(IRR)就錯了！本文整理 IWFA 國際窗膜協會認證品牌（舒熱佳/V-KOOL/3M 等）代理商資訊，並深度解析 TSER 總隔熱率、內反光等關鍵參數，教你分辨金屬紙與陶瓷紙的優缺點。"
 keywords: "隔熱紙推薦, 汽車隔熱紙, TSER, IRER, 總隔熱率, 金屬隔熱紙, 陶瓷隔熱紙, 舒熱佳, V-KOOL, FSK, 丹龍"
 image: /images/mobile01-f399ed6b775373389192ea6c2e592f0b.webp
+faq:
+  - question: "選購隔熱紙時，最主要的建議是什麼？"
+    answer: "建議在預算許可下，盡量挑選國際大品牌。小品牌可能存在數據虛構、製造商無從查證，以及高溫曝曬有無致癌物等風險。"
+  - question: "哪些是國際知名的歐美隔熱紙品牌？"
+    answer: "國際知名的歐美品牌包括 Solar Gard 舒熱佳、Quantum 量子膜、3M、LLumar 龍膜、V-KOOL 和 ClearPlex。"
+  - question: "隔熱紙的「總熱能阻隔 (TSER)」是什麼？為什麼它是關鍵指標？"
+    answer: "TSER (Total Solar Energy Rejection) 是總熱能阻隔，是重點指標，數值越高越好。它代表隔熱紙阻擋太陽總熱能的效率。"
+  - question: "隔熱紙的紅外線阻隔率應該看 IRR 還是 IRER？兩者有何不同？"
+    answer: "應看 IRER (Infrared Energy Rejection)，數值越高越好。IRR (Infrared Rejection) 僅測量 900–1,000 nm 且不計吸收後再輻射的能量，數據漂亮但與體感不符，無參考價值。IRER 測量 780–2,500 nm，並統計原始熱量減去穿透熱量和玻璃吸收後再輻射的熱量，最接近真實體驗。"
+  - question: "金屬隔熱紙和陶瓷隔熱紙的主要原理和特性有何不同？"
+    answer: "金屬紙主要靠反射及阻斷熱能，隔熱持久度優異，但可能阻擋 eTag 和輕微影響 GPS 訊號。陶瓷紙主要靠阻斷（吸收）熱能，行駛撞風時效果佳，但停車/塞車時累積在玻璃的熱量會輻射進車內，且不影響訊號。"
+  - question: "金屬隔熱紙會影響哪些訊號？有解決方案嗎？"
+    answer: "金屬隔熱紙可能阻擋 eTag (可改用車牌框解決)。對 GPS 影響微乎其微，因為現代車輛的天線多在車外。"
+  - question: "隔熱紙的「內反光」和「外反光」分別代表什麼？"
+    answer: "內反光 (Interior Reflectance) 越低越好，以避免產生倒影。外反光 (Exterior Reflectance) 數據超過 15 會呈現鏡面效果，若重視隔熱，外反光通常越高越好（因為可見光也是能量來源）。"
+  - question: "隔熱紙的「透光率 (VLT)」應如何選擇？"
+    answer: "透光率 (VLT, Visible Light Transmission) 大於 40 建議用於前擋及側窗，日間可搭配偏光墨鏡行車更安全；透光率小於 40 建議用於天窗。"
 ---
 
  ![太陽熱能組成](/images/mobile01-f399ed6b775373389192ea6c2e592f0b.webp)

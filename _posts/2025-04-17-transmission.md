@@ -7,6 +7,19 @@ tags: [變速箱, 變速箱油, 濾網, 汽車保養, DIY, 閥體, 扭力轉換�
 description: "變速箱油底殼很髒代表變速箱快壞了？其實關鍵在濾網！本文透過油路循環圖解，分析傳統濾網、雙濾芯設計與「無法更換濾網」的差異。揭露為何某些設計屬於計畫性報廢，以及正確的變速箱保養觀念。"
 keywords: "變速箱油, 變速箱濾網, 油底殼, 閥體, 扭力轉換器, 雙濾芯, 紙濾芯, 金屬濾網, 計畫性報廢"
 image: https://img.youtube.com/vi/zcwG97VMOVk/maxresdefault.jpg
+faq:
+  - question: "變速箱油在內部是如何循環的？"
+    answer: "變速箱油路循環是透過油泵抽取油底殼的油，先經過濾芯，然後分成兩條流路：一路往扭力轉換器，另一路往變速機構及閥體，在這些部件來回循環後，最後回流至油底殼。"
+  - question: "變速箱濾網在油路循環中扮演什麼角色？"
+    answer: "變速箱濾網是油泵抽取油後的第一道關卡，負責過濾雜質。在濾網有效運作下，變速機構及閥體中的油會保持乾淨，保護內部精密部件。"
+  - question: "油底殼很髒是否代表變速箱內部零件也髒？"
+    answer: "不一定。由於濾網是油泵抽取油後的第一步，只要濾網未失效，變速機構及閥體中的油都是雜質很少的乾淨油。因此，油底殼髒不代表變速機構及閥體內的油也髒。"
+  - question: "變速箱濾網主要分為哪幾種類型？"
+    answer: "主要分為傳統型（更換需拆油底殼）、金屬+紙雙濾型（金屬濾網在油底殼，紙濾芯在方便更換處），以及無法更換濾網型。"
+  - question: "什麼是「金屬+紙雙濾型」變速箱濾網？其保養重點為何？"
+    answer: "金屬+紙雙濾型變速箱設計有兩個濾芯，一個是位於油底殼的金屬濾網（孔徑較大），另一個是位於較方便更換位置的紙濾芯。這種設計下，紙濾芯的更換成為維持變速箱油乾淨的關鍵。"
+  - question: "「無法更換濾網型」變速箱有什麼問題？"
+    answer: "這類變速箱的濾網設置在無法拆解的位置，甚至沒有油底殼可供清潔。隨著時間，濾網效能降低，變速箱內的鐵屑無法有效過濾，即使更換新油，變速機構仍持續受到污染，長期下來會導致變速箱壽命縮短，屬於一種計畫性報廢的設計。"
 ---
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/zcwG97VMOVk?si=svbJ4WHcnP2I0Zgr&amp;start=410" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

@@ -7,6 +7,23 @@ tags: [W205, 機油評測, LSPI, MB 229.5, MB 229.52, Shell, Total, Castrol, GTL
 description: "W205 機油怎麼選？本文深入分析 Shell Helix Ultra、Total Ineo MC3、Castrol Edge M 四款 5W30 機油的 SDS 與 TDS 數據。更新 2026 年 API SQ 認證資訊與 GTL 基礎油最新參數。"
 keywords: "W205機油, C300機油, LSPI, MB 229.5, MB 229.52, Shell Helix Ultra, 5W30, GTL基礎油, API SQ"
 image: /images/mobile01-4354e3784c5b7a8a13113354d8a13b2f.webp
+faq:
+  - question: "為何在這次機油比較中排除了 Shell 0W40 和 Ravenol SSV？"
+    answer: "Shell 0W40 雖然在極低溫流動性比 5W30 好，但在台灣氣候下，其 40°C 黏度反而比 5W30 高，啟動保護性不如 5W30。Ravenol SSV 則因台灣通路的製造年份過老而被剔除。"
+  - question: "文章中比較了哪些機油？"
+    answer: "文章比較了四款機油：Shell Helix Ultra 5W-40、Shell Helix Ultra X 5W-30、Total Quartz Ineo MC3 5W-30 和 Castrol Edge M 5W-30。"
+  - question: "API SQ 認證與 API SP 認證有何不同？"
+    answer: "API SQ 是最新的認證，相較於 SP，它對正時鏈條磨損和 LSPI 有更嚴格的測試標準，提供更全面的保護。"
+  - question: "機油的 40°C 黏度代表什麼？"
+    answer: "40°C 黏度影響引擎啟動潤滑，數值越低代表流動性越高，機件能更快獲得潤滑，降低啟動磨耗。"
+  - question: "機油的 100°C 黏度對選擇有何影響？"
+    answer: "100°C 黏度代表引擎工作溫度的油品黏度。在相同認證下，普通車況下黏度低較省油；若行駛里程超過 12 萬公里，黏度高則有助於維持缸壓。"
+  - question: "TBN（總鹼值）對機油有什麼意義？"
+    answer: "TBN 指機油的耐用度，會影響換油週期。例如，MB 229.5 認證的油品 TBN 較高，換油週期可達 25,000 公里，而 229.51/52 認證的油品 TBN 較低，僅約 15,000 公里。"
+  - question: "Pour Point（流動點）和 Flash Point（閃燃點）分別代表什麼？"
+    answer: "Pour Point 是機油能流動的最低溫度，反映低溫流動性。Flash Point 是機油霧化後的燃燒溫度，溫度越高越好，影響機油消耗。"
+  - question: "Shell Helix Ultra 機油的基礎油有何特別之處？"
+    answer: "Shell Helix Ultra 系列機油使用 GTL（費托化學合成油）基礎油，歸類為 Group 3+。這種基礎油在低溫流動性（Pour Point 低）和抗揮發性（Flash Point 高）方面顯著優於傳統的 VHVI 油品。"
 ---
 
 ## 機油選擇與比較

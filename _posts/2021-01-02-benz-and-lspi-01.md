@@ -7,6 +7,23 @@ tags: [W205, 機油推薦, LSPI, API SQ, API SP, MB 229.5, MB 229.52, 渦輪車]
 description: "W205 缸內直噴引擎怕爆震？本文解析 LSPI (低速預燃) 成因與預防對策，整理台灣市售符合賓士 MB 229.5/52 認證且通過 LSPI 測試 (API SQ/SP) 的 5W30 機油清單。"
 keywords: "W205機油, LSPI, 低速預燃, 爆震, API SQ, API SP, MB 229.5, MB 229.52, 5W30, Shell Helix Ultra"
 image: /images/mobile01-bdcd0398015144b90240dd50446d80a4.webp
+faq:
+  - question: "挑選賓士 W205 機油的首要原則是什麼？"
+    answer: "挑選機油應一律從認證下手，認證相同後再考慮黏度及參數。W205 汽油車首選是 TBN 較高的 MB 229.5 及 229.6 認證。"
+  - question: "什麼是 LSPI（低速預燃），它對 W205 引擎有什麼影響？"
+    answer: "LSPI 是指低速預燃，是缸內直噴引擎（如 W205）可能遇到的問題，嚴重時會導致活塞破損。"
+  - question: "如何預防 W205 引擎發生 LSPI？"
+    answer: "預防 LSPI 的方法包括：在高檔位低轉速時，先降檔再踩大腳油門；以及選擇要求通過 LSPI 測試（如 API SQ/SP）的機油，或低鈣配方（<2000ppm）的機油。"
+  - question: "哪些機油認證要求通過 LSPI 測試？"
+    answer: "DEXOS1 GEN 2/GEN 3、DEXOS2（汽油車專用）、API SN Plus、API SP、API SQ，以及 2018 年後取得的 MB 229.5/229.51/229.52/229.6 新認證都要求通過 LSPI 測試。"
+  - question: "MB 229.5 和 MB 229.52 認證的機油有何主要差異？"
+    answer: "MB 229.5 認證要求 HTHS > 3.5、TBN > 10、Noack < 10%；而 MB 229.52 認證則要求低硫灰且 TBN > 6。"
+  - question: "引擎機油的黏度應該如何選擇？"
+    answer: "引擎工作溫度是固定的，因此不需根據市區或高速行駛改變黏度。對於行駛超過 75,000 英里（約 12 萬公里）的高里程車輛，建議使用高黏度機油來填補機件磨損後的間隙，維持缸壓；或使用高里程機油來防止缸壓洩漏和引擎漏油。"
+  - question: "台灣市場上，符合賓士認證且通過 LSPI 測試的機油有哪些推薦？"
+    answer: "台灣市面上有 RAVENOL SSV 0W-30 (229.6)、Shell HELIX ULTRA 0W-40/5W-40/5W-30 (229.5, SP/SQ)、Total Quartz INEO MC3 5W-30 (229.52, SN+/SP)、Castrol EDGE M 5W-30 (229.52, SN+/SP) 等機油符合這些要求。選購時建議確認瓶身認證標章。"
+  - question: "為什麼高里程車輛建議使用高黏度機油或高里程機油？"
+    answer: "因為車輛行駛里程超過約 12 萬公里後，機件磨損會導致間隙變大，高黏度機油可以更好地填補這些間隙，維持缸壓。高里程機油則透過添加劑在不提高黏度的情況下，有效防止老車缸壓洩漏及引擎漏油。"
 ---
 
 ## 挑選機油的原則
