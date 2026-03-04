@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "為何換了輕量化鋁圈，高速反而跑不快又更耗油？"
+title:  "為何換了輕量化鋁圈，高速更耗油還跑不快？"
 date:   2026-02-24 10:00:10
 categories: Auto
 tags: [Aerodynamics, Speed, Wheel Design, Fuel Efficiency, Car Modification, F1 Technology]
