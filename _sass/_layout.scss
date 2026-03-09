@@ -1,329 +1,280 @@
 /* =========================================
    1. 核心全域容器
    ========================================= */
-.page-content {
+   .page-content {
     padding: var(--spacing-lg) 0;
-    flex: 1;
-}
-
-.wrapper {
+    flex: 1; 
+  }
+  
+  .wrapper {
     max-width: 800px;
     margin: 0 auto;
     padding: 0 var(--spacing-lg);
-}
-
-/* =========================================
+  }
+  
+  /* =========================================
      2. Header 網站頭部與導覽列
      ========================================= */
-.site-header {
+  .site-header {
     border-bottom: 1px solid var(--color-border);
     min-height: 56px;
     position: relative;
     background-color: var(--color-bg);
-
+  
     .wrapper {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding-top: var(--spacing-md);
-        padding-bottom: var(--spacing-md);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: var(--spacing-md);
+      padding-bottom: var(--spacing-md);
     }
-
+  
     .site-title {
-        font-size: 1.5rem;
-        font-weight: 700;
-        color: var(--color-text);
-        text-decoration: none;
-        line-height: 1;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--color-text);
+      text-decoration: none;
+      line-height: 1;
     }
-}
-
-.site-nav {
-
+  }
+  
+  .site-nav {
     /* 電腦版選單 */
     .page-link {
-        color: var(--color-text);
-        margin-left: 20px;
-        text-decoration: none;
-        font-size: 1rem;
-
-        &:hover {
-            color: var(--color-accent);
-        }
+      color: var(--color-text);
+      margin-left: 20px;
+      text-decoration: none;
+      font-size: 1rem;
+      &:hover { color: var(--color-accent); }
     }
-
+  
     .menu-icon {
-        display: none; // 電腦版隱藏
+      display: none; // 電腦版隱藏
     }
-}
-
-/* =========================================
+  }
+  
+  /* =========================================
      3. 首頁文章列表 (index.html)
      ========================================= */
-.post-list {
+  .post-list {
     list-style: none;
     padding: 0;
     margin: 0;
-
+  
     li {
-        margin-bottom: var(--spacing-lg);
+      margin-bottom: var(--spacing-lg);
     }
-
+  
     h2 {
-        font-size: 1.6rem;
-        margin-bottom: var(--spacing-sm);
-
-        a {
-            color: var(--color-text);
-            text-decoration: none;
-
-            &:hover {
-                color: var(--color-accent);
-            }
-        }
+      font-size: 1.6rem;
+      margin-bottom: var(--spacing-sm);
+      a {
+        color: var(--color-text);
+        text-decoration: none;
+        &:hover { color: var(--color-accent); }
+      }
     }
-
+  
     .post-meta {
-        font-size: 0.95rem;
-        color: var(--color-text-muted);
+      font-size: 0.95rem;
+      color: var(--color-text-muted);
     }
-}
-
-/* =========================================
+  }
+  
+  /* =========================================
      4. 文章內部版面 (post.html / page.html)
      ========================================= */
-.post-header {
+  .post-header {
     margin-bottom: var(--spacing-xl);
     text-align: center;
-
+    
     .post-title {
-        font-size: 2.2rem;
-        margin-bottom: var(--spacing-sm);
+      font-size: 2.2rem;
+      margin-bottom: var(--spacing-sm);
     }
-
+    
     .post-meta {
-        color: var(--color-text-muted);
-        font-size: 0.95rem;
+      color: var(--color-text-muted);
+      font-size: 0.95rem;
     }
-}
-
-.post-content {
+  }
+  
+  .post-content {
     font-size: 1.1rem;
     color: var(--color-text);
-
-    p {
-        margin-bottom: 1.5em;
-    }
-
-    h2,
-    h3,
-    h4 {
-        margin-top: 1.5em;
-        margin-bottom: 0.5em;
-    }
-
-    ul,
-    ol {
-        margin-bottom: 1.5em;
-        padding-left: 1.5em;
-    }
-}
-
-/* =========================================
+    
+    p { margin-bottom: 1.5em; }
+    h2, h3, h4 { margin-top: 1.5em; margin-bottom: 0.5em; }
+    ul, ol { margin-bottom: 1.5em; padding-left: 1.5em; }
+  }
+  
+  /* =========================================
      5. 延伸閱讀區塊 (Related Posts)
      ========================================= */
-.related-posts {
+  .related-posts {
     margin-top: var(--spacing-xl);
-    /* 改用色塊與外框包裝整個區塊 */
-    padding: var(--spacing-lg);
-    background-color: var(--color-card-bg);
-    border-radius: var(--radius);
-    border: 1px solid var(--color-border);
-
+    padding-top: var(--spacing-lg);
+    border-top: 1px solid var(--color-border);
+    
     &-title {
-        font-size: 1.4rem;
-        margin-top: 0;
-        margin-bottom: var(--spacing-lg);
-        padding-bottom: var(--spacing-sm);
-        /* 新增：標題底部的主題色點綴線 */
-        border-bottom: 3px solid var(--color-accent);
-        display: inline-block;
+      font-size: 1.4rem;
+      margin-bottom: var(--spacing-lg);
     }
-
+    
     &-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-        gap: var(--spacing-md);
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: var(--spacing-md);
     }
-}
-
-.related-card {
+  }
+  
+  .related-card {
     display: flex;
     flex-direction: column;
-    /* 外層已經是灰色色塊，因此將卡片本身改為純白，製造立體浮出感 */
-    background: var(--color-bg);
+    background: var(--color-card-bg);
     padding: var(--spacing-lg);
     border-radius: var(--radius);
     color: var(--color-text) !important;
-    /* 加上淡淡的邊框勾勒卡片輪廓 */
-    border: 1px solid var(--color-border);
+    border: 1px solid transparent;
     transition: all 0.3s ease;
-
+    
     &:hover {
-        /* Hover 時將邊框變成主題色，增加互動回饋 */
-        border-color: var(--color-accent);
-        box-shadow: var(--shadow-hover);
-        transform: translateY(-3px);
+      background: var(--color-bg);
+      border-color: var(--color-border);
+      box-shadow: var(--shadow-hover);
+      transform: translateY(-3px);
     }
-
+    
     h4 {
-        margin: 0 0 var(--spacing-sm) 0;
-        font-size: 1.1rem;
-        line-height: 1.4;
+      margin: 0 0 var(--spacing-sm) 0;
+      font-size: 1.1rem;
+      line-height: 1.4;
     }
-
+    
     time {
-        font-size: 0.85rem;
-        color: var(--color-text-muted);
-        margin-top: auto;
+      font-size: 0.85rem;
+      color: var(--color-text-muted);
+      margin-top: auto; 
     }
-}
-
-/* =========================================
+  }
+  
+  /* =========================================
      6. Footer 頁尾
      ========================================= */
-.site-footer {
+  .site-footer {
     border-top: 1px solid var(--color-border);
     padding: var(--spacing-lg) 0;
     margin-top: var(--spacing-xl);
     font-size: 0.95rem;
     color: var(--color-text-muted);
-
+  
     .footer-heading {
-        font-size: 1.2rem;
-        margin-bottom: var(--spacing-md);
-        color: var(--color-text);
+      font-size: 1.2rem;
+      margin-bottom: var(--spacing-md);
+      color: var(--color-text);
     }
-
+  
     .footer-col-wrapper {
-        display: flex;
-        flex-wrap: wrap;
-        gap: var(--spacing-lg);
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--spacing-lg);
     }
-
+  
     .footer-col {
-        flex: 1;
-        min-width: 200px;
+      flex: 1;
+      min-width: 200px;
     }
-
+  
     ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
+      list-style: none;
+      padding: 0;
+      margin: 0;
     }
-
+  
     a {
-        color: inherit;
-        text-decoration: none;
-
-        &:hover {
-            color: var(--color-accent);
-        }
+      color: inherit;
+      text-decoration: none;
+      &:hover { color: var(--color-accent); }
     }
-
+  
     .social-media-list .icon {
-        display: inline-block;
-        width: 16px;
-        height: 16px;
-        vertical-align: middle;
-        margin-right: 4px;
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      vertical-align: middle;
+      margin-right: 4px;
     }
-}
-
-/* =========================================
+  }
+  
+  /* =========================================
      7. RWD 響應式設定 (Mobile)
      ========================================= */
-@media (max-width: 768px) {
+  @media (max-width: 768px) {
     .wrapper {
-        padding: 0 var(--spacing-md);
+      padding: 0 var(--spacing-md);
     }
-
+  
     /* Header 導覽列手機版漢堡選單邏輯 */
     .site-header {
-        .wrapper {
-            position: relative;
-        }
+      .wrapper {
+        position: relative;
+      }
     }
-
+  
     .site-nav {
-        position: absolute;
-        top: 50%;
-        right: var(--spacing-md);
-        transform: translateY(-50%);
-        background-color: var(--color-bg);
-        border: 1px solid var(--color-border);
-        border-radius: var(--radius);
-        z-index: 10;
-
-        .menu-icon {
-            display: block;
-            padding: 10px;
-            cursor: pointer;
-
-            svg {
-                width: 18px;
-                height: 15px;
-            }
-        }
-
-        .trigger {
-            display: none;
-            /* 預設隱藏，依賴 hover 打開 */
-            padding: 5px 15px 15px;
-        }
-
-        &:hover .trigger {
-            display: block;
-        }
-
-        .page-link {
-            display: block;
-            margin: 10px 0 0 0;
-        }
+      position: absolute;
+      top: 50%;
+      right: var(--spacing-md);
+      transform: translateY(-50%);
+      background-color: var(--color-bg);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius);
+      z-index: 10;
+      
+      .menu-icon {
+        display: block;
+        padding: 10px;
+        cursor: pointer;
+        svg { width: 18px; height: 15px; }
+      }
+  
+      .trigger {
+        display: none; /* 預設隱藏，依賴 hover 打開 */
+        padding: 5px 15px 15px;
+      }
+  
+      &:hover .trigger {
+        display: block;
+      }
+  
+      .page-link {
+        display: block;
+        margin: 10px 0 0 0;
+      }
     }
-
+  
     /* 首頁列表 */
-    .post-list h2 {
-        font-size: 1.4rem;
-    }
-
+    .post-list h2 { font-size: 1.4rem; }
+  
     /* 文章標題在手機版適度縮小 */
     .post-header {
-        margin-bottom: var(--spacing-lg);
-
-        .post-title {
-            font-size: 1.8rem;
-        }
+      margin-bottom: var(--spacing-lg);
+      .post-title { font-size: 1.8rem; }
     }
-
+  
     /* 縮小各個區塊的垂直間距 */
     .related-posts {
-        margin-top: var(--spacing-lg);
-        padding-top: var(--spacing-md);
-
-        &-title {
-            font-size: 1.2rem;
-        }
+      margin-top: var(--spacing-lg);
+      padding-top: var(--spacing-md);
+      &-title { font-size: 1.2rem; }
     }
-
+  
     /* 手機版卡片內部留白縮小 */
-    .related-card {
-        padding: var(--spacing-md);
-    }
-
+    .related-card { padding: var(--spacing-md); }
+  
     /* Footer 手機版垂直堆疊 */
     .footer-col-wrapper {
-        flex-direction: column;
-        gap: var(--spacing-md);
+      flex-direction: column;
+      gap: var(--spacing-md);
     }
-}
+  }
