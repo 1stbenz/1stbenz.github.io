@@ -24,75 +24,89 @@ faq:
 
 例如目前正在駕駛的 **W205** 是德國賓士公司生產，所以我從德國油商的網站之中，找油商推薦的機油。
 
-> **查詢小技巧**
+> **💡 查詢小技巧**
 >
 > 找油之前可以先到 [LastVIN.com](https://www.lastvin.com) 輸入 VIN 碼，查詢自己的車型版本、引擎版本代碼。
 > *(待會適用油品搜尋的時候會用到)*
 
-![VIN碼查詢範例](https://attach.mobile01.com/attach/202301/mobile01-b8d448cb6873a80e73a77d05ef3ffd4f.png)
+![賓士 W205 車型與引擎版本代碼 VIN 碼查詢教學範例 LastVIN](https://attach.mobile01.com/attach/202301/mobile01-b8d448cb6873a80e73a77d05ef3ffd4f.png)
 
 ---
 
 ## 油商適用油品搜尋 (Oil Finder)
 
-### 🔝 全球大型油商
-*   **Shell** → [Oil Finder](https://www.shell.co.uk/motorist/engine-oils/lubematch.html)
-*   **Mobil (ExxonMobil)** → [Oil Finder](https://www.mobil.com.de/de-de/b2c-produkt-auszuwahlen/)
-*   **Castrol (BP集團)** → [Oil Finder](https://www.castrol.com/de_de/germany/home/car-engine-oil-and-fluids/motor-oil-and-fluids-finder.html?customerType=retail)
-*   **TotalEnergies (Total)** → [Oil Finder](https://totalenergies.co.uk/lub-advisor)
-*   **Petronas (賓士原廠合作夥伴)** → [Oil Finder](https://global.pli-petronas.com/lubricants)
-*   **Chevron(Havoline)** → [Oil Finder](https://www.chevronlubricants.com/en_us/home/chevron-products-selector.html)
+透過各品牌的官方 Oil Finder 工具，只要輸入車型與引擎代碼，就能精準找出符合原廠認證的最佳機油。以下為您整理各大品牌的官方查詢連結：
+
+### 全球大型油商
+| 品牌名稱 | 備註說明 | 官方 Oil Finder 工具 |
+| :--- | :--- | :--- |
+| **Shell** | 殼牌 | [前往查詢](https://www.shell.co.uk/motorist/engine-oils/lubematch.html) |
+| **Mobil** | ExxonMobil 美孚 | [前往查詢](https://www.mobil.com.de/de-de/b2c-produkt-auszuwahlen/) |
+| **Castrol** | BP 集團旗下 | [前往查詢](https://www.castrol.com/de_de/germany/home/car-engine-oil-and-fluids/motor-oil-and-fluids-finder.html?customerType=retail) |
+| **TotalEnergies** | Total 道達爾 | [前往查詢](https://totalenergies.co.uk/lub-advisor) |
+| **Petronas** | 賓士原廠合作夥伴 | [前往查詢](https://global.pli-petronas.com/lubricants) |
+| **Chevron** | Havoline 系列 | [前往查詢](https://www.chevronlubricants.com/en_us/home/chevron-products-selector.html) |
 
 ### 歐洲大型油商
-*   **FUCHS (德國最大獨立油商)** → [Oil Finder](https://www.fuchs.com/de/en/products/search-find/oil-chooser/)
-*   **LIQUI MOLY (德國知名品牌)** → [Oil Finder](https://www.liqui-moly.com/en/service/oil-guide.html)
-*   **MOTUL (法國高端品牌)** → [Oil Finder](https://www.oelberater.de/home)
-*   **Eni (義大利，前Agip)** → [Oil Finder](https://oilproducts.eni.com/en_GB/)
-*   **Millers Oils (英國)** → [Oil Finder](https://www.millersoils.co.uk/which-oil/)
+| 品牌名稱 | 備註說明 | 官方 Oil Finder 工具 |
+| :--- | :--- | :--- |
+| **FUCHS** | 德國最大獨立油商 | [前往查詢](https://www.fuchs.com/de/en/products/search-find/oil-chooser/) |
+| **LIQUI MOLY** | 德國知名品牌 | [前往查詢](https://www.liqui-moly.com/en/service/oil-guide.html) |
+| **MOTUL** | 法國高端品牌 | [前往查詢](https://www.oelberater.de/home) |
+| **Eni** | 義大利，前 Agip | [前往查詢](https://oilproducts.eni.com/en_GB/) |
+| **Millers Oils** | 英國知名品牌 | [前往查詢](https://www.millersoils.co.uk/which-oil/) |
 
 ### 美國本土品牌
-*   **Valvoline** → [Oil Finder](https://www.valvolineglobal.com/en/product-finder/)
-*   **Red Line** → [Oil Finder](https://www.redlineoil.com/find-products-for-my-vehicle)
-*   **AMSOIL** → [Oil Finder](https://www.amsoil.com/lookup/auto-and-light-truck/)
-*   **Pennzoil(殼牌旗下)** → [Oil Finder](https://www.pennzoil.com/en_us/oil-selector.html)
-*   **Quaker State(殼牌旗下)** → [Oil Finder](https://www.quakerstate.com/en_us/oil-selector.html)
+| 品牌名稱 | 備註說明 | 官方 Oil Finder 工具 |
+| :--- | :--- | :--- |
+| **Valvoline** | 勝牌 | [前往查詢](https://www.valvolineglobal.com/en/product-finder/) |
+| **Red Line** | 紅線機油 | [前往查詢](https://www.redlineoil.com/find-products-for-my-vehicle) |
+| **AMSOIL** | 安索機油 | [前往查詢](https://www.amsoil.com/lookup/auto-and-light-truck/) |
+| **Pennzoil** | 殼牌旗下 | [前往查詢](https://www.pennzoil.com/en_us/oil-selector.html) |
+| **Quaker State**| 殼牌旗下 | [前往查詢](https://www.quakerstate.com/en_us/oil-selector.html) |
 
 ### 德國本土中型品牌
-*   **RAVENOL** → [Oil Finder](https://oilguide.ravenol.de/?lang=en)
-*   **ROWE** → [Oil Finder](https://rowe-oil.com/en/oil-guide)
-*   **ARAL (BP旗下德國品牌)** → [Oil Finder](https://www.aral-lubricants.de/en/oilfinder)
-*   **ADDINOL** → [Oil Finder](https://addinol.de/oilfinder/)
-*   **MEGUIN (LIQUI MOLY子公司)** → [Oil Finder](https://www.meguin.de/en/products/oil-guide.html)
+| 品牌名稱 | 備註說明 | 官方 Oil Finder 工具 |
+| :--- | :--- | :--- |
+| **RAVENOL** | 漢諾威 | [前往查詢](https://oilguide.ravenol.de/?lang=en) |
+| **ROWE** | 德國製造品牌 | [前往查詢](https://rowe-oil.com/en/oil-guide) |
+| **ARAL** | BP 旗下德國品牌 | [前往查詢](https://www.aral-lubricants.de/en/oilfinder) |
+| **ADDINOL** | 德國品牌 | [前往查詢](https://addinol.de/oilfinder/) |
+| **MEGUIN** | LIQUI MOLY 子公司 | [前往查詢](https://www.meguin.de/en/products/oil-guide.html) |
 
-### 小型/區域品牌
-*   **AVISTA** → [Oil Finder](https://www.avista-lubes.de/en/oilfinder/)
-*   **SWD Rheinol** → [Oil Finder](https://www.swdrheinol.de/oelfinder/)
+### 小型 / 區域品牌
+| 品牌名稱 | 備註說明 | 官方 Oil Finder 工具 |
+| :--- | :--- | :--- |
+| **AVISTA** | 區域性品牌 | [前往查詢](https://www.avista-lubes.de/en/oilfinder/) |
+| **SWD Rheinol** | 區域性品牌 | [前往查詢](https://www.swdrheinol.de/oelfinder/) |
 
 ---
 
 ## 換油里程規劃
 
-德國油商的機油規格通常分為 **15,000公里** 與 **25,000公里** 兩種。考慮到台灣原廠建議里程約為國外的 **2/3**，換算如下：
+德國油商的機油規格通常分為 **15,000公里** 與 **25,000公里** 兩種。考慮到台灣的用車環境，原廠建議的換油里程約為國外的 **2/3**，換算標準如下：
 
-*   **一般長效油**：國外 15,000 km → 台灣建議 **10,000 km**
-*   **超長效油**：國外 25,000 km → 台灣建議約 **16,600 km**
+| 機油類型 (依德國油商規範) | 國外原廠建議里程 | 台灣環境建議里程 (約 2/3) |
+| :--- | :--- | :--- |
+| **一般長效機油** | 15,000 km | **10,000 km** |
+| **超長效機油** | 25,000 km | **約 16,600 km** |
 
-考量台灣路況（走走停停）與氣候較嚴苛，折衷建議 **15,000公里換油**。
+> 考量台灣路況（市區走走停停居多）與氣候較為嚴苛，綜合上述兩種油品的特性，折衷建議抓在 **15,000公里進行換油**。
 
 ---
 
 ## 認證與 TBN 指標分析
 
-W205 油商建議多為 15,000 公里的油品。觀察長效油品（25,000公里）與認證的關係，主要差異在於 **TBN (Total Base Number)**，即機油的鹼值（抗酸化能力）。
+W205 油商建議多為 15,000 公里的油品。觀察長效油品（25,000公里）與認證的關係，主要差異在於 **TBN (Total Base Number)**，即機油的總鹼值（抗酸化能力）。
 
-| 認證標準 | TBN (鹼值) | 特性說明 |
+| 賓士機油認證標準 | TBN (總鹼值) | 特性與適用情境說明 |
 | :--- | :--- | :--- |
-| **MB 229.5** | **≥ 10** | 抗酸化能力強，適合更長里程使用。 |
-| **MB 229.51 / .52** | **≈ 6** | 數值較低，通常是為了配合 DPF 等環保裝置。 |
+| **MB 229.5** | **≥ 10** | 抗酸化能力極強，機油壽命長，適合**更長里程**使用。 |
+| **MB 229.51 / .52** | **≈ 6** | 數值較低，配方通常是為了配合 **DPF (碳微粒濾清器)** 等環保裝置而妥協。 |
 
 **小結**：
-適用更長里程的機油通常會選擇 **更高 TBN 值** 的機油，以確保在使用後期仍有足夠的抗酸能力。
+適用更長里程的機油，通常會選擇 **更高 TBN 值** 的機油，以確保在使用後期，機油內部仍有足夠的鹼性物質來中和燃燒產生的酸性物質，維持抗酸能力。
 
 > **重要提醒**
 >
-> 若執行長里程換油，請務必搭配 **污物容量加大的長效濾芯**。雜牌或普通濾芯可能無法支撐長里程的過濾需求，請自行斟酌。
+> 若您決定執行長里程換油計畫，請務必搭配 **污物容量加大的長效機油濾芯**。市面上的雜牌或普通濾芯，其濾紙容量可能無法支撐長里程的過濾需求，導致後期失去過濾作用，請車主自行斟酌選用。
