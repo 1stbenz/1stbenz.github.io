@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "深度解析：簧下一公斤，簧上十公斤的物理真相"
-date:   2026-03-09 10:00:00
+date:   2026-03-07 10:00:00
 categories: Auto
 tags: [Rotational Inertia, Car Modification, Physics, Unsprung Mass, Suspension]
 description: "常聽說「簧下一公斤，簧上十公斤」，這句話背後的物理學依據是什麼？本文將深入探討轉動慣量與懸吊系統的交互作用，解析輪下減重對操控與加速的真實影響。"
