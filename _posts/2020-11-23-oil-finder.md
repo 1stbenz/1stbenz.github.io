@@ -29,7 +29,7 @@ faq:
 > 找油之前可以先到 [LastVIN.com](https://www.lastvin.com) 輸入 VIN 碼，查詢自己的車型版本、引擎版本代碼。
 > *(待會適用油品搜尋的時候會用到)*
 
-![賓士 W205 車型與引擎版本代碼 VIN 碼查詢教學範例 LastVIN](https://attach.mobile01.com/attach/202301/mobile01-b8d448cb6873a80e73a77d05ef3ffd4f.png)
+![賓士 W205 車型與引擎版本代碼 VIN 碼查詢教學範例 LastVIN](/images/mobile01-b8d448cb6873a80e73a77d05ef3ffd4f.webp)
 
 ---
 
