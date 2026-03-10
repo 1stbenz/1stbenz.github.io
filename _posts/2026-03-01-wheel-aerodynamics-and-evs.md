@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "輪圈空氣力學：為何電動車與性能車開始回歸「大餅圈」？"
-date:   2026-03-22 10:00:00
+date:   2026-03-01 10:00:00
 categories: Auto
 tags: [Aerodynamics, Fuel Efficiency, Wheel Design, EV Technology, Wind Tunnel]
 description: "延續 F1 賽車的輪圈蓋設計，現今越來越多電動車採用封閉式的「低風阻輪圈」。本文帶你走進風洞，了解通風阻力如何影響高速巡航，以及空氣力學在輪圈設計上的革命。"
