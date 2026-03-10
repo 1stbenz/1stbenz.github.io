@@ -41,7 +41,7 @@ $$F_D = \frac{1}{2} \rho v^2 C_D A$$
 ## 3. 電動車時代的「續航焦慮」解方
 
 
-
+![節能鋁圈](/images/wheel-aerodynamics.webp)
 對於燃油車來說，增加一點風阻頂多就是油耗變差；但對於電動車來說，風阻直接關乎「續航里程」這個致命指標。
 
 這就是為什麼 Tesla, Porsche Taycan, 或是 Hyundai IONIQ 系列，原廠幾乎都標配了表面極度平整、開孔面積極小的「低風阻輪圈」或「Aero Covers」。
