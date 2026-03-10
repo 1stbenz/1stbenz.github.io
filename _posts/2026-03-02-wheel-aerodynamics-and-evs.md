@@ -6,7 +6,7 @@ categories: Auto
 tags: [Aerodynamics, Fuel Efficiency, Wheel Design, EV Technology, Wind Tunnel]
 description: "延續 F1 賽車的輪圈蓋設計，現今越來越多電動車採用封閉式的「低風阻輪圈」。本文帶你走進風洞，了解通風阻力如何影響高速巡航，以及空氣力學在輪圈設計上的革命。"
 keywords: "空氣力學, 風阻係數, 電動車, Tesla 輪圈蓋, 通風阻力, 低風阻輪圈, 續航力"
-image: /images/wind-tunnel-car-wheel-aerodynamics.webp
+image: /images/wheel-aerodynamics.webp
 faq:
   - question: "輪圈設計對汽車的高速行駛有什麼影響？"
     answer: "高速行駛時，車輪在輪拱內高速旋轉會像抽風機一樣攪動空氣，產生嚴重的「通風阻力」與紊流。這部分的空氣阻力，大約佔了整輛車總風阻的 25% 到 30%。"

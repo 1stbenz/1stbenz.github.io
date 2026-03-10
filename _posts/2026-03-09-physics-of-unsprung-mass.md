@@ -6,7 +6,7 @@ categories: Auto
 tags: [Rotational Inertia, Car Modification, Physics, Unsprung Mass, Suspension]
 description: "常聽說「簧下一公斤，簧上十公斤」，這句話背後的物理學依據是什麼？本文將深入探討轉動慣量與懸吊系統的交互作用，解析輪下減重對操控與加速的真實影響。"
 keywords: "簧下重量, 轉動慣量, 懸吊系統, 輪圈改裝, 操控性能, 物理學, 動能公式"
-image: /images/suspension-unsprung-mass-diagram.webp
+image: /images/physics-of-unsprung.webp
 faq:
   - question: "什麼是簧上重量與簧下重量？"
     answer: "簧上重量是指由汽車懸吊系統支撐的重量（包含車體、引擎、乘客等）；簧下重量則是不被懸吊支撐、直接跟隨路面起伏的重量（包含輪胎、輪圈、煞車系統與部分懸吊連桿）。"
