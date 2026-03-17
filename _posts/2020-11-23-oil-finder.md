@@ -54,7 +54,7 @@ faq:
 | :--- | :--- | :--- |
 | **FUCHS** | 德國最大獨立油商 | [前往查詢](https://www.fuchs.com/de/en/products/search-find/oil-chooser/) |
 | **LIQUI MOLY** | 德國知名品牌 | [前往查詢](https://www.liqui-moly.com/en/service/oil-guide.html) |
-| **MOTUL** | 法國高端品牌 | [前往查詢](https://www.oelberater.de/home) |
+| **MOTUL** | 法國高端品牌 | [前往查詢](https://www.motul.com/de-DE/lubricants) |
 | **Eni** | 義大利，前 Agip | [前往查詢](https://oilproducts.eni.com/en_GB/) |
 | **Millers Oils** | 英國知名品牌 | [前往查詢](https://www.millersoils.co.uk/which-oil/) |
 
