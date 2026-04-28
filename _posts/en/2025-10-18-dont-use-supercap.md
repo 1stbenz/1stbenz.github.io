@@ -131,16 +131,14 @@ In the past, when LiFePO4 batteries were expensive, supercapacitors had a market
 
 ## Reason 7: The Capacity of Supercapacitors is "Too Large" for Filtering
 
-The capacity of a supercapacitor is **extremely small compared to a "car battery,"** but **absolutely massive compared to "filtering components"** (millions of times larger than traditional filtering capacitors).
+Supercapacitors are relatively small compared to batteries, but enormous compared to filtering components—millions of times larger than traditional capacitors. Some shops claim they can “filter alternator noise” or “deliver pure power for better sound,” but this contradicts basic electronics principles.
 
-This excessively large capacity introduces significant Equivalent Series Inductance (ESL). As a result, the supercapacitor reacts sluggishly to high-frequency noise, causing its impedance to rise instead of fall, which completely defeats its filtering capabilities. 
+Large-capacity capacitors require complex structures, which often come with higher Equivalent Series Inductance (ESL). As a result, their filtering effect disappears at high frequencies.
 
+- **Low-frequency energy buffering:** Supercapacitors can handle large low-frequency energy swings, but lithium iron phosphate (LiFePO₄) batteries can also provide stable low-frequency filtering.  
+- **High-frequency noise suppression:** Alternator ripple and ignition interference require small, fast-reacting capacitors such as ceramic or film types.
 
-
-* **Low-Frequency Energy Buffering:** Supercapacitors are well-suited for handling large, low-frequency energy throughput, but lithium iron phosphate (LiFePO4) batteries can provide an equally stable low-frequency filtering effect. 
-* **High-Frequency Noise Filtering:** Filtering out AC ripple and ignition interference in a car's electrical system requires small-capacity, fast-reacting ceramic or film capacitors.
-
-👉 The low-frequency voltage stabilization that supercapacitors offer can easily be handled by a LiFePO4 battery. Adding a supercapacitor purely to "purify the power supply" is completely redundant.
+👉 The low-frequency stabilization that supercapacitors offer can be easily achieved with LiFePO₄ batteries. Installing supercapacitors for “power purification” is simply unnecessary.  
 
 ## Spend Your Money Wisely
 
