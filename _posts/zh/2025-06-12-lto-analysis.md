@@ -200,11 +200,10 @@ faq:
                 <td>中</td>
             </tr>
             <tr>
-                <td>
+                <td colspan="4">
                     歐系車發電機：<b>190A</b><br>
                     日系車發電機：<b>120A</b>
                 </td>
-                <td colspan="3"></td>
             </tr>
         </tbody>
     </table>

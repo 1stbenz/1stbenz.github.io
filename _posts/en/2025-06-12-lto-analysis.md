@@ -200,11 +200,10 @@ LTO is advertised as having a high cycle count, but due to its low capacity, hig
                 <td>Medium</td>
             </tr>
             <tr>
-                <td>
+                <td colspan="4">
                     Euro Car Alternator: <b>190A</b><br>
                     Japanese Car Alternator: <b>120A</b>
                 </td>
-                <td colspan="3"></td>
             </tr>
         </tbody>
     </table>
