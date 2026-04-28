@@ -86,7 +86,129 @@ faq:
 ---
 ## 比較目前市場常見電池
 
-![LTO Compare](/images/mobile01-73a3f73994754009670d4e7b1e13c046.webp)
+<style>
+    /* RWD 響應式滾動容器 */
+    .table-responsive {
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch; /* 讓 iOS 裝置滑動更順暢 */
+        margin-bottom: 20px;
+    }
+    
+    .battery-table {
+        border-collapse: collapse;
+        width: 100%;
+        min-width: 500px; /* 確保在手機上縮小時，文字不會全部擠在一起 */
+        max-width: 600px;
+        font-family: sans-serif;
+        font-size: 16px;
+    }
+    
+    .battery-table th, .battery-table td {
+        border: 1px solid #b3c6e7; /* 配合標題顏色的柔和邊框 */
+        padding: 10px 15px;
+        text-align: left;
+        vertical-align: top;
+        line-height: 1.5;
+    }
+    
+    /* 標題上色 (參考原圖的藍色系) */
+    .battery-table th {
+        font-weight: bold;
+        text-align: center;
+        background-color: #6495ED; /* 標題底色：矢車菊藍 */
+        color: #ffffff; /* 標題文字：白色，增加對比度 */
+    }
+    
+    /* 單雙背景色有區別 (斑馬紋) */
+    .battery-table tbody tr:nth-child(even) {
+        background-color: #f2f7ff; /* 雙數行：極淺的藍色 */
+    }
+    .battery-table tbody tr:nth-child(odd) {
+        background-color: #ffffff; /* 單數行：白色 */
+    }
+    
+    /* 滑鼠懸停效果 (稍微提亮，增加互動感) */
+    .battery-table tbody tr:hover {
+        background-color: #e6f0ff;
+    }
+</style>
+
+<div class="table-responsive">
+    <table class="battery-table">
+        <thead>
+            <tr>
+                <th>尺寸LN3</th>
+                <th>鉛酸</th>
+                <th>鈦酸鋰</th>
+                <th>鋰鐵</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>容量</td>
+                <td>70Ah</td>
+                <td><span style="color: red;">46Ah</span></td>
+                <td><b>100Ah</b></td>
+            </tr>
+            <tr>
+                <td>充電效能</td>
+                <td>7A(0.1C)</td>
+                <td><b>920A(20C)</b></td>
+                <td>200A(2C)</td>
+            </tr>
+            <tr>
+                <td>放電效能</td>
+                <td>10C</td>
+                <td>20C</td>
+                <td><b>50-80C</b></td>
+            </tr>
+            <tr>
+                <td>耐壓</td>
+                <td>16.2V</td>
+                <td><span style="color: red;">13.5V(5串)</span></td>
+                <td>14.6V</td>
+            </tr>
+            <tr>
+                <td>循環壽命</td>
+                <td>1000次</td>
+                <td>
+                    理想20000次<br>
+                    x容量0.46<br>
+                    <span style="color: red;">x二手耗損0.7</span><br>
+                    <span style="color: red;">x長期過充0.7</span><br>
+                    =<b>4500次</b>
+                </td>
+                <td>5000次</td>
+            </tr>
+            <tr>
+                <td>電芯</td>
+                <td>全新</td>
+                <td><span style="color: red;">多二手拆機</span></td>
+                <td>全新</td>
+            </tr>
+            <tr>
+                <td>生產商</td>
+                <td>正規工廠</td>
+                <td><span style="color: red;">多地下工廠</span></td>
+                <td>正規工廠</td>
+            </tr>
+            <tr>
+                <td>價格</td>
+                <td>低</td>
+                <td><span style="color: red;">高</span></td>
+                <td>中</td>
+            </tr>
+            <tr>
+                <td>
+                    歐系車發電機：<b>190A</b><br>
+                    日系車發電機：<b>120A</b>
+                </td>
+                <td colspan="3"></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 
 ---
 
