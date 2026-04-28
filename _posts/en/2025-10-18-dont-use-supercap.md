@@ -131,13 +131,16 @@ In the past, when LiFePO4 batteries were expensive, supercapacitors had a market
 
 ## Reason 7: The Capacity of Supercapacitors is "Too Large" for Filtering
 
-A supercapacitor's capacity puts it in an awkward position: it's too small for a battery, yet too cumbersome for filtering. In the world of filtering, speed is everything.
+Supercapacitors sit in an awkward middle ground: they are too small to be batteries, yet too cumbersome for filtering. In the world of electrical filtering, **"speed is king,"** and that is the supercapacitor's greatest weakness.
 
-* **The side effect of large capacity:** Supercapacitors have a complex structure, making their reaction to high-frequency noise extremely sluggish. Before they can even respond, the noise has already slipped right through.
-* **Low-frequency energy buffering:** LiFePO4 batteries are already top-tier low-frequency buffers, rendering supercapacitors redundant.
-* **High-frequency noise filtering:** Supercapacitors are too slow and their ESL is too high, meaning they cannot filter it out at all.
+* **The Side Effects of Massive Capacity:** Due to their complex internal structure, supercapacitors react extremely sluggishly to high-frequency noise. The noise simply slips through before the supercapacitor can even begin to respond.
+* **Low-Frequency Energy Buffering:** LiFePO4 (Lithium Iron Phosphate) batteries are already top-tier low-frequency buffers. In a system already equipped with one, a supercapacitor is redundant.
+* **High-Frequency Noise Filtering:** Effective filtering requires the "right tool for the job." For instance, early voltage stabilizers used a **combination of small capacitors** (such as electrolytic, ceramic, or film) to precisely intercept noise at various frequency ranges. Supercapacitors are too slow and have massive **ESL (Equivalent Series Inductance)**, making them completely ineffective against high-frequency interference.
 
-👉 **Conclusion:** When it comes to "filtering" and "improving the electrical system," adding a supercapacitor is completely redundant now that LiFePO4 batteries have become affordable.
+
+
+👉 Adding a supercapacitor for "filtering" or "electrical system improvement" is entirely redundant in today’s era of affordable LiFePO4 batteries.
+
 
 ## Spend Your Money Wisely
 
