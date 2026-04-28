@@ -129,6 +129,19 @@ In the past, when LiFePO4 batteries were expensive, supercapacitors had a market
 
 👉 Since LiFePO4 battery prices are now approachable, **why spend over ten thousand dollars on a supercapacitor that has less than 0.4Ah, high internal resistance, slow response, is afraid of heat, and "steals" electricity?**
 
+## Reason 7: The Capacity of Supercapacitors is "Too Large" for Filtering
+
+The capacity of a supercapacitor is **extremely small compared to a "car battery,"** but **absolutely massive compared to "filtering components"** (millions of times larger than traditional filtering capacitors).
+
+This excessively large capacity introduces significant Equivalent Series Inductance (ESL). As a result, the supercapacitor reacts sluggishly to high-frequency noise, causing its impedance to rise instead of fall, which completely defeats its filtering capabilities. 
+
+
+
+* **Low-Frequency Energy Buffering:** Supercapacitors are well-suited for handling large, low-frequency energy throughput, but lithium iron phosphate (LiFePO4) batteries can provide an equally stable low-frequency filtering effect. 
+* **High-Frequency Noise Filtering:** Filtering out AC ripple and ignition interference in a car's electrical system requires small-capacity, fast-reacting ceramic or film capacitors.
+
+👉 The low-frequency voltage stabilization that supercapacitors offer can easily be handled by a LiFePO4 battery. Adding a supercapacitor purely to "purify the power supply" is completely redundant.
+
 ## Spend Your Money Wisely
 
 In conclusion, the era of supercapacitors in the car modification market is over.
