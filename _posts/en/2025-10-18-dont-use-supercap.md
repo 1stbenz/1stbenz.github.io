@@ -131,14 +131,13 @@ In the past, when LiFePO4 batteries were expensive, supercapacitors had a market
 
 ## Reason 7: The Capacity of Supercapacitors is "Too Large" for Filtering
 
-Supercapacitors are relatively small compared to batteries, but enormous compared to filtering components—millions of times larger than traditional capacitors. Some shops claim they can “filter alternator noise” or “deliver pure power for better sound,” but this contradicts basic electronics principles.
+A supercapacitor's capacity puts it in an awkward position: it's too small for a battery, yet too cumbersome for filtering. In the world of filtering, speed is everything.
 
-Large-capacity capacitors require complex structures, which often come with higher Equivalent Series Inductance (ESL). As a result, their filtering effect disappears at high frequencies.
+* **The side effect of large capacity:** Supercapacitors have a complex structure, making their reaction to high-frequency noise extremely sluggish. Before they can even respond, the noise has already slipped right through.
+* **Low-frequency energy buffering:** LiFePO4 batteries are already top-tier low-frequency buffers, rendering supercapacitors redundant.
+* **High-frequency noise filtering:** Supercapacitors are too slow and their ESL is too high, meaning they cannot filter it out at all.
 
-- **Low-frequency energy buffering:** Supercapacitors can handle large low-frequency energy swings, but lithium iron phosphate (LiFePO₄) batteries can also provide stable low-frequency filtering.  
-- **High-frequency noise suppression:** Alternator ripple and ignition interference require small, fast-reacting capacitors such as ceramic or film types.
-
-👉 The low-frequency stabilization that supercapacitors offer can be easily achieved with LiFePO₄ batteries. Installing supercapacitors for “power purification” is simply unnecessary.  
+👉 **Conclusion:** When it comes to "filtering" and "improving the electrical system," adding a supercapacitor is completely redundant now that LiFePO4 batteries have become affordable.
 
 ## Spend Your Money Wisely
 
