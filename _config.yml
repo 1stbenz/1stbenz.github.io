@@ -11,6 +11,10 @@ lang: zh-Hant
 author: 
   name: 中年阿賓
   email: 1stbenz@github.com
+# _config.yml
+description: "汽車技術筆記 | 保養改裝真相探究"
+description_zh: "汽車技術筆記 | 保養改裝真相探究"
+description_en: "Automotive Tech Notes | Maintenance & Tuning Facts"
 
 # 核心：自動根據資料夾路徑分配語言與 URL 前綴
 defaults:
