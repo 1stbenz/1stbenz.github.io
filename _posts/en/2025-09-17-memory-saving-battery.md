@@ -31,9 +31,11 @@ On a **Toyota** or **Honda**, power loss usually just means resetting the clock.
 * **The Consequence of Power Loss:** If disconnected, the ECU loses these correction records and reverts to the "factory clean" default angle. Because the physical valve is still dirty, the default angle provides insufficient air, leading to **unstable idle, severe vibration, or even stalling**.
 * **ECU Learning:** The car will need to be driven for a period to allow the ECU to "relearn" and correct the valve angle again.
 
-According to many OEM Standard Operating Procedures (SOPs), battery replacement is performed by disconnecting the power entirely. This is because **dealerships are equipped with proprietary diagnostic tools** that can instantly clear fault codes and recalibrate sensors, such as the throttle body. In contrast, independent shops and DIYers typically use a **"memory saver"** to maintain power during the swap. This prevents the loss of electronic settings and avoids the risk of system errors that would otherwise require a trip back to the dealer.
+If you flip through the repair manual, you’ll find that many OEM SOPs adopt a “power-off replacement.” The main reason is that the manufacturer is equipped with **dedicated diagnostic computers**, which can instantly clear fault codes, perform sensor calibration, and even **re-execute anti-theft key synchronization and authorization when the system is locked**.  
 
-If you are unsure whether your vehicle requires a dealer-level reset after a power loss, the safest approach is to **use a memory saver during the replacement, then manually reset the BMS (Battery Management System) via the onboard computer.**
+In contrast, independent shops and DIY car owners usually use a “memory saver” to carry out non-power-off replacements. This not only preserves the vehicle’s learned parameters but also prevents large voltage fluctuations that could cause **IMMO malfunctions**, damage electronic modules, or even require returning to the OEM for “activation” or “re-flashing.”  
+
+If you’re unsure whether your vehicle requires OEM computer settings after a power-off, the safest method is: **use a memory saver during replacement, then reset the BMS in the ECU**. 
 
 ---
 
