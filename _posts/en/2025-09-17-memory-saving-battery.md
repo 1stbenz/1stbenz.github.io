@@ -31,7 +31,9 @@ On a **Toyota** or **Honda**, power loss usually just means resetting the clock.
 * **The Consequence of Power Loss:** If disconnected, the ECU loses these correction records and reverts to the "factory clean" default angle. Because the physical valve is still dirty, the default angle provides insufficient air, leading to **unstable idle, severe vibration, or even stalling**.
 * **ECU Learning:** The car will need to be driven for a period to allow the ECU to "relearn" and correct the valve angle again.
 
-On European cars like **Mercedes-Benz** or **BMW**, power loss can be more troublesome. It may require a trip to the dealer to reset sensors, recalibrate windows, or in rare cases, repair damaged modules. This is why using an **OBD-II Memory Saver** is standard procedure for these vehicles. If you aren't sure, **the safest method is to use a memory saver during the swap and then perform a BMS reset via software.**
+According to many OEM Standard Operating Procedures (SOPs), battery replacement is performed by disconnecting the power entirely. This is because **dealerships are equipped with proprietary diagnostic tools** that can instantly clear fault codes and recalibrate sensors, such as the throttle body. In contrast, independent shops and DIYers typically use a **"memory saver"** to maintain power during the swap. This prevents the loss of electronic settings and avoids the risk of system errors that would otherwise require a trip back to the dealer.
+
+If you are unsure whether your vehicle requires a dealer-level reset after a power loss, the safest approach is to **use a memory saver during the replacement, then manually reset the BMS (Battery Management System) via the onboard computer.**
 
 ---
 
