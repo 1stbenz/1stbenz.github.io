@@ -21,8 +21,8 @@ faq:
 
 
 
-- **No new engine oil specification represents a step backward in quality standards.**
-- **The "newer is worse than older" claim is largely pseudoscience or a sales tactic used to flush out old inventory.**
+- **No new engine oil specification has ever lowered the bar—every single standard is a leap forward, not a step back.**
+- **The claim that ‘new is worse than old’ is nothing but blatant pseudoscience and a shameless ploy to dump obsolete stock.**
 
 ## Technical Specification Comparison Table
 
