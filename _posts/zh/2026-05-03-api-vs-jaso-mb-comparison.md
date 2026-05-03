@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  "機車專用JASO MB認證 vs 汽車用API及車廠認證"
+title:  "機車用JASO MB認證 vs 汽車用API及車廠認證"
 lang: zh-Hant
 date:   2026-05-03 12:00:00
 categories: Moto
 tags: [機油, API SQ, JASO MB, 速克達, 引擎保養, 賓士認證, 2026 認證, 機油迷思]
 description: "針對日常轉速低於 8000 轉的通勤速克達，JASO MB 真的是唯一解嗎？深度解析最新 API SQ 規範與歐系認證，探討為何高階汽車油的抗氧化、潔淨度與油膜強度往往超越傳統機車專用油。"
 keywords: "API SQ, JASO MB, 速克達機油, 汽車機油機車用, 8000轉, 引擎潤滑, 2026 機油規範, MB 229.5"
-image: /images/oil-standards-comparison-2026.webp
+image: /images/mobile01-4354e3784c5b7a8a13113354d8a13b2f.webp
 faq:
   - question: "為什麼通勤速克達不一定要用 JASO MB 認證油？"
     answer: "速克達為乾式離合器，無打滑問題。JASO 規範將擁有極致低阻力技術的「RC/EC 節能型汽車油」排除[cite: 1]，死守 JASO 反而錯失了提升省油與輕快感的機會。"
