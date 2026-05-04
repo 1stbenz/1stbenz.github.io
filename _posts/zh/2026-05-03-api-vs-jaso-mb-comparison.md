@@ -2,7 +2,7 @@
 layout: post
 title:  "機車用JASO MB認證 vs 汽車用API及車廠認證"
 lang: zh-Hant
-date:   2026-05-04 12:00:00
+date:   2026-05-03 12:00:00
 categories: Moto
 tags: [機油, API SQ, JASO MB, 速克達, 引擎保養, 賓士認證, 2026 認證, 機油迷思]
 description: "針對日常轉速低於 8000 轉的通勤速克達，JASO MB 真的是唯一解嗎？深度解析最新 API SQ 規範與歐系認證，探討為何高階汽車油的抗氧化、潔淨度與油膜強度往往超越傳統機車專用油。"
