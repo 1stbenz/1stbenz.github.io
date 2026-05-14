@@ -162,7 +162,7 @@ faq:
                             }
                         }
                         let dur = Math.round((new Date(data[endIdx].x) - new Date(data[startIdx].x)) / 60000);
-                        if (dur >= 2) rawTrips.push({ start: data[startIdx].x, end: data[endIdx].x, duration: dur });
+                        if (dur >= 2) rawTrips.push({ start: data[startIdx].x, end: data[endIdx].x, startStr: data[startIdx].xStr,     endStr: data[endIdx].xStr,    duration: dur });
                     } else { i = jumpIdx - 1; }
                 }
             }
@@ -170,7 +170,7 @@ faq:
         if (isOn) {
            let endIdx = data.length - 1;
            let dur = Math.round((new Date(data[endIdx].x) - new Date(data[startIdx].x)) / 60000);
-           if (dur >= 2) rawTrips.push({ start: data[startIdx].x, end: data[endIdx].x, duration: dur });
+           if (dur >= 2) rawTrips.push({ start: data[startIdx].x, end: data[endIdx].x, startStr: data[startIdx].xStr,     endStr: data[endIdx].xStr,    duration: dur });
         }
 
         let mergedTrips = [];
@@ -178,11 +178,13 @@ faq:
         if (rawTrips.length > 0) {
             let currentTrip = rawTrips[0];
             for (let i = 1; i < rawTrips.length; i++) {
-                let gapMins = Math.round((new Date(rawTrips[i].start) - new Date(currentTrip.end)) / 60000);
-                if (gapMins <= mergeGapMins) {
-                    currentTrip.end = rawTrips[i].end;
-                    currentTrip.duration = Math.round((new Date(currentTrip.end) - new Date(currentTrip.start)) / 60000);
-                } else { mergedTrips.push(currentTrip); currentTrip = rawTrips[i]; }
+let gapMins = Math.round((rawTrips[i].start - currentTrip.end) / 60000);
+if (gapMins <= mergeGapMins) {
+    currentTrip.end = rawTrips[i].end;
+    currentTrip.endStr = rawTrips[i].endStr; // 新增這行：更新結束字串
+    currentTrip.duration = Math.round((currentTrip.end - currentTrip.start) / 60000);
+} else { mergedTrips.push(currentTrip); currentTrip = rawTrips[i]; }
+
             }
             mergedTrips.push(currentTrip);
         }
@@ -205,10 +207,10 @@ faq:
 
         let drivePoints = 0, sumV = 0;
         filteredData.forEach(d => {
-            const isDriving = result.trips.some(t => {
-                const time = new Date(d.x).getTime();
-                return time >= new Date(t.start).getTime() && time <= new Date(t.end).getTime();
-            });
+const isDriving = result.trips.some(t => {
+    return d.x >= t.start && d.x <= t.end;
+});
+
             if (isDriving) { drivePoints++; sumV += d.v; }
         });
         document.getElementById('stat-avgv').innerHTML = `${drivePoints > 0 ? (sumV / drivePoints).toFixed(2) : "N/A"} <span style="font-size:12px;">V</span>`;
@@ -225,13 +227,13 @@ faq:
         result.trips.forEach((t, i) => {
             const rowDiv = document.createElement('div');
             rowDiv.style.cssText = "display: flex; align-items: center; justify-content: space-between; background: #0d1117; padding: 10px 16px; border-radius: 8px; border: 1px solid #30363d;";
-            rowDiv.innerHTML = `<span style="font-size: 14px; color: #c9d1d9;"><b style="color:#58a6ff;">行程 ${i+1}</b>：${t.start} ~ ${t.end} (耗時 ${t.duration} 分鐘)</span>`;
+            rowDiv.innerHTML = `<span style="font-size: 14px; color: #c9d1d9;"><b style="color:#58a6ff;">行程 ${i+1}</b>：${t.startStr} ~ ${t.endStr} (耗時 ${t.duration} 分鐘)</span>`;
 
             const btn = document.createElement('button');
             btn.innerHTML = '🔍 圖表縮放';
             btn.style.cssText = "background: #21262d; border: 1px solid #30363d; color: #58a6ff; padding: 5px 15px; border-radius: 6px; cursor: pointer; font-size: 13px; font-weight: bold; transition: 0.2s; white-space: nowrap;";
             btn.onclick = () => {
-                const s = new Date(t.start).getTime() - 600000, e = new Date(t.end).getTime() + 600000;  
+                const s = t.start - 600000, e = t.end + 600000;
                 [vChart, tChart].forEach(c => { c.options.scales.x.min = s; c.options.scales.x.max = e; autoScaleY(c); c.update(); });
             };
             rowDiv.appendChild(btn);
@@ -434,10 +436,12 @@ function normalizeTime(val) {
         });
 
         // 3. 更新行程清單與統計卡片
-        const result = { 
-            trips: (selectedDate === 'all' ? globalDetectedTrips.trips : globalDetectedTrips.trips.filter(t => t.start.startsWith(selectedDate))), 
-            mode: globalDetectedTrips.mode 
-        };
+const result = { 
+    // 將 t.start 改為 t.startStr
+    trips: (selectedDate === 'all' ? globalDetectedTrips.trips : globalDetectedTrips.trips.filter(t => t.startStr.startsWith(selectedDate))), 
+    mode: globalDetectedTrips.mode 
+};
+
         renderTrips(result); 
         updateStatCards(dataList, result);
 
