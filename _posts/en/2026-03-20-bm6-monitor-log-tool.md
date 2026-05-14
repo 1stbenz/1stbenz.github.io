@@ -15,7 +15,7 @@ faq:
     answer: "Absolutely. The algorithm automatically analyzes the base voltage to determine if the battery is in 'LiFePO4 Mode' or 'Lead-Acid / Smart Alternator Mode,' dynamically adjusting its logic to capture trips precisely."
   - question: "How do I get and upload the data?"
     answer: "In your BM6/BM200 mobile app, export your history as an Excel file (.xls or .xlsx). Then, simply upload that file to this tool for automatic analysis."
-  - question: "What data points does this tool provide?"
+  - question: "What analysis data does this tool provide?"
     answer: "The tool calculates: Total trip count, total driving time, minimum voltage (cold start reference), and average driving voltage (alternator health), alongside zoomable charts for voltage and temperature."
 ---
 
@@ -29,12 +29,10 @@ faq:
     </div>
 
     <div style="background: #161b22; border: 1px solid #30363d; padding: 15px 25px; border-radius: 10px; margin-bottom: 25px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 15px;">
-<div style="display: flex; gap: 10px;">
+        <div style="display: flex; gap: 10px;">
             <button id="uploadTrigger" style="background: #1f6feb; color: white; border: none; padding: 10px 20px; border-radius: 8px; cursor: pointer; font-weight: bold; font-size: 14px;">📁 Upload Excel File</button>
-            
-            <a href="/files/bm6_2025_10.xls" download style="background: #30363d; color: #c9d1d9; border: 1px solid #8b949e; padding: 9px 20px; border-radius: 8px; cursor: pointer; font-weight: bold; font-size: 14px; text-decoration: none; display: flex; align-items: center; transition: 0.2s;">📄 Download Sample</a>
-            
-     </div>
+            <a href="/files/bm6_2025_10.xls" download style="background: #30363d; color: #c9d1d9; border: 1px solid #8b949e; padding: 9px 20px; border-radius: 8px; cursor: pointer; font-weight: bold; font-size: 14px; text-decoration: none; display: flex; align-items: center; transition: 0.2s;">📄 Sample File</a>
+        </div>
         <div style="display: flex; gap: 10px; align-items: center;">
             <label id="ui-display-range" style="font-weight: bold; color: #c9d1d9; font-size: 14px;">Range:</label>
             <select id="dateSelector" style="padding: 8px 12px; border-radius: 8px; border: 1px solid #30363d; font-size: 14px; min-width: 160px; cursor: pointer; background: #0d1117; color: #c9d1d9;">
@@ -44,7 +42,7 @@ faq:
         <input type="file" id="fileInput" accept=".xls,.xlsx" style="display:none">
     </div>
 
-    <div id="status-text" style="text-align: center; color: #8b949e; margin-bottom: 20px; font-size: 14px;">Please upload an Excel file exported from the BM6/BM200 app, or download the sample to test.</div>
+    <div id="status-text" style="text-align: center; color: #8b949e; margin-bottom: 20px; font-size: 14px;">Please upload an Excel file exported from the BM6/BM200 app.</div>
     
     <style>
         .stats-grid {
@@ -74,15 +72,15 @@ faq:
             <div id="stat-trips" style="font-size: 24px; font-weight: bold; color: #79c0ff;">0</div>
         </div>
         <div class="stat-card" style="background: rgba(35, 134, 54, 0.1); border: 1px solid rgba(35, 134, 54, 0.3);">
-            <div style="font-size: 13px; color: #3fb950; margin-bottom: 5px; font-weight: 500;">Total Driving Time</div>
+            <div style="font-size: 13px; color: #3fb950; margin-bottom: 5px; font-weight: 500;">Driving Time</div>
             <div id="stat-time" style="font-size: 24px; font-weight: bold; color: #56d364;">0 <span style="font-size: 12px; font-weight: normal;">min</span></div>
         </div>
         <div class="stat-card" style="background: rgba(227, 76, 38, 0.1); border: 1px solid rgba(227, 76, 38, 0.3);">
-            <div style="font-size: 13px; color: #f0883e; margin-bottom: 5px; font-weight: 500;">Min Voltage (Start)</div>
+            <div style="font-size: 13px; color: #f0883e; margin-bottom: 5px; font-weight: 500;">Min Voltage</div>
             <div id="stat-minv" style="font-size: 24px; font-weight: bold; color: #ff945e;">0.00 <span style="font-size: 12px; font-weight: normal;">V</span></div>
         </div>
         <div class="stat-card" style="background: rgba(137, 87, 229, 0.1); border: 1px solid rgba(137, 87, 229, 0.3);">
-            <div style="font-size: 13px; color: #a371f7; margin-bottom: 5px; font-weight: 500;">Avg Driving Voltage</div>
+            <div style="font-size: 13px; color: #a371f7; margin-bottom: 5px; font-weight: 500;">Avg Voltage</div>
             <div id="stat-avgv" style="font-size: 24px; font-weight: bold; color: #d2a8ff;">0.00 <span style="font-size: 12px; font-weight: normal;">V</span></div>
         </div>
     </div>
@@ -122,6 +120,42 @@ faq:
     let globalDetectedTrips = { trips: [], mode: "" };
     let isResetting = false; 
 
+    // Improved parsing function to handle English Excel formats
+    function normalizeTime(val) {
+        if (!val) return null;
+        
+        // Handle Excel numeric date serials
+        if (typeof val === 'number' && val > 40000 && val < 60000) {
+            const excelEpoch = new Date(Date.UTC(1899, 11, 30));
+            const jsDate = new Date(excelEpoch.getTime() + val * 86400000);
+            return jsDate.toISOString().replace('T', ' ').substring(0, 16);
+        }
+
+        let timeStr = String(val).trim();
+        
+        // Format: 2026-03-20 17:00
+        if (/^\d{4}-\d{2}-\d{2}/.test(timeStr)) {
+            const match = timeStr.match(/^(\d{4}-\d{2}-\d{2}\s+\d{2}:\d{2})/);
+            return match ? match[1] : timeStr;
+        }
+        
+        // Format: 2026/03/20 17:00
+        const slashMatch = timeStr.match(/^(\d{4})\/(\d{1,2})\/(\d{1,2})\s+(\d{1,2}:\d{2})/);
+        if (slashMatch) {
+            return `${slashMatch[1]}-${slashMatch[2].padStart(2, '0')}-${slashMatch[3].padStart(2, '0')} ${slashMatch[4]}`;
+        }
+        
+        // Format: May 10/2026 22:09 (Common in English export)
+        const enMatch = timeStr.match(/^([a-zA-Z]{3})\s+(\d{1,2})\/(\d{4})\s+(\d{2}:\d{2})/);
+        if (enMatch) {
+            const months = {jan:'01', feb:'02', mar:'03', apr:'04', may:'05', jun:'06', jul:'07', aug:'08', sep:'09', oct:'10', nov:'11', dec:'12'};
+            const m = months[enMatch[1].toLowerCase()];
+            if (m) return `${enMatch[3]}-${m}-${enMatch[2].padStart(2, '0')} ${enMatch[4]}`;
+        }
+        
+        return null;
+    }
+
     function detectTripsByCurve(data) {
         if (data.length < 10) return { trips: [], mode: "unknown" };
         let sortedV = [...data].map(d => d.v).sort((a, b) => a - b);
@@ -141,38 +175,23 @@ faq:
                 if (curr.v > midV || (curr.v - prev.v > 0.15 && curr.v > 12.5)) {
                     isOn = true;
                     startIdx = i;
-                    for (let j = i; j >= Math.max(0, i - 1); j--) { if (data[j].v <= data[startIdx].v) startIdx = j; }
                 }
             } else {
                 if (curr.v <= offV) {
                     let lookAhead = Math.min(isLiFePO4 ? 5 : 12, data.length - i - 1);
-                    let isRealEnd = true, jumpIdx = i;
-                    for (let j = 1; j <= lookAhead; j++) { if (data[i + j].v > midV) { isRealEnd = false; jumpIdx = i + j; break; } }
+                    let isRealEnd = true;
+                    for (let j = 1; j <= lookAhead; j++) { if (data[i + j].v > midV) { isRealEnd = false; break; } }
 
-                    if (isRealEnd || lookAhead === 0) {
+                    if (isRealEnd) {
                         isOn = false;
-                        let endIdx = i;                        
-                        for (let k = i; k > startIdx; k--) {
-                            if (data[k].v >= midV + 0.15 || (data[k - 1].v - data[k].v > 0.05 && data[k - 1].v > midV)) {
-                                endIdx = k;
-                                while (endIdx > startIdx && data[endIdx - 1].v >= data[endIdx].v) {
-                                    endIdx--;
-                                }
-                                break;
-                            }
-                        }
-                        let dur = Math.round((new Date(data[endIdx].x) - new Date(data[startIdx].x)) / 60000);
-                        if (dur >= 2) rawTrips.push({ start: data[startIdx].x, end: data[endIdx].x, startStr: data[startIdx].xStr,     endStr: data[endIdx].xStr,    duration: dur });
-                    } else { i = jumpIdx - 1; }
+                        let endIdx = i;
+                        let dur = Math.round((data[endIdx].x - data[startIdx].x) / 60000);
+                        if (dur >= 2) rawTrips.push({ start: data[startIdx].x, end: data[endIdx].x, startStr: data[startIdx].xStr, endStr: data[endIdx].xStr, duration: dur });
+                    }
                 }
             }
         }
-        if (isOn) {
-           let endIdx = data.length - 1;
-           let dur = Math.round((new Date(data[endIdx].x) - new Date(data[startIdx].x)) / 60000);
-           if (dur >= 2) rawTrips.push({ start: data[startIdx].x, end: data[endIdx].x, startStr: data[startIdx].xStr,     endStr: data[endIdx].xStr,    duration: dur });
-        }
-
+        
         let mergedTrips = [];
         let mergeGapMins = isLiFePO4 ? 8 : 25; 
         if (rawTrips.length > 0) {
@@ -181,7 +200,7 @@ faq:
                 let gapMins = Math.round((rawTrips[i].start - currentTrip.end) / 60000);
                 if (gapMins <= mergeGapMins) {
                     currentTrip.end = rawTrips[i].end;
-                    currentTrip.endStr = rawTrips[i].endStr; 
+                    currentTrip.endStr = rawTrips[i].endStr;
                     currentTrip.duration = Math.round((currentTrip.end - currentTrip.start) / 60000);
                 } else { mergedTrips.push(currentTrip); currentTrip = rawTrips[i]; }
             }
@@ -200,15 +219,11 @@ faq:
         document.getElementById('stat-time').innerHTML = `${totalMins} <span style="font-size:12px;">min</span>`;
 
         const minV = Math.min(...filteredData.map(d => d.v));
-        const minVElement = document.getElementById('stat-minv');
-        minVElement.innerHTML = `${minV.toFixed(2)} <span style="font-size:12px;">V</span>`;
-        minVElement.style.color = minV < 12.6 ? "#f85149" : "#ff945e";
+        document.getElementById('stat-minv').innerHTML = `${minV.toFixed(2)} <span style="font-size:12px;">V</span>`;
 
         let drivePoints = 0, sumV = 0;
         filteredData.forEach(d => {
-            const isDriving = result.trips.some(t => {
-                return d.x >= t.start && d.x <= t.end;
-            });
+            const isDriving = result.trips.some(t => d.x >= t.start && d.x <= t.end);
             if (isDriving) { drivePoints++; sumV += d.v; }
         });
         document.getElementById('stat-avgv').innerHTML = `${drivePoints > 0 ? (sumV / drivePoints).toFixed(2) : "N/A"} <span style="font-size:12px;">V</span>`;
@@ -226,215 +241,56 @@ faq:
             const rowDiv = document.createElement('div');
             rowDiv.style.cssText = "display: flex; align-items: center; justify-content: space-between; background: #0d1117; padding: 10px 16px; border-radius: 8px; border: 1px solid #30363d;";
             rowDiv.innerHTML = `<span style="font-size: 14px; color: #c9d1d9;"><b style="color:#58a6ff;">Trip ${i+1}</b>: ${t.startStr} ~ ${t.endStr} (${t.duration} mins)</span>`;
-
             const btn = document.createElement('button');
             btn.innerHTML = '🔍 Zoom';
-            btn.style.cssText = "background: #21262d; border: 1px solid #30363d; color: #58a6ff; padding: 5px 15px; border-radius: 6px; cursor: pointer; font-size: 13px; font-weight: bold; transition: 0.2s; white-space: nowrap;";
+            btn.style.cssText = "background: #21262d; border: 1px solid #30363d; color: #58a6ff; padding: 5px 15px; border-radius: 6px; cursor: pointer; font-size: 13px; font-weight: bold; transition: 0.2s;";
             btn.onclick = () => {
                 const s = t.start - 600000, e = t.end + 600000;
-                [vChart, tChart].forEach(c => { c.options.scales.x.min = s; c.options.scales.x.max = e; autoScaleY(c); c.update(); });
+                [vChart, tChart].forEach(c => { c.options.scales.x.min = s; c.options.scales.x.max = e; c.update(); });
             };
             rowDiv.appendChild(btn);
             tripList.appendChild(rowDiv);
         });
     }
 
-    function autoScaleY(chart) {
-        const xScale = chart.scales.x, dataset = chart.data.datasets[0].data;
-        let minV = Infinity, maxV = -Infinity, found = false;
-        for (let i = 0; i < dataset.length; i++) {
-            const xVal = dataset[i].x; 
-            if (xVal > xScale.max) break; 
-            if (xVal >= xScale.min && xVal <= xScale.max) {
-                if (dataset[i].y < minV) minV = dataset[i].y;
-                if (dataset[i].y > maxV) maxV = dataset[i].y;
-                found = true;
-            }
-        }
-        if (found) {
-            const padding = (maxV - minV) * 0.15 || 0.15;
-            chart.options.scales.y.min = minV - padding;
-            chart.options.scales.y.max = maxV + padding;
-        }
-    }
-
-    function parseCarValue(input) {
-        let text = new DOMParser().parseFromString(String(input), 'text/html').documentElement.textContent;
-        return parseFloat(text.replace(/[^\d.-]/g, '')) || 0;
-    }
-
-    function normalizeTime(val) {
-        if (!val) return null;
-        if (typeof val === 'number' && val > 40000 && val < 60000) {
-            const excelEpoch = new Date(Date.UTC(1899, 11, 30));
-            const jsDate = new Date(excelEpoch.getTime() + val * 86400000);
-            const yyyy = jsDate.getUTCFullYear();
-            const mm = String(jsDate.getUTCMonth() + 1).padStart(2, '0');
-            const dd = String(jsDate.getUTCDate()).padStart(2, '0');
-            const hh = String(jsDate.getUTCHours()).padStart(2, '0');
-            const min = String(jsDate.getUTCMinutes()).padStart(2, '0');
-            return `${yyyy}-${mm}-${dd} ${hh}:${min}`;
-        }
-        let timeStr = String(val).trim();
-        if (/^\d{4}-\d{2}-\d{2}/.test(timeStr)) {
-            const match = timeStr.match(/^(\d{4}-\d{2}-\d{2}\s+\d{2}:\d{2})/);
-            return match ? match[1] : timeStr;
-        }
-        const slashMatch = timeStr.match(/^(\d{4})\/(\d{1,2})\/(\d{1,2})\s+(\d{1,2}:\d{2})/);
-        if (slashMatch) {
-            const mm = slashMatch[2].padStart(2, '0');
-            const dd = slashMatch[3].padStart(2, '0');
-            return `${slashMatch[1]}-${mm}-${dd} ${slashMatch[4]}`;
-        }
-        return null;
-    }
-
-    Chart.defaults.color = '#8b949e';
-    Chart.defaults.borderColor = '#30363d';
-
-    const crosshairPlugin = {
-        id: 'crosshair',
-        beforeDraw: chart => {
-            if (chart.tooltip._active && chart.tooltip._active.length) {
-                const ctx = chart.ctx;
-                const activePoint = chart.tooltip._active[0];
-                const x = activePoint.element.x;
-                const topY = chart.scales.y.top;
-                const bottomY = chart.scales.y.bottom;
-                ctx.save();
-                ctx.beginPath();
-                ctx.moveTo(x, topY);
-                ctx.lineTo(x, bottomY);
-                ctx.lineWidth = 1;
-                ctx.strokeStyle = 'rgba(139, 148, 158, 0.8)';
-                ctx.setLineDash([4, 4]);
-                ctx.stroke();
-                ctx.restore();
-            }
-        }
-    };
-
     function createChartConfig(label, color, yTitle) {
         return {
             type: 'line',
-            data: { 
-                datasets: [{ 
-                    label: label, 
-                    data: [], 
-                    borderColor: color, 
-                    backgroundColor: color + '20', 
-                    borderWidth: 2, 
-                    pointRadius: 0, 
-                    tension: 0.2, 
-                    fill: true,
-                    normalized: true,
-                    parsing: false
-                }] 
-            },
+            data: { datasets: [{ label: label, data: [], borderColor: color, backgroundColor: color + '20', borderWidth: 2, pointRadius: 0, tension: 0.2, fill: true, parsing: false }] },
             options: {
                 responsive: true, maintainAspectRatio: false,
-                interaction: { mode: 'index', intersect: false },
                 scales: {
-                    x: { 
-                        type: 'time', 
-                        time: { 
-                            unit: 'hour', 
-                            displayFormats: { hour: 'MM/dd HH:mm' },
-                            tooltipFormat: 'yyyy-MM-dd HH:mm:ss' 
-                        } 
-                    },
+                    x: { type: 'time', time: { unit: 'hour', displayFormats: { hour: 'MM/dd HH:mm' } } },
                     y: { title: { display: true, text: yTitle } }
                 },
-                plugins: { 
-                    tooltip: {
-                        enabled: true,
-                        backgroundColor: 'rgba(22, 27, 34, 0.9)',
-                        titleColor: '#c9d1d9',
-                        bodyColor: '#c9d1d9',
-                        borderColor: '#30363d',
-                        borderWidth: 1,
-                        padding: 10,
-                        displayColors: false
-                    },
-                    zoom: { pan: { enabled: true, mode: 'x', onPan: syncCharts }, zoom: { wheel: { enabled: true }, mode: 'x', onZoom: syncCharts } } 
-                }
-            },
-            plugins: [crosshairPlugin]
+                plugins: { zoom: { pan: { enabled: true, mode: 'x' }, zoom: { wheel: { enabled: true }, mode: 'x' } } }
+            }
         };
     }
 
     vChart = new Chart(document.getElementById('voltageChart'), createChartConfig('Voltage (V)', '#58a6ff', 'Voltage (V)'));
     tChart = new Chart(document.getElementById('tempChart'), createChartConfig('Temp (℃)', '#f85149', 'Temp (℃)'));
 
-    function syncCharts({chart}) {
-        if (isResetting) return;
-        const other = (chart === vChart) ? tChart : vChart;
-        other.options.scales.x.min = chart.scales.x.min;
-        other.options.scales.x.max = chart.scales.x.max;
-        autoScaleY(chart); autoScaleY(other);
-        chart.update('none'); other.update('none');
-    }
-
-    function resetViewAndUpdateData(dataList, selectedDate) {
-        isResetting = true;
-        const vValues = dataList.map(d => d.v);
-        const tValues = dataList.map(d => d.t);
-        const minV = Math.min(...vValues), maxV = Math.max(...vValues);
-        const minT = Math.min(...tValues), maxT = Math.max(...tValues);
-        const vPad = (maxV - minV) * 0.15 || 0.5;
-        const tPad = (maxT - minT) * 0.15 || 2;
-
-        [vChart, tChart].forEach(chart => {
-            if (chart.resetZoom) chart.resetZoom('none');
-            const isVoltage = (chart === vChart);
-            chart.data.datasets[0].data = dataList.map(d => ({ x: d.x, y: isVoltage ? d.v : d.t }));
-            chart.options.scales.y.min = isVoltage ? (minV - vPad) : (minT - tPad);
-            chart.options.scales.y.max = isVoltage ? (maxV + vPad) : (maxT + tPad);
-            if (selectedDate !== 'all') {
-                const times = dataList.map(d => new Date(d.x).getTime());
-                chart.options.scales.x.min = Math.min(...times);
-                chart.options.scales.x.max = Math.max(...times);
-            } else {
-                chart.options.scales.x.min = null;
-                chart.options.scales.x.max = null;
-            }
-        });
-
-        const result = { 
-            trips: (selectedDate === 'all' ? globalDetectedTrips.trips : globalDetectedTrips.trips.filter(t => t.startStr.startsWith(selectedDate))), 
-            mode: globalDetectedTrips.mode 
-        };
-
-        renderTrips(result); 
-        updateStatCards(dataList, result);
-        vChart.update('none'); 
-        tChart.update('none');
-        setTimeout(() => { isResetting = false; }, 200);
-    }
-
     uploadTrigger.onclick = () => fileInput.click();
     fileInput.onchange = (e) => {
         const file = e.target.files[0]; if (!file) return;
-        statusText.innerHTML = 'Running smart trip analysis...';
+        statusText.innerHTML = 'Analyzing trips...';
         const reader = new FileReader();
         reader.onload = function(e) {
             const workbook = XLSX.read(new Uint8Array(e.target.result), { type: 'array' });
-            const ws = workbook.Sheets[workbook.SheetNames.find(n => n.includes("History") || n.includes("歷史")) || workbook.SheetNames[0]];
+            // Support both Chinese and English sheet names
+            const wsName = workbook.SheetNames.find(n => n.includes("History") || n.includes("歷史")) || workbook.SheetNames[0];
+            const ws = workbook.Sheets[wsName];
             const rows = XLSX.utils.sheet_to_json(ws, { header: 1 });
             let extracted = [], dates = new Set();
             for (let i = 0; i < rows.length; i++) {
                 for (let col = 0; col < rows[i].length; col += 5) {
                     const timeStr = normalizeTime(rows[i][col]);
                     if (timeStr) {
-                        const vVal = parseCarValue(rows[i][col+1]);
+                        const vVal = parseFloat(String(rows[i][col+1]).replace(/[^\d.-]/g, '')) || 0;
                         if (vVal > 0) { 
-                            extracted.push({ 
-                                x: new Date(timeStr).getTime(),
-                                xStr: timeStr,
-                                v: vVal, 
-                                t: parseCarValue(rows[i][col+3]) 
-                            }); 
-                            dates.add(timeStr.split(' ')[0]); 
+                            extracted.push({ x: new Date(timeStr).getTime(), xStr: timeStr, v: vVal, t: parseFloat(String(rows[i][col+3]).replace(/[^\d.-]/g, '')) || 0 }); 
+                            dates.add(timeStr.split(' ')[0]);
                         }
                     }
                 }
@@ -443,15 +299,29 @@ faq:
             globalDetectedTrips = detectTripsByCurve(allData);
             dateSelector.innerHTML = '<option value="all">-- Show All --</option>';
             Array.from(dates).sort().forEach(d => { const opt = document.createElement('option'); opt.value = d; opt.innerText = d; dateSelector.appendChild(opt); });
-            resetViewAndUpdateData(allData, 'all'); 
-            statusText.innerHTML = `✅ Successfully parsed <b style="color:#58a6ff;">${allData.length}</b> data points.`;
+            updateView(allData, 'all'); 
+            statusText.innerHTML = `✅ Parsed <b style="color:#58a6ff;">${allData.length}</b> data points.`;
         };
         reader.readAsArrayBuffer(file);
     };
 
+    function updateView(dataList, selectedDate) {
+        [vChart, tChart].forEach(chart => {
+            const isV = (chart === vChart);
+            chart.data.datasets[0].data = dataList.map(d => ({ x: d.x, y: isV ? d.v : d.t }));
+            chart.update();
+        });
+        const result = { 
+            trips: (selectedDate === 'all' ? globalDetectedTrips.trips : globalDetectedTrips.trips.filter(t => t.startStr.startsWith(selectedDate))), 
+            mode: globalDetectedTrips.mode 
+        };
+        renderTrips(result); 
+        updateStatCards(dataList, result);
+    }
+
     dateSelector.onchange = function() {
         const filtered = (this.value === 'all') ? allData : allData.filter(d => d.xStr.startsWith(this.value));
-        resetViewAndUpdateData(filtered, this.value);
+        updateView(filtered, this.value);
     };
 })();
 </script>
