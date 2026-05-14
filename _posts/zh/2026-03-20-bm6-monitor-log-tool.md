@@ -31,8 +31,11 @@ faq:
     </div>
 
     <div style="background: #161b22; border: 1px solid #30363d; padding: 15px 25px; border-radius: 10px; margin-bottom: 25px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 15px;">
-        <div style="display: flex; gap: 10px;">
+<div style="display: flex; gap: 10px;">
             <button id="uploadTrigger" style="background: #1f6feb; color: white; border: none; padding: 10px 20px; border-radius: 8px; cursor: pointer; font-weight: bold; font-size: 14px;">📁 上傳 Excel 檔案</button>
+            
+            <a href="/files/bm6_2025_10.xls" download style="background: #30363d; color: #c9d1d9; border: 1px solid #8b949e; padding: 9px 20px; border-radius: 8px; cursor: pointer; font-weight: bold; font-size: 14px; text-decoration: none; display: flex; align-items: center; transition: 0.2s;">📄 下載範例檔測試</a>
+            
             <button id="downloadBtn" style="display: none; background: #238636; color: white; border: none; padding: 10px 20px; border-radius: 8px; cursor: pointer; font-weight: bold; font-size: 14px;">📥 匯出 Excel 報告</button>
         </div>
         <div style="display: flex; gap: 10px; align-items: center;">
@@ -44,7 +47,7 @@ faq:
         <input type="file" id="fileInput" accept=".xls,.xlsx" style="display:none">
     </div>
 
-    <div id="status-text" style="text-align: center; color: #8b949e; margin-bottom: 20px; font-size: 14px;">請上傳從 BM6/BM200 匯出的 Excel 檔案</div>
+    <div id="status-text" style="text-align: center; color: #8b949e; margin-bottom: 20px; font-size: 14px;">請上傳從 BM6/BM200 匯出的 Excel 檔案，或先下載範例檔進行測試</div>
     
     <style>
         .stats-grid {
