@@ -17,8 +17,6 @@ faq:
     answer: "請先在手機端的 BM6/BM200 APP 中，將歷史紀錄匯出為 Excel（.xls 或 .xlsx）檔案，接著將該檔案上傳至本工具頁面，即可自動進行分析。"
   - question: "這款工具提供哪些分析數據？"
     answer: "工具會自動幫你計算出：總行程數、總行駛時間、最低電壓（冷車啟動參考），以及行駛均壓（發電機健康度），並提供可以自由縮放的電壓與溫度視覺化折線圖。"
-  - question: "我可以保留分析後的資料嗎？"
-    answer: "可以的！分析完成後，您可以點擊「匯出 Excel 報告」，將系統整理好的「每日健康報告」、「行程明細」與「原始數據」下載回電腦永久保存。"
 ---
 
 <div id="car-app-container" style="max-width: 950px; margin: 20px auto; font-family: 'Segoe UI', 'Microsoft JhengHei', sans-serif; background: #0d1117; color: #c9d1d9; padding: 25px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); border: 1px solid #30363d; position: relative;">
@@ -36,8 +34,7 @@ faq:
             
             <a href="/files/bm6_2025_10.xls" download style="background: #30363d; color: #c9d1d9; border: 1px solid #8b949e; padding: 9px 20px; border-radius: 8px; cursor: pointer; font-weight: bold; font-size: 14px; text-decoration: none; display: flex; align-items: center; transition: 0.2s;">📄 下載範例檔測試</a>
             
-            <button id="downloadBtn" style="display: none; background: #238636; color: white; border: none; padding: 10px 20px; border-radius: 8px; cursor: pointer; font-weight: bold; font-size: 14px;">📥 匯出 Excel 報告</button>
-        </div>
+     </div>
         <div style="display: flex; gap: 10px; align-items: center;">
             <label id="ui-display-range" style="font-weight: bold; color: #c9d1d9; font-size: 14px;">顯示範圍：</label>
             <select id="dateSelector" style="padding: 8px 12px; border-radius: 8px; border: 1px solid #30363d; font-size: 14px; min-width: 160px; cursor: pointer; background: #0d1117; color: #c9d1d9;">
@@ -117,7 +114,6 @@ faq:
     const uploadTrigger = document.getElementById('uploadTrigger');
     const dateSelector = document.getElementById('dateSelector');
     const statusText = document.getElementById('status-text');
-    const downloadBtn = document.getElementById('downloadBtn');
     const tripSection = document.getElementById('trip-section');
     const tripList = document.getElementById('trip-list');
     
@@ -243,23 +239,30 @@ faq:
         });
     }
 
-    function autoScaleY(chart) {
-        const xScale = chart.scales.x, dataset = chart.data.datasets[0].data;
-        let minV = Infinity, maxV = -Infinity, found = false;
-        for (let i = 0; i < dataset.length; i++) {
-            const xVal = new Date(dataset[i].x).getTime();
-            if (xVal >= xScale.min && xVal <= xScale.max) {
-                if (dataset[i].y < minV) minV = dataset[i].y;
-                if (dataset[i].y > maxV) maxV = dataset[i].y;
-                found = true;
-            }
-        }
-        if (found) {
-            const padding = (maxV - minV) * 0.15 || 0.15;
-            chart.options.scales.y.min = minV - padding;
-            chart.options.scales.y.max = maxV + padding;
+function autoScaleY(chart) {
+    const xScale = chart.scales.x, dataset = chart.data.datasets[0].data;
+    let minV = Infinity, maxV = -Infinity, found = false;
+    
+
+    for (let i = 0; i < dataset.length; i++) {
+        const xVal = dataset[i].x; 
+        
+
+        if (xVal > xScale.max) break; 
+        
+        if (xVal >= xScale.min && xVal <= xScale.max) {
+            if (dataset[i].y < minV) minV = dataset[i].y;
+            if (dataset[i].y > maxV) maxV = dataset[i].y;
+            found = true;
         }
     }
+    if (found) {
+        const padding = (maxV - minV) * 0.15 || 0.15;
+        chart.options.scales.y.min = minV - padding;
+        chart.options.scales.y.max = maxV + padding;
+    }
+}
+
 
     function parseCarValue(input) {
         let text = new DOMParser().parseFromString(String(input), 'text/html').documentElement.textContent;
@@ -336,7 +339,20 @@ function normalizeTime(val) {
     function createChartConfig(label, color, yTitle) {
         return {
             type: 'line',
-            data: { datasets: [{ label: label, data: [], borderColor: color, backgroundColor: color + '20', borderWidth: 2, pointRadius: 0, tension: 0.2, fill: true }] },
+            data: { 
+    datasets: [{ 
+        label: label, 
+        data: [], 
+        borderColor: color, 
+        backgroundColor: color + '20', 
+        borderWidth: 2, 
+        pointRadius: 0, 
+        tension: 0.2, 
+        fill: true,
+        normalized: true, // 加入此行：告知 Chart.js X軸已排序，提升效能
+        parsing: false    // 加入此行：告知 Chart.js 直接使用 {x, y} 格式，不需內部轉換
+    }] 
+},
             options: {
                 responsive: true, maintainAspectRatio: false,
                 interaction: {
@@ -447,7 +463,16 @@ function normalizeTime(val) {
                     const timeStr = normalizeTime(rows[i][col]);
                     if (timeStr) {
                         const vVal = parseCarValue(rows[i][col+1]);
-                        if (vVal > 0) { extracted.push({ x: timeStr, v: vVal, t: parseCarValue(rows[i][col+3]) }); dates.add(timeStr.split(' ')[0]); }
+                        if (vVal > 0) { 
+    extracted.push({ 
+        x: new Date(timeStr).getTime(), // 直接存為 Number (時間戳)，大幅提升 Chart.js 效能
+        xStr: timeStr,                  // 保留原始字串供過濾與匯出使用
+        v: vVal, 
+        t: parseCarValue(rows[i][col+3]) 
+    }); 
+    dates.add(timeStr.split(' ')[0]); 
+}
+
                     }
                 }
             }
@@ -457,31 +482,14 @@ function normalizeTime(val) {
             Array.from(dates).sort().forEach(d => { const opt = document.createElement('option'); opt.value = d; opt.innerText = d; dateSelector.appendChild(opt); });
             resetViewAndUpdateData(allData, 'all'); 
             statusText.innerHTML = `✅ 已成功解析 <b style="color:#58a6ff;">${allData.length}</b> 筆數據。`;
-            downloadBtn.style.display = "inline-block";
         };
         reader.readAsArrayBuffer(file);
     };
 
     dateSelector.onchange = function() {
-        const filtered = (this.value === 'all') ? allData : allData.filter(d => d.x.startsWith(this.value));
+        const filtered = (this.value === 'all') ? allData : allData.filter(d => d.xStr.startsWith(this.value));
         resetViewAndUpdateData(filtered, this.value);
     };
 
-    downloadBtn.onclick = () => {
-        const wb = XLSX.utils.book_new();
-        let tripDetails = globalDetectedTrips.trips.map((trip, index) => {
-            const pts = allData.filter(d => { const t = new Date(d.x).getTime(); return t >= new Date(trip.start).getTime() && t <= new Date(trip.end).getTime(); });
-            const vList = pts.map(p => p.v), tList = pts.map(p => p.t);
-            return [index + 1, trip.start, trip.end, trip.duration, Math.max(...vList)||0, Math.min(...vList)||0, (tList.reduce((a, b) => a+b, 0)/tList.length||0).toFixed(1)];
-        });
-        const dailyData = [...new Set(allData.map(d => d.x.split(' ')[0]))].sort().map(date => {
-            const dayV = allData.filter(d => d.x.startsWith(date)).map(d => d.v), dayT = globalDetectedTrips.trips.filter(t => t.start.startsWith(date));
-            return [date, Math.min(...dayV).toFixed(2), Math.max(...dayV).toFixed(2), dayT.length, dayT.reduce((acc, t) => acc + t.duration, 0)];
-        });
-        XLSX.utils.book_append_sheet(wb, XLSX.utils.aoa_to_sheet([["日期", "最低電壓", "最高電壓", "行程次數", "總時長(分)"], ...dailyData]), "每日健康報告");
-        XLSX.utils.book_append_sheet(wb, XLSX.utils.aoa_to_sheet([["編號", "開始", "結束", "時長(分)", "最高V", "最低V", "平均溫"], ...tripDetails]), "行程明細");
-        XLSX.utils.book_append_sheet(wb, XLSX.utils.aoa_to_sheet([["時間", "電壓", "溫度"], ...allData.map(d => [d.x, d.v, d.t])]), "原始數據");
-        XLSX.writeFile(wb, `BM6_分析報告_${new Date().toISOString().slice(0,10)}.xlsx`);
-    };
 })();
 </script>
