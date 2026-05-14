@@ -37,11 +37,12 @@ faq:
     </div>
 
     <div
-        style="background: #161b22; border: 1px solid #30363d; padding: 15px 25px; border-radius: 10px; margin-bottom: 25px; display: flex; align-items: center; justify-content: center;">
+        style="background: #161b22; border: 1px solid #30363d; padding: 15px 25px; border-radius: 10px; gap: 10px; margin-bottom: 25px; display: flex; align-items: center; justify-content: center;">
         <button id="uploadTrigger"
             style="background: #1f6feb; color: white; border: none; padding: 12px 24px; border-radius: 8px; cursor: pointer; font-weight: bold; font-size: 15px; transition: 0.2s;">📁
             Upload Log File (.txt / .log)</button>
         <input type="file" id="logFileInput" accept=".txt,.log" style="display:none">
+        <a href="/files/bm6_100Hz.log" download style="background: #30363d; color: #c9d1d9; border: 1px solid #8b949e; padding: 9px 20px; border-radius: 8px; cursor: pointer; font-weight: bold; font-size: 14px; text-decoration: none; display: flex; align-items: center; transition: 0.2s;">📄 Download Test File</a>
     </div>
 
     <div id="status-text"
