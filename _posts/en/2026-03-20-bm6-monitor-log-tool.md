@@ -263,14 +263,42 @@ faq:
         return parseFloat(text.replace(/[^\d.-]/g, '')) || 0;
     }
 
-    function normalizeTime(timeStr) {
-        if (/^\d{4}-\d{2}-\d{2}/.test(timeStr)) return timeStr;
+function normalizeTime(val) {
+        if (!val) return null;
+        
+        if (typeof val === 'number' && val > 40000 && val < 60000) {
+            const excelEpoch = new Date(Date.UTC(1899, 11, 30));
+            const jsDate = new Date(excelEpoch.getTime() + val * 86400000);
+            
+            const yyyy = jsDate.getUTCFullYear();
+            const mm = String(jsDate.getUTCMonth() + 1).padStart(2, '0');
+            const dd = String(jsDate.getUTCDate()).padStart(2, '0');
+            const hh = String(jsDate.getUTCHours()).padStart(2, '0');
+            const min = String(jsDate.getUTCMinutes()).padStart(2, '0');
+            return `${yyyy}-${mm}-${dd} ${hh}:${min}`;
+        }
+
+        let timeStr = String(val).trim();
+        
+        if (/^\d{4}-\d{2}-\d{2}/.test(timeStr)) {
+            const match = timeStr.match(/^(\d{4}-\d{2}-\d{2}\s+\d{2}:\d{2})/);
+            return match ? match[1] : timeStr;
+        }
+        
+        const slashMatch = timeStr.match(/^(\d{4})\/(\d{1,2})\/(\d{1,2})\s+(\d{1,2}:\d{2})/);
+        if (slashMatch) {
+            const mm = slashMatch[2].padStart(2, '0');
+            const dd = slashMatch[3].padStart(2, '0');
+            return `${slashMatch[1]}-${mm}-${dd} ${slashMatch[4]}`;
+        }
+        
         const enMatch = timeStr.match(/^([a-zA-Z]{3})\s+(\d{1,2})\/(\d{4})\s+(\d{2}:\d{2})/);
         if (enMatch) {
             const months = {jan:'01', feb:'02', mar:'03', apr:'04', may:'05', jun:'06', jul:'07', aug:'08', sep:'09', oct:'10', nov:'11', dec:'12'};
             const m = months[enMatch[1].toLowerCase()];
             if (m) return `${enMatch[3]}-${m}-${enMatch[2].padStart(2, '0')} ${enMatch[4]}`;
         }
+        
         return null;
     }
 
@@ -405,7 +433,7 @@ faq:
             let extracted = [], dates = new Set();
             for (let i = 0; i < rows.length; i++) {
                 for (let col = 0; col < rows[i].length; col += 5) {
-                    const timeStr = normalizeTime(String(rows[i][col] || "").trim());
+                    const timeStr = normalizeTime(rows[i][col]);
                     if (timeStr) {
                         const vVal = parseCarValue(rows[i][col+1]);
                         if (vVal > 0) { extracted.push({ x: timeStr, v: vVal, t: parseCarValue(rows[i][col+3]) }); dates.add(timeStr.split(' ')[0]); }
