@@ -38,7 +38,7 @@ faq:
     </div>
 
     <div
-        style="background: #161b22; border: 1px solid #30363d; padding: 15px 25px; border-radius: 10px; margin-bottom: 25px; display: flex; align-items: center; justify-content: center;">
+        style="background: #161b22; border: 1px solid #30363d; padding: 15px 25px; border-radius: 10px; gap: 10px; margin-bottom: 25px; display: flex; align-items: center; justify-content: center;">
         <button id="uploadTrigger"
             style="background: #1f6feb; color: white; border: none; padding: 12px 24px; border-radius: 8px; cursor: pointer; font-weight: bold; font-size: 15px; transition: 0.2s;">📁
             上傳 Log 檔案 (.txt / .log)</button>
