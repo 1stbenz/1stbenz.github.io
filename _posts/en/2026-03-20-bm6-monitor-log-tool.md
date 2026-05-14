@@ -2,37 +2,39 @@
 layout: post
 title: "BM6/BM200 Log Analyzer Tool"
 lang: en
-date: 2026-03-20 17:00:00
+date:   2026-03-20 17:00:00
 categories: Auto
-tags: [BM6, Battery Monitor, LiFePO4, Data Analysis, Trip Detection, Converter Tool, Car Battery]
-description: "A web-based log converter tool designed for the BM6 Bluetooth battery monitor. Using smart algorithms, it solves the trip detection accuracy issues caused by the high-voltage characteristics of LiFePO4 batteries in the official app, accurately restoring every driving trip and providing visual charts and Excel report export functions."
-keywords: "BM6, Bluetooth battery monitor, LiFePO4, trip detection, voltage analysis, Excel export, log converter, car battery, smart alternator"
+tags: [BM6, Battery Monitor, LiFePO4, Data Analysis, Trip Detection, Conversion Tool, Car Battery]
+description: "A web-based log conversion tool specifically designed for the BM6 Bluetooth battery monitor. Using smart algorithms, it solves the trip detection inaccuracies caused by the high voltage characteristics of LiFePO4 batteries, accurately restoring every driving record with visualization and Excel export features."
+keywords: "BM6, Bluetooth Battery Monitor, LiFePO4, Trip Detection, Voltage Analysis, Excel Export, Log Conversion, Car Battery, Smart Alternator"
 image: /images/bm6-tool-preview.webp
 faq:
   - question: "What problem does this tool solve?"
-    answer: "When dealing with LiFePO4 batteries that have a higher resting voltage, the official BM6/BM200 app often fails to accurately determine if the engine is off, causing abnormal or interrupted trip records. This tool uses a specially optimized smart algorithm to accurately filter voltage fluctuations and restore every real driving trip."
-  - question: "Is it suitable for standard lead-acid batteries or vehicles with a Smart Alternator?"
-    answer: "Yes, perfectly suitable. The system's algorithm automatically analyzes the base voltage to determine if the current battery is in 'LiFePO4 mode' or 'Lead-Acid / Smart Alternator mode', and dynamically adjusts the detection logic to accurately capture trips."
+    answer: "The original BM6/BM200 app often fails to accurately detect engine shutdown when using LiFePO4 batteries (due to their high resting voltage), leading to missed or broken trip records. This tool uses an optimized smart algorithm to filter voltage fluctuations and restore actual driving trips."
+  - question: "Does it work for standard Lead-Acid batteries or 'Smart Alternator' vehicles?"
+    answer: "Absolutely. The algorithm automatically analyzes the base voltage to determine if the battery is in 'LiFePO4 Mode' or 'Lead-Acid / Smart Alternator Mode,' dynamically adjusting its logic to capture trips precisely."
   - question: "How do I get and upload the data?"
-    answer: "First, in the BM6/BM200 app on your phone, export the history records as an Excel (.xls or .xlsx) file. Then, upload that file to this tool's page to automatically perform the analysis."
-  - question: "What analytical data does this tool provide?"
-    answer: "The tool automatically calculates: total trips, total driving time, minimum voltage (reference for cold start), and average driving voltage (alternator health). It also provides freely zoomable visual line charts for voltage and temperature."
- ---
+    answer: "In your BM6/BM200 mobile app, export your history as an Excel file (.xls or .xlsx). Then, simply upload that file to this tool for automatic analysis."
+  - question: "What data points does this tool provide?"
+    answer: "The tool calculates: Total trip count, total driving time, minimum voltage (cold start reference), and average driving voltage (alternator health), alongside zoomable charts for voltage and temperature."
+---
 
-<div id="car-app-container" style="max-width: 950px; margin: 20px auto; font-family: 'Segoe UI', 'Roboto', sans-serif; background: #0d1117; color: #c9d1d9; padding: 25px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); border: 1px solid #30363d; position: relative;">
+<div id="car-app-container" style="max-width: 950px; margin: 20px auto; font-family: 'Segoe UI', 'Microsoft JhengHei', sans-serif; background: #0d1117; color: #c9d1d9; padding: 25px; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); border: 1px solid #30363d; position: relative;">
     
     <h2 id="ui-title" style="text-align: center; color: #c9d1d9; margin-bottom: 10px; margin-top: 10px;">BM6/BM200 Log Analysis Tool</h2>
     
     <div style="background: rgba(210, 153, 34, 0.1); padding: 15px 20px; border-radius: 10px; margin-bottom: 25px; border-left: 5px solid #d29922; font-size: 14.5px; line-height: 1.6; color: #8b949e;">
-        <strong id="ui-desc-title" style="color: #d29922;">Why use this tool?</strong><br>
-        <span id="ui-desc-body">While the BM6/BM200 records data after the engine is off, the app's trip detection is often inaccurate, and the waveform details are hard to inspect. <b style="color:#c9d1d9;">This tool fixes these issues</b> by using a custom analysis method to accurately identify voltage fluctuations, restore trips, and provide intuitive visualization.</span>
+        <strong id="ui-desc-title" style="color: #d29922;">Why do you need this?</strong><br>
+        <span id="ui-desc-body">While the BM6/BM200 records data after shutdown, the app's trip detection is often unreliable and the waveforms are hard to inspect. <b style="color:#c9d1d9;">This tool fixes that</b> by using a custom analysis method to accurately identify trips based on voltage fluctuations and provide intuitive visualizations.</span>
     </div>
 
     <div style="background: #161b22; border: 1px solid #30363d; padding: 15px 25px; border-radius: 10px; margin-bottom: 25px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 15px;">
-        <div style="display: flex; gap: 10px;">
+<div style="display: flex; gap: 10px;">
             <button id="uploadTrigger" style="background: #1f6feb; color: white; border: none; padding: 10px 20px; border-radius: 8px; cursor: pointer; font-weight: bold; font-size: 14px;">📁 Upload Excel File</button>
+            
             <a href="/files/bm6_2025_10.xls" download style="background: #30363d; color: #c9d1d9; border: 1px solid #8b949e; padding: 9px 20px; border-radius: 8px; cursor: pointer; font-weight: bold; font-size: 14px; text-decoration: none; display: flex; align-items: center; transition: 0.2s;">📄 Download Sample</a>
-        </div>
+            
+     </div>
         <div style="display: flex; gap: 10px; align-items: center;">
             <label id="ui-display-range" style="font-weight: bold; color: #c9d1d9; font-size: 14px;">Range:</label>
             <select id="dateSelector" style="padding: 8px 12px; border-radius: 8px; border: 1px solid #30363d; font-size: 14px; min-width: 160px; cursor: pointer; background: #0d1117; color: #c9d1d9;">
@@ -42,7 +44,7 @@ faq:
         <input type="file" id="fileInput" accept=".xls,.xlsx" style="display:none">
     </div>
 
-    <div id="status-text" style="text-align: center; color: #8b949e; margin-bottom: 20px; font-size: 14px;">Please upload an Excel file exported from the BM6/BM200 app, or download the sample file to test.</div>
+    <div id="status-text" style="text-align: center; color: #8b949e; margin-bottom: 20px; font-size: 14px;">Please upload an Excel file exported from the BM6/BM200 app, or download the sample to test.</div>
     
     <style>
         .stats-grid {
@@ -72,15 +74,15 @@ faq:
             <div id="stat-trips" style="font-size: 24px; font-weight: bold; color: #79c0ff;">0</div>
         </div>
         <div class="stat-card" style="background: rgba(35, 134, 54, 0.1); border: 1px solid rgba(35, 134, 54, 0.3);">
-            <div style="font-size: 13px; color: #3fb950; margin-bottom: 5px; font-weight: 500;">Driving Duration</div>
+            <div style="font-size: 13px; color: #3fb950; margin-bottom: 5px; font-weight: 500;">Total Driving Time</div>
             <div id="stat-time" style="font-size: 24px; font-weight: bold; color: #56d364;">0 <span style="font-size: 12px; font-weight: normal;">min</span></div>
         </div>
         <div class="stat-card" style="background: rgba(227, 76, 38, 0.1); border: 1px solid rgba(227, 76, 38, 0.3);">
-            <div style="font-size: 13px; color: #f0883e; margin-bottom: 5px; font-weight: 500;">Min Voltage (Cold)</div>
+            <div style="font-size: 13px; color: #f0883e; margin-bottom: 5px; font-weight: 500;">Min Voltage (Start)</div>
             <div id="stat-minv" style="font-size: 24px; font-weight: bold; color: #ff945e;">0.00 <span style="font-size: 12px; font-weight: normal;">V</span></div>
         </div>
         <div class="stat-card" style="background: rgba(137, 87, 229, 0.1); border: 1px solid rgba(137, 87, 229, 0.3);">
-            <div style="font-size: 13px; color: #a371f7; margin-bottom: 5px; font-weight: 500;">Avg Voltage (Drive)</div>
+            <div style="font-size: 13px; color: #a371f7; margin-bottom: 5px; font-weight: 500;">Avg Driving Voltage</div>
             <div id="stat-avgv" style="font-size: 24px; font-weight: bold; color: #d2a8ff;">0.00 <span style="font-size: 12px; font-weight: normal;">V</span></div>
         </div>
     </div>
@@ -185,7 +187,7 @@ faq:
             }
             mergedTrips.push(currentTrip);
         }
-        return { trips: mergedTrips, mode: isLiFePO4 ? "LiFePO4" : "Lead-Acid / Smart Alternator" };
+        return { trips: mergedTrips, mode: isLiFePO4 ? "LiFePO4" : "Lead-Acid" };
     }
 
     function updateStatCards(filteredData, result) {
@@ -217,16 +219,16 @@ faq:
         if (!result.trips || result.trips.length === 0) { tripSection.style.display = 'none'; return; }
         tripSection.style.display = 'block';
         
-        const modeSuffix = ` [${result.mode} Mode]`;
+        const modeSuffix = result.mode === 'LiFePO4' ? ' [LiFePO4 Mode]' : ' [Lead-Acid / Smart Alternator Mode]';
         document.getElementById('ui-trip-title').innerText = 'Detected Trips' + modeSuffix;
 
         result.trips.forEach((t, i) => {
             const rowDiv = document.createElement('div');
             rowDiv.style.cssText = "display: flex; align-items: center; justify-content: space-between; background: #0d1117; padding: 10px 16px; border-radius: 8px; border: 1px solid #30363d;";
-            rowDiv.innerHTML = `<span style="font-size: 14px; color: #c9d1d9;"><b style="color:#58a6ff;">Trip ${i+1}</b>: ${t.startStr} ~ ${t.endStr} (${t.duration} min)</span>`;
+            rowDiv.innerHTML = `<span style="font-size: 14px; color: #c9d1d9;"><b style="color:#58a6ff;">Trip ${i+1}</b>: ${t.startStr} ~ ${t.endStr} (${t.duration} mins)</span>`;
 
             const btn = document.createElement('button');
-            btn.innerHTML = '🔍 Zoom Chart';
+            btn.innerHTML = '🔍 Zoom';
             btn.style.cssText = "background: #21262d; border: 1px solid #30363d; color: #58a6ff; padding: 5px 15px; border-radius: 6px; cursor: pointer; font-size: 13px; font-weight: bold; transition: 0.2s; white-space: nowrap;";
             btn.onclick = () => {
                 const s = t.start - 600000, e = t.end + 600000;
@@ -284,12 +286,6 @@ faq:
             const dd = slashMatch[3].padStart(2, '0');
             return `${slashMatch[1]}-${mm}-${dd} ${slashMatch[4]}`;
         }
-        const enMatch = timeStr.match(/^([a-zA-Z]{3})\s+(\d{1,2})\/(\d{4})\s+(\d{2}:\d{2})/);
-        if (enMatch) {
-            const months = {jan:'01', feb:'02', mar:'03', apr:'04', may:'05', jun:'06', jul:'07', aug:'08', sep:'09', oct:'10', nov:'11', dec:'12'};
-            const m = months[enMatch[1].toLowerCase()];
-            if (m) return `${enMatch[3]}-${m}-${enMatch[2].padStart(2, '0')} ${enMatch[4]}`;
-        }
         return null;
     }
 
@@ -344,7 +340,7 @@ faq:
                         time: { 
                             unit: 'hour', 
                             displayFormats: { hour: 'MM/dd HH:mm' },
-                            tooltipFormat: 'yyyy-MM-dd HH:mm:ss'
+                            tooltipFormat: 'yyyy-MM-dd HH:mm:ss' 
                         } 
                     },
                     y: { title: { display: true, text: yTitle } }
@@ -366,6 +362,7 @@ faq:
             plugins: [crosshairPlugin]
         };
     }
+
     vChart = new Chart(document.getElementById('voltageChart'), createChartConfig('Voltage (V)', '#58a6ff', 'Voltage (V)'));
     tChart = new Chart(document.getElementById('tempChart'), createChartConfig('Temp (℃)', '#f85149', 'Temp (℃)'));
 
@@ -407,6 +404,7 @@ faq:
             trips: (selectedDate === 'all' ? globalDetectedTrips.trips : globalDetectedTrips.trips.filter(t => t.startStr.startsWith(selectedDate))), 
             mode: globalDetectedTrips.mode 
         };
+
         renderTrips(result); 
         updateStatCards(dataList, result);
         vChart.update('none'); 
@@ -417,11 +415,11 @@ faq:
     uploadTrigger.onclick = () => fileInput.click();
     fileInput.onchange = (e) => {
         const file = e.target.files[0]; if (!file) return;
-        statusText.innerHTML = 'Executing smart trip analysis...';
+        statusText.innerHTML = 'Running smart trip analysis...';
         const reader = new FileReader();
         reader.onload = function(e) {
             const workbook = XLSX.read(new Uint8Array(e.target.result), { type: 'array' });
-            const ws = workbook.Sheets[workbook.SheetNames.find(n => n.includes("History")) || workbook.SheetNames[0]];
+            const ws = workbook.Sheets[workbook.SheetNames.find(n => n.includes("History") || n.includes("歷史")) || workbook.SheetNames[0]];
             const rows = XLSX.utils.sheet_to_json(ws, { header: 1 });
             let extracted = [], dates = new Set();
             for (let i = 0; i < rows.length; i++) {
@@ -431,8 +429,8 @@ faq:
                         const vVal = parseCarValue(rows[i][col+1]);
                         if (vVal > 0) { 
                             extracted.push({ 
-                                x: new Date(timeStr).getTime(), 
-                                xStr: timeStr,                  
+                                x: new Date(timeStr).getTime(),
+                                xStr: timeStr,
                                 v: vVal, 
                                 t: parseCarValue(rows[i][col+3]) 
                             }); 
