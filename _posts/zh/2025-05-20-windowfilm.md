@@ -304,4 +304,15 @@ overflow-wrap: break-word;
 </tr>
 </table>
 </div>
+<div class="tint-info-list">
+  <h3>特殊隔熱紙</h3>
+  <ul>
+    <li>
+      <b>日本 70% 高透光反射型：</b>
+      <a href="https://www.ptt.cc/bbs/car/M.1776658725.A.6A0.html" target="_blank" rel="noopener noreferrer">
+        https://www.ptt.cc/bbs/car/M.1776658725.A.6A0.html
+      </a>
+    </li>
+  </ul>
+</div>
 </div>
