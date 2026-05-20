@@ -43,7 +43,7 @@ faq:
             style="background: #1f6feb; color: white; border: none; padding: 12px 24px; border-radius: 8px; cursor: pointer; font-weight: bold; font-size: 15px; transition: 0.2s;">📁
             上傳 Log 檔案 (.txt / .log)</button>
         <input type="file" id="logFileInput" accept=".txt,.log" style="display:none">
-          <a href="/files/bm6_100Hz.log" download style="background: #30363d; color: #c9d1d9; border: 1px solid #8b949e; padding: 9px 20px; border-radius: 8px; cursor: pointer; font-weight: bold; font-size: 14px; text-decoration: none; display: flex; align-items: center; transition: 0.2s;">📄 下載範例檔測試</a>
+        <button id="loadSampleBtn" style="background: #30363d; color: #c9d1d9; border: 1px solid #8b949e; padding: 9px 20px; border-radius: 8px; cursor: pointer; font-weight: bold; font-size: 14px; text-decoration: none; display: flex; align-items: center; transition: 0.2s;">📄 載入範例檔測試</button>
          
     </div>
 
@@ -94,6 +94,31 @@ faq:
         };
 
         uploadTrigger.onclick = () => fileInput.click();
+
+        const loadSampleBtn = document.getElementById('loadSampleBtn');
+
+        // 直接載入範例檔的點擊事件
+        loadSampleBtn.onclick = function() {
+            // 更新狀態與清空畫面
+            statusText.innerHTML = `正在讀取 <b style="color:#58a6ff;">範例檔 (bm6_100Hz.log)</b> ...`;
+            chartsWrapper.innerHTML = ''; 
+
+            // 使用 fetch API 直接從伺服器抓取檔案
+            fetch('/files/bm6_100Hz.log')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('無法取得範例檔案 (HTTP ' + response.status + ')');
+                    }
+                    return response.text();
+                })
+                .then(text => {
+                    // 抓取成功後，直接把純文字交給現有的解析函數
+                    processLogData(text);
+                })
+                .catch(error => {
+                    statusText.innerHTML = `<span style="color:#f85149;">❌ 範例檔案載入失敗：${error.message}</span>`;
+                });
+        };
 
         fileInput.addEventListener('change', function (e) {
             const file = e.target.files[0];
