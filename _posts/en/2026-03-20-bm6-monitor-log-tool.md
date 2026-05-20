@@ -31,9 +31,7 @@ faq:
     <div style="background: #161b22; border: 1px solid #30363d; padding: 15px 25px; border-radius: 10px; margin-bottom: 25px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 15px;">
 <div style="display: flex; gap: 10px;">
             <button id="uploadTrigger" style="background: #1f6feb; color: white; border: none; padding: 10px 20px; border-radius: 8px; cursor: pointer; font-weight: bold; font-size: 14px;">📁 Upload Excel File</button>
-            
-            <a href="/files/bm6_2025_10_en.xls" download style="background: #30363d; color: #c9d1d9; border: 1px solid #8b949e; padding: 9px 20px; border-radius: 8px; cursor: pointer; font-weight: bold; font-size: 14px; text-decoration: none; display: flex; align-items: center; transition: 0.2s;">📄 Download Sample File</a>
-            
+            <button id="loadSampleBtn" style="background: #30363d; color: #c9d1d9; border: 1px solid #8b949e; padding: 9px 20px; border-radius: 8px; cursor: pointer; font-weight: bold; font-size: 14px; display: flex; align-items: center; transition: 0.2s;">📄 Load Sample File</button>            
      </div>
         <div style="display: flex; gap: 10px; align-items: center;">
             <label id="ui-display-range" style="font-weight: bold; color: #c9d1d9; font-size: 14px;">Display Range:</label>
@@ -444,41 +442,90 @@ const result = {
     }
 
     uploadTrigger.onclick = () => fileInput.click();
-    fileInput.onchange = (e) => {
-        const file = e.target.files[0]; if (!file) return;
-        statusText.innerHTML = 'Running smart trip analysis...';
-        const reader = new FileReader();
-        reader.onload = function(e) {
-            const workbook = XLSX.read(new Uint8Array(e.target.result), { type: 'array' });
-            const ws = workbook.Sheets[workbook.SheetNames.find(n => n.includes("歷史")) || workbook.SheetNames[0]];
-            const rows = XLSX.utils.sheet_to_json(ws, { header: 1 });
-            let extracted = [], dates = new Set();
-            for (let i = 0; i < rows.length; i++) {
-                for (let col = 0; col < rows[i].length; col += 5) {
-                    const timeStr = normalizeTime(rows[i][col]);
-                    if (timeStr) {
-                        const vVal = parseCarValue(rows[i][col+1]);
-                        if (vVal > 0) { 
-    extracted.push({ 
-        x: new Date(timeStr).getTime(), 
-        xStr: timeStr,                  
-        v: vVal, 
-        t: parseCarValue(rows[i][col+3]) 
-    }); 
-    dates.add(timeStr.split(' ')[0]); 
-}
+    // (接續在原有變數宣告及函式宣告的下方)
+    
+    const loadSampleBtn = document.getElementById('loadSampleBtn');
 
+    // Create a shared parsing function that accepts an ArrayBuffer
+    function parseExcelData(arrayBuffer) {
+        statusText.innerHTML = '⏳ Analyzing trip data...';
+        
+        // Use setTimeout to allow the UI to update the status text
+        setTimeout(() => {
+            try {
+                const workbook = XLSX.read(new Uint8Array(arrayBuffer), { type: 'array' });
+                // 增加相容英文版 APP 匯出的 "History" 工作表名稱
+                const ws = workbook.Sheets[workbook.SheetNames.find(n => n.includes("歷史") || n.includes("History")) || workbook.SheetNames[0]];
+                const rows = XLSX.utils.sheet_to_json(ws, { header: 1 });
+                let extracted = [], dates = new Set();
+                
+                for (let i = 0; i < rows.length; i++) {
+                    for (let col = 0; col < rows[i].length; col += 5) {
+                        const timeStr = normalizeTime(rows[i][col]);
+                        if (timeStr) {
+                            const vVal = parseCarValue(rows[i][col+1]);
+                            if (vVal > 0) { 
+                                extracted.push({ 
+                                    x: new Date(timeStr).getTime(),
+                                    xStr: timeStr,
+                                    v: vVal, 
+                                    t: parseCarValue(rows[i][col+3]) 
+                                }); 
+                                dates.add(timeStr.split(' ')[0]); 
+                            }
+                        }
                     }
                 }
+                allData = extracted.sort((a, b) => new Date(a.x) - new Date(b.x));
+                globalDetectedTrips = detectTripsByCurve(allData);
+                
+                dateSelector.innerHTML = '<option value="all">-- Show All --</option>';
+                Array.from(dates).sort().forEach(d => { 
+                    const opt = document.createElement('option'); 
+                    opt.value = d; 
+                    opt.innerText = d; 
+                    dateSelector.appendChild(opt); 
+                });
+                
+                resetViewAndUpdateData(allData, 'all'); 
+                statusText.innerHTML = `✅ Successfully parsed <b style="color:#58a6ff;">${allData.length}</b> records.`;
+            } catch (error) {
+                statusText.innerHTML = `❌ Parsing failed. Please check the file format. (${error.message})`;
             }
-            allData = extracted.sort((a, b) => new Date(a.x) - new Date(b.x));
-            globalDetectedTrips = detectTripsByCurve(allData);
-            dateSelector.innerHTML = '<option value="all">-- Show All --</option>';
-            Array.from(dates).sort().forEach(d => { const opt = document.createElement('option'); opt.value = d; opt.innerText = d; dateSelector.appendChild(opt); });
-            resetViewAndUpdateData(allData, 'all'); 
-            statusText.innerHTML = `✅ Successfully parsed <b style="color:#58a6ff;">${allData.length}</b> data points.`;
+        }, 50); // Slight delay ensures rendering
+    }
+
+    // Event: Manual file upload
+    uploadTrigger.onclick = () => fileInput.click();
+    fileInput.onchange = (e) => {
+        const file = e.target.files[0]; 
+        if (!file) return;
+        
+        const reader = new FileReader();
+        reader.onload = function(event) {
+            parseExcelData(event.target.result);
         };
         reader.readAsArrayBuffer(file);
+    };
+
+    // Event: One-click load sample file
+    loadSampleBtn.onclick = () => {
+        statusText.innerHTML = '📥 Downloading sample file...';
+        
+        // Use fetch to get the file directly from the server
+        fetch('/files/bm6_2025_10.xls')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Failed to load sample file. Please check the file path.');
+                }
+                return response.arrayBuffer();
+            })
+            .then(buffer => {
+                parseExcelData(buffer);
+            })
+            .catch(error => {
+                statusText.innerHTML = `❌ Load failed: ${error.message}`;
+            });
     };
 
     dateSelector.onchange = function() {
