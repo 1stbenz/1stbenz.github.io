@@ -42,7 +42,8 @@ faq:
             style="background: #1f6feb; color: white; border: none; padding: 12px 24px; border-radius: 8px; cursor: pointer; font-weight: bold; font-size: 15px; transition: 0.2s;">📁
             Upload Log File (.txt / .log)</button>
         <input type="file" id="logFileInput" accept=".txt,.log" style="display:none">
-        <a href="/files/bm6_100Hz.log" download style="background: #30363d; color: #c9d1d9; border: 1px solid #8b949e; padding: 9px 20px; border-radius: 8px; cursor: pointer; font-weight: bold; font-size: 14px; text-decoration: none; display: flex; align-items: center; transition: 0.2s;">📄 Download Test File</a>
+        <button id="loadSampleBtn" style="background: #30363d; color: #c9d1d9; border: 1px solid #8b949e; padding: 9px 20px; border-radius: 8px; cursor: pointer; font-weight: bold; font-size: 14px; text-decoration: none; display: flex; align-items: center; transition: 0.2s;">📄 Load Test File</button>
+
     </div>
 
     <div id="status-text"
@@ -91,6 +92,26 @@ faq:
         };
 
         uploadTrigger.onclick = () => fileInput.click();
+        const loadSampleBtn = document.getElementById('loadSampleBtn');
+
+        loadSampleBtn.onclick = function() {
+            statusText.innerHTML = `Loading <b style="color:#58a6ff;">sample file (bm6_100Hz.log)</b> ...`;
+            chartsWrapper.innerHTML = ''; 
+
+            fetch('/files/bm6_100Hz.log')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Failed to retrieve sample file (HTTP ' + response.status + ')');
+                    }
+                    return response.text();
+                })
+                .then(text => {
+                    processLogData(text);
+                })
+                .catch(error => {
+                    statusText.innerHTML = `<span style="color:#f85149;">❌ Failed to load sample file: ${error.message}</span>`;
+                });
+        };
 
         fileInput.addEventListener('change', function (e) {
             const file = e.target.files[0];
