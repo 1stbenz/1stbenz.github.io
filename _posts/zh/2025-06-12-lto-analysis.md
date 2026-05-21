@@ -110,6 +110,7 @@ faq:
         text-align: left;
         vertical-align: top;
         line-height: 1.5;
+        color: #333333; /* 新增這行：強制將表格內的文字設定為深灰色 */
     }
     
     /* 標題上色 (參考原圖的藍色系) */

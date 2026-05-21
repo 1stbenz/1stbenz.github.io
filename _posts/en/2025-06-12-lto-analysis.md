@@ -110,6 +110,7 @@ LTO is advertised as having a high cycle count, but due to its low capacity, hig
         text-align: left;
         vertical-align: top;
         line-height: 1.5;
+        color: #333333; /* 新增這行：強制將表格內的文字設定為深灰色 */
     }
     
     /* Header coloring (Cornflower blue referencing original theme) */
