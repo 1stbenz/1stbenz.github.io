@@ -14,7 +14,7 @@ faq:
   - question: "What are the three primary angles in wheel alignment?"
     answer: "The three primary angles are Camber (viewed from the front), Caster (viewed from the side), and Toe (viewed from above)."
   - question: "How does Camber affect handling?"
-    answer: "Camber determines the vertical tilt of the tires. Negative Camber (/ \\) is common in performance cars as it increases the tire's contact patch during hard cornering, providing better grip."
+    answer: "Camber determines the vertical tilt of the tires. Negative Camber (八) is common in performance cars as it increases the tire's contact patch during hard cornering, providing better grip."
 ---
 
 
