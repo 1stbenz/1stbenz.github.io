@@ -79,32 +79,38 @@ faq:
         font-size: 16px;
     }
     
-    .battery-table th, .battery-table td {
-        border: 1px solid #b3c6e7; /* 配合標題顏色的柔和邊框 */
+    /* 設定邊框與文字格式，並強制包含 strong (粗體) 標籤的顏色 */
+    .battery-table th, 
+    .battery-table td {
+        border: 1px solid #b3c6e7;
         padding: 10px 15px;
-        text-align: left;
+        text-align: center; /* 這裡改成 center，讓數字居中更好看 */
         vertical-align: top;
         line-height: 1.5;
-        color: #333333; /* 新增這行：強制將表格內的文字設定為深灰色 */
+        color: #333333 !important; /* 強制深灰色，避免被全域深色模式蓋掉 */
+    }
+
+    /* 針對表格內的粗體字，再次強制設定深灰色 */
+    .battery-table td strong {
+        color: #333333 !important; 
     }
     
-    /* 標題上色 (參考原圖的藍色系) */
+    /* 標題上色 */
     .battery-table th {
         font-weight: bold;
-        text-align: center;
-        background-color: #6495ED; /* 標題底色：矢車菊藍 */
-        color: #ffffff; /* 標題文字：白色，增加對比度 */
+        background-color: #6495ED; 
+        color: #ffffff !important; /* 標題維持白色 */
     }
     
     /* 單雙背景色有區別 (斑馬紋) */
     .battery-table tbody tr:nth-child(even) {
-        background-color: #f2f7ff; /* 雙數行：極淺的藍色 */
+        background-color: #f2f7ff; 
     }
     .battery-table tbody tr:nth-child(odd) {
-        background-color: #ffffff; /* 單數行：白色 */
+        background-color: #ffffff; 
     }
     
-    /* 滑鼠懸停效果 (稍微提亮，增加互動感) */
+    /* 滑鼠懸停效果 */
     .battery-table tbody tr:hover {
         background-color: #e6f0ff;
     }
