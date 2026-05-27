@@ -61,25 +61,146 @@ faq:
 
 ### 1. 濕抓分級 (Wet Grip)
 濕抓等級是依據 G 值（抓地力性能指數）進行分級，A 級（日標 a 級）為最頂級。
-
-| 濕抓指數 (G) | 歐盟等級 | 日本等級 | 台灣等級 |
-| :--- | :---: | :---: | :---: |
-| **1.55 ≤ G** | **A** | **a** | - |
-| 1.40 ≤ G ≤ 1.54 | B | b | - |
-| 1.25 ≤ G ≤ 1.39 | C | c | - |
-| 1.10 ≤ G ≤ 1.24 | D | d | - |
-| G ≤ 1.09 | E | - | - |
+<style>
+    /* RWD 響應式滾動容器 */
+    .table-responsive {
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch; /* 讓 iOS 裝置滑動更順暢 */
+        margin-bottom: 20px;
+    }
+    
+    .battery-table {
+        border-collapse: collapse;
+        width: 100%;
+        min-width: 500px; /* 確保在手機上縮小時，文字不會全部擠在一起 */
+        max-width: 600px;
+        font-family: sans-serif;
+        font-size: 16px;
+    }
+    
+    .battery-table th, .battery-table td {
+        border: 1px solid #b3c6e7; /* 配合標題顏色的柔和邊框 */
+        padding: 10px 15px;
+        text-align: left;
+        vertical-align: top;
+        line-height: 1.5;
+        color: #333333; /* 新增這行：強制將表格內的文字設定為深灰色 */
+    }
+    
+    /* 標題上色 (參考原圖的藍色系) */
+    .battery-table th {
+        font-weight: bold;
+        text-align: center;
+        background-color: #6495ED; /* 標題底色：矢車菊藍 */
+        color: #ffffff; /* 標題文字：白色，增加對比度 */
+    }
+    
+    /* 單雙背景色有區別 (斑馬紋) */
+    .battery-table tbody tr:nth-child(even) {
+        background-color: #f2f7ff; /* 雙數行：極淺的藍色 */
+    }
+    .battery-table tbody tr:nth-child(odd) {
+        background-color: #ffffff; /* 單數行：白色 */
+    }
+    
+    /* 滑鼠懸停效果 (稍微提亮，增加互動感) */
+    .battery-table tbody tr:hover {
+        background-color: #e6f0ff;
+    }
+</style>
+<div class="table-responsive">
+  <table class="battery-table">
+    <thead>
+      <tr>
+        <th>濕抓指數 (G)</th>
+        <th>歐盟等級</th>
+        <th>日本等級</th>
+        <th>台灣等級</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>1.55 ≤ G</strong></td>
+        <td><strong>A</strong></td>
+        <td><strong>a</strong></td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>1.40 ≤ G ≤ 1.54</td>
+        <td>B</td>
+        <td>b</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>1.25 ≤ G ≤ 1.39</td>
+        <td>C</td>
+        <td>c</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>1.10 ≤ G ≤ 1.24</td>
+        <td>D</td>
+        <td>d</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>G ≤ 1.09</td>
+        <td>E</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 ### 2. 節能等級 (滾動阻力 RRC)
 滾動阻力越低越省油，但切記不要為了省油而盲目犧牲濕地抓地力。
 
-| 滾動阻力係數 (RRC) | 歐盟等級 | 日本等級 | 台灣等級 |
-| :--- | :---: | :---: | :---: |
-| **RRC ≤ 6.5** | **A** | **AAA** | **A** |
-| 6.6 ≤ RRC ≤ 7.7 | B | AA | B |
-| 7.8 ≤ RRC ≤ 9.0 | C | A | C |
-| 9.1 ≤ RRC ≤ 10.5 | D | B | - |
-| RRC ≥ 10.6 | E | C | - |
+<div class="table-responsive">
+  <table class="battery-table">
+    <thead>
+      <tr>
+        <th>滾動阻力係數 (RRC)</th>
+        <th>歐盟等級</th>
+        <th>日本等級</th>
+        <th>台灣等級</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>RRC ≤ 6.5</strong></td>
+        <td><strong>A</strong></td>
+        <td><strong>AAA</strong></td>
+        <td><strong>A</strong></td>
+      </tr>
+      <tr>
+        <td>6.6 ≤ RRC ≤ 7.7</td>
+        <td>B</td>
+        <td>AA</td>
+        <td>B</td>
+      </tr>
+      <tr>
+        <td>7.8 ≤ RRC ≤ 9.0</td>
+        <td>C</td>
+        <td>A</td>
+        <td>C</td>
+      </tr>
+      <tr>
+        <td>9.1 ≤ RRC ≤ 10.5</td>
+        <td>D</td>
+        <td>B</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>RRC ≥ 10.6</td>
+        <td>E</td>
+        <td>C</td>
+        <td>-</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 ---
 
@@ -101,22 +222,80 @@ faq:
 
 > *註：Bar 數值已針對 0.05 刻度進行貼心微調，特別適合無 PSI 顯示的傳統指針打氣機。*
 
-| PSI (磅) | kPa | **bar (公斤)** |
-| :---: | :---: | :---: |
-| 31 | 210 | 2.10 |
-| 32 | 220 | 2.20 |
-| **33** | **230** | **2.30** |
-| **34** | - | **2.35** |
-| **35** | **240** | **2.40** |
-| **36** | **250** | **2.50** |
-| **37** | - | **2.55** |
-| **38** | **260** | **2.60** |
-| 39 | 270 | 2.70 |
-| 40 | - | 2.75 |
-| 41 | 280 | 2.80 |
-| 42 | 290 | 2.90 |
 
-
+<div class="table-responsive">
+  <table class="battery-table">
+    <thead>
+      <tr>
+        <th>PSI (磅)</th>
+        <th>kPa</th>
+        <th>bar (公斤)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>31</td>
+        <td>210</td>
+        <td>2.10</td>
+      </tr>
+      <tr>
+        <td>32</td>
+        <td>220</td>
+        <td>2.20</td>
+      </tr>
+      <tr>
+        <td><strong>33</strong></td>
+        <td><strong>230</strong></td>
+        <td><strong>2.30</strong></td>
+      </tr>
+      <tr>
+        <td><strong>34</strong></td>
+        <td>-</td>
+        <td><strong>2.35</strong></td>
+      </tr>
+      <tr>
+        <td><strong>35</strong></td>
+        <td><strong>240</strong></td>
+        <td><strong>2.40</strong></td>
+      </tr>
+      <tr>
+        <td><strong>36</strong></td>
+        <td><strong>250</strong></td>
+        <td><strong>2.50</strong></td>
+      </tr>
+      <tr>
+        <td><strong>37</strong></td>
+        <td>-</td>
+        <td><strong>2.55</strong></td>
+      </tr>
+      <tr>
+        <td><strong>38</strong></td>
+        <td><strong>260</strong></td>
+        <td><strong>2.60</strong></td>
+      </tr>
+      <tr>
+        <td>39</td>
+        <td>270</td>
+        <td>2.70</td>
+      </tr>
+      <tr>
+        <td>40</td>
+        <td>-</td>
+        <td>2.75</td>
+      </tr>
+      <tr>
+        <td>41</td>
+        <td>280</td>
+        <td>2.80</td>
+      </tr>
+      <tr>
+        <td>42</td>
+        <td>290</td>
+        <td>2.90</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
 ## 官方規範文件延伸閱讀
 想深入研究法規法條的硬核車友，可以參考官方 PDF 規範：
