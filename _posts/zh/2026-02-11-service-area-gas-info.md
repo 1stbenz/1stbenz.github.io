@@ -29,33 +29,177 @@ faq:
 
 ![Service Gas Info](/images/service-area-gas-info.webp)
 
+<style>
+    /* RWD 響應式滾動容器 */
+    .table-responsive {
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch; /* 讓 iOS 裝置滑動更順暢 */
+        margin-bottom: 20px;
+    }
+    
+    .battery-table {
+        border-collapse: collapse;
+        width: 100%;
+        min-width: 500px; /* 確保在手機上縮小時，文字不會全部擠在一起 */
+        max-width: 600px;
+        font-family: sans-serif;
+        font-size: 16px;
+    }
+    
+    /* 設定邊框與文字格式，並強制包含 strong (粗體) 標籤的顏色 */
+    .battery-table th, 
+    .battery-table td {
+        border: 1px solid #b3c6e7;
+        padding: 10px 15px;
+        text-align: center; /* 這裡改成 center，讓數字居中更好看 */
+        vertical-align: top;
+        line-height: 1.5;
+        color: #333333 !important; /* 強制深灰色，避免被全域深色模式蓋掉 */
+    }
+
+    /* 針對表格內的粗體字，再次強制設定深灰色 */
+    .battery-table td strong {
+        color: #333333 !important; 
+    }
+    
+    /* 標題上色 */
+    .battery-table th {
+        font-weight: bold;
+        background-color: #6495ED; 
+        color: #ffffff !important; /* 標題維持白色 */
+    }
+    
+    /* 單雙背景色有區別 (斑馬紋) */
+    .battery-table tbody tr:nth-child(even) {
+        background-color: #f2f7ff; 
+    }
+    .battery-table tbody tr:nth-child(odd) {
+        background-color: #ffffff; 
+    }
+    
+    /* 滑鼠懸停效果 */
+    .battery-table tbody tr:hover {
+        background-color: #e6f0ff;
+    }
+</style>
 ### 國道一號（中山高速公路）
 
-| 服務區 | 里程位置 | 北上加油站 | 南下加油站 |
-|--------|----------------|-------------|-------------|
-| 中壢 | 55K | 中油 | 中油 |
-| 楊梅 | 71K | **無** | **無** |
-| 湖口 | 86K | **台塑** | **台塑** |
-| 泰安 | 159K | **台塑** | **台塑** |
-| 西螺 | 229K | 中油 | **台塑** |
-| 新營 | 284K | 中油 | 中油 |
-| 仁德 | 335K | 中油 | 中油 |
-
-
+<div class="table-responsive">
+    <table class="battery-table">
+        <thead>
+            <tr>
+                <th>服務區</th>
+                <th>里程位置</th>
+                <th>北上加油站</th>
+                <th>南下加油站</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>中壢</td>
+                <td>55K</td>
+                <td>中油</td>
+                <td>中油</td>
+            </tr>
+            <tr>
+                <td>楊梅</td>
+                <td>71K</td>
+                <td><strong>無</strong></td>
+                <td><strong>無</strong></td>
+            </tr>
+            <tr>
+                <td>湖口</td>
+                <td>86K</td>
+                <td><strong>台塑</strong></td>
+                <td><strong>台塑</strong></td>
+            </tr>
+            <tr>
+                <td>泰安</td>
+                <td>159K</td>
+                <td><strong>台塑</strong></td>
+                <td><strong>台塑</strong></td>
+            </tr>
+            <tr>
+                <td>西螺</td>
+                <td>229K</td>
+                <td>中油</td>
+                <td><strong>台塑</strong></td>
+            </tr>
+            <tr>
+                <td>新營</td>
+                <td>284K</td>
+                <td>中油</td>
+                <td>中油</td>
+            </tr>
+            <tr>
+                <td>仁德</td>
+                <td>335K</td>
+                <td>中油</td>
+                <td>中油</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 
 ### 國道三號（福爾摩沙高速公路）
 
-| 服務區 | 里程位置 | 北上加油站 | 南下加油站 |
-|--------|----------------|-------------|-------------|
-| 關西 | 76K | 中油（**暫停**） | 中油（**暫停**） |
-| 西湖 | 134K | **無** | **無** |
-| 清水 | 172K | 中油 | 中油 |
-| 南投 | 231K | 中油 | 中油 |
-| 古坑 | 276K | 中油 | 中油 |
-| 東山 | 319K | 中油 | 中油 |
-| 關廟 | 363K | 中油 | 中油 |
-
-
+<div class="table-responsive">
+    <table class="battery-table">
+        <thead>
+            <tr>
+                <th>服務區</th>
+                <th>里程位置</th>
+                <th>北上加油站</th>
+                <th>南下加油站</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>關西</td>
+                <td>76K</td>
+                <td>中油（<strong>暫停</strong>）</td>
+                <td>中油（<strong>暫停</strong>）</td>
+            </tr>
+            <tr>
+                <td>西湖</td>
+                <td>134K</td>
+                <td><strong>無</strong></td>
+                <td><strong>無</strong></td>
+            </tr>
+            <tr>
+                <td>清水</td>
+                <td>172K</td>
+                <td>中油</td>
+                <td>中油</td>
+            </tr>
+            <tr>
+                <td>南投</td>
+                <td>231K</td>
+                <td>中油</td>
+                <td>中油</td>
+            </tr>
+            <tr>
+                <td>古坑</td>
+                <td>276K</td>
+                <td>中油</td>
+                <td>中油</td>
+            </tr>
+            <tr>
+                <td>東山</td>
+                <td>319K</td>
+                <td>中油</td>
+                <td>中油</td>
+            </tr>
+            <tr>
+                <td>關廟</td>
+                <td>363K</td>
+                <td>中油</td>
+                <td>中油</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 
 ### 中油與台塑石油的差異
 目前國道服務區的加油站主要由 **中油**與**台塑石油**經營。兩者在油品品質上皆符合國家標準，但部分駕駛會依據習慣或會員優惠選擇特定品牌。若你有累積點數或會員卡優惠，提前知道哪個服務區有對應品牌的加油站，就能更有效率地安排停靠。
