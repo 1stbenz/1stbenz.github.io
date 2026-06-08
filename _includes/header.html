@@ -36,9 +36,9 @@
         {% endfor %}
 
         {% if current_lang == "en" %}
-          <a class="page-link" href="{{ '/' | relative_url }}" style="font-weight: bold; color: #58a6ff;">中文版</a>
+          <a class="page-link lang-switcher" href="{{ '/' | relative_url }}">中文版</a>
         {% else %}
-          <a class="page-link" href="{{ '/en/' | relative_url }}" style="font-weight: bold; color: #58a6ff;">English</a>
+          <a class="page-link lang-switcher" href="{{ '/en/' | relative_url }}">English</a>
         {% endif %}
       </div>
     </nav>

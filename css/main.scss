@@ -6,23 +6,31 @@
 
 
 // Our variables
-$base-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+$base-font-family: 'Outfit', 'Noto Sans TC', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 $base-font-size:   16px;
 $small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
+$base-line-height: 1.6;
 
 $spacing-unit:     30px;
 
-$background-color: #1e1e20; 
-$text-color:       #e0e0e0;
-$brand-color:      #2a7ae2;
-$card-bg-color:    #2d2d30;
+$background-color: #0b0f19; 
+$text-color:       #c9d1d9;
+$brand-color:      #00e5ff;
+$card-bg-color:    #121824;
 
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+// Tech theme accent colors
+$accent-cyan:      #00e5ff;
+$accent-purple:    #a855f7;
+$accent-orange:    #ff9100;
+$accent-green:     #39ff14;
+$card-bg-glow:     rgba(0, 229, 255, 0.03);
+$border-color-dark:#222a3a;
 
-$on-palm:          9999px;
+$grey-color:       #8b949e;
+$grey-color-light: #30363d;
+$grey-color-dark:  #161b22;
+
+$on-palm:          768px;
 $on-laptop:        1024px;
 
 

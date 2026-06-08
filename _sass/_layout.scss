@@ -42,17 +42,54 @@
     float: right;
     line-height: 56px;
 
-    /* ... (中間 .menu-icon 等代碼保持不變) ... */
+    .menu-icon {
+        display: none;
+    }
+
+    .page-link {
+        color: $text-color;
+        line-height: $base-line-height;
+        display: inline-block;
+        text-decoration: none;
+        transition: color 0.2s ease;
+
+        &:not(:first-child) {
+            margin-left: 20px;
+        }
+
+        &:hover {
+            color: $accent-cyan;
+        }
+        
+        &.lang-switcher {
+            font-weight: bold;
+            color: $accent-cyan;
+            border: 1px solid rgba($accent-cyan, 0.3);
+            padding: 4px 12px;
+            border-radius: 20px;
+            margin-left: 15px;
+            background-color: rgba($accent-cyan, 0.02);
+            
+            &:hover {
+                background-color: rgba($accent-cyan, 0.1);
+                color: #fff;
+                border-color: $accent-cyan;
+                box-shadow: 0 0 8px rgba($accent-cyan, 0.3);
+            }
+        }
+    }
 
     @include media-query($on-palm) {
         position: absolute;
         top: 9px;
-        right: 15px; /* 修改：配合 wrapper 的 padding 調整 */
-        background-color: $background-color;
-        border: 1px solid $grey-color-light;
-        border-radius: 5px;
+        right: 15px;
+        background-color: rgba($card-bg-color, 0.95);
+        backdrop-filter: blur(10px);
+        border: 1px solid $border-color-dark;
+        border-radius: 8px;
         text-align: right;
-        z-index: 999; /* 新增：確保選單浮在最上層 */
+        z-index: 999;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
 
         .menu-icon {
             display: block;
@@ -62,13 +99,13 @@
             line-height: 0;
             padding-top: 10px;
             text-align: center;
-            cursor: pointer; /* 新增：增加點擊手感提示 */
+            cursor: pointer;
 
             > svg {
                 width: 18px;
                 height: 15px;
                 path {
-                    fill: $grey-color-dark;
+                    fill: $accent-cyan;
                 }
             }
         }
@@ -78,23 +115,32 @@
             display: none;
         }
 
-        /* 
-         * 注意：原本的代碼使用 :hover 來顯示選單。
-         * 在手機上 :hover 體驗不佳，但如果沒有 JavaScript，
-         * 這是純 CSS 的妥協做法。建議將 padding 加大以便點擊。
-         */
-        &:hover .trigger {
+        .nav-trigger:checked ~ .trigger {
             display: block;
             padding-bottom: 5px;
         }
 
         .page-link {
             display: block;
-            padding: 10px 20px; /* 修改：加大點擊範圍 */
-            margin-left: 0; /* 重置 margin */
+            padding: 10px 20px;
+            margin-left: 0;
             
             &:not(:first-child) {
                 margin-left: 0;
+            }
+            
+            &.lang-switcher {
+                border: none;
+                border-top: 1px solid $border-color-dark;
+                border-radius: 0;
+                margin-left: 0;
+                padding: 12px 20px;
+                background-color: transparent;
+                
+                &:hover {
+                    box-shadow: none;
+                    background-color: rgba($accent-cyan, 0.05);
+                }
             }
         }
     }
@@ -187,32 +233,48 @@
     list-style: none;
 
     > li {
-        margin-bottom: $spacing-unit;
-        
-        /* --- 新增卡片樣式 --- */
-        background-color: $card-bg-color; // 使用剛剛新增的變數 (若未新增可直接寫 #2d2d30)
+        margin-bottom: 40px;
+        background-color: rgba($card-bg-color, 0.7);
+        backdrop-filter: blur(10px);
+        border: 1px solid $border-color-dark;
         padding: 25px;
-        border-radius: 12px; // 圓角
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); // 陰影增加立體感
-        transition: transform 0.2s ease, box-shadow 0.2s ease; // 動畫過渡
-        border: 1px solid lighten($background-color, 10%); // 微妙的邊框
+        border-radius: 12px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1),
+                    box-shadow 0.3s ease,
+                    border-color 0.3s ease;
 
-        // 滑鼠懸停效果
         &:hover {
-            transform: translateY(-5px); // 稍微浮起
-            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.4);
-            border-color: $brand-color; // 懸停時邊框變色
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba($accent-cyan, 0.12);
+            border-color: $accent-cyan;
+        }
+
+        @include media-query($on-palm) {
+            padding: 15px;
+            margin-bottom: 25px;
         }
     }
 
     /* 調整卡片內的標題與日期 */
     h2 {
         margin-top: 5px;
+        margin-bottom: 15px;
         font-size: 24px;
+        font-weight: 700;
+        
         a {
             color: #fff;
             text-decoration: none;
-            &:hover { color: $brand-color; }
+            transition: color 0.2s ease;
+            
+            &:hover {
+                color: $brand-color;
+            }
+        }
+        
+        @include media-query($on-palm) {
+            font-size: 20px;
         }
     }
 }
@@ -371,3 +433,317 @@
       }
     }
   }
+
+/* ==========================================================================
+   Home Page Layout (2-Column Grid) & Tags Selector
+   ========================================================================== */
+.home-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+
+    @media screen and (min-width: 769px) {
+        grid-template-columns: 2.7fr 1.3fr;
+    }
+}
+
+.sidebar {
+    @media screen and (min-width: 769px) {
+        position: sticky;
+        top: 80px;
+        align-self: start;
+    }
+}
+
+.tags-container {
+    margin-bottom: 30px;
+    background-color: rgba($card-bg-color, 0.4);
+    border: 1px solid $border-color-dark;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+
+    h3 {
+        font-size: 16px;
+        color: #fff;
+        font-weight: 700;
+        margin-top: 0;
+        margin-bottom: 15px;
+        border-left: 3px solid $accent-cyan;
+        padding-left: 10px;
+        line-height: 1.2;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+    }
+}
+
+.tags-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.tag-badge {
+    display: inline-block;
+    padding: 6px 14px;
+    background-color: rgba($background-color, 0.5);
+    border: 1px solid $border-color-dark;
+    border-radius: 20px;
+    font-size: 13px;
+    color: $grey-color;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
+    
+    &:hover {
+        border-color: rgba($accent-cyan, 0.5);
+        color: $accent-cyan;
+        box-shadow: 0 0 10px rgba($accent-cyan, 0.15);
+    }
+    
+    &.active {
+        background-color: rgba($accent-cyan, 0.1);
+        border-color: $accent-cyan;
+        color: #fff;
+        box-shadow: 0 0 12px rgba($accent-cyan, 0.3);
+        font-weight: 500;
+    }
+}
+
+// Mobile Tags layout: Horizontal scrolling list
+@media screen and (max-width: 768px) {
+    .tags-container {
+        margin-bottom: 25px;
+        padding: 12px 15px;
+    }
+    
+    .tags-list {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 5px;
+        
+        &::-webkit-scrollbar {
+            height: 4px;
+        }
+        &::-webkit-scrollbar-thumb {
+    ul, ol {
+        margin-bottom: 25px;
+        li {
+            margin-bottom: 10px; // 列表項目之間也要有點距離
+            line-height: 1.7;
+        }
+    }
+    
+    // 強調文字 (Bold)
+    strong {
+        color: #fff; // 強調文字變亮白
+        font-weight: 700;
+    }
+}
+
+/* ==========================================================================
+   延伸閱讀 (Related Posts) 卡片式樣式
+   ========================================================================== */
+   .related-posts {
+    margin-top: 60px;
+    padding-top: 30px;
+    border-top: 1px solid #333; /* 配合深色主題的低調分隔線 */
+  
+    h3 {
+      font-size: 22px;
+      margin-bottom: 25px;
+      color: #e0e0e0;
+      border-left: 4px solid $brand-color; /* 延續你在 blockquote 使用的品牌色左邊框設計 */
+      padding-left: 12px;
+    }
+  
+    .related-posts-grid {
+      display: grid;
+      /* CSS Grid 自動響應式：最小寬度 250px，空間夠時自動並排 */
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+  
+    .related-post-card {
+      background-color: $card-bg-color; /* 使用你設定好的卡片背景色 #2d2d30 */
+      border-radius: 8px;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* 輕微的基礎陰影 */
+  
+      &:hover {
+        transform: translateY(-5px); /* 滑鼠懸停時微幅上浮 */
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6); /* 懸停時加深陰影，增加立體感 */
+      }
+  
+      a {
+        text-decoration: none;
+        color: inherit;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        
+        &:hover {
+          text-decoration: none;
+        }
+      }
+  
+      .related-post-image {
+        height: 150px;
+        background-size: cover;
+        background-position: center;
+        background-color: #444; 
+        
+        /* 若文章未設定圖片，則套用品牌色漸層作為預設封面 */
+        &.default-bg {
+          background-image: linear-gradient(135deg, $brand-color 0%, darken($background-color, 5%) 100%);
+        }
+      }
+  
+      .related-post-content {
+        padding: 18px;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+  
+        h4 {
+          font-size: 16px;
+          font-weight: 700;
+          margin: 0 0 12px 0;
+          color: #fff; /* 標題高亮白 */
+          line-height: 1.4;
+        }
+  
+        p {
+          font-size: 14px;
+          color: $grey-color; /* 使用你設定好的次要文字顏色 */
+          margin: 0;
+          line-height: 1.6;
+          flex-grow: 1;
+        }
+      }
+    }
+  }
+
+/* ==========================================================================
+   Home Page Layout (2-Column Grid) & Tags Selector
+   ========================================================================== */
+.home-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+
+    @media screen and (min-width: 769px) {
+        grid-template-columns: 2.7fr 1.3fr;
+    }
+}
+
+.sidebar {
+    @media screen and (min-width: 769px) {
+        position: sticky;
+        top: 80px;
+        align-self: start;
+    }
+}
+
+.tags-container {
+    margin-bottom: 30px;
+    background-color: rgba($card-bg-color, 0.4);
+    border: 1px solid $border-color-dark;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+
+    h3 {
+        font-size: 16px;
+        color: #fff;
+        font-weight: 700;
+        margin-top: 0;
+        margin-bottom: 15px;
+        border-left: 3px solid $accent-cyan;
+        padding-left: 10px;
+        line-height: 1.2;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+    }
+}
+
+.tags-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.tag-badge {
+    display: inline-block;
+    padding: 6px 14px;
+    background-color: rgba($background-color, 0.5);
+    border: 1px solid $border-color-dark;
+    border-radius: 20px;
+    font-size: 13px;
+    color: $grey-color;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
+    
+    &:hover {
+        border-color: rgba($accent-cyan, 0.5);
+        color: $accent-cyan;
+        box-shadow: 0 0 10px rgba($accent-cyan, 0.15);
+    }
+    
+    &.active {
+        background-color: rgba($accent-cyan, 0.1);
+        border-color: $accent-cyan;
+        color: #fff;
+        box-shadow: 0 0 12px rgba($accent-cyan, 0.3);
+        font-weight: 500;
+    }
+}
+
+// Mobile Tags layout: Horizontal scrolling list
+@media screen and (max-width: 768px) {
+    .tags-container {
+        margin-bottom: 25px;
+        padding: 12px 15px;
+    }
+    
+    .tags-list {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 5px;
+        
+        &::-webkit-scrollbar {
+            height: 4px;
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: rgba($accent-cyan, 0.2);
+            border-radius: 2px;
+        }
+    }
+    
+    .tag-badge {
+        white-space: nowrap;
+    }
+}
+
+.post-image {
+    margin: 20px 0;
+    
+    img {
+        max-width: 100%;
+        height: auto;
+        max-height: 400px;
+        object-fit: cover;
+        border-radius: 12px;
+        border: 1px solid $border-color-dark;
+    }
+}

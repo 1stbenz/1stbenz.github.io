@@ -73,17 +73,37 @@ img {
 table {
     border-collapse: collapse;
     width: 100%;
-    display: block;       /* 新增：讓表格變成區塊元素以便滑動 */
-    overflow-x: auto;     /* 新增：內容過寬時出現卷軸 */
-    -webkit-overflow-scrolling: touch; /* 新增：iOS 滑動更順暢 */
-    word-wrap: normal;    /* 修改：避免文字在不該斷的地方斷行 */
+    display: block;       /* 讓表格變成區塊元素以便滑動 */
+    overflow-x: auto;     /* 內容過寬時出現卷軸 */
+    -webkit-overflow-scrolling: touch; /* iOS 滑動更順暢 */
+    word-wrap: normal;    /* 避免文字在不該斷的地方斷行 */
     word-break: normal;
+    margin: 25px 0;
+    border: 1px solid $border-color-dark;
+    background-color: rgba($card-bg-color, 0.4);
+    border-radius: 8px;
 }
 
 th, td {
-    border: 1px solid #fdfdfd;
-    text-align: center;
-    padding: 4px;
+    border: 1px solid $border-color-dark;
+    text-align: left;
+    padding: 12px 16px;
+    font-size: 0.95em;
+}
+
+th {
+    background-color: rgba($accent-cyan, 0.08);
+    color: $accent-cyan;
+    font-weight: 700;
+    border-bottom: 2px solid $border-color-dark;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.01);
+}
+
+tr:hover {
+    background-color: rgba($accent-cyan, 0.02);
 }
 
 
@@ -150,18 +170,19 @@ h1, h2, h3, h4, h5, h6 {
  * Blockquotes
  */
  blockquote {
-    color: lighten($grey-color, 10%);
-    border-left: 4px solid $brand-color; // 左側邊框改用品牌色
-    padding-left: 20px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    color: #c9d1d9;
+    border-left: 4px solid $accent-cyan;
+    padding: 16px 20px;
     margin-bottom: 30px;
-    background-color: rgba(255, 255, 255, 0.05); // 淡淡的背景色
-    border-radius: 0 5px 5px 0;
+    background-color: rgba($accent-cyan, 0.02);
+    border: 1px solid rgba($accent-cyan, 0.08);
+    border-left: 4px solid $accent-cyan;
+    border-radius: 6px;
     
-    font-size: 16px; // 字體稍小
-    font-style: normal; // 重點：取消斜體！
+    font-size: 16px;
+    font-style: normal;
     letter-spacing: 0.03em;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     
     > :last-child {
         margin-bottom: 0;
@@ -173,28 +194,51 @@ h1, h2, h3, h4, h5, h6 {
  */
  pre,
  code {
-     font-family: "Menlo", "Consolas", "Monaco", monospace; // 程式碼專用字體
-     font-size: 15px;
-     border-radius: 6px; // 圓角
-     border: 1px solid #444; // 深色邊框
-     background-color: #2b2b2b; // 改為深色背景
-     color: #f8f8f2; // 程式碼預設文字改為淺色
+     font-family: 'JetBrains Mono', "Menlo", "Consolas", "Monaco", monospace;
+     font-size: 14px;
+     border-radius: 6px;
+     border: 1px solid $border-color-dark;
+     background-color: #0e121a;
+     color: #c9d1d9;
  }
  
  code {
      padding: 2px 6px;
+     font-size: 0.9em;
+     background-color: rgba($accent-cyan, 0.05);
+     color: lighten($accent-cyan, 10%);
+     border: 1px solid rgba($accent-cyan, 0.1);
  }
  
  pre {
-     padding: 15px;
+     padding: 20px;
+     position: relative;
      overflow-x: auto;
-     box-shadow: inset 0 0 10px rgba(0,0,0,0.3); // 內部陰影增加層次
+     box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.5);
+     margin-bottom: 30px;
+     
+     // 終端機頂部控制按鈕裝飾
+     &::before {
+         content: "";
+         display: block;
+         height: 12px;
+         background-image: radial-gradient(circle, #ff5f56 4px, transparent 5px),
+                           radial-gradient(circle, #ffbd2e 4px, transparent 5px),
+                           radial-gradient(circle, #27c93f 4px, transparent 5px);
+         background-size: 16px 12px;
+         background-repeat: no-repeat;
+         background-position: 0px 0px, 14px 0px, 28px 0px;
+         margin-bottom: 15px;
+         opacity: 0.8;
+     }
  
      > code {
          border: 0;
          padding-right: 0;
          padding-left: 0;
-         background-color: transparent; // 避免雙重背景
+         background-color: transparent;
+         color: #e0e6ed;
+         border: none;
      }
  }
  
