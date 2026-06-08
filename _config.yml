@@ -56,3 +56,7 @@ kramdown:
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
+
+# Sass compile settings
+sass:
+  style: compressed

@@ -61,3 +61,16 @@
   </div>
 
 </footer>
+
+<script>
+  // 1. 全站圖片自動原生懶載入 (Lazy Loading)
+  document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('img').forEach(function(img) {
+      if (!img.getAttribute('loading') && !img.getAttribute('fetchpriority')) {
+        img.setAttribute('loading', 'lazy');
+      }
+    });
+  });
+</script>
+<!-- 2. Instant.page 預載入技術：滑鼠移到連結上即預先載入，點擊時瞬間切換 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.2.0/instantpage.min.js" type="module" defer></script>
