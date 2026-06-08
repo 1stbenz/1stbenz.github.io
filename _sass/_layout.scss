@@ -1,18 +1,16 @@
 /**
  * Site header
  */
- .site-header {
-    // border-top: 5px solid $grey-color-dark; // 建議註解掉或刪除這行
-    border-bottom: none; // 移除底部線條，改用陰影
+.site-header {
+    border-bottom: none;
     min-height: 56px;
     position: relative;
-    background-color: rgba($background-color, 0.95); // 稍微透明
-    backdrop-filter: blur(5px); // 磨砂玻璃效果 (現代瀏覽器支援)
-    box-shadow: 0 1px 10px rgba(0,0,0,0.5); // 增加底部陰影
+    background-color: rgba($background-color, 0.95);
+    backdrop-filter: blur(5px);
+    box-shadow: 0 1px 10px rgba(0,0,0,0.5);
     
-    // 讓 Header 在手機版更乾淨
     @include media-query($on-palm) {
-        position: sticky; // 讓選單黏在頂部 (選用)
+        position: sticky;
         top: 0;
         z-index: 1000;
     }
@@ -31,10 +29,9 @@
         color: $grey-color;
     }
 
-    /* 新增：手機上若標題太長，稍微縮小字體 */
     @include media-query($on-palm) {
         font-size: 22px;
-        margin-right: 10px; /* 避免跟漢堡選單重疊 */
+        margin-right: 10px;
     }
 }
 
@@ -282,7 +279,7 @@
 .post-meta {
     font-size: 14px;
     color: $grey-color;
-    text-transform: uppercase; // 日期改為全大寫看起來較整齊
+    text-transform: uppercase;
     letter-spacing: 1px;
 }
 
@@ -309,7 +306,6 @@
         font-size: 36px;
     }
     
-    /* 新增：手機版標題再縮小一點，避免斷行太嚴重 */
     @include media-query($on-palm) {
         font-size: 28px;
     }
@@ -318,34 +314,30 @@
 .post-content {
     margin-bottom: $spacing-unit;
 
-    // 針對所有標題 (h1~h6) 增加上方距離，區分段落層級
     h2, h3, h4, h5, h6 {
-        margin-top: 40px; // 標題上方留白
+        margin-top: 40px;
         margin-bottom: 20px;
         font-weight: 700;
         line-height: 1.4;
-        color: #fff; // 標題用全白，與內文灰白區隔
+        color: #fff;
     }
 
-    // 針對段落 p
     p {
-        margin-bottom: 28px; // 段落之間距離加大
-        text-align: justify; // 左右對齊 (讓右邊緣整齊，不會參差不齊)
-        text-justify: inter-ideograph; // 針對中文字的對齊優化
+        margin-bottom: 28px;
+        text-align: justify;
+        text-justify: inter-ideograph;
     }
 
-    // 針對列表
     ul, ol {
         margin-bottom: 25px;
         li {
-            margin-bottom: 10px; // 列表項目之間也要有點距離
+            margin-bottom: 10px;
             line-height: 1.7;
         }
     }
     
-    // 強調文字 (Bold)
     strong {
-        color: #fff; // 強調文字變亮白
+        color: #fff;
         font-weight: 700;
     }
 }
@@ -353,36 +345,35 @@
 /* ==========================================================================
    延伸閱讀 (Related Posts) 卡片式樣式
    ========================================================================== */
-   .related-posts {
+.related-posts {
     margin-top: 60px;
     padding-top: 30px;
-    border-top: 1px solid #333; /* 配合深色主題的低調分隔線 */
+    border-top: 1px solid #333;
   
     h3 {
       font-size: 22px;
       margin-bottom: 25px;
       color: #e0e0e0;
-      border-left: 4px solid $brand-color; /* 延續你在 blockquote 使用的品牌色左邊框設計 */
+      border-left: 4px solid $brand-color;
       padding-left: 12px;
     }
   
     .related-posts-grid {
       display: grid;
-      /* CSS Grid 自動響應式：最小寬度 250px，空間夠時自動並排 */
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 20px;
     }
   
     .related-post-card {
-      background-color: $card-bg-color; /* 使用你設定好的卡片背景色 #2d2d30 */
+      background-color: $card-bg-color;
       border-radius: 8px;
       overflow: hidden;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* 輕微的基礎陰影 */
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   
       &:hover {
-        transform: translateY(-5px); /* 滑鼠懸停時微幅上浮 */
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6); /* 懸停時加深陰影，增加立體感 */
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
       }
   
       a {
@@ -403,7 +394,6 @@
         background-position: center;
         background-color: #444; 
         
-        /* 若文章未設定圖片，則套用品牌色漸層作為預設封面 */
         &.default-bg {
           background-image: linear-gradient(135deg, $brand-color 0%, darken($background-color, 5%) 100%);
         }
@@ -419,215 +409,20 @@
           font-size: 16px;
           font-weight: 700;
           margin: 0 0 12px 0;
-          color: #fff; /* 標題高亮白 */
+          color: #fff;
           line-height: 1.4;
         }
   
         p {
           font-size: 14px;
-          color: $grey-color; /* 使用你設定好的次要文字顏色 */
+          color: $grey-color;
           margin: 0;
           line-height: 1.6;
           flex-grow: 1;
         }
       }
     }
-  }
-
-/* ==========================================================================
-   Home Page Layout (2-Column Grid) & Tags Selector
-   ========================================================================== */
-.home-layout {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 40px;
-
-    @media screen and (min-width: 769px) {
-        grid-template-columns: 2.7fr 1.3fr;
-    }
 }
-
-.sidebar {
-    @media screen and (min-width: 769px) {
-        position: sticky;
-        top: 80px;
-        align-self: start;
-    }
-}
-
-.tags-container {
-    margin-bottom: 30px;
-    background-color: rgba($card-bg-color, 0.4);
-    border: 1px solid $border-color-dark;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
-
-    h3 {
-        font-size: 16px;
-        color: #fff;
-        font-weight: 700;
-        margin-top: 0;
-        margin-bottom: 15px;
-        border-left: 3px solid $accent-cyan;
-        padding-left: 10px;
-        line-height: 1.2;
-        letter-spacing: 0.05em;
-        text-transform: uppercase;
-    }
-}
-
-.tags-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
-
-.tag-badge {
-    display: inline-block;
-    padding: 6px 14px;
-    background-color: rgba($background-color, 0.5);
-    border: 1px solid $border-color-dark;
-    border-radius: 20px;
-    font-size: 13px;
-    color: $grey-color;
-    text-decoration: none;
-    cursor: pointer;
-    transition: all 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
-    
-    &:hover {
-        border-color: rgba($accent-cyan, 0.5);
-        color: $accent-cyan;
-        box-shadow: 0 0 10px rgba($accent-cyan, 0.15);
-    }
-    
-    &.active {
-        background-color: rgba($accent-cyan, 0.1);
-        border-color: $accent-cyan;
-        color: #fff;
-        box-shadow: 0 0 12px rgba($accent-cyan, 0.3);
-        font-weight: 500;
-    }
-}
-
-// Mobile Tags layout: Horizontal scrolling list
-@media screen and (max-width: 768px) {
-    .tags-container {
-        margin-bottom: 25px;
-        padding: 12px 15px;
-    }
-    
-    .tags-list {
-        flex-wrap: nowrap;
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
-        padding-bottom: 5px;
-        
-        &::-webkit-scrollbar {
-            height: 4px;
-        }
-        &::-webkit-scrollbar-thumb {
-    ul, ol {
-        margin-bottom: 25px;
-        li {
-            margin-bottom: 10px; // 列表項目之間也要有點距離
-            line-height: 1.7;
-        }
-    }
-    
-    // 強調文字 (Bold)
-    strong {
-        color: #fff; // 強調文字變亮白
-        font-weight: 700;
-    }
-}
-
-/* ==========================================================================
-   延伸閱讀 (Related Posts) 卡片式樣式
-   ========================================================================== */
-   .related-posts {
-    margin-top: 60px;
-    padding-top: 30px;
-    border-top: 1px solid #333; /* 配合深色主題的低調分隔線 */
-  
-    h3 {
-      font-size: 22px;
-      margin-bottom: 25px;
-      color: #e0e0e0;
-      border-left: 4px solid $brand-color; /* 延續你在 blockquote 使用的品牌色左邊框設計 */
-      padding-left: 12px;
-    }
-  
-    .related-posts-grid {
-      display: grid;
-      /* CSS Grid 自動響應式：最小寬度 250px，空間夠時自動並排 */
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-  
-    .related-post-card {
-      background-color: $card-bg-color; /* 使用你設定好的卡片背景色 #2d2d30 */
-      border-radius: 8px;
-      overflow: hidden;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* 輕微的基礎陰影 */
-  
-      &:hover {
-        transform: translateY(-5px); /* 滑鼠懸停時微幅上浮 */
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6); /* 懸停時加深陰影，增加立體感 */
-      }
-  
-      a {
-        text-decoration: none;
-        color: inherit;
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-        
-        &:hover {
-          text-decoration: none;
-        }
-      }
-  
-      .related-post-image {
-        height: 150px;
-        background-size: cover;
-        background-position: center;
-        background-color: #444; 
-        
-        /* 若文章未設定圖片，則套用品牌色漸層作為預設封面 */
-        &.default-bg {
-          background-image: linear-gradient(135deg, $brand-color 0%, darken($background-color, 5%) 100%);
-        }
-      }
-  
-      .related-post-content {
-        padding: 18px;
-        flex-grow: 1;
-        display: flex;
-        flex-direction: column;
-  
-        h4 {
-          font-size: 16px;
-          font-weight: 700;
-          margin: 0 0 12px 0;
-          color: #fff; /* 標題高亮白 */
-          line-height: 1.4;
-        }
-  
-        p {
-          font-size: 14px;
-          color: $grey-color; /* 使用你設定好的次要文字顏色 */
-          margin: 0;
-          line-height: 1.6;
-          flex-grow: 1;
-        }
-      }
-    }
-  }
 
 /* ==========================================================================
    Home Page Layout (2-Column Grid) & Tags Selector
