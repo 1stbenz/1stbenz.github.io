@@ -60,7 +60,7 @@ lang: en
             {% capture all_tags %}{{ all_tags }}{{ tag }}|{% endcapture %}
           {% endfor %}
         {% endfor %}
-        {% assign tag_array = all_tags | split: "|" | uniq | sort %}
+        {% assign tag_array = all_tags | split: "|" | uniq | sort | reverse %}
 
         <ul class="tags-list">
           <li>
