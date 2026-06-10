@@ -7,6 +7,7 @@ categories: Auto
 tags: [Wiper Chatter, Wiper Maintenance, Dry Lubricant, PTFE, Windshield, Oil Film Removal, Car Tips]
 description: "Windshield wiper judder and squeaking can plague any car owner. This article explores the material properties of rubber, graphite, and silicone wiper blades, clarifies the impact of oil films versus overly clean glass on chattering, and reviews the effectiveness of dry PTFE lubricants."
 keywords: "wiper chatter, wiper squeaking, dry lubricant, PTFE, teflon, graphite wipers, silicone wipers, windshield oil film, wiper fluid"
+image: /images/wiper.webp
 faq:
   - question: "Why do windshield wipers chatter or make loud squeaking noises?"
     answer: "Chattering typically stems from two opposite conditions: either a thick layer of traffic oil film has built up on the glass, creating uneven friction, or the windshield has been stripped completely bare of all lubricant (e.g., after using harsh degreasing shampoos), causing excessive dry friction that binds the rubber to the glass."
