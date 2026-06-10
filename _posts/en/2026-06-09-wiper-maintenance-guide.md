@@ -2,7 +2,7 @@
 layout: post
 title: "Windshield Wiper Juddering and Squeaking Solutions: Material Science and Dry PTFE Lubricant Guide"
 lang: en
-date: 2026-06-10 12:00:00
+date: 2026-06-09 12:00:00
 categories: Auto
 tags: [Wiper Chatter, Wiper Maintenance, Dry Lubricant, PTFE, Windshield, Oil Film Removal, Car Tips]
 description: "Windshield wiper judder and squeaking can plague any car owner. This article explores the material properties of rubber, graphite, and silicone wiper blades, clarifies the impact of oil films versus overly clean glass on chattering, and reviews the effectiveness of dry PTFE lubricants."
