@@ -67,7 +67,7 @@ $$F_D = \frac{1}{2} \rho v^2 C_D A$$
 
 既然高速看風阻，那輪圈會產生風阻嗎？答案是：會，而且非常驚人。
 
-自 2022 年起，F1 賽車強制加裝了**「輪圈蓋」**。
+自 2022 年起，F1 賽車強制加裝了**「輪圈蓋」**。2026年FIA更嚴格限制了鋁圈風阻、空氣動力的走向。
 ![pirelli](/images/pirelli-motorsport-car-Formula1.webp)
 *[圖片來源](https://share.google/MPAaFB03oOuy7eSJT)*
 

@@ -65,7 +65,7 @@ In this extreme environment, minor weight differences are practically irrelevant
 
 If high speeds are all about aerodynamics, do wheels generate drag? The answer is: Yes, and a shocking amount of it.
 
-Starting in 2022, F1 cars were mandated to install **"wheel covers."**
+Formula 1 cars have featured mandatory **wheel covers** since 2022, and for 2026, the FIA has introduced even stricter regulations governing wheel drag and aerodynamic development.
 ![pirelli](/images/pirelli-motorsport-car-Formula1.webp)
 *[Image Source](https://share.google/MPAaFB03oOuy7eSJT)*
 
