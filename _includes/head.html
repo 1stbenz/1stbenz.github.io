@@ -8,12 +8,25 @@
   </script>
   <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
+  {% assign current_lang = page.lang | default: "zh-Hant" %}
+  {% if current_lang == "en" %}
+    {% assign site_title = site.title_en | default: site.title %}
+  {% elsif current_lang == "de" %}
+    {% assign site_title = site.title_de | default: site.title %}
+  {% elsif current_lang == "es" %}
+    {% assign site_title = site.title_es | default: site.title %}
+  {% elsif current_lang == "ja" %}
+    {% assign site_title = site.title_ja | default: site.title %}
+  {% else %}
+    {% assign site_title = site.title_zh | default: site.title %}
+  {% endif %}
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="theme-color" content="#0b57d0">
 
-  <title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <title>{% if page.title %}{{ page.title }} | {{ site_title }}{% else %}{{ site_title }}{% endif %}</title>
 
   {% assign description = page.description | default: page.excerpt | default: site.description | strip_html | strip_newlines | truncate: 160 %}
   <meta name="description" content="{{ description }}">
@@ -43,9 +56,9 @@
   <link rel="alternate" hreflang="es" href="{{ es_url }}" />
   <link rel="alternate" hreflang="ja" href="{{ ja_url }}" />
   <link rel="alternate" hreflang="x-default" href="{{ en_url }}" />
-  <meta property="og:site_name" content="{{ site.title }}">
+  <meta property="og:site_name" content="{{ site_title }}">
   <meta property="og:type" content="article">
-  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site_title }}{% endif %}">
   <meta property="og:description" content="{{ description }}">
   <meta property="og:url" content="{{ page.url | replace:'index.html','' | absolute_url }}">
 
@@ -62,7 +75,7 @@
   {% endif %}
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+  <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site_title }}{% endif %}">
   <meta name="twitter:description" content="{{ description }}">
 
   <link rel="stylesheet" href="{{ "/css/main.css" | relative_url }}">
