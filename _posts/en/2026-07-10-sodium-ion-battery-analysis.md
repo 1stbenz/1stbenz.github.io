@@ -10,7 +10,7 @@ keywords: "lithium iron phosphate, LFP, sodium-ion battery, sodium battery, 3S, 
 image: /images/sodium-battery-analysis.webp
 faq:
   - question: "Why can't an automotive alternator fully charge a 4-series (4S) sodium-ion battery?"
-    answer: "Because car alternators typically set their maximum charging voltage between 13.5V and 14.4V (providing only 3.6V per cell across 4 cells). Depending on cell specs, a 4S sodium battery requires 15.2V (3.8V cells) or even 16.0V (4.0V cells) for a full charge. Under 14.4V charging, the high-voltage energy region above 3.6V cannot be charged at all, cutting actual usable capacity in half or even lower."
+    answer: "Because car alternators typically set their maximum charging voltage between 13.5V and 14.4V (providing only 3.6V per cell across 4 cells). Depending on cell specs, a 4S sodium battery requires 15.2V (3.8V cells) or even 16.0V (4.0V cells) for a full charge. Under 14.4V charging, the high-voltage energy region above 3.6V cannot be charged at all, significantly reducing actual usable capacity."
   - question: "What happens if a 3-series (3S) sodium-ion battery is used as a 12V starter battery?"
     answer: "The full charge voltage limit for a 3S sodium battery is only 11.4V to 12.0V (3.8V-4.0V per cell), whereas car alternators output 13.5V to 14.4V, far exceeding its limits. If installed directly in a car, the alternator will severely overcharge the battery continuously, easily causing cell bloating, thermal runaway, or protection board disconnection hazards."
   - question: "What safety hazards occur when placing sodium-ion batteries in hot engine bays?"
@@ -38,9 +38,9 @@ Most car and motorcycle alternators output approximately **13.5V to 14.4V** duri
 | Series Setup | Nominal / Cell Voltage Spec | Full Charge Voltage Demand | 14.4V Alternator Compatibility | Physical Result |
 | :--- | :--- | :--- | :--- | :--- |
 | **3 Series (3S)** | 3.8V – 4.0V Cells | 11.4V – 12.0V | **Alternator 13.5V~14.4V Constant Overcharge** | **Extremely Dangerous** (Far exceeds 11.4V/12.0V limit, causing bloating & runaway) |
-| **4 Series (4S)** | 3.8V – 4.0V Cells | 15.2V – 16.0V (3.8V~4.0V/cell) | **Each cell only receives 3.6V (Gap of 0.2V~0.4V)** | **Severely Undercharged** (High-voltage region cannot be charged, usable capacity cut in half) |
+| **4 Series (4S)** | 3.8V – 4.0V Cells | 15.2V – 16.0V | **Each cell only receives 3.6V** | **Severely Undercharged** (High-voltage region cannot be charged, usable capacity significantly reduced) |
 
-> **Voltage Specification Source:** [HighStar Original Datasheet](/images/sodium_cell.webp) (Commercial sodium cells have voltage windows of 1.5V~3.8V or 1.5V~4.0V; regardless of spec, neither can adapt to 12V vehicle alternators).
+> **Voltage Specification Source:** [HighStar Original Datasheet](/images/sodium_cell.webp)
 
 ---
 
@@ -49,14 +49,12 @@ Most car and motorcycle alternators output approximately **13.5V to 14.4V** duri
 Under the 13.5V to 14.4V output profile of automotive alternators, sodium-ion batteries face an extremely awkward voltage adaptation dilemma:
 
 ### 1. Why does 3 Series (3S) burn out from overcharging?
-- The alternator outputs 13.5V–14.4V, which is far higher than the full charge limit of **11.4V** for a 3S sodium battery (3.8V per cell).
+- The alternator outputs 13.5V–14.4V, which is far higher than the full charge limit of **11.4V–12.0V** for a 3S sodium battery (3.8V–4.0V per cell).
 - Once installed in a vehicle, the alternator will severely overcharge the battery continuously, easily triggering cell bloating, thermal runaway, or protection board shutdown.
 
 ### 2. Why is 4 Series (4S) severely undercharged with sudden voltage drops?
 - The alternator outputs a maximum of only **14.4V**, distributing to just **3.6V per cell** across 4 cells (far below the 3.8V or 4.0V required for a full charge).
-- **Both 3.8V and 4.0V specs face a physical voltage wall:**
-  - **3.8V Spec Cells**: Full charge requires **15.2V**; under 14.4V, less than 50% capacity can be charged.
-  - **4.0V Spec Cells**: Full charge requires **16.0V**; the 3.6V provided by a 14.4V alternator leaves a gap of up to **0.4V per cell**! The high-voltage energy region between 3.6V and 4.0V is completely unreachable.
+- **Usable capacity significantly reduced**: Sodium battery capacity is distributed along a slope with voltage; **when charged to only 3.6V per cell, only about 60% to 70% of the capacity is charged**. Without reaching the 3.8V–4.0V full charge threshold, the upper high-voltage capacity cannot be utilized, drastically reducing actual usable capacity.
 - **Discharging voltage continuously declines**: LFP has an extremely flat discharge curve (maintaining >13V even with 20% remaining capacity); whereas sodium batteries have a very wide discharge window (1.5V–3.8V/4.0V), causing voltage to drop linearly as capacity depletes. When a 4S sodium battery drops below 11V (2.75V per cell), it easily causes the vehicle ECU to reboot or fail to start the engine properly.
 
 ---
@@ -81,7 +79,7 @@ The three main cathode material routes of current sodium-ion batteries (Layered 
 | **Cycle Life** | **Medium (High-temp ion dissolution & degradation)** | **Low to Medium** | **Medium to High** |
 | **Self-Discharge Rate** | **High (5–10%/month)**<br>Metal dissolution shuttle + Unstable hard carbon SEI | **Extremely High (>10%/month)**<br>Crystal water corrosion + Electrolyte decomposition | **Medium-Low (3–5%/month)**<br>No metal dissolution, only affected by hard carbon SEI repair |
 
-> **Summary:** Commercially available sodium batteries pursuing capacity and energy density mostly use **Layered Oxides**, but in hot engine bays (70–90°C), they are prone to thermal runaway, violently releasing oxygen to fuel combustion and causing bloating or leakage. Relatively safer **Polyanionic Compounds**, despite their thermal stability, suffer from extremely low volumetric energy density and a **flat voltage plateau that severely mismatches 12V vehicle charging systems** (facing the physical flaws where a 3S setup easily drops below 11V and a 4S setup cannot be fully charged). None of the three technical routes can currently be stably applied in automotive starter batteries.
+> **Summary:** Commercially available sodium batteries pursuing capacity and energy density mostly use **Layered Oxides**, but in hot engine bays (70–90°C), they are prone to thermal runaway, violently releasing oxygen to fuel combustion and causing bloating or leakage. Relatively safer **Polyanionic Compounds**, despite their thermal stability, suffer from extremely low volumetric energy density and **voltage characteristics that severely mismatch 12V vehicle charging systems** (facing the physical flaws where a 3S setup easily drops below 11V and a 4S setup cannot be fully charged). None of the three technical routes can currently be stably applied in automotive starter batteries.
 
 ---
 

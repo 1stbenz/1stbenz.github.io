@@ -10,7 +10,7 @@ keywords: "Lithium-Eisenphosphat, LFP, Natrium-Ionen-Batterie, Natrium-Batterie,
 image: /images/sodium-battery-analysis.webp
 faq:
   - question: "Warum kann eine Fahrzeug-Lichtmaschine eine 4S-Natrium-Ionen-Batterie nicht voll aufladen?"
-    answer: "Weil die maximale Ladespannung von Fahrzeug-Lichtmaschinen normalerweise auf 13,5 V bis 14,4 V eingestellt ist (nur 3,6 V pro Zelle bei 4 Zellen). Je nach Zellenspezifikation benötigt eine 4S-Natriumbatterie 15,2 V (3,8V-Zellen) oder sogar 16,0 V (4,0V-Zellen) zum vollständigen Laden. Unter 14,4-V-Ladung kann der Hochspannungsbereich über 3,6 V überhaupt nicht geladen werden, was die nutzbare Kapazität halbiert oder weiter reduziert."
+    answer: "Weil die maximale Ladespannung von Fahrzeug-Lichtmaschinen normalerweise auf 13,5 V bis 14,4 V eingestellt ist (nur 3,6 V pro Zelle bei 4 Zellen). Je nach Zellenspezifikation benötigt eine 4S-Natriumbatterie 15,2 V (3,8V-Zellen) oder sogar 16,0 V (4,0V-Zellen) zum vollständigen Laden. Unter 14,4-V-Ladung kann der Hochspannungsbereich über 3,6 V überhaupt nicht geladen werden, was die nutzbare Kapazität erheblich reduziert."
   - question: "Was passiert, wenn eine 3S-Natrium-Ionen-Batterie als 12V-Starterbatterie verwendet wird?"
     answer: "Die Obergrenze der vollen Ladespannung für eine 3S-Natriumbatterie liegt bei nur 11,4 V bis 12,0 V (3,8V-4,0V pro Zelle), während die Lichtmaschine 13,5 V bis 14,4 V liefert – weit über dem zulässigen Limit. Wenn sie direkt eingebaut wird, überlädt die Lichtmaschine die Batterie kontinuierlich stark, was leicht zu Zellblähungen, thermischem Durchgehen oder zum Auslösen der Schutzplatine führt."
   - question: "Welche Sicherheitsrisiken entstehen beim Einsatz von Natrium-Ionen-Batterien im heißen Motorraum?"
@@ -38,9 +38,9 @@ Die meisten Lichtmaschinen von Autos und Motorrädern liefern im Betrieb eine Sp
 | Reihenschaltung | Nenn- / Zellspannungsspezifikation | Max. Ladespannungsbedarf | 14,4-V-Lichtmaschinen-Ergebnis | Physikalisches Urteil |
 | :--- | :--- | :--- | :--- | :--- |
 | **3er-Reihe (3S)** | 3,8 V – 4,0 V Zellen | 11,4 V – 12,0 V | **Lichtmaschine 13,5 V~14,4 V Permanente Überladung** | **Extrem gefährlich** (Weit über 11,4 V/12,0 V Obergrenze, führt zu Blähungen & Durchgehen) |
-| **4er-Reihe (4S)** | 3,8 V – 4,0 V Zellen | 15,2 V – 16,0 V (3,8 V~4,0 V/Zelle) | **Einzelzelle erhält nur 3,6 V (Lücke von 0,2 V~0,4 V)** | **Stark unterladen** (Hochspannungsbereich nicht ladbar, nutzbare Kapazität halbiert) |
+| **4er-Reihe (4S)** | 3,8 V – 4,0 V Zellen | 15,2 V – 16,0 V | **Einzelzelle erhält nur 3,6 V** | **Stark unterladen** (Hochspannungsbereich nicht ladbar, nutzbare Kapazität erheblich reduziert) |
 
-> **Quelle der Spannungsspezifikation:** [HighStar-Original-Datenblatt](/images/sodium_cell.webp) (Handelsübliche Natriumzellen haben Entladefenster von 1,5 V~3,8 V oder 1,5 V~4,0 V; ungeachtet der Spezifikation ist keine davon mit 12V-Fahrzeuglichtmaschinen kompatibel).
+> **Quelle der Spannungsspezifikation:** [HighStar-Original-Datenblatt](/images/sodium_cell.webp)
 
 ---
 
@@ -49,14 +49,12 @@ Die meisten Lichtmaschinen von Autos und Motorrädern liefern im Betrieb eine Sp
 Unter den Ausgangseigenschaften der Lichtmaschine von 13,5 V bis 14,4 V stehen Natrium-Ionen-Batterien vor einem äußerst unangenehmen Anpassungsproblem:
 
 ### 1. Warum brennt eine 3S-Konfiguration durch Überladung durch?
-- Die Lichtmaschine liefert 13,5 V bis 14,4 V, was weit über der vollen Ladeobergrenze von **11,4 V** für eine 3S-Natrium-Batterie (3,8 V pro Zelle) liegt.
+- Die Lichtmaschine liefert 13,5 V bis 14,4 V, was weit über der vollen Ladeobergrenze von **11,4 V–12,0 V** für eine 3S-Natrium-Batterie (3,8 V–4,0 V pro Zelle) liegt.
 - Einmal im Fahrzeug eingebaut, wird die Lichtmaschine die Batterie kontinuierlich stark überladen, was leicht zu Zellblähungen, thermischem Durchgehen oder zum Auslösen der Schutzplatine führt.
 
 ### 2. Warum bleibt 4S stark unterladen mit plötzlichem Spannungsabfall?
 - Die Lichtmaschine liefert maximal nur **14,4 V**, was verteilt auf 4 Zellen nur **3,6 V pro Zelle** ergibt (weit unter den für eine vollständige Ladung erforderlichen 3,8 V oder 4,0 V).
-- **Sowohl 3,8V- als auch 4,0V-Spezifikationen stehen vor einer physikalischen Spannungswand:**
-  - **3,8V-Zellen**: Volle Ladung erfordert **15,2 V**; unter 14,4 V können weniger als 50 % Kapazität geladen werden.
-  - **4,0V-Zellen**: Volle Ladung erfordert **16,0 V**; die 3,6 V der 14,4-V-Lichtmaschine lassen eine Lücke von bis zu **0,4 V pro Zelle** offen! Der Hochspannungsenergiebereich zwischen 3,6 V und 4,0 V ist völlig unerreichbar.
+- **Nutzbare Kapazität stark reduziert**: Die Kapazität von Natriumbatterien ist entlang der Spannungsskurve geneigt. **Wird die Zelle nur auf 3,6 V geladen, stehen nur etwa 60 bis 70 % der Kapazität zur Verfügung**. Wird die Vollladeschwelle von 3,8 V–4,0 V nicht erreicht, kann die obere Hochspannungskapazität überhaupt nicht genutzt werden, wodurch die tatsächlich nutzbare Kapazität erheblich schrumpft.
 - **Entladespannung fällt kontinuierlich ab**: LFP hat eine extrem flache Entladekurve (behält selbst bei 20 % Restkapazität noch >13 V bei); Natriumbatterien haben hingegen ein sehr breites Entladefenster (1,5 V–3,8 V/4,0 V), wodurch die Spannung linear mit der Kapazität abfällt. Fällt eine 4S-Natriumbatterie unter 11 V (2,75 V pro Zelle), führt dies leicht zum Neustart des Fahrzeug-Steuergeräts (ECU) oder zum Ausfall des Startvorgangs.
 
 ---
@@ -81,7 +79,7 @@ Die drei derzeitigen Hauptrouten für Kathodenmaterialien von Natrium-Ionen-Batt
 | **Zykluslebensdauer** | **Mittel (Ion auflösung & Verfall bei Hitze)** | **Niedrig bis Mittel** | **Mittel bis Hoch** |
 | **Selbstentladungsrate** | **Hoch (5–10%/Monat)**<br>Metallauflösungs-Shuttle + Instabile Hartkohlenstoff-SEI | **Extrem hoch (>10%/Monat)**<br>Kristallwasserkorrosion + Elektrolytzersetzung | **Mittel-Niedrig (3–5%/Monat)**<br>Keine Metallauflösung, nur durch SEI-Reparatur beeinflusst |
 
-> **Zusammenfassung:** Die im Handel erhältlichen Natriumbatterien, die auf Kapazität und Energiedichte abzielen, verwenden meist **Schichtoxide**, neigen jedoch im heißen Motorraum (70–90°C) zu thermischem Durchgehen mit heftiger Sauerstofffreisetzung und Blähungen/Leckagen; die relativ sicheren **polyanionischen Verbindungen** sind zwar thermisch stabil, leiden jedoch unter einer extrem niedrigen volumetrischen Energiedichte und ihr **flaches Spannungsplateau ist stark inkompatibel mit 12V-Ladesystemen** (3S neigt dazu, unter 11V zu fallen, 4S lässt sich nicht voll aufladen). Keine der drei Routen ist derzeit für den stabilen Einsatz in Starterbatterien geeignet.
+> **Zusammenfassung:** Die im Handel erhältlichen Natriumbatterien, die auf Kapazität und Energiedichte abzielen, verwenden meist **Schichtoxide**, neigen jedoch im heißen Motorraum (70–90°C) zu thermischem Durchgehen mit heftiger Sauerstofffreisetzung und Blähungen/Leckagen; die relativ sicheren **polyanionischen Verbindungen** sind zwar thermisch stabil, leiden jedoch unter einer extrem niedrigen volumetrischen Energiedichte und **ihre Spannungseigenschaften sind stark inkompatibel mit 12V-Ladesystemen** (3S neigt dazu, unter 11V zu fallen, 4S lässt sich nicht voll aufladen). Keine der drei Routen ist derzeit für den stabilen Einsatz in Starterbatterien geeignet.
 
 ---
 
