@@ -4,7 +4,7 @@ title: "Tire Label Comparison (EU, Japan, Taiwan) | Wet Grip, Fuel Efficiency Ra
 lang: en
 date: 2021-09-14 12:58:29
 categories: Auto
-tags: [Tires, Tire Labels, Wet Grip, Fuel Efficient Tires, Tire Pressure Conversion, EU Label, Japan Label]
+tags: [Tire & Alignment]
 description: "A must-read before buying new tires! Learn how to look up EU and Japanese tire labels to avoid tires with poor wet grip. Includes comparison tables for Wet Grip, Rolling Resistance (RRC), and a Mercedes-Benz OEM tire pressure conversion chart (PSI/Bar/kPa)."
 keywords: "Tire Labels, Wet Grip, Rolling Resistance, Fuel Efficient Tires, Tire Pressure Conversion, Tire Search, EU Label, Japan Label, Tire Recommendations"
 image: /images/mobile01-03938a4db5623e33ffa69c10d48dc387.webp

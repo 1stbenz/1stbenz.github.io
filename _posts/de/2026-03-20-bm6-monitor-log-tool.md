@@ -4,7 +4,7 @@ title: "Wochenendberichtanalyse-Tool für BM6/BM200"
 lang: de
 date:   2026-03-20 17:00:00
 categories: Auto
-tags: [BM6, Batterieüberwachung, Lithium-Eisenphosphat-Batterie, Datenanalyse, Fahrstreckenerkennung, Umrechnungswerkzeug, Automobilbatterie]
+tags: [Autobatterie, Batterieüberwachung, Fahrzeugwissen, DIY Werkzeuge, Datenanalyse]
 description: "Eine webbasierte Konvertierungssoftware, die speziell für den BM6-Bluetooth-Akkuüberwachungsmelder entwickelt wurde. Mit intelligenten Algorithmen löst sie das Problem der ungenauen Fahrtenmessung durch Lithium-Eisenphosphat-Batterien bei hohen Spannungen und stellt exakte Reiseredaktionen sicher. Zusätzlich bietet sie visuelle Diagramme sowie die Möglichkeit, Excel-Reports zu exportieren."
 keywords: "BM6, Bluetooth-Batterie-Monitoring, Lithium-Eisen-Phosphat-Akku, Fahrstreckenerfassung, Spannungsanalyse, Excel-Export, Protokolldatei-Konvertierung, Autoakku, Ladesteuerung"
 image: /images/bm6-tool-preview.webp

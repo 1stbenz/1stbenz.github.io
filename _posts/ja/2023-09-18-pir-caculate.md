@@ -4,7 +4,7 @@ title: "高圧洗浄機の泡ディスペンサーの比率はどう計算する
 lang: ja
 date: 2023-09-18 11:08:29 +0900
 categories: Auto
-tags: [高圧洗浄機, 泡ディスペンサー, PAボトル, カーシャンプー, PIR, カーケア, DIY]
+tags: [カーケア, DIYチュートリアル]
 description: "泡ディスペンサー（PAボトル）にカーシャンプーをどれだけ入れるべきか？本記事ではPIR（Panel Impact Ratio）の計算式を詳しく解説します。高圧洗浄機の実際の吐出量を測定することで、カーシャンプーと水の希釈比率を正確に換算し、泡濃度をメーカー推奨値に合わせます。"
 keywords: "PIR計算, 泡ディスペンサーの比率, PAボトル, カーシャンプー希釈, 高圧洗浄機, Panel Impact Ratio, 事前洗浄, Meguiars, 二バケ式"
 image: /images/mobile01-0e1b9c7a4802eb77ff910d07e666e195.webp

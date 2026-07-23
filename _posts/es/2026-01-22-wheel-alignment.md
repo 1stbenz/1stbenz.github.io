@@ -4,7 +4,7 @@ title: "El ángulo que define la conducción"
 lang: es
 date: 2026-01-22 10:00:10
 categories: Auto
-tags: [Mantenimiento automotriz, alineación de cuatro ruedas, conocimientos sobre neumáticos, técnicas de conducción]
+tags: [Alineación de neumáticos]
 description: "¿La sensación de flotación al conducir o un desgaste desigual de los neumáticos? ¡Entiende el alineamiento del vehículo en solo 3 minutos! Este artículo explica de forma sencilla la función del ángulo de inclinación (Camber), el ángulo de diestra (Caster) y el ángulo de convergencia (Toe), así como su impacto en la maniobrabilidad mediante Toe-in/Toe-out, enseñándote a determinar si tu vehículo necesita un alineamiento."
 keywords: "Posicionamiento de vehículos, alineación en cuatro ruedas, ángulo de inclinación exterior, Camber, Ángulo de inclinado posterior (Caster), Ángulo de convergencia anterior, Toe-in, Toe-out, Desgaste lateral del neumático, Manejo automotriz"
 image: /images/wheel_alignment.webp

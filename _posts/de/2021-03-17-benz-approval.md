@@ -4,7 +4,7 @@ title: "Der Weg zur W205 (6) - Benzinmotoröl-Zertifizierungsvorschriften"
 lang: de
 date:   2021-03-17 12:58:29
 categories: Auto
-tags: [W205, Motoröl-Zertifizierung, MB 229.5, MB 229.52, MB 229.71, Motoröl-Spezifikationen]
+tags: [Fahrzeugwartung, Ölspezifikationen]
 description: "WASHERS OIL ZERTIFIZIERUNG: Was ist der Unterschied zwischen den Spezifikationen 229.5, 229.52 und dem neuesten 229.71? Dieser Artikel fasst Daten von Oil Club zusammen und macht die Leistungsunterschiede bei Verschleißschutz, Kraftstoffeffizienz und Kohlenablagerungsunterdrückung zwischen den verschiedenen Generationen der Zertifikate auf einen Blick sichtbar."
 keywords: "MB 229.5, MB 229.52, MB 229.71, Mercedes-Benz Motoröl-Zertifizierung, Motoröl-Normen, W205-Motoröl, Motoröl-Netz-Diagramm, 0W20"
 image: /images/mobile01-51c63dcf33904b90f6be286303199693.webp

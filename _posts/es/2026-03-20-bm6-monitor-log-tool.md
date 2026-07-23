@@ -4,7 +4,7 @@ title: "Herramienta de análisis para archivos mensuales BM6/BM200"
 lang: es
 date:   2026-03-20 17:00:00
 categories: Auto
-tags: [BM6, monitoreo de baterías, batería LiFePO4, análisis de datos, detección de recorrido, herramienta de conversión, batería automotriz]
+tags: [Batería de coche, Monitor de batería, Conocimiento de coche, Herramientas DIY, Análisis de datos]
 description: "Herramienta de conversión de registros para BM6, diseñada específicamente para el monitor Bluetooth. Mediante algoritmos inteligentes, resuelve los problemas de detección inexactos del recorrido causados por las características de alta tensión de las baterías LiFePO4 en la aplicación original, restaurando con precisión cada registro de conducción y proporcionando gráficos visuales junto con la exportación a Excel."
 keywords: "BM6, monitor de batería Bluetooth, batería LiFePO4, detección de recorrido, análisis de voltaje, exportación a Excel, conversión de archivos de registro, baterías para automóviles, control de carga"
 image: /images/bm6-tool-preview.webp

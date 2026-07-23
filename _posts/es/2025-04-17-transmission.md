@@ -4,7 +4,7 @@ title: "Notas sobre el sistema de aceite y la rejilla del cambio automático"
 lang: es
 date: 2025-04-17 12:58:29
 categories: Auto
-tags: [Cambio de velocidad, Aceite para cambio de velocidad, Filtro, Mantenimiento del automóvil, Hágalo usted mismo (DIY), Cuerpo de válvula, Convertidor de par]
+tags: [Mantenimiento de coche, Conocimiento de coche, Tutorial DIY]
 description: "¿Un cárter de aceite muy sucio indica que la transmisión está a punto de fallar? La clave reside en el filtro. Este artículo analiza mediante diagramas del circuito hidráulico las diferencias entre los filtros tradicionales, el diseño con doble cartucho y aquellos modelos \"sin posibilidad de cambiar el filtro\". Se revelan por qué ciertos diseños constituyen una obsolescencia planificada y se presentan conceptos correctos sobre el mantenimiento de la transmisión."
 keywords: "aceite de transmisión, filtro de transmisión, cárter, cuerpo de válvulas, convertidor de par, doble filtro, filtro de papel, malla metálica, reemplazo programado"
 image: https://img.youtube.com/vi/zcwG97VMOVk/maxresdefault.jpg

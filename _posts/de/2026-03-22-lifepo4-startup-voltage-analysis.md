@@ -4,7 +4,7 @@ title: "Analyse der Fahrzeugstartspannung (2.3 NA × Lithium-Eisenphosphat-Batte
 lang: de
 date:   2026-03-22 16:00:00
 categories: Auto
-tags: [Autoreparatur, Autoelektrik, Lithium-Eisen-Phosphat-Batterie, Messanalyse, Schaltprinzipien]
+tags: [Autobatterie, Fahrzeugwissen]
 description: "Brich das Missverständnis, dass es nur eine einzige Startspannung gibt! Durch hochfrequente Messdaten über einen Zeitraum von 0,05 Sekunden analysieren wir die physikalische Leistungsfähigkeit einer Reihe aus vier Lithium-Eisenphosphat-Batterien im Moment des Motorstarts und erklären mit der Formel V = V₀ - (I × R), wie der Innenwiderstand der Batterie den Spannungsabfall und die Effizienz beim Aufladen durch den Generator beeinflusst."
 keywords: "Eisen-Lithium-Startbatterie, Autobatterie, Spannungsabfall, Innenwiderstand, CCA, Startstrom, Generator, LiFePO4, Spannungsfallsformel"
 image: /images/voltage_record_image.svg

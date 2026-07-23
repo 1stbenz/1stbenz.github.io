@@ -4,7 +4,7 @@ title: "Wie sollte man die Reifen drehen? Grafische Anleitung der NHTSA/JATMA zu
 lang: de
 date:   2020-11-24 12:58:29
 categories: Auto
-tags: [Reifendrehen, Reifenwechsel, Reifenlebensdauer, Fahrzeugwartung, NHTSA, JATMA, Vorderradantrieb, Fehrradantrieb]
+tags: [Reifenausrichtung]
 description: "Ein Reifendrehen alle 5000 Kilometer verlängert die Lebensdauer der Reifen und verhindert Abnutzung. Dieser Artikel fasst die Standard-Anleitungen des US-amerikanischen NHTSA und des japanischen JATMA zusammen, um für Fahrzeuge mit Vorderradantrieb (FF), Fehrradantrieb (FR) oder Vierradantrieb (AWD) den korrekten Drehvorgang zu erläutern."
 keywords: "Reifendrehfolge, Reifenwechsel, Vorderradantriebs-Reifendrehen, Fehrrad-Antriebs-Reifendrehen, Abnutzung, Reifenlebensdauer, Fahrzeugwartung, NHTSA, JATMA"
 image: /images/mobile01-2e1893169f4c34081d996c1dca417758.webp

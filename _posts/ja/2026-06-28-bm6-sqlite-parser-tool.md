@@ -4,7 +4,7 @@ title:  "BM6 バッテリーテストデータベース (SQLite) パーサー"
 lang: ja
 date:   2026-06-28 09:30:00
 categories: Auto
-tags: [BM6, バッテリー監視, データ分析, クランキング波形, ドライブ検出, SQLite, 車載バッテリー]
+tags: [自動車バッテリー, バッテリーモニター, DIYツール, データ分析]
 description: "BM6 Bluetoothバッテリーモニター専用のSQLiteローカルデータベースパーサー。BM6.sqliteファイルを読み取り、完全な走行履歴、クランキングテスト波形、充電リップルテストを解析し、豊富なズーム可能なチャートと検出統計を提供します。"
 keywords: "BM6, SQLite解析, クランキング波形, クランキング電圧, ドライブ検出, 温度分析, 充電リップル, バッテリー監視"
 image: /images/bm6-sqlite-preview2.webp

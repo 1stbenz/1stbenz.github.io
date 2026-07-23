@@ -4,7 +4,7 @@ title: "W205 Oil Journey (4) - Understanding Engine Oil Parameters"
 lang: en
 date: 2021-01-16 12:58:29
 categories: Auto
-tags: [Engine Oil, Car Maintenance, API SQ, API SP, MB 229.5, HTHS, PAO, GTL, LSPI]
+tags: [Car Maintenance, Oil Specifications]
 description: "Don't let marketing hype fool you. This article explains the difference between the latest API SQ/SP standards and OEM approvals (MB 229.5). Learn how to distinguish genuine 'Approvals' from fake ones, and dive deep into metrics like HTHS, TBN, and Noack volatility."
 keywords: "Oil Specifications, API SQ, API SP, MB 229.5, HTHS, TBN, Noack, PAO, GTL, LSPI, Base Oil, Additives"
 image: /images/mobile01-6c9f3d5e1626b191b75230bf6dd0eda6.webp

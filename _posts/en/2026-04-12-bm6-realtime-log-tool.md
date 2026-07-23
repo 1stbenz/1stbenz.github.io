@@ -4,7 +4,7 @@ title: "BM6 Real-Time 1Hz Data Parsing Tool"
 lang: en
 date: 2026-04-12 10:00:00
 categories: Auto
-tags: [BM6, Battery Monitor, Data Conversion, Log Parsing, Car Battery]
+tags: [Car Battery, Battery Monitor, DIY Tools, Data Analysis]
 description: "Convert hex packets from raw BM6 logs into readable per-second voltage and temperature data, with CSV export and dual-axis chart visualization support."
 keywords: "BM6, Battery Monitor, Real-time Data, Voltage Record, Temperature Record, Log Parsing, Hex Decoding, CSV Export, LiFePO4 Battery"
 image: /images/bm6-cranking-preview.webp

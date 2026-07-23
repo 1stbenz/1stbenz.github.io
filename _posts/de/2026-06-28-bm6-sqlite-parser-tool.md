@@ -4,7 +4,7 @@ title:  "BM6 Batterietest-Datenbank (SQLite) Parser"
 lang: de
 date:   2026-06-28 09:30:00
 categories: Auto
-tags: [BM6, Batterieüberwachung, Datenanalyse, Startwellenform, Fahrterkennung, SQLite, Autobatterie]
+tags: [Autobatterie, Batterieüberwachung, DIY Werkzeuge, Datenanalyse]
 description: "Ein SQLite-Lokaldatenbank-Parser, speziell für den BM6 Bluetooth-Batteriemonitor entwickelt. Er liest BM6.sqlite-Dateien, analysiert vollständige historische Fahrtenaufzeichnungen, Starttest-Wellenformen und Ladewellen-Tests und bietet umfangreiche zoombare Diagramme und Erkennungsstatistikdaten."
 keywords: "BM6, SQLite-Analyse, Startwellenform, Startspannung, Fahrterkennung, Temperaturanalyse, Ladewellen, Batterieüberwachung"
 image: /images/bm6-sqlite-preview2.webp

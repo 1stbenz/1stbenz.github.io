@@ -4,7 +4,7 @@ title: "Certificación JASO MB para motocicletas versus certificación API y de 
 lang: es
 date: 2026-05-03 12:00:00
 categories: Moto
-tags: [Aceite de motor, API SQ, JASO MB, motocicleta, mantenimiento del motor, certificación Mercedes-Benz, certificación 2026, normativa ambiental séptima fase]
+tags: [Mantenimiento de coche, Especificaciones de aceite]
 description: "¿Es realmente la única solución para scooters de uso diario con revoluciones inferiores a 8000 que cumplir con JASO MB? Un análisis profundo de las nuevas especificaciones API SQ y la certificación MB 229.52, explorando por qué los aceites automotrices de gama alta suelen superar en antioxidación, limpieza e intensidad del film lubricante a los tradicionales aceites diseñados específicamente para motocicletas."
 keywords: "API SQ, JASO MB, aceite de motocicleta, aceite para automóvil y motocicletas, 8000 rpm, lubricación del motor, especificaciones de aceite 2026, norma MB 229.52, séptima fase ambiental"
 image: /images/mobile01-4354e3784c5b7a8a13113354d8a13b2f.webp

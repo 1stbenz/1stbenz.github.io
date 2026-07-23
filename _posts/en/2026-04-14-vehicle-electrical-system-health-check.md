@@ -4,7 +4,7 @@ title: "Comprehensive Vehicle Electrical System Health Check: BM6 Long-term Data
 lang: en
 date: 2026-04-14 09:52:00
 categories: Auto
-tags: [Car Battery, LiFePO4 Battery, Lead-Acid Battery, Alternator Diagnostics, Data Analysis, Dark Current, Cranking Voltage]
+tags: [Car Battery, Battery Monitor, Car Knowledge]
 description: "How to scientifically determine if it's time to replace your battery? This article introduces a vehicle electrical system health check system. By analyzing 1Hz monitoring data and 100Hz high-frequency cranking logs, it deeply evaluates resting leakage, driving alternator efficiency, and instantaneous cranking power."
 keywords: "Battery Health, LiFePO4, Lead-Acid Battery, Dark Current Test, Cranking Voltage, Alternator Check, Bluetooth Log Analysis, Vehicle Power"
 image: /images/battery-health-report-analysis.webp

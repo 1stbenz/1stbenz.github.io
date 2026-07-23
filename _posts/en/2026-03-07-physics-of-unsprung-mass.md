@@ -4,7 +4,7 @@ title: "The Physics of Unsprung Mass: Does 1kg Really Equal 10kg?"
 lang: en
 date: 2026-03-07 10:00:00
 categories: Auto
-tags: [Rotational Inertia, Car Modification, Physics, Unsprung Mass, Suspension, Handling]
+tags: [Tire & Alignment, Car Knowledge, Car Modification]
 description: "We've all heard the saying: '1kg of unsprung weight equals 10kg of sprung weight.' But is it scientifically accurate? This article dives into the physics of rotational inertia and suspension dynamics to reveal the truth about how wheel weight affects acceleration and handling."
 keywords: "Unsprung Mass, Sprung Mass, Rotational Inertia, Suspension Dynamics, Wheel Weight, Forged Wheels, Kinetic Energy, Car Handling, Modification Physics"
 image: /images/physics-of-unsprung.webp

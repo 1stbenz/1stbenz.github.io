@@ -4,7 +4,7 @@ title: "W205 Oil Selection (3) - MB Approval + LSPI Prevention 5W-30 (Part 1)"
 date: 2021-01-02 17:10:11
 lang: en
 categories: Auto
-tags: [W205, Oil Recommendation, LSPI, API SQ, API SP, MB 229.5, MB 229.52, Turbocharged Engines]
+tags: [Car Maintenance, Oil Specifications]
 description: "Is your W205 direct-injection engine at risk of knocking? This article explains the causes and prevention of LSPI (Low-Speed Pre-Ignition) and lists 5W-30 oils available in Taiwan that meet MB 229.5/52 and LSPI tests (API SQ/SP)."
 keywords: "W205 Oil, LSPI, Low Speed Pre-Ignition, Engine Knock, API SQ, API SP, MB 229.5, MB 229.52, 5W-30, Shell Helix Ultra"
 image: /images/mobile01-bdcd0398015144b90240dd50446d80a4.webp

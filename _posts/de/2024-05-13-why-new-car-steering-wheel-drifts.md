@@ -4,7 +4,7 @@ title: "Warum neigt das Lenkrad beim Neuwagen leicht? Ist es ein Mangel oder nor
 lang: de
 date: 2024-05-13 09:00:00
 categories: Auto
-tags: [Lenkradverzug, Neuwagen, Torsionssteuerung, Straßenneigung, Vierradjustierung, Autowerkstattwissen, RAV4, CX-60]
+tags: [Reifenausrichtung, Fahrzeugwissen]
 description: "Ist eine leichte Ausrichtung des Lenkrads beim Neuwagen ein Mangel? Dieser Artikel analysiert vier häufige Ursachen: Straßenneigung, Kraftstoffverteilung (Torque), die Nullpunkt-Einstellung der EPS und das Werkseinstellzentrum. So erfahren Sie mehr über die dahinterliegenden Automobiltechnik-Phänomene und physikalischen Gesetzmäßigkeiten."
 keywords: "Lenkrad nicht gerade, Lenkradrücklauf, Torsionslenkung, Torque Steer, Straßenneigung, Road Crown, ESP-Zero-Positionierung, Vierradjustage, Mängel bei Neuwagen, Automobilwartung"
 image: /images/steering-wheel-drift.webp

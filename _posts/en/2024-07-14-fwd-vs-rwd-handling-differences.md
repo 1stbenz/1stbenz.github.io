@@ -4,9 +4,9 @@ title: "Transverse FWD vs. Longitudinal RWD: What are the Actual Differences in 
 lang: en
 date: 2024-07-14 09:30:0
 categories: Auto
-tags: [FWD, RWD, Car Handling, Car Tech, Transverse Engine, Longitudinal Engine, Understeer, Oversteer]
+tags: [Tire & Alignment, Car Knowledge]
 description: "Following our discussion on steering drift, let's dive deep into Transverse FWD and Longitudinal RWD layouts. Understand the fundamental differences in handling limits, cabin space, and daily driving experiences."
-keywords: "Transverse FWD, Longitudinal RWD, FWD vs RWD, Car Handling, Understeer, Oversteer, Weight Distribution, Torque Steer, Understeer, Tail Slide"
+keywords: "Transverse FWD, Longitudinal RWD, FWD vs RWD, Car Handling, Understeer, Oversteer, Weight Distribution, Torque Steer, Tail Slide"
 image: /images/fwd-vs-rwd-handling.webp
 faq:
   - question: "What is the biggest advantage of a Transverse Front-Wheel Drive (FWD) layout?"

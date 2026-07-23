@@ -4,7 +4,7 @@ title:  "Analyse der fatalen Schwächen von LTO-Autobatterien: Warum 5S überlad
 lang: de
 date:   2025-06-12 10:00:29
 categories: Auto
-tags: [Lithium-Titanat, LTO, Autobatterie, Modifizierte Batterie, 5S, 6S, DIY, Spannungsanpassung, Innenwiderstandsmesser-Blindfleck, Temperaturbeschränkung, Motorraumhitze]
+tags: [Autobatterie, Batterieüberwachung, Fahrzeugtuning, Fahrzeugwissen, DIY Anleitung]
 description: "Möchten Sie eine Lithium-Titanat (LTO) Batterie modifizieren? Verstehen Sie zuerst die Einschränkungen bei Spannungsanpassung und Temperatur. Dieser Artikel analysiert, warum die 14V der Lichtmaschine 5S LTO überlädt und 6S LTO mit nur 30% Kapazität belässt, zeigt auf, warum LTO keine Motorraumtemperaturen über 55°C verträgt, und deckt die blinden Flecken beim Testen von gebrauchten Zellen auf."
 keywords: "Lithium-Titanat, LTO, SCiB, 5S, 6S, Spannungsfehlanpassung, Überladung, Auto-Modifikation, Lithiumbatterie, Toshiba, Innenwiderstandstest, Temperaturbeschränkung, Motorraumhitze"
 image: /images/mobile01-73a3f73994754009670d4e7b1e13c046.webp

@@ -4,9 +4,9 @@ title: "Análisis de la arquitectura de baterías de litio para vehículos: seri
 date: 2025-04-20 10:00:00 +0800
 categories: Auto
 lang: es
-tags: [Litio-iron-phosphate battery, BMS, batería envejecida, circuito equivalente, modificación automotriz]
+tags: [Batería de coche, Modificación de coche, Conocimiento de coche]
 description: "Análisis profundo de las dos arquitecturas principales para baterías LiFePO4 de arranque automotivo de 12 V: la configuración monobloque 4S1P y el paralelismo cónico 4S20P. Se examinan desde una perspectiva física los aspectos de gestión térmica, las zonas ciegas del BMS en cuanto a monitoreo y el comportamiento de rebote de voltaje, además de analizarse cómo la lógica de mantenimiento postventa impacta en los costos de posesión a largo plazo para el consumidor."
-keywords: "Litio-ferro-bato, Batería de arranque para automóviles, Celdas grandes, 26650, 4S1P, 4S20P, Balanceo BMS, Reparación de baterías, Impedancia interna, Autodescarga en paralelo"
+keywords: "Litio-ferro-bato, Batería de arranque para automóviles, Celdas grandes, 4S1P, 4S20P, Balanceo BMS, Reparación de baterías, Impedancia interna, Autodescarga en paralelo"
 image: /images/mobile01-4354e3784c5b7a8a13113354d8a13b2f.webp
 faq:
   - question: "¿Cuáles son las dos arquitecturas principales de una batería de litio para automóvil de 12V?"

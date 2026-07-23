@@ -4,7 +4,7 @@ title:  "Análisis de los defectos fatales de las baterías LTO para automóvile
 lang: es
 date:   2025-06-12 10:00:29
 categories: Auto
-tags: [Titanato de litio, LTO, Batería de coche, Batería modificada, 5S, 6S, DIY, Ajuste de voltaje, Punto ciego del medidor de resistencia interna, Límite de temperatura, Calor del motor]
+tags: [Batería de coche, Monitor de batería, Modificación de coche, Conocimiento de coche, Tutorial DIY]
 description: "¿Estás pensando en modificar una batería de Titanato de Litio (LTO)? Primero comprende las limitaciones de voltaje y temperatura. Este artículo analiza por qué los 14V del alternador sobrecargan el LTO 5S y dejan el LTO 6S con solo 30% de capacidad, revela por qué LTO no soporta temperaturas del motor superiores a 55°C, y expone los puntos ciegos al probar celdas de segunda mano."
 keywords: "Titanato de litio, LTO, SCiB, 5S, 6S, Desajuste de voltaje, Sobrecarga, Modificación de coche, Batería de litio, Toshiba, Prueba de resistencia interna, Límite de temperatura, Calor del motor"
 image: /images/mobile01-73a3f73994754009670d4e7b1e13c046.webp

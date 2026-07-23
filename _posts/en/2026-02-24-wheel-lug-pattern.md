@@ -4,7 +4,7 @@ title: "Why Do Lightweight Alloy Wheels Make Your Car Consume More Gas and Run S
 lang: en
 date: 2026-02-24 10:00:10
 categories: Auto
-tags: [Aerodynamics, Speed, Wheel Design, Fuel Efficiency, Car Modification, F1 Technology, Rotational Inertia, EV Technology, Wind Tunnel]
+tags: [Car Maintenance, Car Knowledge, Tire & Alignment, Car Modification]
 description: "Many people believe that upgrading to lightweight alloy wheels saves fuel and improves acceleration. However, on the highway, air resistance and rotational inertia are the real deciding factors. Combining physics, F1 racing technology, and EV low-drag designs, this article reveals why \"weight shaving\" and \"upsizing\" can actually lead to worse fuel economy and a lower top speed."
 keywords: "alloy wheel modification, lightweight wheels, fuel consumption, aerodynamic drag, aerodynamics, unsprung weight, rotational inertia, moment of inertia, forged wheels, ventilation drag, drag coefficient, EV, low-drag wheels, range"
 image: /images/pirelli-motorsport-car-Formula1.webp

@@ -4,7 +4,7 @@ title: "W205 Öl-Suche (4) - Zusammenstellung der Öleigenschaften"
 lang: de
 date:   2021-01-16 12:58:29
 categories: Auto
-tags: [Motoröl, Fahrzeugwartung, API SQ, API SP, MB 229.5, HTHS, PAO, GTL, LSPI]
+tags: [Fahrzeugwartung, Ölspezifikationen]
 description: "Vorsicht vor Täuschung durch die Verpackung beim Kauf von Motoröl! Dieser Artikel vergleicht die neuesten API SQ/SP-Standards mit den Herstellerzertifizierungen (MB 229.5), um Ihnen zu helfen, echte Approvals zu erkennen. Eine detaillierte Analyse der Bedeutung von HTHS-, TBN- und Noack-Daten sowie der Basisölen PAO/GTL und Additiven, damit Sie sich vor unbekannten 'Göttlichen Ölen' schützen."
 keywords: "Ölzertifizierung, API SQ, API SP, MB 229.5, HTHS, TBN, Noack, PAO, GTL, LSPI, Basisöl, Additive"
 image: /images/mobile01-6c9f3d5e1626b191b75230bf6dd0eda6.webp

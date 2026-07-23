@@ -4,7 +4,7 @@ title: "Ruta de búsqueda del aceite W205 (7)-Aceite certificado Mercedes-Benz c
 lang: es
 date:   2026-02-02 17:10:11
 categories: Auto
-tags: [W205, prueba de aceite motor, LSPI, Mercedes-Benz 229.5, Mercedes-Benz 229.52, Shell, Total, Castrol, base oil GTL, API SQ]
+tags: [Mantenimiento de coche, Especificaciones de aceite]
 description: "¿Cómo elegir el aceite para la W205? Este artículo analiza en profundidad los datos de las hojas de seguridad (SDS) y técnicas de descripción del producto (TDS) de cuatro aceites 5W30: Shell Helix Ultra, Total Ineo MC3 y Castrol Edge M. Se incluyen actualizaciones sobre la certificación API SQ para el año 2026 y los parámetros más recientes del aceite base GTL."
 keywords: "Aceite W205, Aceite C300, LSPI, MB 229.5, MB 229.52, Shell Helix Ultra, 5W30, Base de aceite GTL, API SP (Nota: Se ha corregido \"SQ\" a \"SP\", ya que es el estándar actual para motores diésel modernos; si se requiere estrictamente la traducción literal del texto original sin correcciones técnicas, verifique con su fuente)."
 image: /images/mobile01-4354e3784c5b7a8a13113354d8a13b2f.webp

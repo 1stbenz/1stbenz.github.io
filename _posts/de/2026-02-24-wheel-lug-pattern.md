@@ -4,7 +4,7 @@ title: "Warum verbraucht der Fahrzeug nach dem Wechsel auf leichte Aluminiumfelg
 lang: de
 date: 2026-02-24 10:00:10
 categories: Auto
-tags: [Strömungslehre, Geschwindigkeit, Raddesign, Kraftstoffeffizienz, Fahrzeugmodifikation, Formel-1-Technologie, Trägheitsmoment, Elektrofahrzeugtechnologie, Aerodynamikkanal]
+tags: [Fahrzeugwartung, Fahrzeugwissen, Reifenausrichtung, Fahrzeugtuning]
 description: "Viele glauben, dass der Austausch von Leichtlaufalufelgen den Kraftstoffverbrauch senkt und die Beschleunigung verbessert. Auf Autobahnen sind jedoch Luftwiderstand und Rotationsmasse entscheidend. Dieser Artikel verbindet physikalische Prinzipien mit F1-Technologie und Low-Drag-Designs für Elektrofahrzeuge, um aufzuklären, warum das „Versteifen von Leichtlauf\" und der Wechsel zu größeren Felgenrädern tatsächlich den Kraftstoffverbrauch erhöhen und die Höchstgeschwindigkeit verringern können."
 keywords: "Alufelgen-Modifikation, Leichtgewichts-Alufelgen, Kraftstoffverbrauch, Luftwiderstand, Aerodynamik, Unachslast, Rotationsmoment, Drehträgheit, Gussfelgen, Strömswiderstand, Widerstandsbeiwert, Elektrofahrzeug, Niedriger-Widerstand-Felge, Reichweite"
 image: /images/pirelli-motorsport-car-Formula1.webp

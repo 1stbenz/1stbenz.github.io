@@ -5,7 +5,7 @@ date: 2026-03-30 22:30:00 +0800
 categories: Auto
 lang: de
 image: /images/battery_aging.webp
-tags: [Batteriealterung, Innenwiderstand, Äquivalenzschaltung, Lithium-Ionen-Akkumulator, Blei-Säure-Akku]
+tags: [Autobatterie, Fahrzeugwissen]
 description: "Erforschen Sie die physikalischen Wahrheiten der BatterielAlterung. Durch äquivalente Schaltkreismodelle und das Ohmsche Gesetz analysieren wir, wie ein Anstieg des Innenwiderstands zu ungewöhnlicher Erwärmung beim Laden, einer scheinbar hohen Endspannung sowie einem Spannungsabfall während des Entladens führt. Dieser Artikel bietet einfache Formelbeispiele, die Ihnen helfen, die wissenschaftlichen Prinzipien und Sicherheitsbewertungen hinter dem Phänomen «Lithium- oder Blei-Säurebatterien laden nicht voll auf / entladen sich schnell» zu verstehen."
 keywords: "Batterialterungsursachen, Zunahme des Innenwiderstands, Äquivalentkreis, Lithium-Ionen-Batterie-Lebensdauer, Blei-Säure-Akku-Wartung, Spannungsabfallberechnung, Formel für Leistungsverschwendung, Batterieerwärmungsprinzip, Interner Widerstand, Batteriezustandsüberprüfung"
 math: true

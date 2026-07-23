@@ -4,7 +4,7 @@ title: "Baterías de hierro-litio versus supercondensadores: ¿cómo elegir?"
 lang: es
 date:   2025-10-18 10:08:30
 categories: Auto
-tags: [Litio-ferro-bato, supercapacitores, modificacións automotrices, actualización do sistema eléctrico, CCA, impuesto de la estúpida inteligencia (o "impuesto a los tontos")]
+tags: [Batería de coche, Modificación de coche]
 description: "¿Sigue dudando entre actualizar a una batería de iones de litio o instalar un supercondensador? Este artículo analiza mediante fórmulas en paralelo, principios de división de corriente y datos reales de resistencia interna para revelar por qué las baterías de iones de litio vencen claramente al supercondensador y por qué los condensadores externos pueden ser una \"actualización negativa\" que cuesta dinero y daña el vehículo."
 keywords: "Litio-ferro-bato, supercapacitor, sistema eléctrico automotriz, corriente inversa, regulador de voltaje, resistencia interna, beneficios del tuning, CCA, impuesto a la inteligencia artificial (o simplemente: impuestos innecesarios)"
 image: /images/mobile01-4354e3784c5b7a8a13113354d8a13b2f.webp

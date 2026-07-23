@@ -4,7 +4,7 @@ title: "Análisis de los defectos fatales de las baterías de arranque de ion de
 lang: es
 date: 2026-07-10 00:30:00
 categories: Auto
-tags: [fosfato de hierro y litio, LFP, batería de coche, batería de arranque, batería modificada, batería de ion de sodio, 3S, 4S, coincidencia de voltaje, fuga térmica, liberación de oxígeno, alta temperatura en el compartimento del motor]
+tags: [Batería de coche, Monitor de batería, Modificación de coche, Conocimiento de coche]
 description: "¿Quieres modificar la batería de arranque de 12V de tu coche? Comprende primero el límite físico de la coincidencia de voltaje y los riesgos de seguridad a alta temperatura. Este artículo compara en profundidad el Fosfato de Hierro y Litio (LFP) con las baterías de Ion de Sodio (SIB), analizando por qué una batería de sodio 4S permanece gravemente subcargada bajo un alternador de 14.4V —reduciendo su capacidad útil a la mitad— y expone fallos fatales como la fuga térmica con liberación violenta de oxígeno en compartimentos de motor calientes."
 keywords: "fosfato de hierro y litio, LFP, batería de ion de sodio, batería de sodio, 3S, 4S, batería de arranque de 12V, modificación de coche, falta de coincidencia de voltaje, subcargada, fuga térmica, liberación de oxígeno, alta temperatura en el compartimento del motor, meseta de descarga"
 image: /images/sodium-battery-analysis.webp

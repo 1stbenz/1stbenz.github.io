@@ -4,7 +4,7 @@ title: "Notizen zum Getriebeölkreislauf und Filter"
 lang: de
 date:   2025-04-17 12:58:29
 categories: Auto
-tags: [Getriebe, Getriebeöl, Filter, Wartung des Autos, Do-It-Yourself (DIY), Ventilkörper, Kupplungsgetriebe]
+tags: [Fahrzeugwartung, Fahrzeugwissen, DIY Anleitung]
 description: "Ein verschmutzter Getriebeölwanne deutet nicht zwingend auf einen bevorstehenden Getriebeschaden hin; der entscheidende Faktor ist das Filterelement. In diesem Artikel wird anhand von Diagrammen zur Ölkreislaufanalyse die Unterschiede zwischen herkömmlichen Filtersystemen, Doppelfilterkonstruktionen und Designs mit „nicht austauschbarem Filter\" aufgezeigt. Es werden erläutert, warum bestimmte Konstruktionen als geplante Verschleißteile konzipiert sind, sowie das richtige Verständnis für eine Getriebepflege vermittelt."
 keywords: "Getriebeöl, Getriebehalsfilter, Ölpanne, Ventilgehäuse, Kupplungsmuttern, Doppel-Filterelement, Papierfilterelement, Metallfilterelement, Planmäßiger Ersatz"
 image: https://img.youtube.com/vi/zcwG97VMOVk/maxresdefault.jpg

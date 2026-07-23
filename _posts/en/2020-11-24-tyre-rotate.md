@@ -4,7 +4,7 @@ title: "Tire Rotation Guide | NHTSA/JATMA Recommended Patterns for FWD, RWD, and
 date: 2020-11-24 12:58:29
 lang: en
 categories: Auto
-tags: [Tire Rotation, Tire Maintenance, Tire Life, Car Maintenance, NHTSA, JATMA, FWD, RWD, AWD]
+tags: [Tire & Alignment]
 description: "Rotating tires every 5,000 km extends tire life and prevents uneven wear. This guide summarizes the standard rotation patterns recommended by NHTSA and JATMA for FWD, RWD, and AWD vehicles."
 keywords: "Tire Rotation Pattern, Tire Maintenance, FWD Tire Rotation, RWD Tire Rotation, Uneven Tire Wear, Tire Life, Car Care, NHTSA, JATMA"
 image: /images/mobile01-2e1893169f4c34081d996c1dca417758.webp

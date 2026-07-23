@@ -4,7 +4,7 @@ title: "Wie berechnet man das Mischungsverhältnis für Hochdruckreiniger-Schaum
 lang: de
 date:   2023-09-18 11:08:29
 categories: Auto
-tags: [Druckreiniger, Schaumspender, PA-Flasche, Autowäsche, PIR, Autoverzierungen, Do-it-yourself]
+tags: [Autopflege, DIY Anleitung]
 description: "Wie viel Waschmittel muss in den Schaumspender (PA-Topf) gegeben werden? Dieser Artikel erläutert die Berechnungsformel für das PIR (Panel Impact Ratio). Durch Messung des tatsächlichen Wasserausflusses der Hochdruckreiniger wird das Verdünnungsverhältnis von Waschmittel und Wasser präzise berechnet, sodass die Schaumdichte den vom Hersteller empfohlenen Wert erreicht."
 keywords: "PIR-Berechnung, Schaumspülverhältnis, PA-Topf, Car-Shampoo Verdünnung, Hochdruckreiniger, Panel Impact Ratio, Vorwäsche, Meguiar's, Zwei-Eimer-Methode"
 image: /images/mobile01-0e1b9c7a4802eb77ff910d07e666e195.webp

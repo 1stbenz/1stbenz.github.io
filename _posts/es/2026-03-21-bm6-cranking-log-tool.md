@@ -4,7 +4,7 @@ title: "Herramienta de análisis del diario de arranque a 100 Hz para BM6/BM200"
 lang: es
 date:   2026-03-21 10:00:00
 categories: Auto
-tags: [BM6, monitor de baterías, forma de onda del arranque, análisis de datos, herramienta de conversión, batería automotriz]
+tags: [Batería de coche, Monitor de batería, Herramientas DIY, Análisis de datos]
 description: "Herramienta de análisis de ondas de arranque diseñada específicamente para el monitor Bluetooth BM6. Permite decodificar paquetes hexadecimales desde archivos log crudos, dibujar con precisión curvas de voltaje del motor a alta resolución y marcar automáticamente los puntos más bajos y el punto de separación del motor de arranque mediante un algoritmo dinámico de umbrales."
 keywords: "BM6, monitor de batería Bluetooth, forma de onda del arranque, voltaje de arranque, Craning, análisis de registros, batería automotriz, batería LiFePO4"
 image: /images/bm6-cranking-preview2.webp

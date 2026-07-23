@@ -4,7 +4,7 @@ title: "¿Por qué al cambiar por llantas de aleación más ligeras se consume m
 lang: es
 date: 2026-02-24 10:00:10
 categories: Auto
-tags: [Dinámica de fluidos, Velocidad, Diseño de ruedas, Eficiencia del combustible, Modificación automotriz, Tecnología Fórmula 1, Momento de inercia rotacional, Tecnología de vehículos eléctricos, Túnel de viento]
+tags: [Mantenimiento de coche, Conocimiento de coche, Alineación de neumáticos, Modificación de coche]
 description: "Muchos creen que modificar las llantas de aleación ligera ahorra combustible y acelera más rápido, pero en autopista la resistencia del aire y el momento de inercia rotacional son los factores determinantes. Este artículo combina principios físicos con tecnología de Fórmula 1 y diseños de baja aerodinámica para vehículos eléctricos para revelar por qué «reducir peso» e «incrementar las medidas» pueden resultar paradójicamente en un mayor consumo de combustible y una menor velocidad máxima."
 keywords: "Ruedas de aleación modificadas, Ruedas de aleación ligeras, Consumo de combustible, Resistencia aerodinámica, Aerodinámica, Peso suspendido, Inercia rotacional, Momento inercial, Diseño forjado, Resistencia al flujo de aire, Coeficiente de resistencia aerodinámica, Vehículo eléctrico, Rueda baja en coeficiente de arrastre, Autonomía"
 image: /images/pirelli-motorsport-car-Formula1.webp

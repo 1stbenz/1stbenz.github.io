@@ -4,7 +4,7 @@ title: "W205 Oil Journey (7) - MB Approval + LSPI Prevention 5W-30 (Part 2)"
 lang: en
 date: 2026-02-02 17:10:11
 categories: Auto
-tags: [W205, Oil Review, LSPI, MB 229.5, MB 229.52, Shell, Total, Castrol, GTL Base Oil, API SQ]
+tags: [Car Maintenance, Oil Specifications]
 description: "How to choose the best oil for your W205? This article provides an in-depth analysis of SDS and TDS data for Shell Helix Ultra, Total Ineo MC3, and Castrol Edge M 5W-30 oils. Featuring 2026 updates on API SQ certifications and the latest GTL base oil parameters."
 keywords: "W205 Oil, C300 Oil, LSPI, MB 229.5, MB 229.52, Shell Helix Ultra, 5W-30, GTL Base Oil, API SQ"
 image: /images/mobile01-4354e3784c5b7a8a13113354d8a13b2f.webp

@@ -4,7 +4,7 @@ title: "Herramienta de análisis en tiempo real de datos por segundo para BM6"
 lang: es
 date: 2026-04-12 10:00:00
 categories: Auto
-tags: [BM6, monitor de baterías, conversión de datos, análisis de registros, batería automotriz]
+tags: [Batería de coche, Monitor de batería, Herramientas DIY, Análisis de datos]
 description: "Convierta los paquetes hexadecimales del registro original de la BM6 en datos legibles de voltaje por segundo y temperatura, con soporte para exportación a CSV y visualización gráfica de doble eje."
 keywords: "BM6, monitoreo de baterías, datos en tiempo real, registro de voltaje, registro de temperatura, análisis de registros, decodificación hexadecimal, exportación a CSV, batería LiFePO4"
 image: /images/bm6-cranking-preview.webp

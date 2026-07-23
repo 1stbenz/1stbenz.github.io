@@ -4,7 +4,7 @@ title: "Calculadora de resistencia interna del supercondensador"
 lang: es
 date:   2026-01-11 10:00:10
 categories: Auto
-tags: [Supercondensadores, modificación de automóviles, resistencia interna de la batería, herramientas para el bricolaje, cálculo de circuitos]
+tags: [Batería de coche, Modificación de coche, Herramientas DIY]
 description: "El vendedor afirma que la instalación de un supercondensador reduce drásticamente la resistencia interna? Esta página ofrece una calculadora en línea para resistencias en paralelo; simplemente introduzca la resistencia interna original del batería y la impedancia total después de conectarlas, lo que permitirá deducir el valor real de la resistencia interna del supercondensador, ayudando a los entusiastas automotrices a determinar si las modificaciones son una inversión inteligente o un fraude intelectual."
 keywords: "Supercondensadores, Cálculo de resistencia interna, Resistencia en paralelo, Sistemas eléctricos automotrices, Corriente inversa, Regulador de voltaje, Impedancia total equivalente"
 image: /images/ir_caculator.webp

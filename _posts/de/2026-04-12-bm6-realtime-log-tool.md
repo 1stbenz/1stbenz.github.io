@@ -4,7 +4,7 @@ title: "Werkzeug zur Echtzeit-Datenanalyse pro Sekunde für BM6"
 lang: de
 date: 2026-04-12 10:00:00
 categories: Auto
-tags: [BM6, Batterieüberwachung, Datenkonvertierung, Protokolldatenanalyse, Automobilbatterie]
+tags: [Autobatterie, Batterieüberwachung, DIY Werkzeuge, Datenanalyse]
 description: "Konvertieren Sie die hexagonalen Pakete aus dem ursprünglichen BM6-Protokoll in lesbare Daten für Spannung und Temperatur pro Sekunde, mit Unterstützung der CSV-Erfassung und Visualisierung durch Dual-Achsen-Diagramme."
 keywords: "BM6, Batterieüberwachung, Echtzeitdaten, Spannungserfassung, Temperaturerfassung, Protokollierungsparsing, Hexadezimaldecodierung, CSV-Export, Lithium-Eisenphosphat-Batterie"
 image: /images/bm6-cranking-preview.webp

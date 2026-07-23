@@ -4,7 +4,7 @@ title: "BM6/BM200 Log Analyzer Tool"
 lang: en
 date:   2026-03-20 17:00:00
 categories: Auto
-tags: [BM6, Battery Monitor, LiFePO4, Data Analysis, Trip Detection, Converter Tool, Car Battery]
+tags: [Car Battery, Battery Monitor, Car Knowledge, DIY Tools, Data Analysis]
 description: "A web-based log converter tool specifically designed for the BM6 Bluetooth battery monitor. Through smart algorithms, it solves the inaccurate trip detection issue of the original APP caused by the high voltage characteristics of LiFePO4 batteries, accurately restores every driving record, and provides visual charts and Excel report export functions."
 keywords: "BM6, Bluetooth Battery Monitor, LiFePO4, Trip Detection, Voltage Analysis, Excel Export, Log Converter, Car Battery, Smart Alternator"
 image: /images/bm6-tool-preview.webp

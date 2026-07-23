@@ -4,7 +4,7 @@ title: "Rotación de llantas NHTSA/JATMA"
 lang: es
 date: 2020-11-24 12:58:29
 categories: Auto
-tags: [ajuste de llantas, rotación de neumáticos, vida útil del neumático, mantenimiento automotriz, NHTSA, JATMA, tracción delantera, tracción trasera]
+tags: [Alineación de neumáticos]
 description: "Ajustar las llantas cada 5000 kilómetros puede extender la vida útil del neumático y prevenir su desgaste prematuro. Este artículo resume los gráficos estándar recomendados por NHTSA (EE.UU.) y JATMA (Japón), proporcionando el orden correcto de rotación cruzada para vehículos delanteros (FF), traseros (FR) y todo terreno (AWD)."
 keywords: "orden de ajuste de llantas, rotación de neumáticos, ajuste para tracción delantera, ajuste para tracción trasera, desgaste prematuro, vida útil del neumático, mantenimiento automotriz, NHTSA, JATMA"
 image: /images/mobile01-2e1893169f4c34081d996c1dca417758.webp

@@ -4,7 +4,7 @@ title: "Ruta de búsqueda del aceite W205 (3)-Aceite certificado Mercedes-Benz c
 lang: es
 date: 2021-01-02 17:10:11
 categories: Auto
-tags: [W205, recomendación de aceite motor, LSPI, API SQ, API SP, MB 229.5, MB 229.52, coche turbo]
+tags: [Mantenimiento de coche, Especificaciones de aceite]
 description: "¿El motor de inyección directa del W205 teme al detonación? Este artículo analiza las causas y medidas preventivas contra el LSPI (autoencendido a baja velocidad), además de presentar una lista de aceites minerales sintéticos SAE 5W30 disponibles en Taiwán que cumplen con la certificación MB 229.5/52 y han superado los ensayos de LSPI (API SQ/SP)."
 keywords: "Aceite W205, LSPI, encendido prematuro de baja velocidad, detonación, API SQ, API SP, MB 229.5, MB 229.52, 5W30, Shell Helix Ultra"
 image: /images/mobile01-bdcd0398015144b90240dd50446d80a4.webp

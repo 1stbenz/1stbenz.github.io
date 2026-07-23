@@ -4,7 +4,7 @@ title:  "Analizador de Base de Datos (SQLite) de Pruebas de Batería BM6"
 lang: es
 date:   2026-06-28 09:30:00
 categories: Auto
-tags: [BM6, Monitoreo de Batería, Análisis de Datos, Forma de Onda de Arranque, Detección de Viajes, SQLite, Batería de Coche]
+tags: [Batería de coche, Monitor de batería, Herramientas DIY, Análisis de datos]
 description: "Un analizador de base de datos local SQLite diseñado específicamente para el monitor de batería Bluetooth BM6. Puede leer archivos BM6.sqlite, analizar registros completos de historial de conducción, formas de onda de prueba de arranque y pruebas de ondulación de carga, y proporcionar gráficos con zoom enriquecidos y datos estadísticos de detección."
 keywords: "BM6, Análisis SQLite, Forma de Onda de Arranque, Voltaje de Arranque, Detección de Viajes, Análisis de Temperatura, Ondulación de Carga, Monitoreo de Batería"
 image: /images/bm6-sqlite-preview2.webp

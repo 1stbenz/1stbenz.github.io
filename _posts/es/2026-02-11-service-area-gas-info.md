@@ -4,7 +4,7 @@ title: "Guía completa de información sobre estaciones de servicio en los servi
 lang: es
 date:   2026-02-11 11:08:30
 categories: Travel
-tags: [Servicio de autopista, carretera, estación de servicio, Sinopec, Shell Petroleum, información turística]
+tags: [Mantenimiento de coche, Conocimiento de coche, Información de viaje]
 description: "Este artículo resume la información de las estaciones de servicio ubicadas en los principales servicios a lo largo del Autopista Nacional 1 y el Autopista Nacional 3, incluyendo su ubicación municipal y distancia desde el inicio, así como si cuentan con estación de servicio para el tráfico hacia Taipei o hacia Tainan. El objetivo es permitir que los conductores identifiquen rápidamente las estaciones donde pueden recargar combustible durante sus viajes."
 keywords: "Servicio de autopista, estación de servicio en carretera, Sinopec, Shell Petroleum, abastecimiento turístico, hacia el norte y sur, información del servicio"
 image: /images/service-area-gas-info.webp

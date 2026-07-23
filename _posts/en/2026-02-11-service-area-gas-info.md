@@ -4,7 +4,7 @@ title: "Taiwan Freeway Service Area Gas Station Guide: Freeway 1 & 3"
 lang: en
 date: 2026-02-11 11:08:30
 categories: Travel
-tags: [Freeway Service Area, Highway, Gas Station, CPC, FPCC, Travel Info]
+tags: [Car Maintenance, Car Knowledge, Travel Information]
 description: "Planning a road trip in Taiwan? This guide summarizes the gas station information for major service areas along Freeway 1 and Freeway 3, including location (mileage), brands (CPC/FPCC), and availability for northbound and southbound directions."
 keywords: "Taiwan Freeway Service Area, Highway Gas Station, CPC, FPCC, Travel Supply, Northbound Southbound, Highway Information"
 image: /images/service-area-gas-info.webp

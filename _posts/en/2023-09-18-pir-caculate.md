@@ -4,7 +4,7 @@ title: "How to Calculate Foam Cannon Ratios? PIR Guide and Car Shampoo Dosage An
 lang: en
 date: 2023-09-18 11:08:29
 categories: Auto
-tags: [Pressure Washer, Foam Cannon, Snow Foam Lance, Car Shampoo, PIR, Car Detailing, DIY]
+tags: [Car Detailing, DIY Tutorial]
 description: "How much car shampoo should you add to your foam cannon (Snow Foam Lance)? This article explains the PIR (Panel Impact Ratio) formula in detail. By measuring the actual water output of your pressure washer, you can precisely calculate the dilution ratio to achieve the manufacturer's recommended foam concentration."
 keywords: "PIR Calculation, Foam Cannon Ratio, Snow Foam Lance, Car Shampoo Dilution, Pressure Washer, Panel Impact Ratio, Pre-wash, Meguiars, Two Bucket Method"
 image: /images/mobile01-0e1b9c7a4802eb77ff910d07e666e195.webp

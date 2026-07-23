@@ -4,9 +4,9 @@ title: W205のオイル探求記（7）-ベンツ認証対応＆LSPI防止オイ
 lang: ja
 date:   2026-02-02 17:10:11
 categories: Auto
-tags: [W205, オイル評価, LSPI, MB 229.5, MB 229.52, Shell, Total, Castrol, GTLベースオイル, API SQ]
+tags: [車のメンテナンス, エンジンオイル規格]
 description: W205用のオイルの選び方とは？本記事では、Shell Helix Ultra、Total Ineo MC3、Castrol Edge M の4種類の5W-30オイルについて、SDSおよびTDSデータに基づき深く分析します。2026年のAPI SQ認証情報とGTLベースオイルの最新パラメータを更新しました。
-keywords: W205オイル, C300オイル, LSPI, MB 229.5, MB 229.52, Shell Helix Ultra, 5W-30, GTLベースオイル, API SQ
+keywords: "W205オイル, C300オイル, LSPI, MB 229.5, MB 229.52, Shell Helix Ultra, 5W-30, GTLベースオイル, API SQ"
 image: /images/mobile01-4354e3784c5b7a8a13113354d8a13b2f.webp
 faq:
   - question: "今回のオイル比較からShell 0W-40とRavenol SSVが除外されたのはなぜですか？"

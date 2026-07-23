@@ -4,9 +4,9 @@ title: W205のオイル探しの旅（1）-主要オイルブランド-適合オ
 lang: ja
 date: 2020-11-23 12:58:29
 categories: Auto
-tags: [W205, オイル, 車のメンテナンス, Oil Finder, TBN, MB 229.5, 交換サイクル, ベンツ]
+tags: [車のメンテナンス, エンジンオイル規格]
 description: ベンツ W205のオイル交換をしたいが、規格がわからない？この記事では、Liqui Moly、Motul、Shellなど12社のドイツ系オイルメーカー公式Oil Finder検索ツールをまとめました。VINコードを使ってエンジン代号を確認する方法や、TBN（総アルカリ度）とMB 229.5/229.51の認証の違いから、台湾環境における最適な交換サイクルを分析します。
-keywords: W205オイル, C300オイル, オイル認証, Oil Finder, TBN, 交換走行距離, ドイツオイル, Liqui Moly, Motul, Shell
+keywords: "W205オイル, C300オイル, オイル認証, Oil Finder, TBN, 交換走行距離, ドイツオイル, Liqui Moly, Motul, Shell"
 image: /images/mobile01-b8d448cb6873a80e73a77d05ef3ffd4f.webp
 faq:
   - question: "私のベンツ W205に合ったオイルを見つけるにはどうすればいいですか？"

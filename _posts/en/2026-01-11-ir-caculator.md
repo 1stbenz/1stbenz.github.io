@@ -4,7 +4,7 @@ title: "Supercapacitor Internal Resistance Calculator"
 lang: en
 date: 2026-01-11 10:00:10
 categories: Auto
-tags: [Supercapacitor, Car Modification, Battery Internal Resistance, DIY Tools, Circuit Calculation]
+tags: [Car Battery, Car Modification, DIY Tools]
 description: "Sellers claim a massive drop in internal resistance after adding a supercapacitor? Use this online parallel resistance calculator to reverse-calculate the actual internal resistance of the capacitor. Simply enter your battery's original resistance and the total resistance after installation to see if the upgrade is worth the investment."
 keywords: "Supercapacitor, Internal Resistance Calculator, Parallel Resistance, Car Electrical System, Voltage Stabilizer, Total Impedance"
 image: /images/ir_caculator.webp

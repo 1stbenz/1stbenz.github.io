@@ -4,7 +4,7 @@ title: "Análisis de voltaje para el arranque del vehículo (2.3 NA con batería
 lang: es
 date:   2026-03-22 16:00:00
 categories: Auto
-tags: [Mantenimiento automotriz, Sistemas eléctricos de automóviles, Baterías LiFePO4, Análisis experimental, Principios del circuito]
+tags: [Batería de coche, Conocimiento de coche]
 description: "¡Rompa el mito único de la «tensión de arranque»! Mediante datos medidos a alta frecuencia en un intervalo de solo 0,05 segundos, desmontamos profundamente el comportamiento físico de cuatro baterías de litio-ferro en el instante del encendido del motor y analizamos cómo la resistencia interna afecta la caída de tensión y la eficiencia de recarga mediante el generador utilizando la fórmula V = V0 - (I x R)."
 keywords: "Batería de hierro-litio para arranque, batería automotriz, caída de voltaje, resistencia interna, CCA, corriente de arranque, alternador, LiFePO4, fórmula de caída de voltaje"
 image: /images/voltage_record_image.svg

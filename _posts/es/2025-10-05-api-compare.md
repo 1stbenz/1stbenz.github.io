@@ -4,7 +4,7 @@ title: "Explicación detallada de la certificación API SQ para aceites: tabla c
 lang: es
 date:   2025-10-05 09:00:30
 categories: Auto
-tags: [Certificación de aceite motor, API SQ, Mantenimiento automotriz, ILSAC GF-7, Especificaciones de aceite motor]
+tags: [Mantenimiento de coche, Especificaciones de aceite]
 description: "¡Presentación oficial de la certificación API SQ! Este artículo ofrece una tabla comparativa detallada entre las especificaciones históricas SP, SN y SM. Los datos demuestran que el nuevo estándar representa un avance integral en resistencia al desgaste, control del LSPI (líquido de aceite espumado) y prevención de depósitos en turbina, desmintiendo así la retórica comercial de \"lo nuevo es peor que lo antiguo\" utilizada para limpiar inventarios."
 keywords: "API SQ, API SP, Grado de aceite, Especificación del aceite, LSPI, Carbono en turbina, Aceite lubricante para automóviles, ILSAC GF-7, Encendido prematuro a baja velocidad"
 image: /images/20251007_122034.webp

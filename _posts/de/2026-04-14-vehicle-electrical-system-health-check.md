@@ -4,7 +4,7 @@ title: "Ganzheitliche Gesundheitsprüfung des Fahrzeugelektriksystems: Langzeitd
 lang: de
 date: 2026-04-14 09:52:00
 categories: Auto
-tags: [Auto-Batterie, Lithium-Eisen-Phosphat-Akku, Blei-Säure-Akkumulator, Generator-Diagnose, Datenanalyse, Parallellaufstrom (Leckage), Startspannung]
+tags: [Autobatterie, Batterieüberwachung, Fahrzeugwissen]
 description: "Wie kann man wissenschaftlich beurteilen, ob eine Batterie ausgetauscht werden sollte? Dieser Artikel stellt ein System zur Gesundheitsüberprüfung des Fahrzeugstromnetzes vor. Durch die Analyse von 1-Hz-Monitoringdaten und Hochfrequenz-Startprotokollen bei 100 Hz wird das Stillstandsleakage, der Ladeeffizienz während der Fahrt sowie die Explosionskraft beim Startmoment in tieferer Ebene bewertet."
 keywords: "Batteriegesundheit, Lithium-Eisenphosphat-Batterie, LiFePO4, Blei-Säure-Akku, Dunkelstrom-Test, Startspannung, Generatorprüfung, Bluetooth-Tagebuchanalyse, Fahrzeugenergie"
 image: /images/battery-health-report-analysis.webp

@@ -4,7 +4,7 @@ title: "Werkzeug zur Analyse des Startprotokolls für BM6/BM200 bei 100 Hz"
 lang: de
 date:   2026-03-21 10:00:00
 categories: Auto
-tags: [BM6, Batterieüberwachung, Startwellenform, Datenanalyse, Konvertierungstool, Autobatterie]
+tags: [Autobatterie, Batterieüberwachung, DIY Werkzeuge, Datenanalyse]
 description: "Ein Startwellen-Analyse-Tool, das speziell für den BM6 Bluetooth-Akku-Monitor entwickelt wurde. Es kann 16-Bit-Pakete aus Rohlogdateien decodieren und präzise hochauflösende Kurven des Starter-Voltage während der Motorstartphase zeichnen, wobei ein dynamischer Schwellenwertalgorithmus automatisch die Tiefpunkte sowie den Trennpunkt vom Startmotor markiert."
 keywords: "BM6, Bluetooth-Batterie-Monitoring, Startwellenform, Starterspannung, Cranking, Log-Parser, Automobilbatterie, Lithium-Eisenphosphat-Batterie"
 image: /images/bm6-cranking-preview2.webp

@@ -5,7 +5,7 @@ date: 2026-03-30 22:30:00 +0800
 categories: Auto
 lang: en
 image: /images/battery-symbol.webp
-tags: [Battery Aging, Internal Resistance, Equivalent Circuit, Lithium-ion Battery, Lead-acid Battery]
+tags: [Car Battery, Car Knowledge]
 description: "An in-depth look at the physical truth behind battery aging. Through the equivalent circuit model and Ohm's law, we analyze how a surge in internal resistance causes abnormal heating during charging, falsely high terminal voltage, and voltage collapse during discharge. This article provides simple formula examples to help you understand the scientific principles and safety assessments of why lithium and lead-acid batteries 'won't fully charge and drain fast'."
 keywords: "causes of battery aging, internal resistance increase, equivalent circuit, lithium battery lifespan, lead-acid battery maintenance, voltage drop calculation, power loss formula, battery heating principle, internal impedance, battery health check"
 math: true

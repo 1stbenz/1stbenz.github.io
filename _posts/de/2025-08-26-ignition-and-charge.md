@@ -4,7 +4,7 @@ title: "Analyse des Stromverbrauchs und der Wiederaufladezeit beim Starten von K
 lang: de
 date:   2025-08-26 11:00:29
 categories: Auto
-tags: [Auto-Batterie, Motorradbatterie, Generator, Ladezeit, Stromlast, Lithium-Eisen-Phosphat-Batterie, Datenanalyse]
+tags: [Autobatterie, Fahrzeugwissen]
 description: "Wie viel Strom verbraucht ein Motorstart wirklich? Füllt eine kurze Fahrt nicht die Batterie ungenügend auf? Dieser Artikel analysiert anhand detaillierter Datenblätter den Stromverbrauch (Ah) beim Start von 125-cm³-Motorrädern bis hin zu 3,0-Liter-Pkw und berechnet die erforderliche Nachladezeit für verschiedene Generatoren – um das Missverständnis „Kurzfahrten schaden der Batterie\" aufzuklären."
 keywords: "Auto-Batterie, Motorradbatterie, Startermotor, Generator-Regenaufladung, Ladezeit, Verbrauchsberechnung, Lithium-Eisen-Phosphat-Batterie, Leerlauf-Laden, Amperestunden"
 image: /images/mobile01-8d165a281b4f677c157cefce5a8597ce.webp

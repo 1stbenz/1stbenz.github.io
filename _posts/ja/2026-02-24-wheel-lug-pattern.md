@@ -4,9 +4,9 @@ title: "軽量なアルミホイールに交換したら、なぜ高速で燃費
 lang: ja
 date: 2026-02-24 10:00:10
 categories: Auto
-tags: [Aerodynamics, Speed, Wheel Design, Fuel Efficiency, Car Modification, F1 Technology, Rotational Inertia, EV Technology, Wind Tunnel]
+tags: [車のメンテナンス, 自動車の知識, タイヤ＆アライメント, カーカスタム]
 description: "多くの人は、軽量なアルミホイールに交換すれば燃費が良くなり加速が速くなると考えがちです。しかし、高速道路での鍵となるのは空気抵抗と回転慣量です。本記事では、物理原理、F1レース技術、そして電気自動車の低風速設計を組み合わせて、「軽さ」や「サイズアップ」が逆に燃費悪化や最高速度低下を引き起こす真実を明らかにします。"
-keywords: "アルミホイール交換, 軽量アルミホイール, 燃費, 空気抵抗, 空力学, 未簧下重量, 回転慣性, 回転慣性, フォージドホイール, 通気抵抗, 抗力係数, 電気自動車, 低風速ホイール, 航続距離"
+keywords: "アルミホイール交換, 軽量アルミホイール, 燃費, 空気抵抗, 空力学, 未簧下重量, 回転慣性, フォージドホイール, 通気抵抗, 抗力係数, 電気自動車, 低風速ホイール, 航続距離"
 image: /images/pirelli-motorsport-car-Formula1.webp
 faq:
   - question: "軽量アルミホイールへの交換が、車両の性能や燃費について一般的にどのような認識がありますか？"

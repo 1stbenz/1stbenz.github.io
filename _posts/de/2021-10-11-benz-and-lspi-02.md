@@ -4,7 +4,7 @@ title: "Der Weg zum W205 (7) - Benzin-zertifiziert und LSPI-freies Motoröl 5W30
 lang: de
 date:   2026-02-02 17:10:11
 categories: Auto
-tags: [W205, Öltestbericht, LSPI, MB 229.5, MB 229.52, Shell, Total, Castrol, GTL-Grundöl, API SP]
+tags: [Fahrzeugwartung, Ölspezifikationen]
 description: "Wie wählt man das richtige Motoröl für den W205? In diesem Artikel analysieren wir die SDs- und TDs-Daten der vier 5W30-Motoröle Shell Helix Ultra, Total Ineo MC3, Castrol Edge M sowie aktualisierte Informationen zur API SQ-Zertifizierung aus dem Jahr 2026 und den neuesten Parameter für GTL-Basisöl."
 keywords: "Motoröl W205, Motoröl C300, LSPI, MB 229.5, MB 229.52, Shell Helix Ultra, 5W30, GTL-Grundstoff, API SQ"
 image: /images/mobile01-4354e3784c5b7a8a13113354d8a13b2f.webp

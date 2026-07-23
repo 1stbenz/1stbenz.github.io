@@ -4,7 +4,7 @@ title: "Der Weg zur W205 (Teil 3): Mercedes-zertifiziertes Öl mit LSPI-Schutz, 
 lang: de
 date: 2021-01-02 17:10:11
 categories: Auto
-tags: [W205, Motoröl-Empfehlung, LSPI, API SQ, API SP, MB 229.5, MB 229.52, Turbo-Auto]
+tags: [Fahrzeugwartung, Ölspezifikationen]
 description: "Scheuen Sie sich nicht vor Knocking bei W205 Motoren mit Direkteinsprung? In diesem Artikel analysieren wir die Ursachen und Präventionsmaßnahmen für LSPI (Low-Speed Pre-Ignition) sowie stellen eine Liste von 5W30 Motorölen bereit, die auf dem taiwanesischen Markt erhältlich sind, der Mercedes-Benz MB 229.5/52 Zertifizierung entsprechen und den LSPI-Test nach API SQ/SP bestanden haben."
 keywords: "Motoröl W205, LSPI, Low-Speed Pre-Ignition (LSPI), Knock, API SQ, API SP, MB 229.5, MB 229.52, 5W30, Shell Helix Ultra"
 image: /images/mobile01-bdcd0398015144b90240dd50446d80a4.webp

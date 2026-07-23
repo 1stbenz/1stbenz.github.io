@@ -4,9 +4,9 @@ title: "Automotive LiFePO4 Battery Architecture Analysis: Series Large Prismatic
 date: 2025-04-20 10:00:00 +0800
 categories: Auto
 lang: en
-tags: [LiFePO4, BMS, Battery Aging, Equivalent Circuit, Car Modification]
+tags: [Car Battery, Car Modification, Car Knowledge]
 description: "An in-depth analysis of the two mainstream architectures for 12V automotive LiFePO4 starter batteries: 4S1P large prismatic cells and 4S20P multi-parallel cylindrical cells. Exploring heat management, BMS monitoring blind spots, and voltage rebound performance from a physics perspective, while analyzing how after-sales repair logic affects the long-term cost of ownership for consumers."
-keywords: "LiFePO4 battery, car starter battery, large prismatic cell, 26650, 4S1P, 4S20P, BMS balancing, battery repair, internal impedance, parallel internal drain"
+keywords: "LiFePO4 battery, car starter battery, large prismatic cell, 4S1P, 4S20P, BMS balancing, battery repair, internal impedance, parallel internal drain"
 image: /images/mobile01-4354e3784c5b7a8a13113354d8a13b2f.webp
 faq:
   - question: "What are the two mainstream architectures for 12V automotive LiFePO4 starter batteries?"

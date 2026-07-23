@@ -4,7 +4,7 @@ title: "BM6/BM200 100Hz Cranking Log Parsing Tool"
 lang: en
 date: 2026-03-21 10:00:00
 categories: Auto
-tags: [BM6, Battery Monitor, Cranking Waveform, Data Analysis, Conversion Tool, Car Battery]
+tags: [Car Battery, Battery Monitor, DIY Tools, Data Analysis]
 description: "A cranking waveform parsing tool designed specifically for the BM6 Bluetooth Battery Monitor. It decodes the hex packets from raw Log files to accurately plot a high-resolution engine cranking voltage curve, automatically marking the minimum point and starter motor disengagement point using a dynamic threshold algorithm."
 keywords: "BM6, Bluetooth Battery Monitor, Cranking Waveform, Cranking Voltage, Cranking, Log Parser, Car Battery, LiFePO4 Battery"
 image: /images/bm6-cranking-preview2.webp

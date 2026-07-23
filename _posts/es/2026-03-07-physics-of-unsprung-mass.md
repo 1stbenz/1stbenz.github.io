@@ -4,7 +4,7 @@ title: "Análisis profundo: la verdad física detrás de un kilogramo por debajo
 lang: es
 date:   2026-03-07 10:00:00
 categories: Auto
-tags: [Momento de Inercia Rotacional, Modificación del Coche, Física, Masa No Colocada en Suspensión, Suspensión]
+tags: [Alineación de neumáticos, Conocimiento de coche, Modificación de coche]
 description: "Se suele escuchar la frase «una tonelada debajo del eje, diez toneladas encima», pero ¿cuál es su base física? Este artículo explorará en profundidad la interacción entre el momento de inercia y el sistema de suspensión para analizar los efectos reales que tiene reducir el peso sobre las ruedas en la maniobrabilidad y la aceleración."
 keywords: "peso subframe, inercia de rotación, sistema de suspensión, modificación de llantas, rendimiento dinámico, física, fórmula de la energía cinética"
 image: /images/physics-of-unsprung.webp

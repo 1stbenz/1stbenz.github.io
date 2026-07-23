@@ -4,7 +4,7 @@ title: "Öl-SDS: Tabelle der häufigsten Inhaltsstoffe und zugehörige CAS-Nr.-N
 lang: de
 date:   2024-05-24 10:00:00
 categories: Auto
-tags: [Motoröl, Sicherheitsdatenblatt, CAS-Nummer, Basisöle, Zusätze, Schmierstoffe]
+tags: [Fahrzeugwartung, Ölspezifikationen]
 description: "Vergleichstabelle der häufigsten chemischen Bestandteile und CAS-Nummern aus Sicherheitsdatenblättern (SDS) für Motoröle, einschließlich Basisölen Gruppe I bis V (PAO, VHVI, GTL, Estere) sowie Kernzusatzstoffe wie Verschleißschutzmittel, Reiniger und Dispergiermittel. Erlernen Sie, die Zusammensetzung von Motoröl zu verstehen."
 keywords: "Motoröl, SDS, CAS-Nummer, Basisöl, PAO, VHVI, GTL, Additive, ZDDP, Ester"
 image: /images/engine-oil-sds.webp

@@ -4,7 +4,7 @@ title: "Vorderantrieb versus Hinterantrieb: Was macht den Unterschied bei Fahrve
 lang: de
 date: 2024-07-14 09:30:00
 categories: Auto
-tags: [Vorderradantrieb, Hinterradantrieb, Fahrwerk des Autos, Autowissen, Querantrieb, Langantrieb, VORDERRADANTRIEB, HINTERRADANTRIEB]
+tags: [Reifenausrichtung, Fahrzeugwissen]
 description: "Als Fortsetzung der vorherigen Diskussion zur Lenkungsvorliebe führt Sie dieser Beitrag zu einem tieferen Verständnis der beiden Fahrwerkskonzepte „Frontantrieb mit Querachslage\" und „Hinterradantrieb mit Längsachslage\". Wir beleuchten die fundamentalen Unterschiede in Bezug auf das Fahrdynamik-Grenzenverhalten, den Innenraumvolumina sowie die Alltagsfahreigenschaften."
 keywords: "Vorderantrieb, Hinterantrieb, Unterschied zwischen Vorder- und Hinterradantrieb, Fahrzeuginhaltung, Pushover, Oversteer, FWD, RWD, Understeering, Oversteering"
 image: /images/fwd-vs-rwd-handling.webp

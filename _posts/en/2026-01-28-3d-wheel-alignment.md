@@ -4,7 +4,7 @@ title: "Technical Notes: Principles of 3D Wheel Alignment"
 lang: en
 date: 2026-01-28 10:28:29
 categories: Auto
-tags: [Tires, Wheel Alignment, Car Repair, Chassis, Camber, Toe, Caster, ADAS]
+tags: [Tire & Alignment, Car Knowledge]
 description: "An in-depth look at the mathematical principles, optical design, and error correction behind 3D wheel alignment systems—essential knowledge before your next tire change or chassis service."
 keywords: "3D Wheel Alignment, Wheel Alignment, Camber, Toe, Caster, ADAS Calibration, Spindle Axis, Run-out Compensation, Vehicle Chassis, Tire Maintenance"
 image: /images/3d-wheel.webp

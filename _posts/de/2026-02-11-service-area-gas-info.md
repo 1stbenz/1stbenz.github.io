@@ -4,7 +4,7 @@ title: "Ganzheitliche Zusammenstellung der Informationen zu Tankstellen an Autob
 lang: de
 date:   2026-02-11 11:08:30
 categories: Travel
-tags: [Nationalpark-Servicestrecke, Autobahn, Tankstelle, CNOIL, Formosa Petrochemicals, Tourismusinformationen]
+tags: [Fahrzeugwartung, Fahrzeugwissen, Reiseinformationen]
 description: "Dieser Artikel fasst Informationen zu Tankstellen an den Hauptservicegebieten der Nationalstraßen 1 und 3 zusammen, einschließlich des jeweiligen Kantons/Ortes sowie der Entfernungsmessung. Er gibt zudem Auskunft darüber, ob auf dem Weg nach Norden oder Süden eine Tankstelle vorhanden ist, damit Reisende schnell die Versorgungspunkte kennen lernen können."
 keywords: "Nationalstraße-Servicebereich, Autobahn-Tankstelle, CNOIL, Formosa Petrochemicals, Reiseversorgung, Nord-Süd-Richtung, Servicebereich-Informationen"
 image: /images/service-area-gas-info.webp

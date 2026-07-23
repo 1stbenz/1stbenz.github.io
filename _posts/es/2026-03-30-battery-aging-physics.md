@@ -5,7 +5,7 @@ date: 2026-03-30 22:30:00 +0800
 categories: Auto
 lang: es
 image: /images/battery_aging.webp
-tags: [Envejecimiento de la batería, resistencia interna, circuito equivalente, batería de litio, batería al ácido plúmbico]
+tags: [Batería de coche, Conocimiento de coche]
 description: "Profundice en la verdad física detrás del deterioro de las baterías. A través de modelos de circuito equivalente y la ley de Ohm, analice cómo el aumento repentino de la resistencia interna provoca sobrecalentamiento anómalo durante la carga, voltaje terminal artificialmente elevado y colapso de tensión al descargar. Este artículo ofrece ejemplos sencillos de fórmulas para que comprenda los principios científicos detrás del fenómeno «no se cargan completamente ni mantienen su carga» en baterías de iones de litio y ácido plomo, así como sus criterios de evaluación de seguridad."
 keywords: "Causas del envejecimiento de la batería, aumento de la resistencia interna, circuito equivalente, vida útil de las baterías de litio, mantenimiento de baterías de plomo-ácido, cálculo de caída de tensión, fórmula de pérdida de potencia, principio de calentamiento de la batería, impedancia interna, detección del estado de salud de la batería"
 math: true

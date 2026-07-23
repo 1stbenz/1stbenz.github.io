@@ -4,7 +4,7 @@ title: "Automotive Starting Voltage Analysis (2.3 NA x LiFePO4 Battery)"
 lang: en
 date: 2026-03-22 16:00:00
 categories: Auto
-tags: [Car Maintenance, Automotive Electrical System, LiFePO4 Battery, Empirical Analysis, Circuit Principles]
+tags: [Car Battery, Car Knowledge]
 description: "Breaking the 'starting voltage' myth! Using 100Hz high-frequency empirical data, we dissect the physical performance of a 4-cell LiFePO4 battery during engine startup, and use the V = V0 - (I x R) formula to analyze how battery internal resistance affects voltage drop and alternator charging efficiency."
 keywords: "LiFePO4 starter battery, car battery, voltage drop, internal resistance, CCA, starting current, alternator, LiFePO4, voltage drop formula"
 image: /images/voltage_record_image.svg

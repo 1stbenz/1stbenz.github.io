@@ -4,7 +4,7 @@ title: "Notas sobre el principio de funcionamiento del alineador de cuatro rueda
 lang: es
 date:   2026-01-28 10:28:29
 categories: Auto
-tags: [Ruedas, Alineación de cuatro ruedas, Mantenimiento vehicular, Chasis, Camber, Toe, Castor, ADAS]
+tags: [Alineación de neumáticos, Conocimiento de coche]
 description: "Un análisis profundo de los principios matemáticos, el diseño óptico y la corrección de errores del equipo de alineación en cuatro ruedas; ¡imprescindible antes de cambiar las llantas o realizar reparaciones al chasis!"
 keywords: "Alineación de cuatro ruedas, equipo de alineación en 3D, reparación vehicular, Cabina (Camber), Dirección (Toe), Caster, Ajuste ADAS, Eje de giro del neumático, Compensación de Run-out, Chasis vehicular, Mantenimiento de llantas"
 image: /images/3d-wheel.webp

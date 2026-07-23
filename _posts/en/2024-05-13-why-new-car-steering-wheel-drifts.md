@@ -4,7 +4,7 @@ title: "Why Does My New Car's Steering Wheel Drift? Flaw or Normal Phenomenon?"
 lang: en
 date: 2024-05-13 09:00:00
 categories: Auto
-tags: [Steering Drift, New Car, Torque Steer, Road Crown, Wheel Alignment, Car Knowledge, RAV4, CX-60]
+tags: [Tire & Alignment, Car Knowledge]
 description: "Is a slightly off-center steering wheel on a new car a defect? This article explores 4 common reasons: Road Crown, Torque Steer, EPS Zero Point settings, and Factory Alignment, helping you understand the automotive engineering and physics behind it."
 keywords: "Steering Wheel Off-center, Steering Drift, Torque Steer, Road Crown, EPS Zeroing, Wheel Alignment, New Car Defect, Car Maintenance"
 image: /images/steering-wheel-drift.webp

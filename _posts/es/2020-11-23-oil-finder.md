@@ -4,7 +4,7 @@ title: "Ruta del Aceite para la W205 (1) - Principales Marcas de Aceites - Búsq
 lang: es
 date:   2020-11-23 12:58:29
 categories: Auto
-tags: [W205, Aceite Motor, Mantenimiento Automotriz, Oil Finder, TBN, MB 229.5, Intervalo de Cambio, Mercedes-Benz]
+tags: [Mantenimiento de coche, Especificaciones de aceite]
 description: "¿Quieres cambiar el aceite en tu Mercedes-Benz W205 pero no conoces las especificaciones? Este artículo resume los 12 herramientas oficiales Oil Finder de fabricantes alemanes como Liqui Moly, Motul y Shell. Te enseñará a verificar el código del motor mediante VIN y analizar la diferencia entre TBN (Alcalinidad Total) y certificaciones MB 229.5/229.51 para determinar el mejor intervalo de cambio en las condiciones taiwanesas."
 keywords: "Aceite W205, Aceite C300, Certificación de Aceites, Oil Finder, TBN, Intervalo Kilométrico, Aceites Alemanes, Liqui Moly, Motul, Shell"
 image: /images/mobile01-b8d448cb6873a80e73a77d05ef3ffd4f.webp

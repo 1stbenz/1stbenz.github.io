@@ -4,7 +4,7 @@ title: "Analysis of Fatal Flaws in Automotive Sodium-Ion Batteries (SIB): Voltag
 lang: en
 date: 2026-07-10 00:30:00
 categories: Auto
-tags: [lithium iron phosphate, LFP, car battery, starter battery, modified battery, sodium-ion battery, 3S, 4S, voltage matching, thermal runaway, oxygen release combustion, engine bay high temperature]
+tags: [Car Battery, Battery Monitor, Car Modification, Car Knowledge]
 description: "Looking to upgrade your 12V starter battery? Understand the physical barrier of voltage matching and high-temperature safety hazards first. This article provides an in-depth comparison between Lithium Iron Phosphate (LFP) and Sodium-Ion Batteries (SIB), analyzing why a 4S sodium battery is severely undercharged under a 14.4V alternator—cutting usable capacity in half—and exposing fatal flaws such as violent oxygen-releasing thermal runaway in hot engine bays."
 keywords: "lithium iron phosphate, LFP, sodium-ion battery, sodium battery, 3S, 4S, 12V starter battery, car modification, voltage mismatch, undercharging, thermal runaway, oxygen release, engine bay high temperature, discharge plateau"
 image: /images/sodium-battery-analysis.webp

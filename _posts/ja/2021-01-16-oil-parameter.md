@@ -4,7 +4,7 @@ title: "W205のオイル探求記（4）-エンジンオイルパラメータま
 lang: ja
 date: 2021-01-16 12:58:29
 categories: Auto
-tags: [エンジンオイル, 車のメンテナンス, API SQ, API SP, MB 229.5, HTHS, PAO, GTL, LSPI]
+tags: [車のメンテナンス, エンジンオイル規格]
 description: "エンジンオイルの購入でパッケージに騙されないように！本記事では、最新のAPI SQ/SPとメーカー認証（MB 229.5）の違いを整理し、「Approval」が本物か偽物かを判別する方法を教えます。HTHS、TBN、Noackデータの意味や、PAO/GTLベースオイルおよび添加剤成分を深く解析し、出所不明の「神油」を避ける方法を紹介します。"
 keywords: "エンジンオイル認証, API SQ, API SP, MB 229.5, HTHS, TBN, Noack, PAO, GTL, LSPI, ベースオイル, 添加剤"
 image: /images/mobile01-6c9f3d5e1626b191b75230bf6dd0eda6.webp

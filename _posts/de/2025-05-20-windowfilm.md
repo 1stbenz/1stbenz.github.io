@@ -4,7 +4,7 @@ title: "Notizen zur Auswahl von Isolierfolie"
 lang: de
 date:   2025-05-20 12:58:29
 categories: Auto
-tags: [Wärmedämmfolie, Autowärmeschutzfolie, TSER, Metallfolie, Keramikfolie, Shu Re Jia, V-KOOL, 3M, FSK]
+tags: [Fahrzeugwartung, Fahrzeugwissen]
 description: "Das Isolierfolien-Verständnis beschränkt sich nicht nur auf den Infrarot-Abscheidegrad (IRR)! Dieser Artikel fasst Informationen über zertifizierte Marken des IWFA International Window Film Association (wie V-KOOL, 3M und andere) zusammen und analysiert im Detail Schlüsselparameter wie die Gesamtisolierwirkung (TSER), das innere Reflexionsvermögen usw. Er lehrt Sie zudem, die Vor- und Nachteile von metallischen gegenüber keramischen Folien zu unterscheiden."
 keywords: "Wärmedämmfolie-Empfehlungen, Autowärmeschutzfolien, TSER, IRER, Gesamtwärmeableitungskoeffizient (GWL), Metallwärmeschutzfolie, Keramikwärmeschutzfolie, Shurejia, V-KOOL, FSK, Danlong"
 image: /images/mobile01-f399ed6b775373389192ea6c2e592f0b.webp

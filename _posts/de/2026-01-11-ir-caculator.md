@@ -4,7 +4,7 @@ title: "SuperkondensatorInnenwiderstand-Rechner"
 lang: de
 date:   2026-01-11 10:00:10
 categories: Auto
-tags: [Superkondensatoren, Autotuning, Innenwiderstand der Batterie, Do-It-Yourself-Werkzeuge, Schaltkreisberechnung]
+tags: [Autobatterie, Fahrzeugtuning, DIY Werkzeuge]
 description: "Der Händler behauptet, dass die Installation eines Superkondensators den Innenwiderstand erheblich senkt? Diese Seite bietet einen Online-Rechner für parallele Widerstände. Geben Sie einfach den ursprünglichen Innenwiderstand der Batterie und den Gesamtimpedanzwert nach dem Parallelschalten ein, um so den tatsächlichen Innenwiderstand des Superkondensators rückwärts zu berechnen und damit Autofahrern dabei zu helfen, die Wirksamkeit einer solchen Modifikation zu beurteilen."
 keywords: "Superkondensator, Innenwiderstandsrechnung, Paralleler Widerstand, Autoelektriksysteme, Umkehrstrom, Spannungsregler, Gesamtimpedanz R"
 image: /images/ir_caculator.webp

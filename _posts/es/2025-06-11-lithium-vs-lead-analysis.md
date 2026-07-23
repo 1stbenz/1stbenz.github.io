@@ -4,7 +4,7 @@ title: "Baterías de hierro-litio versus baterías de plomo-ácido: ¿cuál tien
 lang: es
 date:   2025-06-11 10:00:29
 categories: Auto
-tags: [Litio-ferro-baterías, baterías de plomo-ácido, modificación automotriz, resistencia interna, velocidad de descarga, respuesta del acelerador, principio químico]
+tags: [Batería de coche, Modificación de coche, Conocimiento de coche]
 description: "Cambiar a una batería de hierro-litio hace que el arranque se sienta más potente? No es solo un efecto psicológico. Este artículo analiza desde la perspectiva de la cinética química para revelar las enormes diferencias en velocidad de descarga entre las baterías de hierro-litio (<10 ms) y las tradicionales aluminios-ácido (500 ms), explicando cómo una baja resistencia interna mejora la eficiencia del encendido y la respuesta del sistema eléctrico."
 keywords: "Litio-ferrofosfato, plomo-ácido, velocidad de descarga, resistencia interna, difusión iónica, respuesta del acelerador, aumento de encendido, LiFePO4, tiempo de reacción"
 image: /images/mobile01-9498f82ae67716e6d44ae48621090886.webp

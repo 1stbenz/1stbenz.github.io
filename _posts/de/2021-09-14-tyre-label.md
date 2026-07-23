@@ -4,7 +4,7 @@ title: "Reifenbeschriftungsübersicht (EU, Japan, Taiwan): Feuchtreibhaftigkeit 
 lang: de
 date: 2021-09-14 12:58:29
 categories: Auto
-tags: [Reifen, Reifenbeschriftung, Nassgriffsklasse, Energiesparende Reifenkategorie, Luftdruckumrechnung, EU-Reifenkennzeichnung, Japanische Kennzeichnung]
+tags: [Reifenausrichtung]
 description: "Bevor Sie Reifen wechseln, sollten diese Punkte beachten! In Taiwan können nachmittägliche Gewitter mit heftigen Regenschauern einhergehen und führen häufig zu Überschwemmungen auf Autobahnen. Wir zeigen Ihnen, wie Sie die EU- und japanischen Reifenschilder prüfen, um schlechte Nasshaftung von Reifen (die sogenannten „Reifen-Mine\") zu vermeiden. Im Anhang finden Sie eine Vergleichstabelle für den Nasshafterhaltungsgrad (Wet Grip) sowie den Rollwiderstand (RRC), zusätzlich einen Umrechnungstabellen für die Reifendruckeinstellung, der auf alle Fahrzeugmodelle anwendbar ist."
 keywords: "Reifenbeschriftung, Nassgriffsklasse, Rollwiderstand, Energieredeicheffekt-Reifen, Luftdruckumrechnung, Reifenabfrage, EU-Beschriftung, Japan-Beschriftung, Reifenempfehlung, Wasserplan-Effekt"
 image: /images/mobile01-03938a4db5623e33ffa69c10d48dc387.webp

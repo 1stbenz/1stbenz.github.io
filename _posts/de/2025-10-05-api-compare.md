@@ -4,7 +4,7 @@ title: "Detaillierte Erklärung der API-SQ-Öl-Zertifizierung: Vergleichstabelle
 lang: de
 date:   2025-10-05 09:00:30
 categories: Auto
-tags: [Motoröl-Zertifizierung, API SQ, Kraftfahrzeugwartung, ILSAC GF-7, Motorölspezifikationen]
+tags: [Fahrzeugwartung, Ölspezifikationen]
 description: "Die offizielle Einführung der API SQ-Ölstandards! Dieser Artikel bietet einen detaillierten Vergleichstabelle zwischen den aktuellen Standards und den früheren Spezifikationen (API SP, SN, SM). Die Daten belegen eine umfassende Verbesserung des neuen Zertifikats bei Verschleißschutz, LSPI-Versorgungssicherheit und Kontrolle von Turbolader-Kot. Dies widerlegt die Händlerargumentation „Neues ist nicht besser als Altes\" zur Bestandsauflösung."
 keywords: "API SQ, API SP, Motorölklasse, Motorölnorm, LSPI, Turbolader-Kohlenstoffablagerungen, Automobilmotoröl, ILSAC GF-7, Low-Speed Pre-Ignition (LSPI)"
 image: /images/20251007_122034.webp

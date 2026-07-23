@@ -4,7 +4,7 @@ title: "W205 Oil Journey (6) - Mercedes-Benz Engine Oil Approval Specifications"
 lang: en
 date: 2021-03-17 12:58:29
 categories: Auto
-tags: [W205, Oil Approval, MB 229.5, MB 229.52, MB 229.71, Oil Specifications]
+tags: [Car Maintenance, Oil Specifications]
 description: "What exactly are the differences between MB 229.5, 229.52, and the latest 229.71? This article summarizes performance data from Oil Club, providing a clear comparison of wear protection, fuel economy, and deposit control across different Mercedes-Benz oil generations."
 keywords: "MB 229.5, MB 229.52, MB 229.71, Mercedes-Benz Oil Approval, Engine Oil Specifications, W205 Oil, Oil Spider Chart, 0W-20"
 image: /images/mobile01-51c63dcf33904b90f6be286303199693.webp

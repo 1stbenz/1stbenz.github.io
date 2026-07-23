@@ -4,7 +4,7 @@ title: "Ruta de búsqueda del aceite W205 (6) - Especificaciones de certificaci�
 lang: es
 date:   2021-03-17 12:58:29
 categories: Auto
-tags: [W205, Certificación de aceite, MB 229.5, MB 229.52, MB 229.71, Especificaciones del aceite]
+tags: [Mantenimiento de coche, Especificaciones de aceite]
 description: "¿En qué difieren exactamente las certificaciones de aceite para Mercedes-Benz 229.5, 229.52 y la más reciente 229.71? Este artículo resume los datos normativos proporcionados por Oil Club para ofrecer una visión clara sobre las diferencias en rendimiento entre cada generación de certificación en términos de protección contra el desgaste, eficiencia del combustible y control de depósitos de carbono."
 keywords: "MB 229.5, MB 229.52, MB 229.71, Certificación de aceite Mercedes-Benz, Especificaciones del aceite, Aceite W205, Diagrama enredo de araña de aceite, 0W20"
 image: /images/mobile01-51c63dcf33904b90f6be286303199693.webp

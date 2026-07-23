@@ -4,7 +4,7 @@ title: "Análisis del consumo de energía y recarga al iniciar vehículos automo
 lang: es
 date:   2025-08-26 11:00:29
 categories: Auto
-tags: [Batería de automóvil, batería de motocicleta, generador, tiempo de carga, potencia del motor, batería LiFePO4, análisis de datos]
+tags: [Batería de coche, Conocimiento de coche]
 description: "¿Cuánta energía consume realmente un vehículo al encenderlo? ¿Se recarga completamente si se conduce a corto recorrido? Este artículo analiza, mediante tablas detalladas, el consumo de arranque en amperios-hora (Ah) desde motocicletas de 125cc hasta automóviles de 3.0L y calcula los tiempos necesarios para la recarga según diferentes especificaciones del alternador, desmintiendo así el mito de que \"conducir a corto recorrido daña la batería\"."
 keywords: "Batería de automóvil, batería de motocicleta, motor de arranque, recarga del generador, tiempo de carga, cálculo del consumo eléctrico, batería LiFePO4, carga en ralentí, amperios-hora"
 image: /images/mobile01-8d165a281b4f677c157cefce5a8597ce.webp

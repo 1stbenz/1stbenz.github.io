@@ -4,7 +4,7 @@ title:  "BM6 Battery Test Database (SQLite) Parser"
 lang: en
 date:   2026-06-28 09:30:00
 categories: Auto
-tags: [BM6, Battery Monitoring, Data Analysis, Cranking Waveform, Trip Detection, SQLite, Car Battery]
+tags: [Car Battery, Battery Monitor, DIY Tools, Data Analysis]
 description: "A dedicated SQLite local database parser for the BM6 Bluetooth Battery Monitor. It can read BM6.sqlite files, parse complete historical driving records, cranking test waveforms, and charging ripple tests, providing rich zoomable charts and detection statistics."
 keywords: "BM6, SQLite parsing, Cranking Waveform, Cranking Voltage, Trip Detection, Temperature Analysis, Charging Ripple, Battery Monitoring"
 image: /images/bm6-sqlite-preview2.webp

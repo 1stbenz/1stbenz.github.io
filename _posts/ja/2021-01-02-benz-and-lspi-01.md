@@ -4,9 +4,9 @@ title: 「W205のオイル探求記（3）-ベンツ認証対応＆LSPI防止オ
 lang: ja
 date: 2021-01-02 17:10:11
 categories: Auto
-tags: [W205, オイル推奨, LSPI, API SQ, API SP, MB 229.5, MB 229.52, ターボ車]
+tags: [車のメンテナンス, エンジンオイル規格]
 description: 「W205のガソリン直噴エンジンはノッキングが心配？本記事では、LSPI（低速予燃）の原因と予防策を解析し、台湾市販でベンツ MB 229.5/52認証に適合し、かつLSPIテスト（API SQ/SP）を通過した5W30オイルのリストをまとめました。」
-keywords: 「W205オイル, LSPI, 低速予燃, ノッキング, API SQ, API SP, MB 229.5, MB 229.52, 5W30, シェル ヘリックス ウルトラ」
+keywords: "「W205オイル, LSPI, 低速予燃, ノッキング, API SQ, API SP, MB 229.5, MB 229.52, 5W30, シェル ヘリックス ウルトラ」"
 image: /images/mobile01-bdcd0398015144b90240dd50446d80a4.webp
 faq:
   - question: "メルセデス W205 のエンジンオイル選びの第一原則は何ですか？"

@@ -4,7 +4,7 @@ title: "Inspección integral de la salud del sistema eléctrico del vehículo: a
 lang: es
 date: 2026-04-14 09:52:00
 categories: Auto
-tags: [Batería de automóvil, batería de hierro-litio, batería al ácido sulfúrico, diagnóstico del generador, análisis de datos, corriente de fuga, voltaje de arranque]
+tags: [Batería de coche, Monitor de batería, Conocimiento de coche]
 description: "¿Cómo determinar científicamente si una batería necesita reemplazo? Este artículo presenta un sistema de inspección integral para la salud del sistema eléctrico vehicular, que evalúa en profundidad las fugas eléctricas en reposo, la eficiencia de generación durante el funcionamiento y la potencia explosiva al instante de arranque mediante el análisis de datos de monitoreo a 1 Hz y registros de alta frecuencia (100 Hz) tras un encendido."
 keywords: "Salud de la batería, Batería de hierro-litio, LiFePO4, Baterías al ácido plomo, Prueba de corriente fugitiva (corriente de fuga), Voltaje de arranque, Detección del generador, Análisis de registros Bluetooth, Electricidad para vehículos"
 image: /images/battery-health-report-analysis.webp

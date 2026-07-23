@@ -4,7 +4,7 @@ title: "Notizen zum Funktionsprinzip der 3D-Four-Rad-Alignment-Maschine"
 lang: de
 date:   2026-01-28 10:28:29
 categories: Auto
-tags: [Reifen, Vierradausrichtung, Fahrzeugwartung, Fahrwerk, Camber, Toe, Caster, ADAS]
+tags: [Reifenausrichtung, Fahrzeugwissen]
 description: "Eine tiefgehende Analyse der mathematischen Grundlagen, optischen Konstruktion und Fehlerkorrektur von 3D-Vierradausrichtgeräten – ein Muss vor dem Wechseln der Reifen oder einer Karosseriearbeit!"
 keywords: "Vierradausrichtung, 3D Ausrichtmaschine, Fahrzeugwartung, Camber, Spurwinkel (Toe), Lenkneifung (Caster), ADAS-Kalibrierung, Drehachse der Räder, Laufabweichungskompensation, Fahrzeuginstandhaltung, Reifenpflege"
 image: /images/3d-wheel.webp

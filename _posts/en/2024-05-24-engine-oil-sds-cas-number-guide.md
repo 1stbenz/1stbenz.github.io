@@ -4,7 +4,7 @@ title:  "Engine Oil SDS CAS Numbers Reference Table: Base Oils and Additives"
 lang: en
 date:   2024-05-24 10:00:00
 categories: Auto
-tags: [Engine Oil, SDS, CAS Number, Base Oil, Additives, Lubricants]
+tags: [Car Maintenance, Oil Specifications]
 description: "A practical reference table of common chemical ingredients and CAS numbers found in engine oil Safety Data Sheets (SDS). Includes Group I to Group V base oils and core additives to help you decode engine oil formulations."
 keywords: "Engine Oil, SDS, CAS Number, Base Oil, PAO, VHVI, GTL, Additives, ZDDP, Esters, Reference Table"
 image: /images/engine-oil-sds.webp

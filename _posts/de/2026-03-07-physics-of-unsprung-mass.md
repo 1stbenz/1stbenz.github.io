@@ -4,7 +4,7 @@ title: "Tiefenanalyse: Die physikalische Wahrheit hinter 1 kg ungelagert und 10 
 lang: de
 date:   2026-03-07 10:00:00
 categories: Auto
-tags: [Rotationsträgheit, Fahrzeugmodifikation, Physik, ungelagerte Masse, Federung]
+tags: [Reifenausrichtung, Fahrzeugwissen, Fahrzeugtuning]
 description: "Man hört oft das Sprichwort «Ein Kilo unter der Federung, zehn Kilo darüber». Was ist die physikalische Grundlage dahinter? In diesem Artikel wird untersucht, wie sich Trägheitsmomente mit dem Aufhängungssystem zusammenspielen und analysiert werden, welchen echten Einfluss eine Reduzierung des Gewichts im Radbereich auf Fahrverhalten und Beschleunigung hat."
 keywords: "Unterwagenmasse, Trägheitsmoment, Federungssystem, Felgenanpassungen, Fahrverhalten, Physik, Formel für kinetische Energie"
 image: /images/physics-of-unsprung.webp

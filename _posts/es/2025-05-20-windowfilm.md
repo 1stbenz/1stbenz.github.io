@@ -4,7 +4,7 @@ title: "Notas para la selección de papel aislante térmico"
 lang: es
 date:   2025-05-20 12:58:29
 categories: Auto
-tags: [Papel aislante térmico, papel de aislamiento para automóviles, TSER, papel metálico, papel cerámico, Shurejia, V-KOOL, 3M, FSK]
+tags: [Mantenimiento de coche, Conocimiento de coche]
 description: "La película de aislamiento térmico no se debe evaluar únicamente por su tasa de bloqueo de radiación infrarroja (IRR). Este artículo recopila información sobre marcas certificadas por la IWFA, Asociación Internacional de Películas para Ventanas (como V-KOOL/舒熱佳 y 3M), junto con sus distribuidores. Además, realiza un análisis profundo de parámetros clave como el factor solar total bloqueado (TSER) y la reflexión interna, enseñándote a distinguir las ventajas y desventajas entre películas metálicas y cerámicas."
 keywords: "Papel de aislamiento térmico recomendado, papel de aislamiento para automóviles, TSER, IRER, Tasa total de aislamiento, papel metálico aislante, papel cerámico aislante, Shurejia, V-KOOL, FSK, Danlong"
 image: /images/mobile01-f399ed6b775373389192ea6c2e592f0b.webp

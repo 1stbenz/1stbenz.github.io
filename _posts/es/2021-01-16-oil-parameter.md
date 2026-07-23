@@ -4,7 +4,7 @@ title: "Ruta de búsqueda del aceite W205 (4) - Organización de parámetros del
 lang: es
 date:   2021-01-16 12:58:29
 categories: Auto
-tags: [aceite de motor, mantenimiento automotriz, API SQ, API SP, MB 229.5, HTHS, PAO, GTL, LSPI]
+tags: [Mantenimiento de coche, Especificaciones de aceite]
 description: "¡Cuidado con las estafas de los envases al comprar aceite! Este artículo resume las diferencias más recientes entre la certificación API SQ/SP y el estándar OEM (MB 229.5), enseñándote a distinguir auténticas certificaciones de Approval. Se realiza un análisis profundo del significado de los datos HTHS, TBN y Noack, así como de los componentes básicos PAO/GTL y aditivos, para evitar aceites misteriosos de procedencia dudosa."
 keywords: "Certificación de aceite motor, API SQ, API SP, MB 229.5, HTHS, TBN, Noack, PAO, GTL, LSPI, base oil, aditivos"
 image: /images/mobile01-6c9f3d5e1626b191b75230bf6dd0eda6.webp
