@@ -10,15 +10,15 @@ keywords: "fosfato de hierro y litio, LFP, batería de ion de sodio, batería de
 image: /images/sodium-battery-analysis.webp
 faq:
   - question: "¿Por qué el alternador de un automóvil no puede cargar completamente una batería de ion de sodio 4S?"
-    answer: "Porque el voltaje máximo de carga del alternador suele estar configurado entre 13.5V y 14.4V. Una batería de sodio 4S necesita 15.2V para cargarse por completo (3.8V por celda). Dado que el alternador solo entrega un máximo de 14.4V (solo 3.6V por celda), la zona de alto voltaje no se carga en absoluto, reduciendo la capacidad útil a la mitad."
+    answer: "Porque el voltaje máximo de carga del alternador suele estar configurado entre 13.5V y 14.4V (proporcionando solo 3.6V por celda en 4 celdas). Según la especificación de la celda, una batería de sodio 4S requiere 15.2V (celdas de 3.8V) o incluso 16.0V (celdas de 4.0V) para cargarse por completo. Bajo una carga de 14.4V, la zona de energía de alto voltaje por encima de 3.6V no se carga en absoluto, reduciendo la capacidad útil a la mitad o incluso más."
   - question: "¿Qué sucede si se usa una batería de ion de sodio 3S como batería de arranque de 12V?"
-    answer: "El límite máximo de carga de una batería de sodio 3S es de solo 11.4V (3.8V por celda), mientras que la salida del alternador es de 13.5V a 14.4V, superando con creces su límite. Si se instala directamente, el alternador sobrecargará gravemente la batería todo el tiempo, provocando fácilmente hinchamiento de celdas, fuga térmica o desconexión de la placa de protección."
+    answer: "El límite máximo de carga de una batería de sodio 3S es de solo 11.4V a 12.0V (3.8V-4.0V por celda), mientras que la salida del alternador es de 13.5V a 14.4V, superando con creces su límite. Si se instala directamente, el alternador sobrecargará gravemente la batería todo el tiempo, provocando fácilmente hinchamiento de celdas, fuga térmica o desconexión de la placa de protección."
   - question: "¿Qué riesgos de seguridad existen al colocar baterías de ion de sodio en el compartimento caliente del motor?"
     answer: "En verano, el compartimento del motor alcanza temperaturas de 70°C a 90°C. Las baterías de sodio comerciales de óxido laminar tienen una temperatura de inicio de fuga térmica baja (aprox. 150-200°C) y liberan oxígeno violentamente para alimentar la combustión, lo que a altas temperaturas causa generación de gas, hinchamiento, fugas o incendios violentos."
   - question: "¿Por qué el Fosfato de Hierro y Litio (LFP) es más adecuado que las baterías de sodio para el arranque de vehículos?"
     answer: "La meseta de voltaje 4S del LFP (12.8V-14.6V) coincide perfectamente con el alternador del vehículo (13.5V-14.4V), logrando más del 95% de capacidad útil. Además, el LFP tiene un punto de fuga térmica superior a 270°C, 'intrínsecamente no libera oxígeno' al descomponerse, y ofrece una autodescarga muy baja junto con más de 4,000 ciclos de vida."
   - question: "¿Cómo afecta la curva de descarga de la batería de sodio a los componentes electrónicos del vehículo?"
-    answer: "Las baterías de sodio tienen una ventana de descarga muy amplia (1.5V a 3.8V) y su voltaje cae linealmente a medida que disminuye la capacidad. Con poca carga, el voltaje de una batería de sodio 4S cae fácilmente por debajo de 11V, lo que puede causar el reinicio de la ECU del vehículo, fallos en dispositivos electrónicos o la incapacidad de entregar suficiente corriente de arranque en frío (CCA)."
+    answer: "Las baterías de sodio tienen una ventana de descarga muy amplia (1.5V a 3.8V/4.0V) y su voltaje cae linealmente a medida que disminuye la capacidad. Con poca carga, el voltaje de una batería de sodio 4S cae fácilmente por debajo de 11V, lo que puede causar el reinicio de la ECU del vehículo, fallos en dispositivos electrónicos o la incapacidad de entregar suficiente corriente de arranque en frío (CCA)."
 ---
 
 En los últimos años, con el desarrollo de la tecnología de baterías de litio, cada vez más propietarios de vehículos eligen reemplazar las pesadas y poco duraderas baterías tradicionales de plomo-ácido por baterías de arranque de alta eficiencia de **Fosfato de Hierro y Litio (LFP)**. Sin embargo, recientemente han aparecido en el mercado nuevos conceptos como las baterías de ion de sodio (SIB), afirmando que pueden sustituir al LFP.
@@ -35,12 +35,12 @@ La mayoría de los alternadores de automóviles y motocicletas entregan un volta
 
 ## Configuración en serie y mapeo de voltaje de baterías de ion de sodio (SIB)
 
-| Configuración | Voltaje Nominal | Voltaje Recomendado de Carga Completa | Rango de Voltaje de Funcionamiento | Resultado |
+| Configuración | Especificación de Voltaje Nominal / Celda | Requisito de Voltaje de Carga Completa | Resultado de Compatibilidad con Alternador de 14.4V | Resultado Físico |
 | :--- | :--- | :--- | :--- | :--- |
-| **3 en serie (3S)** | Aprox. 9.0V | 11.4V (3.8V/celda) | 4.5V–11.4V | **Sobrecarga constante y quemado** (El voltaje del alternador supera con creces el límite de 11.4V) |
-| **4 en serie (4S)** | Aprox. 12.0V | 15.2V (3.8V/celda) | 6.0V–15.2V | **Gravemente subcargada** (A 14.4V no alcanza la zona de alto voltaje, reduciendo la capacidad útil a la mitad) |
+| **3 en serie (3S)** | Celdas de 3.8V – 4.0V | 11.4V – 12.0V | **Alternador de 13.5V~14.4V Sobrecarga Constante** | **Extremadamente Peligroso** (Supera con creces el límite de 11.4V/12.0V, causando hinchamiento y fuga térmica) |
+| **4 en serie (4S)** | Celdas de 3.8V – 4.0V | 15.2V – 16.0V (3.8V~4.0V/celda) | **Cada celda solo recibe 3.6V (Diferencia de 0.2V~0.4V)** | **Gravemente Subcargada** (La zona de alto voltaje no se puede cargar, capacidad útil reducida a la mitad) |
 
-> **Fuente de especificaciones de voltaje:** [Hoja de datos original de HighStar](/images/sodium_cell.webp)
+> **Fuente de especificaciones de voltaje:** [Hoja de datos original de HighStar](/images/sodium_cell.webp) (Las celdas de sodio comerciales tienen ventanas de voltaje de 1.5V~3.8V o 1.5V~4.0V; independientemente de la especificación, ninguna se adapta a los alternadores de vehículos de 12V).
 
 ---
 
@@ -53,9 +53,11 @@ Bajo las características de salida de 13.5V a 14.4V de los alternadores automot
 - Una vez instalada en el vehículo, el alternador sobrecargará gravemente la batería de manera continua, lo que fácilmente provocará hinchamiento de las celdas, fuga térmica o la desconexión de la placa de protección.
 
 ### 2. ¿Por qué la configuración 4S queda gravemente subcargada y con caídas repentinas de voltaje?
-- El alternador entrega como máximo solo **14.4V**, distribuyendo solo **3.6V por celda** entre 4 celdas (muy por debajo de los 3.8V necesarios para una carga completa).
-- **Capacidad útil drásticamente reducida**: Al no poder alcanzar el rango de alto voltaje de 3.8V, la batería de sodio en condiciones normales solo puede cargarse a menos del **50% de su capacidad**, sin poder entregar sus especificaciones nominales.
-- **El voltaje de descarga cae continuamente**: El LFP tiene una curva de descarga extremadamente plana (manteniéndose >13V incluso con un 20% de capacidad restante); mientras que las baterías de sodio tienen una ventana de descarga muy amplia (1.5V–3.8V), haciendo que el voltaje caiga linealmente con la capacidad. Cuando una batería de sodio 4S cae por debajo de 11V (2.75V por celda), causa fácilmente el reinicio de la ECU del vehículo o la imposibilidad de arrancar el motor.
+- El alternador entrega como máximo solo **14.4V**, distribuyendo solo **3.6V por celda** entre 4 celdas (muy por debajo de los 3.8V o 4.0V necesarios para una carga completa).
+- **Tanto las especificaciones de 3.8V como las de 4.0V enfrentan una pared física de voltaje:**
+  - **Celdas de especificación de 3.8V**: La carga completa requiere **15.2V**; a 14.4V, se puede cargar menos del 50% de la capacidad.
+  - **Celdas de especificación de 4.0V**: La carga completa requiere **16.0V**; los 3.6V entregados por un alternador de 14.4V dejan una diferencia de hasta **0.4V por celda**. La zona de energía de alto voltaje entre 3.6V y 4.0V es completamente inalcanzable.
+- **El voltaje de descarga cae continuamente**: El LFP tiene una curva de descarga extremadamente plana (manteniéndose >13V incluso con un 20% de capacidad restante); mientras que las baterías de sodio tienen una ventana de descarga muy amplia (1.5V–3.8V/4.0V), haciendo que el voltaje caiga linealmente con la capacidad. Cuando una batería de sodio 4S cae por debajo de 11V (2.75V por celda), causa fácilmente el reinicio de la ECU del vehículo o la imposibilidad de arrancar el motor.
 
 ---
 
