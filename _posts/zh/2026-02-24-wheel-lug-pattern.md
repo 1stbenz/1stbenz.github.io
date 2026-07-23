@@ -4,7 +4,7 @@ title: "為何換了輕量化鋁圈，高速更耗油還跑不快？"
 lang: zh-Hant
 date: 2026-02-24 10:00:10
 categories: Auto
-tags: [Aerodynamics, Speed, Wheel Design, Fuel Efficiency, Car Modification, F1 Technology, Rotational Inertia, EV Technology, Wind Tunnel]
+tags: [汽車保養, 汽車知識, 輪胎定位, 汽車改裝]
 description: "許多人認為改裝輕量化鋁圈能省油加速快，但在高速公路上，空氣阻力與旋轉慣量才是關鍵。本文結合物理原理、F1 賽車科技與電動車低風阻設計，揭開為何「偷輕」與「加大尺碼」反而可能導致耗油、極速下降的真相。"
 keywords: "鋁圈改裝, 輕量化鋁圈, 油耗, 風阻, 空氣力學, 簧下重量, 旋轉慣量, 轉動慣量, 鍛造框, 通風阻力, 風阻係數, 電動車, 低風阻輪圈, 續航力"
 image: /images/pirelli-motorsport-car-Formula1.webp

@@ -4,7 +4,7 @@ title:  "超級電容內阻計算器"
 lang: zh-Hant
 date:   2026-01-11 10:00:10
 categories: Auto
-tags: [超級電容, 汽車改裝, 電池內阻, DIY工具, 電路計算]
+tags: [汽車電池, 汽車改裝, DIY工具]
 description: "店家宣稱加裝超級電容後內阻大幅下降？本頁面提供線上並聯電阻計算器，只要輸入電池原內阻與並聯後總阻抗，即可反推超級電容的真實內阻值，協助車友判斷改裝效益是否為智商稅。"
 keywords: "超級電容, 內阻計算, 並聯電阻, 汽車電系, 逆電流, 穩壓器, R總阻抗"
 image: /images/ir_caculator.webp

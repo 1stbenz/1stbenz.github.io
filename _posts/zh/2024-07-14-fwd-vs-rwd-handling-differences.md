@@ -4,7 +4,7 @@ title: "橫置前驅 vs 縱置後驅，操控與駕駛體驗到底差在哪？"
 lang: zh-Hant
 date: 2024-07-14 09:30:00
 categories: Auto
-tags: [前輪驅動, 後輪驅動, 汽車操控, 汽車知識, 橫置引擎, 縱置引擎, FWD, RWD]
+tags: [輪胎定位, 汽車知識]
 description: "接續前一篇方向盤偏向的探討，帶您深入了解「橫置前驅」與「縱置後驅」這兩種底盤架構，在操控極限、車室空間及日常駕駛體驗上的根本差異。"
 keywords: "橫置前驅, 縱置後驅, 前驅後驅差別, 汽車操控, 推頭, 甩尾, FWD, RWD, 轉向不足, 轉向過度"
 image: /images/fwd-vs-rwd-handling.webp

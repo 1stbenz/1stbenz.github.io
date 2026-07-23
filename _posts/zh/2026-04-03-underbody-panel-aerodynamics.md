@@ -4,7 +4,7 @@ title: "引擎下護板的功能解析"
 lang: zh-Hant
 date: 2026-04-03 19:00:00
 categories: Auto
-tags: [底盤平整化, 下護板, 風阻, 引擎下沉, 塑鋼, 鋁合金, 空氣動力學, 汽車改裝]
+tags: [汽車知識]
 description: "探討加裝汽車底盤下護板的真正價值。從空氣動力學角度分析平整化底盤如何降低風阻與升力，提升高速穩定性與油耗表現。同時破除「硬式護板阻礙引擎下沉安全機制」的常見迷思，並提供塑鋼與金屬材質的挑選實用指南。"
 keywords: "汽車下護板, 底盤平整化, 引擎下沉, Engine Dropping, 空氣動力學, 降低風阻, 地面效應, 塑鋼下護板, 鋁合金下護板, 汽車改裝迷思"
 image: /images/underbody-panel-aerodynamics.webp

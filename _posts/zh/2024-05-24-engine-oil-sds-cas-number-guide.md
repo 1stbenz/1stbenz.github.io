@@ -4,7 +4,7 @@ title:  "機油 SDS 常見成分與 CAS 號碼對照表"
 lang: zh-Hant
 date:   2024-05-24 10:00:00
 categories: Auto
-tags: [Engine Oil, SDS, CAS Number, Base Oil, Additives, Lubricants]
+tags: [汽車保養, 機油認證]
 description: "整理機油安全資料表 (SDS) 中常見的化學成分與 CAS 號碼對照表，包含 Group I 到 Group V 基礎油（PAO, VHVI, GTL, 酯類）以及抗磨、清淨、分散等核心添加劑的中英對照，教你如何看懂機油成分。"
 keywords: "機油, SDS, CAS號碼, 基礎油, PAO, VHVI, GTL, 添加劑, ZDDP, 酯類"
 image: /images/engine-oil-sds.webp

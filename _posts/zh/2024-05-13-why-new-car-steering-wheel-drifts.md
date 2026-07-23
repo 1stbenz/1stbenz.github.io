@@ -4,7 +4,7 @@ title: "為什麼新車方向盤會微微偏向？是瑕疵還是正常現象？
 lang: zh-Hant
 date: 2024-05-13 09:00:00
 categories: Auto
-tags: [方向盤偏向, 新車, 扭力轉向, 路面傾角, 四輪定位, 汽車知識, RAV4, CX-60]
+tags: [輪胎定位, 汽車知識]
 description: "新車方向盤微微偏向是瑕疵嗎？本文為您解析路面傾角、扭力轉向、EPS 零點設定與出廠定位等 4 大常見原因，帶您了解背後的汽車工程與物理現象。"
 keywords: "方向盤不正, 方向盤偏向, 扭力轉向, Torque Steer, 路面傾角, Road Crown, EPS歸零, 四輪定位, 新車瑕疵, 汽車保養"
 image: /images/steering-wheel-drift.webp

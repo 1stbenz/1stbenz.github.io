@@ -4,7 +4,7 @@ title: "車輛電力系統綜合健康檢查：BM6長期數據分析"
 lang: zh-Hant
 date: 2026-04-14 09:52:00
 categories: Auto
-tags: [汽車電池, 鋰鐵電池, 鉛酸電池, 發電機診斷, 數據分析, 暗電流, 啟動電壓]
+tags: [汽車電池, 電瓶監控, 汽車知識]
 description: "如何科學地判斷電池是否該換了？本文介紹一套車輛電力系統健康檢查系統，透過分析 1Hz 監控數據與 100Hz 高頻啟動紀錄，深度評估靜置漏電、行駛發電效率及啟動瞬間的爆發力。"
 keywords: "電池健康度, 鋰鐵電池, LiFePO4, 鉛酸電池, 暗電流測試, 啟動電壓, 發電機檢測, 藍牙日誌分析, 車用電力"
 image: /images/battery-health-report-analysis.webp

@@ -4,7 +4,7 @@ title:  "W205 尋油之路（1）-各大機油品牌-適用油品搜尋"
 lang: zh-Hant
 date:   2020-11-23 12:58:29
 categories: Auto
-tags: [W205, 機油, 汽車保養, Oil Finder, TBN, MB 229.5, 換油週期, 賓士]
+tags: [汽車保養, 機油認證]
 description: "想幫賓士 W205 換機油卻不知道規格？本文彙整 Liqui Moly, Motul, Shell 等 12 家德國油商官方 Oil Finder 查詢工具。教你透過 VIN 碼確認引擎代號，並從 TBN 總鹼值與 MB 229.5/229.51 認證差異，分析台灣環境下的最佳換油週期。"
 keywords: "W205機油, C300機油, 機油認證, Oil Finder, TBN, 換油里程, 德國機油, Liqui Moly, Motul, Shell"
 image: /images/mobile01-b8d448cb6873a80e73a77d05ef3ffd4f.webp

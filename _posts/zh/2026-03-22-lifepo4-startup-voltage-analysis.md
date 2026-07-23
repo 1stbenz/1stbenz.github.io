@@ -4,7 +4,7 @@ title:  "汽車啟動電壓分析(2.3 NA x 鋰鐵電池)"
 lang: zh-Hant
 date:   2026-03-22 16:00:00
 categories: Auto
-tags: [汽車保養, 汽車電系, 鋰鐵電池, 實測分析, 電路原理]
+tags: [汽車電池, 汽車知識]
 description: "打破「啟動電壓」的單一迷思！透過 0.05 秒高頻率實測數據，我們深入拆解四串鋰鐵電池在引擎啟動瞬間的物理表現，並利用 V = V0 - (I x R) 公式解析電池內阻如何影響壓降與發電機回充效能。"
 keywords: "鋰鐵啟動電池, 汽車電瓶, 電壓降, 內阻, CCA, 啟動電流, 發電機, LiFePO4, 壓降公式"
 image: /images/voltage_record_image.svg

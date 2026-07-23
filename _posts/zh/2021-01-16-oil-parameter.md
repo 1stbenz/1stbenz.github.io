@@ -4,7 +4,7 @@ title:  "W205 尋油之路（4）-機油參數整理"
 lang: zh-Hant
 date:   2021-01-16 12:58:29
 categories: Auto
-tags: [機油, 汽車保養, API SQ, API SP, MB 229.5, HTHS, PAO, GTL, LSPI]
+tags: [汽車保養, 機油認證]
 description: "買機油別被包裝騙了！本文整理最新 API SQ/SP 與車廠認證 (MB 229.5) 的差異，教你分辨 Approval 真假認證。深入解析 HTHS、TBN、Noack 數據意義，以及 PAO/GTL 基礎油與添加劑成分，避開來路不明的神油。"
 keywords: "機油認證, API SQ, API SP, MB 229.5, HTHS, TBN, Noack, PAO, GTL, LSPI, 基礎油, 添加劑"
 image: /images/mobile01-6c9f3d5e1626b191b75230bf6dd0eda6.webp

@@ -4,7 +4,7 @@ title:  "API SQ 機油認證詳解：與 SP/SN/SM 規格比較表"
 lang: zh-Hant
 date:   2025-10-05 09:00:30
 categories: Auto
-tags: [機油認證, API SQ, 汽車保養, ILSAC GF-7, 機油規格]
+tags: [汽車保養, 機油認證]
 description: "API SQ 機油認證正式登場！本文提供 API SQ 與 SP、SN、SM 歷代規格詳細比較表。數據證明新認證在抗磨損、防LSPI、渦輪積碳控制上全面升級，破解商家「新不如舊」的清庫存話術。"
 keywords: "API SQ, API SP, 機油等級, 機油規格, LSPI, 渦輪積碳, 汽車潤滑油, ILSAC GF-7, 低速早燃"
 image: /images/20251007_122034.webp

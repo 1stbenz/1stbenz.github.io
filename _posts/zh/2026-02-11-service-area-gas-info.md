@@ -4,7 +4,7 @@ title:  "國道服務區加油站資訊總整理"
 lang: zh-Hant
 date:   2026-02-11 11:08:30
 categories: Travel
-tags: [國道服務區, 高速公路, 加油站, 中油, 台塑石油, 旅遊資訊]
+tags: [汽車保養, 汽車知識, 旅遊資訊]
 description: "本文整理國道一號與國道三號主要服務區的加油站資訊，包含所在縣市、里程位置，以及北上與南下是否設有加油站，讓用路人能快速掌握補給據點。"
 keywords: "國道服務區, 高速公路加油站, 中油, 台塑石油, 旅遊補給, 北上南下, 服務區資訊"
 image: /images/service-area-gas-info.webp

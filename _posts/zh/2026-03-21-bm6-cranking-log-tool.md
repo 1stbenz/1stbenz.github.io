@@ -4,7 +4,7 @@ title:  "BM6/BM200 100Hz啟動日誌解析工具"
 lang: zh-Hant
 date:   2026-03-21 10:00:00
 categories: Auto
-tags: [BM6, 電瓶監控, 啟動波形, 數據分析, 轉換工具, 汽車電池]
+tags: [汽車電池, 電瓶監控, DIY工具, 數據分析]
 description: "專為 BM6 藍牙電瓶監控器設計的啟動波形解析工具。可將原始 Log 檔案中的 16 進位封包解碼，精準繪製高解析度的引擎啟動電壓曲線，並透過動態門檻演算法自動標記最低點與啟動馬達脫離點。"
 keywords: "BM6, 藍牙電瓶監控, 啟動波形, 啟動電壓, Cranking, Log解析, 汽車電池, 鋰鐵電池"
 image: /images/bm6-cranking-preview2.webp

@@ -4,7 +4,7 @@ title: "BM6 每秒即時數據解析工具"
 lang: zh-Hant
 date: 2026-04-12 10:00:00
 categories: Auto
-tags: [BM6, 電瓶監控, 數據轉換, 日誌解析, 汽車電池]
+tags: [汽車電池, 電瓶監控, DIY工具, 數據分析]
 description: "將 BM6 原始 Log 中的 16 進位封包轉換為可讀的每秒電壓與溫度數據，並支援 CSV 匯出與雙軸圖表視覺化。"
 keywords: "BM6, 電瓶監控, 即時數據, 電壓紀錄, 溫度紀錄, Log解析, 16進位解碼, CSV匯出, 鋰鐵電池"
 image: /images/bm6-cranking-preview.webp

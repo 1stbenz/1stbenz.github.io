@@ -4,7 +4,7 @@ title:  "變速箱油路及濾網筆記"
 lang: zh-Hant
 date:   2025-04-17 12:58:29
 categories: Auto
-tags: [變速箱, 變速箱油, 濾網, 汽車保養, DIY, 閥體, 扭力轉換器]
+tags: [汽車保養, 汽車知識, DIY教學]
 description: "變速箱油底殼很髒代表變速箱快壞了？其實關鍵在濾網！本文透過油路循環圖解，分析傳統濾網、雙濾芯設計與「無法更換濾網」的差異。揭露為何某些設計屬於計畫性報廢，以及正確的變速箱保養觀念。"
 keywords: "變速箱油, 變速箱濾網, 油底殼, 閥體, 扭力轉換器, 雙濾芯, 紙濾芯, 金屬濾網, 計畫性報廢"
 image: https://img.youtube.com/vi/zcwG97VMOVk/maxresdefault.jpg

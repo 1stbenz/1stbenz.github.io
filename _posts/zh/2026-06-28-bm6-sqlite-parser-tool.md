@@ -4,7 +4,7 @@ title:  "BM6 電池測試資料庫 (SQLite) 解析器"
 lang: zh-Hant
 date:   2026-06-28 09:30:00
 categories: Auto
-tags: [BM6, 電瓶監控, 數據分析, 啟動波形, 行程偵測, SQLite, 汽車電池]
+tags: [汽車電池, 電瓶監控, DIY工具, 數據分析]
 description: "專為 BM6 藍牙電瓶監控器設計的 SQLite 本地資料庫解析器。能讀取 BM6.sqlite 檔案，解析出完整的歷史行駛紀錄、啟動測試波形與充電波紋測試，並提供豐富的縮放圖表與偵測統計數據。"
 keywords: "BM6, SQLite解析, 啟動波形, 啟動電壓, 行程偵測, 溫度分析, 充電波紋, 電瓶監控"
 image: /images/bm6-sqlite-preview2.webp

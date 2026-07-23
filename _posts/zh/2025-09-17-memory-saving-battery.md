@@ -4,7 +4,7 @@ title:  "汽車電池不斷電更換教學：OBD 記憶保存器使用須知與 
 lang: zh-Hant
 date:   2025-09-17 15:20:00
 categories: Auto
-tags: [汽車電池, 不斷電更換, DIY, OBD, 汽車保養, BMS]
+tags: [汽車電池, 汽車改裝, DIY教學]
 description: "DIY 更換汽車電池怕電腦設定跑掉？本文詳解如何使用 OBD 記憶保存器進行不斷電更換。包含防止節氣門怠速抖動、正極絕緣防短路及 BMS 電池管理系統重置等 5 大關鍵注意事項。"
 keywords: "汽車電池, 不斷電更換, 記憶保存器, OBDII, 節氣門積碳, 怠速抖動, BMS重置, DIY換電池, ECU設定"
 image: https://img.youtube.com/vi/JV2daotkZhc/maxresdefault.jpg

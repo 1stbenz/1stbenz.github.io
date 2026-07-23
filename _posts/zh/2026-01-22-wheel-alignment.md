@@ -4,9 +4,9 @@ title:  "愛車定位角度知多少？影響駕駛感的幕後功臣"
 lang: zh-Hant
 date:   2026-01-22 10:00:10
 categories: Auto
-tags: [汽車保養, 四輪定位, 輪胎知識, 駕駛技巧]
+tags: [輪胎定位]
 description: "車子開起來飄、輪胎磨損不均？3分鐘搞懂車輛定位！本文深入淺出解析外傾角(Camber)、後傾角(Caster)與前束角(Toe)的作用，以及Toe-in/Toe-out對操控的影響，教你如何判斷愛車是否需要「拉正」。"
-keywords: "車輛定位,四輪定位,外傾角,Camber,後傾角,Caster,前束角,Toe-in,Toe-out,輪胎吃胎,汽車操控"
+keywords: "車輛定位, 四輪定位, 外傾角, Camber, 後傾角, Caster, 前束角, Toe-in, Toe-out, 輪胎吃胎, 汽車操控"
 image: /images/wheel_alignment.webp
 faq:
   - question: "什麼是車輛定位（Wheel Alignment）？它有什麼作用？"

@@ -4,7 +4,7 @@ title:  "輪胎該怎麼調？NHTSA/JATMA 建議的前驅/後驅/四驅車調胎
 lang: zh-Hant
 date:   2020-11-24 12:58:29
 categories: Auto
-tags: [調胎, 輪胎對調, 輪胎壽命, 汽車保養, NHTSA, JATMA, 前輪驅動, 後輪驅動]
+tags: [輪胎定位]
 description: "每 5000 公里調胎能延長輪胎壽命並預防吃胎。本文整理美國 NHTSA 與日本 JATMA 建議的標準調胎圖解，針對前驅 (FF)、後驅 (FR) 與四驅 (AWD) 車款提供正確的交叉對調順序。"
 keywords: "調胎順序, 輪胎對調, 前輪驅動調胎, 後輪驅動調胎, 吃胎, 輪胎壽命, 汽車保養, NHTSA, JATMA"
 image: /images/mobile01-2e1893169f4c34081d996c1dca417758.webp

@@ -4,7 +4,7 @@ title:  "BM6/BM200 月份記錄檔分析工具"
 lang: zh-Hant
 date:   2026-03-20 17:00:00
 categories: Auto
-tags: [BM6, 電瓶監控, 鋰鐵電池, 數據分析, 行程偵測, 轉換工具, 汽車電池]
+tags: [汽車電池, 電瓶監控, 汽車知識, DIY工具, 數據分析]
 description: "專為 BM6 藍牙電瓶監控器設計的網頁版記錄檔轉換工具。透過智慧演算法，解決原廠 APP 對於鋰鐵電池高電壓特性導致的行程偵測失準問題，精準還原每一趟行駛紀錄，並提供視覺化圖表與 Excel 報告匯出功能。"
 keywords: "BM6, 藍牙電瓶監控, 鋰鐵電池, 行程偵測, 電壓分析, Excel匯出, 記錄檔轉換, 汽車電池, 充電制御"
 image: /images/bm6-tool-preview.webp

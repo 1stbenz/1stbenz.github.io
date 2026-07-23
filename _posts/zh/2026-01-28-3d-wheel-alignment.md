@@ -4,7 +4,7 @@ title:  "3D 四輪定位機原理筆記"
 lang: zh-Hant
 date:   2026-01-28 10:28:29
 categories: Auto
-tags: [輪胎, 四輪定位, 車輛維修, 底盤, Camber, Toe, Caster, ADAS]
+tags: [輪胎定位, 汽車知識]
 description: "深入解析 3D 四輪定位機的數學原理、光學設計與誤差修正，換輪胎或底盤維修前必看！"
 keywords: "四輪定位, 3D 定位機, 車輛維修, Camber, Toe, Caster, ADAS 校正, 車輪旋轉軸, Run-out Compensation, 車輛底盤, 輪胎保養"
 image: /images/3d-wheel.webp

@@ -4,7 +4,7 @@ title:  "隔熱紙挑選筆記"
 lang: zh-Hant
 date:   2025-05-20 12:58:29
 categories: Auto
-tags: [隔熱紙, 汽車隔熱紙, TSER, 金屬紙, 陶瓷紙, 舒熱佳, V-KOOL, 3M, FSK]
+tags: [汽車保養, 汽車知識]
 description: "隔熱紙只看紅外線阻隔率(IRR)就錯了！本文整理 IWFA 國際窗膜協會認證品牌（舒熱佳/V-KOOL/3M 等）代理商資訊，並深度解析 TSER 總隔熱率、內反光等關鍵參數，教你分辨金屬紙與陶瓷紙的優缺點。"
 keywords: "隔熱紙推薦, 汽車隔熱紙, TSER, IRER, 總隔熱率, 金屬隔熱紙, 陶瓷隔熱紙, 舒熱佳, V-KOOL, FSK, 丹龍"
 image: /images/mobile01-f399ed6b775373389192ea6c2e592f0b.webp

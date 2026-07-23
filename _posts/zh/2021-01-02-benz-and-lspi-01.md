@@ -4,7 +4,7 @@ title:  "W205 尋油之路（3）-賓士認證 + 防LSPI機油 5W30（上)"
 lang: zh-Hant
 date: 2021-01-02 17:10:11
 categories: Auto
-tags: [W205, 機油推薦, LSPI, API SQ, API SP, MB 229.5, MB 229.52, 渦輪車]
+tags: [汽車保養, 機油認證]
 description: "W205 缸內直噴引擎怕爆震？本文解析 LSPI (低速預燃) 成因與預防對策，整理台灣市售符合賓士 MB 229.5/52 認證且通過 LSPI 測試 (API SQ/SP) 的 5W30 機油清單。"
 keywords: "W205機油, LSPI, 低速預燃, 爆震, API SQ, API SP, MB 229.5, MB 229.52, 5W30, Shell Helix Ultra"
 image: /images/mobile01-bdcd0398015144b90240dd50446d80a4.webp

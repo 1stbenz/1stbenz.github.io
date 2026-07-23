@@ -4,7 +4,7 @@ title:  "W205 尋油之路（7）-賓士認證 + 防LSPI機油 5w30（下)"
 lang: zh-Hant
 date:   2026-02-02 17:10:11
 categories: Auto
-tags: [W205, 機油評測, LSPI, MB 229.5, MB 229.52, Shell, Total, Castrol, GTL基礎油, API SQ]
+tags: [汽車保養, 機油認證]
 description: "W205 機油怎麼選？本文深入分析 Shell Helix Ultra、Total Ineo MC3、Castrol Edge M 四款 5W30 機油的 SDS 與 TDS 數據。更新 2026 年 API SQ 認證資訊與 GTL 基礎油最新參數。"
 keywords: "W205機油, C300機油, LSPI, MB 229.5, MB 229.52, Shell Helix Ultra, 5W30, GTL基礎油, API SQ"
 image: /images/mobile01-4354e3784c5b7a8a13113354d8a13b2f.webp
