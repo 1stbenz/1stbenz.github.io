@@ -56,10 +56,19 @@ Automotive engine bays frequently reach temperatures of **70°C to 90°C** durin
 - **Ultra-high thermal runaway threshold**: The thermal runaway onset temperature is above **270°C**, and the core crystal structure ($PO_4$ phosphate) remains solid even up to 500°C.
 - **No oxygen release (Key Advantage)**: LFP releases **almost no oxygen** when decomposing under extreme heat or physical damage. Without an oxidizer/supporter of combustion, it is inherently extremely difficult to catch fire or explode.
 
-### 2. Sodium-Ion Battery: Violent Oxygen Release Fueling Combustion (Fatal Safety Hazard)
-- **Lower thermal runaway temperature**: Thermal runaway starts at only about **150°C to 200°C**, offering far less heat tolerance than LFP.
-- **Violently releases oxygen to fuel combustion**: The cathode material of sodium batteries **violently releases oxygen** during a thermal runaway chain reaction. Inside a sealed battery pack filled with organic electrolyte vapor, the massive release of oxygen acts as a strong combustion supporter, drastically increasing the risk of violent burning or explosion.
-- **High-temperature gas generation & bloating**: At 70°C to 90°C engine bay temperatures, current commercially available liquid sodium batteries exhibit active interfacial reactions, causing cathode material dissolution and electrolyte decomposition, resulting in cell **bloating, leakage**, and rapid degradation of cycle life.
+### 2. Sodium-Ion Battery: Comparison of Three Cathode Material Routes and Inherent Limitations
+
+The three main cathode material routes of current sodium-ion batteries (Layered Oxides Na<sub>x</sub>MO<sub>2</sub>, Prussian Blue Analogues PBA, and Polyanionic Compounds NFPP/NVPF) all face insurmountable disadvantages under high engine bay temperatures and 12V automotive starting demands:
+
+| Property | Layered Oxides (Mainstream Commercial) | Prussian Blue / White | Polyanionic Compounds |
+| :--- | :--- | :--- | :--- |
+| **Thermal Runaway Risk** | **High (Violent oxygen release fueling combustion)** | **Medium (High-temp gas generation & bloating)** | **Low (More stable structure)** |
+| **Initial Decomposition Temp** | **Approx. 150–200°C** | **High variability (Prone to residual crystal water)** | **Higher (>250°C)** |
+| **Volumetric Energy Density** | **High** | **Low** | **Low to Medium** |
+| **Cycle Life** | **Medium (High-temp ion dissolution & degradation)** | **Low to Medium** | **Medium to High** |
+| **Self-Discharge Rate** | **High (5–10%/month)**<br>Metal dissolution shuttle + Unstable hard carbon SEI | **Extremely High (>10%/month)**<br>Crystal water corrosion + Electrolyte decomposition | **Medium-Low (3–5%/month)**<br>No metal dissolution, only affected by hard carbon SEI repair |
+
+> **Summary:** Commercially available sodium batteries pursuing capacity and energy density mostly use **Layered Oxides**, but in hot engine bays (70–90°C), they are prone to thermal runaway, violently releasing oxygen to fuel combustion and causing bloating or leakage. Relatively safer **Polyanionic Compounds**, despite their thermal stability, suffer from extremely low volumetric energy density and a **flat voltage plateau that severely mismatches 12V vehicle charging systems** (facing the physical flaws where a 3S setup easily drops below 11V and a 4S setup cannot be fully charged). None of the three technical routes can currently be stably applied in automotive starter batteries.
 
 ---
 
@@ -129,22 +138,22 @@ Automotive engine bays frequently reach temperatures of **70°C to 90°C** durin
             <tr>
                 <th>LN3 Size Comparison</th>
                 <th>Traditional Lead-Acid</th>
-                <th>Sodium-Ion Battery (4S)</th>
-                <th>Lithium Iron Phosphate (LFP 4S) ✦ Top Pick</th>
+                <th>Sodium-Ion Battery</th>
+                <th>Lithium Iron Phosphate (LFP)</th>
             </tr>
         </thead>
         <tbody>
             <tr>
                 <td><b>Charge Rate & Usable Capacity</b></td>
                 <td>100% Full Charge</td>
-                <td><span style="color: red;">Capacity Discounted (Cannot charge into high voltage at 14.4V, only ~50% usable capacity)</span></td>
-                <td><b>Perfectly Charged (>95% Usable Capacity)</b></td>
+                <td><span style="color: red;">Capacity Discounted (Cannot charge into high voltage at 14.4V)</span></td>
+                <td><b>Fully Chargeable (>95% Usable Capacity)</b></td>
             </tr>
             <tr>
                 <td><b>14.4V Alternator Compatibility</b></td>
-                <td>Perfect Match</td>
-                <td><span style="color: red;">Poor (Voltage mismatch, cannot fully charge)</span></td>
-                <td><b>Perfect (14.2V~14.6V Perfect Match)</b></td>
+                <td>Good</td>
+                <td><span style="color: red;">Poor (Cannot fully charge)</span></td>
+                <td><b>Good</b></td>
             </tr>
             <tr>
                 <td><b>Discharge Voltage Flatness</b></td>
@@ -154,27 +163,33 @@ Automotive engine bays frequently reach temperatures of **70°C to 90°C** durin
             </tr>
             <tr>
                 <td><b>Thermal Runaway & Safety</b></td>
-                <td>Not easy to catch fire</td>
-                <td><span style="color: red;">Dangerous (Runaway violently releases oxygen to fuel combustion)</span></td>
-                <td><b>Extremely High (>270°C, inherently releases no oxygen)</b></td>
+                <td>Good</td>
+                <td><span style="color: red;">Poor (Oxygen release fuels combustion)</span></td>
+                <td><b>Good (>270°C, inherently releases no oxygen)</b></td>
             </tr>
             <tr>
                 <td><b>Engine Bay High Temp Tolerance</b></td>
                 <td>Good</td>
-                <td><span style="color: red;">Poor (Prone to high temp gas bloating)</span></td>
-                <td><b>Excellent (Long cycle life at high temp)</b></td>
+                <td><span style="color: red;">Poor (Prone to high temp bloating)</span></td>
+                <td><b>Good (Long cycle life at high temp)</b></td>
             </tr>
             <tr>
-                <td><b>Base Cycle Life</b></td>
-                <td>Approx. 500 – 1,000 cycles</td>
-                <td><span style="color: red;">Approx. 1,500 – 2,000 cycles (Accelerated degradation at high temp)</span></td>
-                <td><b>4,000 – 6,000 cycles (Ultra-long life)</b></td>
+                <td><b>Cycle Life</b></td>
+                <td>500 – 1,000 cycles</td>
+                <td><span style="color: red;">1,500 – 2,000 cycles</span></td>
+                <td><b>4,000 – 6,000 cycles</b></td>
+            </tr>
+            <tr>
+                <td><b>Self-Discharge Rate</b></td>
+                <td>5%–15%/month</td>
+                <td><span style="color: red;">5%–10%/month</span></td>
+                <td><b>1%–2%/month</b></td>
             </tr>
             <tr>
                 <td><b>Cell Quality Source</b></td>
                 <td>Standard automotive grade</td>
-                <td><span style="color: red;">Mostly underground factories / B-grade materials</span></td>
-                <td><b>Automotive grade top-tier manufacturers</b></td>
+                <td><span style="color: red;">Mostly second-tier minor factories</span></td>
+                <td><b>Top-tier lithium manufacturers</b></td>
             </tr>
         </tbody>
     </table>

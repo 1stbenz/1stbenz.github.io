@@ -56,10 +56,19 @@ El compartimento del motor de un automóvil alcanza con frecuencia temperaturas 
 - **Punto de inicio de fuga térmica extremadamente alto**: La temperatura de inicio de fuga térmica supera los **270°C**, y la estructura cristalina principal (fosfato $PO_4$) se mantiene estable incluso hasta los 500°C.
 - **No libera oxígeno (Ventaja clave)**: El LFP no libera **casi nada de oxígeno** cuando se descompone bajo calor extremo o daño físico. Sin comburente, es intrínsecamente muy difícil que se incencie o explote.
 
-### 2. Batería de ion de sodio: Liberación violenta de oxígeno que alimenta la combustión (Riesgo fatal de seguridad)
-- **Temperatura de fuga térmica más baja**: El inicio de la fuga térmica ocurre a solo unos **150°C a 200°C**, con una tolerancia al calor mucho menor que la del LFP.
-- **Liberación violenta de oxígeno que alimenta la combustión**: El material del cátodo de la batería de sodio **libera oxígeno violentamente** durante una reacción en cadena de fuga térmica. Dentro de un paquete de batería sellado lleno de vapores de electrolito orgánico, la liberación masiva de oxígeno actúa como un potente comburente, aumentando drásticamente el peligro de incendio violento o explosión.
-- **Generación de gas e hinchamiento a alta temperatura**: A temperaturas de 70°C a 90°C en el compartimento del motor, las baterías líquidas de sodio disponibles comercialmente muestran reacciones de interfaz activas, provocando la disolución del material del cátodo y la descomposición del electrolito, lo que resulta en **hinchamiento, fugas** y una drástica degradación de la vida útil.
+### 2. Batería de ion de sodio: Comparación de las tres rutas de materiales catódicos y limitaciones inherentes
+
+Las tres rutas principales de materiales catódicos para las baterías de ion de sodio actuales (Óxidos Laminares Na<sub>x</sub>MO<sub>2</sub>, Análogos de Azul de Prusia PBA y Compuestos Polianiónicos NFPP/NVPF) enfrentan desventajas difíciles de superar ante las altas temperaturas del compartimento del motor y las demandas de arranque de 12V:
+
+| Propiedad | Óxidos Laminares (Principal comercial) | Azul / Blanco de Prusia | Compuestos Polianiónicos |
+| :--- | :--- | :--- | :--- |
+| **Riesgo de Fuga Térmica** | **Alto (Liberación violenta de oxígeno que alimenta el fuego)** | **Medio (Generación de gas e hinchamiento a alta temp.)** | **Bajo (Estructura más estable)** |
+| **Temp. Inicial de Descomposición** | **Aprox. 150–200°C** | **Alta variabilidad (Propenso a agua de cristalización residual)** | **Más alta (>250°C)** |
+| **Densidad de Energía Volumétrica** | **Alta** | **Baja** | **Baja a Media** |
+| **Vida Útil en Ciclos** | **Media (Disolución iónica y degradación a alta temp.)** | **Baja a Media** | **Media a Alta** |
+| **Tasa de Autodescarga** | **Alta (5–10%/mes)**<br>Lanzadera de disolución metálica + SEI de carbón duro inestable | **Extremadamente Alta (>10%/mes)**<br>Corrosión por agua de cristalización + Descomposición de electrolito | **Media-Baja (3–5%/mes)**<br>Sin disolución metálica, solo afectada por reparación de SEI |
+
+> **Resumen:** Las baterías de sodio comerciales que buscan capacidad y densidad de energía utilizan principalmente **Óxidos Laminares**, pero en el compartimento del motor caliente (70–90°C) sufren fácilmente de fuga térmica con liberación violenta de oxígeno e hinchamiento con fugas; los **Compuestos Polianiónicos**, más seguros y estables térmicamente, sufren de una densidad de energía volumétrica extremadamente baja y su **meseta de voltaje plana es altamente incompatible con los sistemas de carga de 12V** (3S cae fácilmente de 11V y 4S no se puede cargar por completo). Ninguna de las tres rutas es apta actualmente para baterías de arranque automotrices.
 
 ---
 
@@ -129,22 +138,22 @@ El compartimento del motor de un automóvil alcanza con frecuencia temperaturas 
             <tr>
                 <th>Comparación de tamaño LN3</th>
                 <th>Plomo-ácido tradicional</th>
-                <th>Batería de ion de sodio (4S)</th>
-                <th>Fosfato de hierro y litio (LFP 4S) ✦ Primera opción</th>
+                <th>Batería de ion de sodio</th>
+                <th>Fosfato de hierro y litio (LFP)</th>
             </tr>
         </thead>
         <tbody>
             <tr>
                 <td><b>Tasa de carga y energía útil</b></td>
                 <td>100% Carga completa</td>
-                <td><span style="color: red;">Capacidad reducida (A 14.4V no carga en alto voltaje, solo ~50% de energía útil)</span></td>
-                <td><b>Carga perfecta (>95% de energía útil)</b></td>
+                <td><span style="color: red;">Capacidad reducida (A 14.4V no carga en alto voltaje)</span></td>
+                <td><b>Totalmente cargable (>95% de energía útil)</b></td>
             </tr>
             <tr>
                 <td><b>Compatibilidad con alternador de 14.4V</b></td>
-                <td>Ajuste perfecto</td>
-                <td><span style="color: red;">Mala (Desajuste de voltaje, no se carga por completo)</span></td>
-                <td><b>Perfecta (14.2V~14.6V coincidencia perfecta)</b></td>
+                <td>Buena</td>
+                <td><span style="color: red;">Mala (No se carga por completo)</span></td>
+                <td><b>Buena</b></td>
             </tr>
             <tr>
                 <td><b>Estabilidad del voltaje de descarga</b></td>
@@ -154,27 +163,33 @@ El compartimento del motor de un automóvil alcanza con frecuencia temperaturas 
             </tr>
             <tr>
                 <td><b>Fuga térmica y seguridad</b></td>
-                <td>Difícil que se incendie</td>
-                <td><span style="color: red;">Peligrosa (La fuga libera oxígeno violentamente y alimenta el fuego)</span></td>
-                <td><b>Extremadamente alta (>270°C, intrínsecamente no libera oxígeno)</b></td>
+                <td>Buena</td>
+                <td><span style="color: red;">Mala (Liberación de oxígeno alimenta el fuego)</span></td>
+                <td><b>Buena (>270°C, intrínsecamente no libera oxígeno)</b></td>
             </tr>
             <tr>
                 <td><b>Tolerancia al calor del motor</b></td>
                 <td>Buena</td>
-                <td><span style="color: red;">Mala (Propensa a la generación de gas e hinchamiento por calor)</span></td>
-                <td><b>Excelente (Larga vida útil en ciclo a alta temperatura)</b></td>
+                <td><span style="color: red;">Mala (Propensa a hinchamiento por calor)</span></td>
+                <td><b>Buena (Larga vida útil a alta temperatura)</b></td>
             </tr>
             <tr>
-                <td><b>Vida útil básica en ciclos</b></td>
-                <td>Aprox. 500 – 1,000 ciclos</td>
-                <td><span style="color: red;">Aprox. 1,500 – 2,000 ciclos (Degradación acelerada con calor)</span></td>
-                <td><b>4,000 – 6,000 ciclos (Vida útil ultra larga)</b></td>
+                <td><b>Vida útil en ciclos</b></td>
+                <td>500 – 1,000 ciclos</td>
+                <td><span style="color: red;">1,500 – 2,000 ciclos</span></td>
+                <td><b>4,000 – 6,000 ciclos</b></td>
+            </tr>
+            <tr>
+                <td><b>Tasa de autodescarga</b></td>
+                <td>5%–15%/mes</td>
+                <td><span style="color: red;">5%–10%/mes</span></td>
+                <td><b>1%–2%/mes</b></td>
             </tr>
             <tr>
                 <td><b>Origen de la calidad de celdas</b></td>
                 <td>Calidad automotriz estándar</td>
-                <td><span style="color: red;">Mayoría de talleres clandestinos / Materiales Grado B</span></td>
-                <td><b>Grandes fabricantes de grado automotriz</b></td>
+                <td><span style="color: red;">Mayoría de fabricantes de segundo nivel</span></td>
+                <td><b>Grandes fabricantes de litio de primer nivel</b></td>
             </tr>
         </tbody>
     </table>

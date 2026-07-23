@@ -56,10 +56,19 @@ Der Motorraum von Fahrzeugen erreicht im Sommerbetrieb häufig Temperaturen von 
 - **Sehr hohe Schwelle für thermisches Durchgehen**: Die Starttemperatur für thermisches Durchgehen liegt bei über **270 °C**, und die Kristallstruktur ($PO_4$-Phosphat) bleibt selbst bei 500 °C stabil.
 - **Freisetzung von praktisch keinem Sauerstoff (Schlüsselvorteil)**: LFP setzt bei Zersetzung unter extremer Hitze oder mechatronischer Beschädigung **praktisch keinen Sauerstoff frei**. Ohne Verbrennungsbeschleuniger ist es von Natur aus extrem schwer zu entzünden oder zu explodieren.
 
-### 2. Natrium-Ionen-Batterie: Heftige Sauerstofffreisetzung (Fatales Sicherheitsrisiko)
-- **Niedrigere Starttemperatur für thermisches Durchgehen**: Das thermische Durchgehen beginnt bereits bei etwa **150 °C bis 200 °C**, was eine weit geringere Hitzetoleranz als bei LFP bedeutet.
-- **Heftige Sauerstofffreisetzung speist die Verbrennung**: Das Kathodenmaterial von Natriumbatterien setzt bei einer Kettenreaktion des thermischen Durchgehens **heftig Sauerstoff frei**. In einem geschlossenen Akkupack voller organischer Elektrolytdämpfe wirkt der in großen Mengen freigesetzte Sauerstoff als starker Verbrennungsbeschleuniger, was das Risiko eines heftigen Brandes oder einer Explosion drastisch erhöht.
-- **Gasbildung und Blähung bei hohen Temperaturen**: Bei Motorraumtemperaturen von 70 °C bis 90 °C zeigen derzeit kommerziell erhältliche flüssige Natriumbatterien aktive Grenzflächenreaktionen, was zur Auflösung des Kathodenmaterials und zur Zersetzung des Elektrolyten führt. Dies verursacht **Zellblähungen, Leckagen** und einen rapiden Verfall der Lebensdauer.
+### 2. Natrium-Ionen-Batterie: Vergleich der drei Kathodenmaterial-Routen und angeborene Grenzen
+
+Die drei derzeitigen Hauptrouten für Kathodenmaterialien von Natrium-Ionen-Batterien (Schichtoxide Na<sub>x</sub>MO<sub>2</sub>, Preußischblau-Analoga PBA, Polyanionische Verbindungen NFPP/NVPF) stehen unter den hohen Temperaturen im Motorraum und den 12V-Fahrzeug-Startanforderungen vor schwer zu überwindenden Nachteilen:
+
+| Eigenschaft | Schichtoxide (Derzeitiges Markthauptfeld) | Preußischblau / Preußischweiß | Polyanionische Verbindungen |
+| :--- | :--- | :--- | :--- |
+| **Thermisches Durchgehen-Risiko** | **Hoch (Heftige Sauerstofffreisetzung speist Brand)** | **Mittel (Gasbildung & Blähung bei Hitze)** | **Gering (Stabilere Struktur)** |
+| **Start-Zersetzungstemp.** | **Ca. 150–200°C** | **Hohe Variabilität (Neigt zu Restkristallwasser)** | **Höher (>250°C)** |
+| **Volumetric Energiedichte** | **Hoch** | **Niedrig** | **Niedrig bis Mittel** |
+| **Zykluslebensdauer** | **Mittel (Ion auflösung & Verfall bei Hitze)** | **Niedrig bis Mittel** | **Mittel bis Hoch** |
+| **Selbstentladungsrate** | **Hoch (5–10%/Monat)**<br>Metallauflösungs-Shuttle + Instabile Hartkohlenstoff-SEI | **Extrem hoch (>10%/Monat)**<br>Kristallwasserkorrosion + Elektrolytzersetzung | **Mittel-Niedrig (3–5%/Monat)**<br>Keine Metallauflösung, nur durch SEI-Reparatur beeinflusst |
+
+> **Zusammenfassung:** Die im Handel erhältlichen Natriumbatterien, die auf Kapazität und Energiedichte abzielen, verwenden meist **Schichtoxide**, neigen jedoch im heißen Motorraum (70–90°C) zu thermischem Durchgehen mit heftiger Sauerstofffreisetzung und Blähungen/Leckagen; die relativ sicheren **polyanionischen Verbindungen** sind zwar thermisch stabil, leiden jedoch unter einer extrem niedrigen volumetrischen Energiedichte und ihr **flaches Spannungsplateau ist stark inkompatibel mit 12V-Ladesystemen** (3S neigt dazu, unter 11V zu fallen, 4S lässt sich nicht voll aufladen). Keine der drei Routen ist derzeit für den stabilen Einsatz in Starterbatterien geeignet.
 
 ---
 
@@ -129,22 +138,22 @@ Der Motorraum von Fahrzeugen erreicht im Sommerbetrieb häufig Temperaturen von 
             <tr>
                 <th>Vergleich der LN3-Größe</th>
                 <th>Traditionelle Blei-Säure</th>
-                <th>Natrium-Ionen-Batterie (4S)</th>
-                <th>Lithium-Eisenphosphat (LFP 4S) ✦ Erste Wahl</th>
+                <th>Natrium-Ionen-Batterie</th>
+                <th>Lithium-Eisenphosphat (LFP)</th>
             </tr>
         </thead>
         <tbody>
             <tr>
                 <td><b>Laderate & Nutzbare Kapazität</b></td>
                 <td>100 % voll geladen</td>
-                <td><span style="color: red;">Kapazität reduziert (Kann bei 14,4 V nicht in den Hochspannungsbereich laden, nur ca. 50 % nutzbar)</span></td>
-                <td><b>Perfekt geladen (>95 % nutzbare Kapazität)</b></td>
+                <td><span style="color: red;">Kapazität reduziert (Bei 14,4 V nicht im Hochspannungsbereich ladbar)</span></td>
+                <td><b>Voll aufladbar (>95 % nutzbare Kapazität)</b></td>
             </tr>
             <tr>
                 <td><b>14,4-V-Lichtmaschinen-Passgenauigkeit</b></td>
-                <td>Perfekte Passform</td>
-                <td><span style="color: red;">Schlecht (Spannung unpassend, kann nicht voll laden)</span></td>
-                <td><b>Perfekt (14,2 V–14,6 V perfekte Übereinstimmung)</b></td>
+                <td>Gut</td>
+                <td><span style="color: red;">Schlecht (Kann nicht voll laden)</span></td>
+                <td><b>Gut</b></td>
             </tr>
             <tr>
                 <td><b>Gleichmäßigkeit der Entladespannung</b></td>
@@ -154,27 +163,33 @@ Der Motorraum von Fahrzeugen erreicht im Sommerbetrieb häufig Temperaturen von 
             </tr>
             <tr>
                 <td><b>Thermisches Durchgehen & Sicherheit</b></td>
-                <td>Schwer entflammbar</td>
-                <td><span style="color: red;">Gefährlich (Durchgehen setzt heftig Sauerstoff frei und nährt Brand)</span></td>
-                <td><b>Extrem hoch (>270 °C, setzt von Natur aus keinen Sauerstoff frei)</b></td>
+                <td>Gut</td>
+                <td><span style="color: red;">Schlecht (Sauerstofffreisetzung speist Brand)</span></td>
+                <td><b>Gut (>270 °C, setzt von Natur aus keinen Sauerstoff frei)</b></td>
             </tr>
             <tr>
                 <td><b>Hitzetoleranz im Motorraum</b></td>
                 <td>Gut</td>
-                <td><span style="color: red;">Schlecht (Neigt bei hohen Temperaturen zu Gasbildung & Blähung)</span></td>
-                <td><b>Hervorragend (Lange Lebensdauer bei hohen Temperaturen)</b></td>
+                <td><span style="color: red;">Schlecht (Neigt bei Hitze zu Blähung)</span></td>
+                <td><b>Gut (Lange Lebensdauer bei hohen Temperaturen)</b></td>
             </tr>
             <tr>
-                <td><b>Basis-Zykluslebensdauer</b></td>
-                <td>Ca. 500 – 1.000 Zyklen</td>
-                <td><span style="color: red;">Ca. 1.500 – 2.000 Zyklen (Beschleunigter Verfall bei Hitze)</span></td>
-                <td><b>4.000 – 6.000 Zyklen (Sehr lange Lebensdauer)</b></td>
+                <td><b>Zykluslebensdauer</b></td>
+                <td>500 – 1.000 Zyklen</td>
+                <td><span style="color: red;">1.500 – 2.000 Zyklen</span></td>
+                <td><b>4.000 – 6.000 Zyklen</b></td>
+            </tr>
+            <tr>
+                <td><b>Selbstentladungsrate</b></td>
+                <td>5%–15%/Monat</td>
+                <td><span style="color: red;">5%–10%/Monat</span></td>
+                <td><b>1%–2%/Monat</b></td>
             </tr>
             <tr>
                 <td><b>Herkunft der Zellqualität</b></td>
                 <td>Reguläre Fahrzeugqualität</td>
-                <td><span style="color: red;">Meist Hinterhof-Fabriken / B-Ware-Materialien</span></td>
-                <td><b>Große Hersteller in Automobilqualität</b></td>
+                <td><span style="color: red;">Meist Zweit- oder Drittanbieter-Hersteller</span></td>
+                <td><b>Erstklassige Lithium-Hersteller</b></td>
             </tr>
         </tbody>
     </table>
