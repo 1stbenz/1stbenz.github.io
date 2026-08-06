@@ -97,7 +97,7 @@ LTO 電池除了電壓匹配難題，還有**嚴格的溫度限制**。東芝規
 
 ### 1. 漂亮的 CCA 與內阻數據，其實是「假的」
 
-首先，**鋰電池的內阻不等於實際放電能力**。以 [東芝鈦酸鋰官方規格表](https://www.global.toshiba/ww/products-solutions/battery/scib/product-next/product/cell/high-energy.html) 為例，其放電倍率其實只有 20C，用傳統儀器測出超高 CCA 在實務上毫無意義（可進一步參考：[為何測量鋰電池的 CCA 毫無意義](https://www.google.com/search?q=/2025/about-cca.html)）。
+首先，**鋰電池的內阻不等於實際放電能力**。以 [東芝鈦酸鋰官方規格表](https://www.global.toshiba/ww/products-solutions/battery/scib/product-next/product/cell/high-energy.html) 為例，其放電倍率其實只有 20C，用傳統儀器測出超高 CCA 在實務上毫無意義（可進一步參考：[為何測量鋰電池的 CCA 毫無意義](/2025/about-cca.html)）。
 
 更致命的是 LTO 的獨特電化學特性（零應變材料且不易生成傳統 SEI 膜），導致它在老化初期或內部產氣時，**歐姆內阻的變化並不明顯**。市售常見的 1kHz 內阻儀只能測到靜態交流阻抗，因此不論這顆二手電芯的可用容量已經衰減、還是內部開始嚴重脹氣，**量出來的內阻數據往往依然非常漂亮**，極具欺騙性。
 

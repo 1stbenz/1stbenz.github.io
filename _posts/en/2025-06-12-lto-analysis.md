@@ -97,7 +97,7 @@ Many DIY enthusiasts testing LTO cells are often deceived by two sets of beautif
 
 ### 1. Beautiful CCA and Internal Resistance Data Are Actually "Fake"
 
-First, **a lithium battery's internal resistance does not equate to its actual discharge capability**. Taking the [Toshiba official LTO specification sheet](https://www.global.toshiba/ww/products-solutions/battery/scib/product-next/product/cell/high-energy.html) as an example, its discharge rate is actually only 20C. Measuring an ultra-high CCA using traditional instruments is practically meaningless (Further reading: [Why measuring CCA for lithium batteries is meaningless](https://www.google.com/search?q=/2025/about-cca.html)).
+First, **a lithium battery's internal resistance does not equate to its actual discharge capability**. Taking the [Toshiba official LTO specification sheet](https://www.global.toshiba/ww/products-solutions/battery/scib/product-next/product/cell/high-energy.html) as an example, its discharge rate is actually only 20C. Measuring an ultra-high CCA using traditional instruments is practically meaningless (Further reading: [Why measuring CCA for lithium batteries is meaningless](/2025/about-cca.html)).
 
 More fatally, LTO's unique electrochemical properties (zero-strain material and less likely to form a traditional SEI layer) mean that during the early stages of aging or when internal gassing occurs, its **ohmic internal resistance changes are not obvious**. Common 1kHz internal resistance meters can only measure static AC impedance. Therefore, whether the usable capacity of this second-hand cell has degraded or the interior is starting to gas severely, **the measured internal resistance data often remains very attractive**, making it highly deceptive.
 
