@@ -16,15 +16,15 @@ faq:
   - question: "¿Qué zonas de servicio en la autopista Nacional No.1 no tienen estaciones de servicio?"
     answer: "La Zona de Servicio Yangmei en la autopista Nacional No.1 no tiene estación de servicio (ni hacia el norte ni hacia el sur)."
   - question: "¿Qué estaciones de servicio en la autopista nacional número 3 tienen una estación de gasolina?"
-    answer: "Las estaciones de servicio con estación de gasolina en la autopista nacional número 3 incluyen Kansai (CPC, pero actualmente suspendida), Chingshui (CPC), Nantou (CPC), Guqing (CPC), Dongshan (CPC) y Guanmao (CPC)."
+    answer: "Las estaciones de servicio con estación de gasolina en la autopista nacional número 3 incluyen Kansai (CPC), Chingshui (CPC), Nantou (CPC), Guqing (CPC), Dongshan (CPC) y Guanmao (CPC)."
   - question: "¿Qué zonas de servicio en la autopista nacional número 3 no tienen estaciones de servicio?"
     answer: "La zona de servicio de Xihu en la autopista nacional número 3 no tiene estación de servicio (ni hacia el norte ni hacia el sur)."
   - question: "¿Qué marcas operan las estaciones de servicio en los parques de descanso nacionales y cuáles son sus diferencias?"
     answer: "Las estaciones de servicio en los parques de descanso nacionales están principalmente operadas por la Corporación China Petróleos (CPC) y el Grupo Petrochemicals Taiwan. Ambas ofrecen combustibles que cumplen con los estándares nacionales; los conductores pueden elegir una marca específica según su preferencia personal o las ventajas para miembros."
   - question: "¿Por qué es necesario tener en cuenta la configuración de las estaciones de servicio para el tráfico hacia el norte y hacia el sur al planificar un itinerario?"
     answer: "Algunas zonas de descanso solo tienen estaciones de servicio en una dirección, o bien las marcas de combustible son diferentes para el tránsito hacia el norte y hacia el sur (por ejemplo, la Zona de Descanso Xiluó del Autopista 1). Conocer con anticipación estas configuraciones ayuda a los conductores a organizar más eficientemente sus paradas y evitar perderse puntos de abastecimiento."
-  - question: "¿Cuál es el estado actual de la estación de servicio del gasoducto en el Servicio Nacional de Carretera Oeste?"
-    answer: "Las estaciones de servicio Shell y CNOOC para tráfico hacia norte y sur en el Servicio Nacional de Carretera Oeste están actualmente en estado 'Pausa'."
+  - question: "¿Cuál es el estado actual de las estaciones de servicio en el área de servicio de Guanxi (Kansai) de la Autopista Nacional 3?"
+    answer: "Las estaciones de servicio en el área de servicio de Guanxi (Kansai) han reanudado sus operaciones y hay estaciones de CPC disponibles en ambas direcciones."
 ---
 
 [![](alt: Información de servicio de gas)](/images/service-area-gas-info.webp)
@@ -164,8 +164,8 @@ faq:
             <tr>
                 <td>Kansai</td>
                 <td>76 km</td>
-                <td>CPC (suspendido)</td>
-                <td>CPC (suspendido)</td>
+                <td>CPC</td>
+                <td>CPC</td>
             </tr>
             <tr>
                 <td>Xihu</td>

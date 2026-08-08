@@ -16,15 +16,15 @@ faq:
   - question: "Auf der Nationalstraße 1, welche Serviceareale haben keine Tankstelle?"
     answer: "Das Serviceareal Yangmei an der Nationalstraße 1 hat keinen Kraftstofftanker (es gibt ihn weder in Richtung Norden als auch in Richtung Süden)."
   - question: "Welche Rastplätze auf der Nationalstraße Nummer 3 verfügen über eine Tankstelle?"
-    answer: "Die Rastplätze mit einer Tankstelle auf der Nationalstraße Nummer 3 sind Kansai (CPC, derzeit jedoch stillgelegt), Chingshui (CPC), Nantou (CPC), Kuku (CPC), Dongshan (CPC) und Guanmao (CPC)."
+    answer: "Die Rastplätze mit einer Tankstelle auf der Nationalstraße Nummer 3 sind Kansai (CPC), Chingshui (CPC), Nantou (CPC), Kuku (CPC), Dongshan (CPC) und Guanmao (CPC)."
   - question: "Auf der Nationalstraße 3, welche Serviceareale haben keine Tankstelle?"
     answer: "Das Serviceareal Xihu an der Nationalstraße 3 hat keinen Kraftstofftanker (in beide Richtungen)."
   - question: "Welche Marken betreiben die Tankstellen an den Autobahn-Servicestations? Was sind deren Unterschiede?"
     answer: "Die Tankstellen an den Autobahn-Servicestationen werden hauptsächlich von der China Petroleum Corporation und Taiwan Petrochemicals betrieben. Beide bieten Kraftstoffqualität, die den nationalen Standards entspricht; Fahrer können je nach persönlicher Präferenz oder Mitglieder-Vorteilen eine bestimmte Marke wählen."
   - question: "Warum ist es bei der Planung einer Route wichtig, die Tankstellenkonfiguration für den Nord- und Südrauf an Servicegebieten zu beachten?"
     answer: "Weil einige Servicegebiete nur in eine Richtung über Tankstellen verfügen oder dass sich die Marken von Tankstellen im Nord- und Südrauf unterscheiden (z. B. am Westluo-Serviceway auf der Nationalstraße 1). Das Vorherwissen dieser Konfigurationen kann es Fahrern ermöglichen, effizienter zu planen, wo sie anhalten sollen, um Überholpunkte nicht zu verpassen."
-  - question: "Wie ist der Zustand des Tankstellenservice am West-Kyoto-Service-Area auf dem Expressway No.3?"
-    answer: "Die Shell-Tankstellen für den nördlichen und südlichen Verkehr im Service-Area West-Kyogen auf dem Expressway No.3 befinden sich derzeit in einem 'Aus' -Status."
+  - question: "Wie ist der aktuelle Zustand der Tankstellen am Rastplatz Guanxi (Kansai) auf der Nationalstraße 3?"
+    answer: "Die Tankstellen am Rastplatz Guanxi (Kansai) haben ihren Betrieb wieder aufgenommen. Sowohl in Richtung Norden als auch in Richtung Süden stehen CPC-Tankstellen für den Service zur Verfügung."
 ---
 
 [![Dienstgasinfo](/images/service-area-gas-info.webp)](/images/service-area-gas-info.webp)
@@ -162,8 +162,8 @@ faq:
             <tr>
                 <td>Guanxi</td>
                 <td>76K</td>
-                <td>CPC (<strong>Pausiert</strong>)</td>
-                <td>CPC (<strong>Pausiert</strong>)</td>
+                <td>CPC</td>
+                <td>CPC</td>
             </tr>
             <tr>
                 <td>Xihu</td>

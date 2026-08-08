@@ -16,7 +16,7 @@ faq:
   - question: "Are there any service areas on Freeway 1 without gas stations?"
     answer: "Yes, the Yangmei Service Area on Freeway 1 does not have a gas station."
   - question: "Which service areas on Freeway 3 have gas stations?"
-    answer: "Service areas on Freeway 3 with gas stations include Guanxi (CPC - Currently Suspended), Qingshui (CPC), Nantou (CPC), Gukeng (CPC), Dongshan (CPC), and Guanmiao (CPC)."
+    answer: "Service areas on Freeway 3 with gas stations include Guanxi (CPC), Qingshui (CPC), Nantou (CPC), Gukeng (CPC), Dongshan (CPC), and Guanmiao (CPC)."
   - question: "Which service areas on Freeway 3 do not have gas stations?"
     answer: "The Xihu Service Area on Freeway 3 does not have a gas station for either direction."
   - question: "Why is it important to check the northbound vs. southbound configuration?"
@@ -47,7 +47,7 @@ When driving long distances on Taiwan's major freeways, knowing where to refuel 
 
 | Service Area | Mileage | Northbound (NB) | Southbound (SB) | Note |
 | :--- | :---: | :---: | :---: | :--- |
-| **Guanxi** | 76k | **Suspended** | **Suspended** | CPC (Currently not in service) |
+| **Guanxi** | 76k | **CPC** | **CPC** | - |
 | **Xihu** | 134k | No | No | - |
 | **Qingshui** | 172k | **CPC** | **CPC** | - |
 | **Nantou** | 231k | **CPC** | **CPC** | - |
@@ -61,7 +61,7 @@ When driving long distances on Taiwan's major freeways, knowing where to refuel 
 
 1.  **Brand Preference:** Gas stations on the freeway are primarily operated by **CPC (Chinese Petroleum Corp)** or **FPCC (Formosa Petrochemical Corp)**. Both meet national standards, but you may prefer one for membership points or credit card discounts.
 2.  **The Xiluo Split:** Note that at **Xiluo Service Area**, the Northbound station is CPC, while the Southbound station is FPCC. 
-3.  **Check Guanxi Status:** As of early 2026, the gas stations at Guanxi Service Area (Freeway 3) are suspended. Make sure to refuel at earlier points if traveling through this section.
+3.  **Guanxi Service Area is Active:** The gas stations at Guanxi Service Area (Freeway 3) have resumed operations, providing CPC refueling services in both directions.
 4.  **No Gas at Xihu/Yangmei:** These two areas are smaller and do not provide refueling services. 
 
 Safe travels!
