@@ -44,7 +44,7 @@ Obwohl der ISG eine sofortige Leistungsspritze liefern kann, unterscheidet er si
 
 * **Leistungsgrenze des 12V-Bordnetzes**: Nach der Formel $$P = V \times I$$ (Leistung = Spannung × Stromstärke) sind im standardmäßigen 12V-System eines Motorrads für eine Boost-Leigung von 1 kW (ca. 1,35 PS) unter Berücksichtigung der Wirkungsgrade von Steuergerät (MCU) und Motor kurzzeitig Ströme von **mehr als 90 bis 100 Ampere** erforderlich. Würde man die Leistung weiter erhöhen, stiege der Strom drastisch an, was zu extremer Kabelerwärmung und Bauteilschäden führen würde.
 * **Platzmangel und thermische Grenzen**: Der ISG-Motor sitzt direkt am Kurbelgehäuse in einer sehr heißen Umgebung mit minimalem Bauraum. Bei dauerhafter hoher Leistungsabgabe staut sich in den Motorwicklungen Hitze, was zum Durchbrennen der Drähte oder zur Entmagnetisierung der Permanentmagnete bei hohen Temperaturen führen kann.
-* **Kurze Boost-Dauer**: Um die Batterie vor Tiefentladung und den Motor vor Überhitzung zu schützen, begrenzt die werkseitige ECU den Elektro-Boost meist auf die ersten 3 bis 5 Sekunden beim Anfahren oder Beschleunigen. Ein dauerhafter Schub bei höheren Geschwindigkeiten wie bei einem echten E-Bike ist nicht möglich.
+* **Kurze Boost-Dauer**: Um die Batterie vor Tiefentladung und den Motor vor Überhitzung zu schützen, begrenzt die werkseitige ECU den Elektro-Boost meist auf die ersten 10 bis 20 Sekunden beim Anfahren oder Beschleunigen. Ein dauerhafter Schub bei höheren Geschwindigkeiten wie bei einem echten E-Bike ist nicht möglich.
 
 ---
 

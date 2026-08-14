@@ -44,7 +44,7 @@ Aunque el ISG proporciona asistencia de potencia instantánea, es fundamentalmen
 
 * **Cuello de botella de potencia del sistema de 12V**: Según la fórmula $$P = V \times I$$ (Potencia = Voltaje × Corriente), para entregar 1 kW (aprox. 1.35 CV) de asistencia en una arquitectura estándar de 12V, y considerando la eficiencia del controlador (MCU) y del motor, la corriente instantánea de la batería superará los **90 a 100 amperios**. Intentar aumentar más la potencia haría que la corriente se disparara, provocando un calentamiento extremo de los cables y daños en los componentes.
 * **Espacio reducido y disipación de calor**: El motor ISG está pegado al cárter, en un entorno de alta temperatura y espacio muy restringido. Si la asistencia eléctrica de alta potencia se prolonga, el bobinado acumula calor excesivo, lo que puede quemar el aislamiento del cable o desmagnetizar los imanes permanentes.
-* **Breve tiempo de asistencia**: Para proteger la batería de descargas excesivas y evitar el sobrecalentamiento del motor, la ECU original suele limitar el boost eléctrico a los primeros 3 o 5 segundos del arranque o de la aceleración, por lo que no proporciona un empuje continuo a alta velocidad como un EV.
+* **Breve tiempo de asistencia**: Para proteger la batería de descargas excesivas y evitar el sobrecalentamiento del motor, la ECU original suele limitar el boost eléctrico a los primeros 10 o 20 segundos del arranque o de la aceleración, por lo que no proporciona un empuje continuo a alta velocidad como un EV.
 
 ---
 

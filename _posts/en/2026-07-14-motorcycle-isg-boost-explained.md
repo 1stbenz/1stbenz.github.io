@@ -44,7 +44,7 @@ Although the ISG can provide instant power assistance, it is fundamentally diffe
 
 * **Power Bottleneck of the 12V Low-Voltage System**: According to the power formula $$P = V \times I$$ (Power = Voltage × Current), to output 1 kW (about 1.35 hp) of electric boost power in a standard 12V motorcycle architecture, the transient current on the battery side will exceed **90–100 Amps** after accounting for the conversion efficiency of the controller (MCU) and motor. Increasing the power output further would cause the current to soar, leading to extreme wire heating and component failure.
 * **Confined Space and Heat Dissipation Bottlenecks**: The ISG motor is located right next to the crankcase, operating in a high-temperature environment with very limited space. If high-power electric boost is sustained for too long, the motor windings will accumulate excessive heat, potentially burning the magnet wires or demagnetizing the permanent magnets.
-* **Brief Assist Duration**: To protect the battery from deep discharge and prevent the motor from overheating, the factory ECU typically limits electric boost to the first 3 to 5 seconds of starting or accelerating, unable to provide sustained high-speed thrust like a pure EV.
+* **Brief Assist Duration**: To protect the battery from deep discharge and prevent the motor from overheating, the factory ECU typically limits electric boost to the first 10 to 20 seconds of starting or accelerating, unable to provide sustained high-speed thrust like a pure EV.
 
 ---
 
