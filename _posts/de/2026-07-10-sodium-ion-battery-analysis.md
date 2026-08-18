@@ -74,7 +74,7 @@ Die drei derzeitigen Hauptrouten für Kathodenmaterialien von Natrium-Ionen-Batt
 | Eigenschaft | Schichtoxide (Derzeitiges Markthauptfeld) | Preußischblau / Preußischweiß | Polyanionische Verbindungen |
 | :--- | :--- | :--- | :--- |
 | **Thermisches Durchgehen-Risiko** | **Hoch (Heftige Sauerstofffreisetzung speist Brand)** | Mittel (Gasbildung & Blähung bei Hitze) | Gering (Stabilere Struktur) |
-| **Start-Zersetzungstemp.** | **Ca. 150–200°C** | Hohe Variabilität (Neigt zu Restkristallwasser) | Höher (>250°C) |
+| **Start-Zersetzungstemp.** | **Ca. 150–200°C** | Höher (>250°C) | Höher (>250°C) |
 | **Volumetric Energiedichte** | Hoch | **Niedrig** | Niedrig bis Mittel |
 | **Zykluslebensdauer** | Mittel (Ion auflösung & Verfall bei Hitze) | **Niedrig bis Mittel** | Mittel bis Hoch |
 | **Tieftemperaturtoleranz (-20°C)** | Mittel | Gut | **Schlecht** |

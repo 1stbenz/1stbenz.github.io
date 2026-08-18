@@ -74,7 +74,7 @@ Las tres rutas principales de materiales catódicos para las baterías de ion de
 | Propiedad | Óxidos Laminares (Principal comercial) | Azul / Blanco de Prusia | Compuestos Polianiónicos |
 | :--- | :--- | :--- | :--- |
 | **Riesgo de Fuga Térmica** | **Alto (Liberación violenta de oxígeno que alimenta el fuego)** | Medio (Generación de gas e hinchamiento a alta temp.) | Bajo (Estructura más estable) |
-| **Temp. Inicial de Descomposición** | **Aprox. 150–200°C** | Alta variabilidad (Propenso a agua de cristalización residual) | Más alta (>250°C) |
+| **Temp. Inicial de Descomposición** | **Aprox. 150–200°C** | Más alta (>250°C) | Más alta (>250°C) |
 | **Densidad de Energía Volumétrica** | Alta | **Baja** | Baja a Media |
 | **Vida Útil en Ciclos** | Media (Disolución iónica y degradación a alta temp.) | **Baja a Media** | Media a Alta |
 | **Tolerancia a Bajas Temperaturas (-20°C)** | Media | Buena | **Mala** |

@@ -74,7 +74,7 @@ The three main cathode material routes of current sodium-ion batteries (Layered 
 | Property | Layered Oxides (Mainstream Commercial) | Prussian Blue / White | Polyanionic Compounds |
 | :--- | :--- | :--- | :--- |
 | **Thermal Runaway Risk** | **High (Violent oxygen release fueling combustion)** | Medium (High-temp gas generation & bloating) | Low (More stable structure) |
-| **Initial Decomposition Temp** | **Approx. 150–200°C** | High variability (Prone to residual crystal water) | Higher (>250°C) |
+| **Initial Decomposition Temp** | **Approx. 150–200°C** | Higher (>250°C) | Higher (>250°C) |
 | **Volumetric Energy Density** | High | **Low** | Low to Medium |
 | **Cycle Life** | Medium (High-temp ion dissolution & degradation) | **Low to Medium** | Medium to High |
 | **Low-Temperature Tolerance (-20°C)** | Medium | Good | **Poor** |
