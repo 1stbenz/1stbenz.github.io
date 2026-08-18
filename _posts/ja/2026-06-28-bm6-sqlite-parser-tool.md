@@ -16,7 +16,7 @@ faq:
   - question: "SQLiteファイルをアップロードするとプライバシー漏洩のリスクがありますか？"
     answer: "全くありません。このツールはSQL.jsローカルWebAssembly技術を使用しており、すべてのデータベースの読み込み、クエリ、グラフ描画はブラウザのサンドボックス内で完結し、いかなるデータも外部サーバーに送信されません。"
   - question: "クランキング波形に赤点とオレンジ点があるのはなぜですか？"
-    answer: "赤点 (Min) はスターターモーターが作動しているときの最低瞬時電圧を表します。オレンジ点 (Starter) は動的しきい値アルゴリズムによって判定され、スターターモーターの電源が切れてオルタネーターが発電を引き継ぐ瞬間の転換点です。"
+    answer: "赤点 (最低) はスターターモーターが作動しているときの最低瞬時電圧を表します。オレンジ点 (スターター解除) は動的しきい値アルゴリズムによって判定され、スターターモーターの電源が切れてオルタネーターが発電を引き継ぐ瞬間の転換点です。"
 ---
 
 
@@ -721,14 +721,14 @@ faq:
                                 const ptMin = meta.data[0];
                                 if (ptMin.x >= chart.chartArea.left && ptMin.x <= chart.chartArea.right) {
                                     ctx.textAlign = 'left';
-                                    ctx.fillText(`Min: ${minPoint.y.toFixed(2)}V`, ptMin.x + 10, ptMin.y);
+                                    ctx.fillText(` 最低: ${minPoint.y.toFixed(2)}V`, ptMin.x + 10, ptMin.y);
                                 }
                                 
                                 // Starterラベル
                                 const ptStarter = meta.data[1];
                                 if (ptStarter.x >= chart.chartArea.left && ptStarter.x <= chart.chartArea.right) {
                                     ctx.textAlign = 'left';
-                                    ctx.fillText(` Starter: ${starterPoint.y.toFixed(2)}V`, ptStarter.x + 10, ptStarter.y);
+                                    ctx.fillText(` スターター解除: ${starterPoint.y.toFixed(2)}V`, ptStarter.x + 10, ptStarter.y);
                                 }
                                 ctx.restore();
                             }

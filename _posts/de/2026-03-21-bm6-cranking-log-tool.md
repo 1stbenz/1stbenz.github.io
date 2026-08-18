@@ -12,7 +12,7 @@ faq:
   - question: "Welches Problem löst dieses Tool hauptsächlich?"
     answer: "Das Original-APP kann keine hochauflösenden Startwellenausgaben bereitstellen. Dieses Tool kann die ursprünglichen Logdateien direkt vom Bluetooth-Lesegerät lesen, die internen 16-bit-Pakete decodieren und den 100-Hz-präzisen Spannungsverlauf beim Start wiederherstellen, um die momentane Entladeleistung des Akkus und den Zustand des Startermotors zu beurteilen."
   - question: "Was bedeuten die roten und orangen Punkte auf dem Diagramm?"
-    answer: "Der rote Punkt (Min) repräsentiert den niedrigsten Spannungswert, zu dem der Akku beim Startvorgang des Motors gezogen wird. Der orange Punkt (Starter) markiert hingegen den durch Algorithmen berechneten Übergangspunkt, an dem die Stromversorgung für den Starter abgeschaltet und das Motorwerk erfolgreich mit der Generierung von elektrischer Energie übergeben wurde."
+    answer: "Der rote Punkt (Min) repräsentiert den niedrigsten Spannungswert, zu dem der Akku beim Startvorgang des Motors gezogen wird. Der orange Punkt (Anlasser getrennt) markiert hingegen den durch Algorithmen berechneten Übergangspunkt, an dem die Stromversorgung für den Starter abgeschaltet und das Motorwerk erfolgreich mit der Generierung von elektrischer Energie übergeben wurde."
   - question: "Wie kann man eine zum Hochladen geeignete Log-Datei erhalten?"
     answer: "Sie können die abgefangenen Broadcast-Daten entweder mit einem Bluetooth-Analysegerät für mobile Endgeräte oder über den integrierten Funktion zur Exportierung von Protokolldateien in der BM6-Urheberrechts-App als .txt- oder .log-Format archivieren. Stellen Sie sicher, dass das Archiv den Zeitraum des aktuellen Betriebszeitraums umfasst."
   - question: "Gibt es bei der Hochladung von Log-Dateien Bedenken hinsichtlich des Datenschutzes oder einer Datenlecks?"
@@ -367,7 +367,7 @@ const ptStarter = meta.data[1];
 if (ptStarter.x >= chart.chartArea.left && ptStarter.x <= chart.chartArea.right) {
     ctx.textAlign = 'left';
     // Ebenfalls um 10 px nach rechts verschieben, um den orangen Punkt zu vermeiden
-    ctx.fillText(` Starter dise: ${starterPoint.y.toFixed(2)}V`, ptStarter.x + 10, ptStarter.y);
+    ctx.fillText(` Anlasser getrennt: ${starterPoint.y.toFixed(2)}V`, ptStarter.x + 10, ptStarter.y);
 }
 ctx.restore();
 

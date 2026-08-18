@@ -12,12 +12,12 @@ faq:
   - question: "¿Qué problema resuelve principalmente esta herramienta?"
     answer: "La aplicación original no puede exportar ondas de arranque con alta resolución. Esta herramienta puede leer directamente los archivos Log crudos grabados por Bluetooth, decodificar los paquetes hexadecimales internos y restaurar la curva del voltaje de arranque a una precisión de 100 Hz para ayudar a determinar la capacidad instantánea de descarga de la batería y el estado del motor de arranque."
   - question: "¿Qué representan los puntos rojos y naranjas en el gráfico?"
-    answer: "El punto rojo (Min) representa la tensión mínima a la que se baja la batería durante el arranque instantáneo del motor de arranque; el punto naranja (Starter) es el punto de inflexión calculado mediante un algoritmo, marcando el momento en que se corta la alimentación al motor de arranque y el motor toma el control para generar electricidad."
+    answer: "El punto rojo (Mín) representa la tensión mínima a la que se baja la batería durante el arranque instantáneo del motor de arranque; el punto naranja (Desacople arranque) es el punto de inflexión calculado mediante un algoritmo, marcando el momento en que se corta la alimentación al motor de arranque y el motor toma el control para generar electricidad."
   - question: "¿Cómo obtener un archivo Log para subir?"
     answer: "Puede guardar los datos de transmisión capturados como archivos en formato .txt o .log utilizando la herramienta de análisis Bluetooth del dispositivo móvil, o bien mediante la función integrada de exportación de registros dentro de la aplicación BM6 original. Asegúrese de que el archivo abarque el período durante el cual se encontraba encendido."
   - question: "¿Subir archivos Log plantea preocupaciones de privacidad o fuga de datos?"
     answer: "Absolutamente no. Esta herramienta se desarrolla utilizando tecnología puramente frontend (JavaScript). Todos los procesos de análisis, decodificación hexadecimal y generación de gráficos se realizan independientemente dentro del navegador del usuario, sin que ningún dato sea enviado a servidores en la nube."
-  - question: "¿A qué voltaje mínimo (Min) de arranque se considera que la batería podría estar cerca del final de su vida útil?"
+  - question: "¿A qué voltaje mínimo (Mín) de arranque se considera que la batería podría estar cerca del final de su vida útil?"
     answer: "Una batería plomo-ácida o AGM saludable de 12V, a temperatura ambiente durante el arrancado del motor, generalmente mantiene un voltaje mínimo superior a 9.6 V. Si sus lecturas rojas caen frecuentemente por debajo de 9.0 V e incluso más, podría indicar que la batería se ha envejecido y su resistencia interna aumentado; le recomendamos realizar una evaluación profesional con antelación."
   - question: "¿Por qué aparece el mensaje «No se encontró una onda de encendido válida» después de subir un archivo?"
     answer: "Esto suele deberse a que no se ha capturado ningún paquete completo del momento en que la motoriza. Por favor, verifique si existe dentro del archivo la etiqueta exitosa 'cranking.add:ok'. Además, si el teléfono está demasiado lejos del vehículo durante el encendido y esto provoca una caída de conexión Bluetooth, también puede causar incompletitud en la onda e impedir su análisis."
@@ -368,7 +368,7 @@ const ptMin = meta.data[0];
 if (ptMin.x >= chart.chartArea.left && ptMin.x <= chart.chartArea.right) {
     ctx.textAlign = 'left';
     // Desplazar el eje X hacia la derecha 10 píxeles para evitar que se solape con el punto, y mantener el mismo eje Y
-    ctx.fillText(`Min: ${minPoint.y.toFixed(2)}V`, ptMin.x + 10, ptMin.y);
+    ctx.fillText(`Mín: ${minPoint.y.toFixed(2)}V`, ptMin.x + 10, ptMin.y);
 }
 
 // Etiqueta Starter (ubicada a la derecha del punto naranja)
@@ -376,7 +376,7 @@ const ptStarter = meta.data[1];
 if (ptStarter.x >= chart.chartArea.left && ptStarter.x <= chart.chartArea.right) {
     ctx.textAlign = 'left';
     // Desplazar también hacia la derecha 10 píxeles para evitar que se solape con el punto naranja
-    ctx.fillText(` Starter dise: ${starterPoint.y.toFixed(2)}V`, ptStarter.x + 10, ptStarter.y);
+    ctx.fillText(` Desacople arranque: ${starterPoint.y.toFixed(2)}V`, ptStarter.x + 10, ptStarter.y);
 }
 ctx.restore();
 

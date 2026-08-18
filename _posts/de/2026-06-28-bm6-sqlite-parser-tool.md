@@ -16,7 +16,7 @@ faq:
   - question: "Besteht bei der Hochladung von SQLite-Dateien ein Risiko für den Datenschutz?"
     answer: "Absolut nicht. Dieses Tool verwendet die lokale WebAssembly-Technologie SQL.js. Alle Datenbankladevorgänge, Abfragen und Diagrammzeichnungen werden in der Sandbox Ihres Browsers durchgeführt, und es werden keinerlei Daten an externe Server gesendet."
   - question: "Warum gibt es rote und orangefarbene Punkte auf der Startwellenform?"
-    answer: "Der rote Punkt (Min) stellt die niedrigste Momentanspannung während des Anlasserbetriebs dar; der orangefarbene Punkt (Starter) ist der Wendepunkt, der durch einen dynamischen Schwellenwert-Algorithmus bestimmt wird, wenn die Stromversorgung des Anlassers unterbrochen wird und der Generator die Stromerzeugung übernimmt."
+    answer: "Der rote Punkt (Min) stellt die niedrigste Momentanspannung während des Anlasserbetriebs dar; der orangefarbene Punkt (Anlasser getrennt) ist der Wendepunkt, der durch einen dynamischen Schwellenwert-Algorithmus bestimmt wird, wenn die Stromversorgung des Anlassers unterbrochen wird und der Generator die Stromerzeugung übernimmt."
 ---
 
 <style>
@@ -727,7 +727,7 @@ faq:
                                 const ptStarter = meta.data[1];
                                 if (ptStarter.x >= chart.chartArea.left && ptStarter.x <= chart.chartArea.right) {
                                     ctx.textAlign = 'left';
-                                    ctx.fillText(` Starter: ${starterPoint.y.toFixed(2)}V`, ptStarter.x + 10, ptStarter.y);
+                                    ctx.fillText(` Anlasser getrennt: ${starterPoint.y.toFixed(2)}V`, ptStarter.x + 10, ptStarter.y);
                                 }
                                 ctx.restore();
                             }

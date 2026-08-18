@@ -721,14 +721,14 @@ faq:
                                 const ptMin = meta.data[0];
                                 if (ptMin.x >= chart.chartArea.left && ptMin.x <= chart.chartArea.right) {
                                     ctx.textAlign = 'left';
-                                    ctx.fillText(`Min: ${minPoint.y.toFixed(2)}V`, ptMin.x + 10, ptMin.y);
+                                    ctx.fillText(` Min: ${minPoint.y.toFixed(2)}V`, ptMin.x + 10, ptMin.y);
                                 }
                                 
                                 // Starter 標籤
                                 const ptStarter = meta.data[1];
                                 if (ptStarter.x >= chart.chartArea.left && ptStarter.x <= chart.chartArea.right) {
                                     ctx.textAlign = 'left';
-                                    ctx.fillText(` Starter: ${starterPoint.y.toFixed(2)}V`, ptStarter.x + 10, ptStarter.y);
+                                    ctx.fillText(` Starter dise: ${starterPoint.y.toFixed(2)}V`, ptStarter.x + 10, ptStarter.y);
                                 }
                                 ctx.restore();
                             }

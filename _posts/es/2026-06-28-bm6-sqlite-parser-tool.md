@@ -16,7 +16,7 @@ faq:
   - question: "¿Existe riesgo de fuga de privacidad al subir el archivo sqlite?"
     answer: "Absolutamente no. Esta herramienta utiliza la tecnología WebAssembly local de SQL.js. Toda la carga de la base de datos, las consultas y la representación de gráficos se realizan en el sandbox de su navegador, y no se envía ningún dato a servidores externos."
   - question: "¿Por qué hay puntos rojos y naranjas en la forma de onda de arranque?"
-    answer: "El punto rojo (Min) representa el voltaje transitorio más bajo cuando el motor de arranque está arrastrando; el punto naranja (Starter) es el punto de inflexión detectado por un algoritmo de umbral dinámico, cuando la alimentación del motor de arranque se corta y el alternador toma el relevo para generar electricidad."
+    answer: "El punto rojo (Mín) representa el voltaje transitorio más bajo cuando el motor de arranque está arrastrando; el punto naranja (Desacople arranque) es el punto de inflexión detectado por un algoritmo de umbral dinámico, cuando la alimentación del motor de arranque se corta y el alternador toma el relevo para generar electricidad."
 ---
 
 
@@ -728,7 +728,7 @@ faq:
                                 const ptStarter = meta.data[1];
                                 if (ptStarter.x >= chart.chartArea.left && ptStarter.x <= chart.chartArea.right) {
                                     ctx.textAlign = 'left';
-                                    ctx.fillText(` Arranque: ${starterPoint.y.toFixed(2)}V`, ptStarter.x + 10, ptStarter.y);
+                                    ctx.fillText(` Desacople arranque: ${starterPoint.y.toFixed(2)}V`, ptStarter.x + 10, ptStarter.y);
                                 }
                                 ctx.restore();
                             }

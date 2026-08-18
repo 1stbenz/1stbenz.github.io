@@ -12,7 +12,7 @@ faq:
   - question: "What problem does this tool solve?"
     answer: "The official APP cannot export high-resolution cranking waveforms. This tool directly reads raw Log files captured via Bluetooth, decodes the internal hex packets, and restores the 100Hz high-precision cranking voltage curve. This helps in assessing the battery's instantaneous discharge capability and the starter motor's condition."
   - question: "What do the red and orange dots on the chart represent?"
-    answer: "The red dot (Min) represents the lowest voltage the battery drops to under the heavy load of the starter motor. The orange dot (Starter) is the turning point, calculated via an algorithm, where the starter motor's power is cut off and the engine successfully takes over generating power."
+    answer: "The red dot (Min) represents the lowest voltage the battery drops to under the heavy load of the starter motor. The orange dot (Starter Disengaged) is the turning point, calculated via an algorithm, where the starter motor's power is cut off and the engine successfully takes over generating power."
   - question: "How do I get a Log file to upload?"
     answer: "You can use a Bluetooth analysis tool on your phone, or the log export feature built into the official BM6 APP, to save the captured broadcast data as a .txt or .log file. Make sure the file covers the time period when the engine was started."
   - question: "Are there any privacy or data leak concerns when uploading a Log file?"
@@ -363,7 +363,7 @@ faq:
                         if (ptStarter.x >= chart.chartArea.left && ptStarter.x <= chart.chartArea.right) {
                             ctx.textAlign = 'left';
                             // Also shift right by 10px to avoid the orange dot
-                            ctx.fillText(` Starter dise: ${starterPoint.y.toFixed(2)}V`, ptStarter.x + 10, ptStarter.y);
+                            ctx.fillText(` Starter Disengaged: ${starterPoint.y.toFixed(2)}V`, ptStarter.x + 10, ptStarter.y);
                         }
                         ctx.restore();
                     }

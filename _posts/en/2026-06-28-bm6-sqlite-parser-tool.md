@@ -16,7 +16,7 @@ faq:
   - question: "Is there a privacy risk when uploading the sqlite file?"
     answer: "Absolutely not. This tool uses SQL.js local WebAssembly technology. All database loading, querying, and chart rendering are performed within your browser's sandbox, and no data is transmitted to external servers."
   - question: "Why are there red and orange dots on the cranking waveform?"
-    answer: "The red dot (Min) represents the lowest instantaneous voltage during starter motor drag; the orange dot (Starter) is determined by a dynamic threshold algorithm, indicating the instant the starter motor power is cut off and the alternator takes over power generation."
+    answer: "The red dot (Min) represents the lowest instantaneous voltage during starter motor drag; the orange dot (Starter Disengaged) is determined by a dynamic threshold algorithm, indicating the instant the starter motor power is cut off and the alternator takes over power generation."
 ---
 
 
@@ -728,7 +728,7 @@ faq:
                                 const ptStarter = meta.data[1];
                                 if (ptStarter.x >= chart.chartArea.left && ptStarter.x <= chart.chartArea.right) {
                                     ctx.textAlign = 'left';
-                                    ctx.fillText(` Starter: ${starterPoint.y.toFixed(2)}V`, ptStarter.x + 10, ptStarter.y);
+                                    ctx.fillText(` Starter Disengaged: ${starterPoint.y.toFixed(2)}V`, ptStarter.x + 10, ptStarter.y);
                                 }
                                 ctx.restore();
                             }
