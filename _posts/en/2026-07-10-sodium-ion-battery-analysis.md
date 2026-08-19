@@ -64,7 +64,7 @@ Under the 13.5V to 14.4V output profile of automotive alternators, sodium-ion ba
 Automotive engine bays frequently reach temperatures of **70°C to 90°C** during summer operation, posing a severe test to battery material thermal stability.
 
 ### 1. LFP (Lithium Iron Phosphate): Inherently Safe, No Oxygen Release
-- **Ultra-high thermal runaway threshold**: The thermal runaway onset temperature is above **270°C**, and the core crystal structure ($PO_4$ phosphate) remains solid even up to 500°C.
+- **Ultra-high thermal runaway threshold**: The thermal runaway onset temperature is above **270°C**, and the core crystal structure ($$PO_4$$ phosphate) remains solid even up to 500°C.
 - **No oxygen release (Key Advantage)**: LFP releases **almost no oxygen** when decomposing under extreme heat or physical damage. Without an oxidizer/supporter of combustion, it is inherently extremely difficult to catch fire or explode.
 
 ### 2. Sodium-Ion Battery: Comparison of Three Cathode Material Routes and Inherent Limitations

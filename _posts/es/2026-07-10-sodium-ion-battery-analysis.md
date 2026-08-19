@@ -64,7 +64,7 @@ Bajo las características de salida de 13.5V a 14.4V de los alternadores automot
 El compartimento del motor de un automóvil alcanza con frecuencia temperaturas de **70°C a 90°C** durante el verano, lo que representa una prueba extremadamente rigurosa para la estabilidad térmica de los materiales de la batería.
 
 ### 1. LFP (Fosfato de Hierro y Litio): Seguridad intrínseca, sin liberación de oxígeno
-- **Punto de inicio de fuga térmica extremadamente alto**: La temperatura de inicio de fuga térmica supera los **270°C**, y la estructura cristalina principal (fosfato $PO_4$) se mantiene estable incluso hasta los 500°C.
+- **Punto de inicio de fuga térmica extremadamente alto**: La temperatura de inicio de fuga térmica supera los **270°C**, y la estructura cristalina principal (fosfato $$PO_4$$) se mantiene estable incluso hasta los 500°C.
 - **No libera oxígeno (Ventaja clave)**: El LFP no libera **casi nada de oxígeno** cuando se descompone bajo calor extremo o daño físico. Sin comburente, es intrínsecamente muy difícil que se incendie o explote.
 
 ### 2. Batería de ion de sodio: Comparación de las tres rutas de materiales catódicos y limitaciones inherentes
