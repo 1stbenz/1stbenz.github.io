@@ -110,6 +110,35 @@ faq:
     #bm6-sqlite-app-container tr:nth-child(odd) {
         background-color: #0d1117;
     }
+    #bm6-sqlite-app-container .chart-header-action {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 8px;
+    }
+    #bm6-sqlite-app-container .chart-save-btn {
+        background: #21262d;
+        border: 1px solid #30363d;
+        color: #c9d1d9;
+        padding: 5px 12px;
+        border-radius: 6px;
+        font-size: 13px;
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        transition: all 0.2s ease;
+        user-select: none;
+    }
+    #bm6-sqlite-app-container .chart-save-btn:hover {
+        background: #30363d;
+        color: #58a6ff;
+        border-color: #58a6ff;
+        transform: translateY(-1px);
+    }
+    #bm6-sqlite-app-container .chart-save-btn:active {
+        transform: translateY(0);
+    }
 </style>
 
 <div id="bm6-sqlite-app-container">
@@ -172,12 +201,28 @@ faq:
             </div>
         </div>
 
-        <div style="background: #161b22; padding: 15px; border-radius: 10px; border: 1px solid #30363d; margin-bottom: 25px;">
-            <div style="height: 280px; width: 100%; margin-bottom: 10px;">
-                <canvas id="voltageChart"></canvas>
+        <div style="background: #161b22; padding: 15px; border-radius: 10px; border: 1px solid #30363d; margin-bottom: 25px; display: flex; flex-direction: column; gap: 20px;">
+            <div>
+                <div class="chart-header-action">
+                    <span style="font-size: 14px; font-weight: bold; color: #58a6ff;">⚡ Tendencia histórica de voltaje (Voltage)</span>
+                    <button class="chart-save-btn" onclick="saveChartWithWatermark('voltageChart', 'bm6_history_voltage.png', 'BM6 Tendencia histórica de voltaje')">
+                        📷 Guardar captura
+                    </button>
+                </div>
+                <div style="height: 280px; width: 100%;">
+                    <canvas id="voltageChart"></canvas>
+                </div>
             </div>
-            <div style="height: 280px; width: 100%;">
-                <canvas id="tempChart"></canvas>
+            <div>
+                <div class="chart-header-action">
+                    <span style="font-size: 14px; font-weight: bold; color: #f85149;">🌡️ Tendencia histórica de temperatura (Temperature)</span>
+                    <button class="chart-save-btn" onclick="saveChartWithWatermark('tempChart', 'bm6_history_temperature.png', 'BM6 Tendencia histórica de temperatura')">
+                        📷 Guardar captura
+                    </button>
+                </div>
+                <div style="height: 280px; width: 100%;">
+                    <canvas id="tempChart"></canvas>
+                </div>
             </div>
         </div>
 
@@ -789,10 +834,14 @@ faq:
                     }
                     titleText += ` (Inicial: ${vInitial.toFixed(2)}V)`;
 
+                    const headerDiv = document.createElement('div');
+                    headerDiv.className = 'chart-header-action';
+                    headerDiv.style.cssText = "margin-bottom: 12px; flex-wrap: wrap; gap: 10px;";
+
                     const titleElement = document.createElement('div');
-                    titleElement.style.cssText = "color: #c9d1d9; font-size: 16px; font-weight: bold; text-align: center; margin-bottom: 15px;";
+                    titleElement.style.cssText = "color: #c9d1d9; font-size: 15px; font-weight: bold;";
                     titleElement.innerText = titleText;
-                    wrapperDiv.appendChild(titleElement);
+                    headerDiv.appendChild(titleElement);
 
                     const canvasDiv = document.createElement('div');
                     canvasDiv.style.cssText = "width: 100%; height: 400px; position: relative;";
@@ -800,6 +849,18 @@ faq:
                     const canvas = document.createElement('canvas');
                     canvas.id = `chart-${index}`;
                     canvasDiv.appendChild(canvas);
+
+                    const saveBtn = document.createElement('button');
+                    saveBtn.className = 'chart-save-btn';
+                    saveBtn.innerHTML = '📷 Guardar captura';
+                    saveBtn.title = 'Descargar captura de gráfico con marca de agua';
+                    const fileName = `bm6_cranking_${dateStr ? dateStr.replace(/[: ]/g, '_') : (index + 1)}.png`;
+                    saveBtn.onclick = () => {
+                        saveChartWithWatermark(canvas, fileName, titleText);
+                    };
+                    headerDiv.appendChild(saveBtn);
+
+                    wrapperDiv.appendChild(headerDiv);
                     wrapperDiv.appendChild(canvasDiv);
                     container.appendChild(wrapperDiv);
 
@@ -1419,5 +1480,105 @@ faq:
     }
 
     document.getElementById('exportCsvBtn').addEventListener('click', exportVisibleHistoryCsv);
+
+    function saveChartWithWatermark(chartOrCanvas, defaultFileName, chartTitle) {
+        let canvas = (typeof chartOrCanvas === 'string') ? document.getElementById(chartOrCanvas) : chartOrCanvas;
+        if (canvas && canvas.canvas) canvas = canvas.canvas;
+        if (!canvas || !(canvas instanceof HTMLCanvasElement)) {
+            alert("No se encontró el gráfico para la captura.");
+            return;
+        }
+
+        const ratio = canvas.width / (canvas.clientWidth || canvas.width) || (window.devicePixelRatio || 1);
+        
+        const topPadding = chartTitle ? Math.round(42 * ratio) : 0;
+        const watermarkHeight = Math.round(38 * ratio);
+        
+        const exportCanvas = document.createElement('canvas');
+        exportCanvas.width = canvas.width;
+        exportCanvas.height = canvas.height + topPadding + watermarkHeight;
+        
+        const ctx = exportCanvas.getContext('2d');
+        if (!ctx) return;
+        
+        // 1. Dibujar fondo oscuro (coincide con el tema)
+        ctx.fillStyle = '#0d1117';
+        ctx.fillRect(0, 0, exportCanvas.width, exportCanvas.height);
+        
+        // 2. Dibujar barra de título superior (si se proporciona)
+        if (chartTitle) {
+            ctx.fillStyle = '#161b22';
+            ctx.fillRect(0, 0, exportCanvas.width, topPadding);
+            
+            ctx.strokeStyle = '#30363d';
+            ctx.lineWidth = Math.max(1, Math.round(1 * ratio));
+            ctx.beginPath();
+            ctx.moveTo(0, topPadding);
+            ctx.lineTo(exportCanvas.width, topPadding);
+            ctx.stroke();
+
+            ctx.fillStyle = '#c9d1d9';
+            ctx.font = `bold ${Math.round(14 * ratio)}px "Segoe UI", -apple-system, BlinkMacSystemFont, sans-serif`;
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'middle';
+            ctx.fillText(chartTitle, exportCanvas.width / 2, topPadding / 2);
+        }
+        
+        // 3. Dibujar contenido del gráfico
+        ctx.drawImage(canvas, 0, topPadding);
+        
+        // 4. Dibujar pie de página con marca de agua
+        const footerY = topPadding + canvas.height;
+        ctx.fillStyle = '#161b22';
+        ctx.fillRect(0, footerY, exportCanvas.width, watermarkHeight);
+        
+        ctx.strokeStyle = '#30363d';
+        ctx.lineWidth = Math.max(1, Math.round(1 * ratio));
+        ctx.beginPath();
+        ctx.moveTo(0, footerY);
+        ctx.lineTo(exportCanvas.width, footerY);
+        ctx.stroke();
+        
+        // Pie de página izquierdo
+        ctx.fillStyle = '#58a6ff';
+        ctx.font = `${Math.round(12 * ratio)}px "Segoe UI", -apple-system, BlinkMacSystemFont, sans-serif`;
+        ctx.textAlign = 'left';
+        ctx.textBaseline = 'middle';
+        ctx.fillText('BM6 Monitor de Batería', Math.round(16 * ratio), footerY + watermarkHeight / 2);
+        
+        // Pie de página derecho (URL de marca de agua)
+        ctx.fillStyle = '#8b949e';
+        ctx.font = `bold ${Math.round(13 * ratio)}px "Segoe UI", -apple-system, BlinkMacSystemFont, sans-serif`;
+        ctx.textAlign = 'right';
+        ctx.textBaseline = 'middle';
+        ctx.fillText('1stbenz.github.io', exportCanvas.width - Math.round(16 * ratio), footerY + watermarkHeight / 2);
+        
+        // 5. Descargar imagen
+        try {
+            exportCanvas.toBlob(function(blob) {
+                if (!blob) {
+                    const dataUrl = exportCanvas.toDataURL('image/png');
+                    const a = document.createElement('a');
+                    a.href = dataUrl;
+                    a.download = defaultFileName || `bm6_chart_${Date.now()}.png`;
+                    document.body.appendChild(a);
+                    a.click();
+                    document.body.removeChild(a);
+                    return;
+                }
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = defaultFileName || `bm6_chart_${Date.now()}.png`;
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                setTimeout(() => URL.revokeObjectURL(url), 1000);
+            }, 'image/png');
+        } catch (err) {
+            console.error("Error al guardar la captura:", err);
+            alert("Error al guardar la captura: " + err.message);
+        }
+    }
 
 </script>
