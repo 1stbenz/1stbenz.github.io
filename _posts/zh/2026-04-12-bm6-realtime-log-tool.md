@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "BM6 每秒即時數據解析工具"
+title: "BM6/BM200 每秒即時數據解析工具"
 lang: zh-Hant
 date: 2026-04-12 10:00:00
 categories: Auto

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Analizador de Base de Datos (SQLite) de Pruebas de Batería BM6"
+title:  "Analizador de Base de Datos (SQLite) de Pruebas de Batería BM6/BM200"
 lang: es
 date:   2026-06-28 09:30:00
 categories: Auto

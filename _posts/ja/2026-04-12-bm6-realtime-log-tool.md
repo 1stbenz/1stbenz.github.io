@@ -1,6 +1,6 @@
 ---
 layout: post
-title: BM6の毎秒リアルタイムデータ解析ツール
+title: BM6/BM200の毎秒リアルタイムデータ解析ツール
 lang: ja
 date: 2026-04-12 10:00:00
 categories: Auto

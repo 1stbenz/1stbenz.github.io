@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "BM6 バッテリーテストデータベース (SQLite) パーサー"
+title:  "BM6/BM200 バッテリーテストデータベース (SQLite) パーサー"
 lang: ja
 date:   2026-06-28 09:30:00
 categories: Auto

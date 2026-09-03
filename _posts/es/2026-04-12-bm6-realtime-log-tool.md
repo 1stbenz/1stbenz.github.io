@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Herramienta de análisis en tiempo real de datos por segundo para BM6"
+title: "Herramienta de análisis en tiempo real de datos por segundo para BM6/BM200"
 lang: es
 date: 2026-04-12 10:00:00
 categories: Auto

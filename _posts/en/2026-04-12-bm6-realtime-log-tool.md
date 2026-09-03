@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "BM6 Real-Time 1Hz Data Parsing Tool"
+title: "BM6/BM200 Real-Time 1Hz Data Parsing Tool"
 lang: en
 date: 2026-04-12 10:00:00
 categories: Auto

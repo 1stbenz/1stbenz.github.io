@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Werkzeug zur Echtzeit-Datenanalyse pro Sekunde für BM6"
+title: "Werkzeug zur Echtzeit-Datenanalyse pro Sekunde für BM6/BM200"
 lang: de
 date: 2026-04-12 10:00:00
 categories: Auto

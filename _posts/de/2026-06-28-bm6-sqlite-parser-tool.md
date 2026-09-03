@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "BM6 Batterietest-Datenbank (SQLite) Parser"
+title:  "BM6/BM200 Batterietest-Datenbank (SQLite) Parser"
 lang: de
 date:   2026-06-28 09:30:00
 categories: Auto
