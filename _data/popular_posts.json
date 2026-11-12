@@ -1,0 +1,568 @@
+{
+  "update_date": "2026.11 更新",
+  "update_date_en": "2026.11 Updated",
+  "update_date_de": "2026.11 Aktualisiert",
+  "update_date_es": "2026.11 Actualizado",
+  "update_date_fr": "2026.11 Mis à jour",
+  "update_date_pt": "2026.11 Atualizado",
+  "update_date_ar": "2026.11 مُحَدَّث",
+  "date_range": "20261001 - 20261101",
+  "zh-Hant": [
+    {
+      "title": "車用鈉電池 (SIB) 致命缺點解析：電壓硬傷與安全隱患",
+      "url": "/2026/sodium-ion-battery-analysis.html",
+      "image": "/images/sodium-battery-analysis.webp",
+      "views": 229
+    },
+    {
+      "title": "機車 ISG 電推系統解析：運作原理、改裝鋰鐵電池的性能提升與物理極限",
+      "url": "/2026/motorcycle-isg-boost-explained.html",
+      "image": "/images/isg-motorcycle-system.webp",
+      "views": 225
+    },
+    {
+      "title": "車用鈦酸鋰 (LTO) 致命缺點解析：為何 5 串過充、6 串充不飽？",
+      "url": "/2025/lto-analysis.html",
+      "image": "/images/battery-specs-lead-acid-vs-lto-vs-lifepo4-ln3.webp",
+      "views": 151
+    },
+    {
+      "title": "汽車電池不斷電更換教學：OBD 記憶保存器使用須知與 DIY 注意事項",
+      "url": "/2025/memory-saving-battery.html",
+      "image": "https://img.youtube.com/vi/JV2daotkZhc/maxresdefault.jpg",
+      "views": 115
+    },
+    {
+      "title": "輪胎標籤對照(歐盟、日本、台灣）濕抓與節能等級對照表 & 胎壓換算",
+      "url": "/2021/tyre-label.html",
+      "image": "/images/eu-tyre-energy-label-giti-synergy-h2.webp",
+      "views": 60
+    },
+    {
+      "title": "為何換了輕量化鋁圈，高速更耗油還跑不快？",
+      "url": "/2026/wheel-lug-pattern.html",
+      "image": "/images/pirelli-motorsport-car-Formula1.webp",
+      "views": 56
+    },
+    {
+      "title": "一秒看懂日系車電瓶密碼！JIS 規格型號與性能指標全解析",
+      "url": "/2026/jis-battery-spec-guide.html",
+      "image": "/images/Panasonic80B24L.webp",
+      "views": 54
+    },
+    {
+      "title": "API SQ 機油認證詳解：與 SP/SN/SM 規格比較表",
+      "url": "/2025/api-compare.html",
+      "image": "/images/20251007_122034.webp",
+      "views": 51
+    },
+    {
+      "title": "機車用JASO MB認證 vs 汽車用API及車廠認證",
+      "url": "/2026/api-vs-jaso-mb-comparison.html",
+      "image": "/images/versus-comparison-banner.webp",
+      "views": 40
+    },
+    {
+      "title": "鋰鐵電池 vs. 超級電容：該如何選擇？",
+      "url": "/2025/dont-use-supercap.html",
+      "image": "/images/versus-comparison-banner.webp",
+      "views": 39
+    }
+  ],
+  "en": [
+    {
+      "title": "Analysis of Fatal Flaws in Automotive Sodium-Ion Batteries (SIB): Voltage Limitations and High-Temperature Safety Hazards",
+      "url": "/en/2026/sodium-ion-battery-analysis.html",
+      "image": "/images/sodium-battery-analysis.webp",
+      "views": 229
+    },
+    {
+      "title": "Analysis of Motorcycle ISG Electric Boost System: How It Works, Performance Gains with LiFePO4 Battery Upgrades, and Physical Limits",
+      "url": "/en/2026/motorcycle-isg-boost-explained.html",
+      "image": "/images/isg-motorcycle-system.webp",
+      "views": 225
+    },
+    {
+      "title": "Analysis of Fatal Flaws in Automotive LTO Batteries: Why 5S Overcharges and 6S Undercharges?",
+      "url": "/en/2025/lto-analysis.html",
+      "image": "/images/battery-specs-lead-acid-vs-lto-vs-lifepo4-ln3.webp",
+      "views": 151
+    },
+    {
+      "title": "Car Battery Memory Saver Guide: OBD-II Memory Saver Usage and DIY Precautions",
+      "url": "/en/2025/memory-saving-battery.html",
+      "image": "https://img.youtube.com/vi/JV2daotkZhc/maxresdefault.jpg",
+      "views": 115
+    },
+    {
+      "title": "Tire Label Comparison (EU, Japan, Taiwan) | Wet Grip, Fuel Efficiency Ratings & Pressure Conversion",
+      "url": "/en/2021/tyre-label.html",
+      "image": "/images/eu-tyre-energy-label-giti-synergy-h2.webp",
+      "views": 60
+    },
+    {
+      "title": "Why Do Lightweight Alloy Wheels Make Your Car Consume More Gas and Run Slower at High Speeds?",
+      "url": "/en/2026/wheel-lug-pattern.html",
+      "image": "/images/pirelli-motorsport-car-Formula1.webp",
+      "views": 56
+    },
+    {
+      "title": "Decode Japanese Car Battery Codes in Seconds! Complete Guide to JIS Specifications & Performance Ranks",
+      "url": "/en/2026/jis-battery-spec-guide.html",
+      "image": "/images/Panasonic80B24L.webp",
+      "views": 54
+    },
+    {
+      "title": "Deep Dive into API SQ Certification: Comparison Chart with SP, SN, and SM",
+      "url": "/en/2025/api-compare.html",
+      "image": "/images/20251007_122034.webp",
+      "views": 51
+    },
+    {
+      "title": "JASO MB for Motorcycles vs. API & OEM Approvals for Cars",
+      "url": "/en/2026/api-vs-jaso-mb-comparison.html",
+      "image": "/images/versus-comparison-banner.webp",
+      "views": 40
+    },
+    {
+      "title": "LiFePO4 Battery vs. Supercapacitor: Which Should You Choose?",
+      "url": "/en/2025/dont-use-supercap.html",
+      "image": "/images/versus-comparison-banner.webp",
+      "views": 39
+    }
+  ],
+  "ja": [
+    {
+      "title": "車載用ナトリウムイオン (SIB) 始動バッテリーの致命的欠陥解析：電圧の弱点と高温下の安全リスク",
+      "url": "/ja/2026/sodium-ion-battery-analysis.html",
+      "image": "/images/sodium-battery-analysis.webp",
+      "views": 229
+    },
+    {
+      "title": "バイク用 ISG アシストシステム解析：動作原理、リチウムイオン（リン酸鉄）バッテリーへの換装による性能向上と物理的限界",
+      "url": "/ja/2026/motorcycle-isg-boost-explained.html",
+      "image": "/images/isg-motorcycle-system.webp",
+      "views": 225
+    },
+    {
+      "title": "「車載用チタン酸リチウム (LTO) の致命的な欠点を解析：なぜ5Sは過充電、6Sは満充電にならないのか？」",
+      "url": "/ja/2025/lto-analysis.html",
+      "image": "/images/battery-specs-lead-acid-vs-lto-vs-lifepo4-ln3.webp",
+      "views": 151
+    },
+    {
+      "title": "車載バッテリーの放電なし交換方法：OBDメモリーキーパーの使用ガイドとDIY注意事項",
+      "url": "/ja/2025/memory-saving-battery.html",
+      "image": "https://img.youtube.com/vi/JV2daotkZhc/maxresdefault.jpg",
+      "views": 115
+    },
+    {
+      "title": "タイヤラベル比較（EU、日本、台湾）ウェットグリップおよび燃費クラス比較表＆空気圧換算",
+      "url": "/ja/2021/tyre-label.html",
+      "image": "/images/eu-tyre-energy-label-giti-synergy-h2.webp",
+      "views": 60
+    },
+    {
+      "title": "軽量なアルミホイールに交換したら、なぜ高速で燃費が悪くなり、スピードも出ないのか？",
+      "url": "/ja/2026/wheel-lug-pattern.html",
+      "image": "/images/pirelli-motorsport-car-Formula1.webp",
+      "views": 56
+    },
+    {
+      "title": "一目でわかる日本車バッテリーの型番の見方！JIS規格型番と性能ランクを完全解説",
+      "url": "/ja/2026/jis-battery-spec-guide.html",
+      "image": "/images/Panasonic80B24L.webp",
+      "views": 54
+    },
+    {
+      "title": "API SQ エンジンオイル認証の詳細解説：SP/SN/SM規格との比較表",
+      "url": "/ja/2025/api-compare.html",
+      "image": "/images/20251007_122034.webp",
+      "views": 51
+    },
+    {
+      "title": "スクーター用のJASO MB認証 vs 自動車用APIおよびメーカー認証",
+      "url": "/ja/2026/api-vs-jaso-mb-comparison.html",
+      "image": "/images/versus-comparison-banner.webp",
+      "views": 40
+    },
+    {
+      "title": "「リチウム鉄バッテリー」対「スーパーキャパシタ」：どちらを選ぶべきか？",
+      "url": "/ja/2025/dont-use-supercap.html",
+      "image": "/images/versus-comparison-banner.webp",
+      "views": 39
+    }
+  ],
+  "de": [
+    {
+      "title": "Analyse der fatalen Schwachstellen von Natrium-Ionen-Starterbatterien (SIB) für Autos: Spannungsdefizit und Sicherheitsrisiken bei hohen Temperaturen",
+      "url": "/de/2026/sodium-ion-battery-analysis.html",
+      "image": "/images/sodium-battery-analysis.webp",
+      "views": 229
+    },
+    {
+      "title": "Analyse des ISG-Elektrobooster-Systems bei Motorrädern: Funktionsweise, Leistungssteigerung durch LiFePO4-Batterien und physikalische Grenzen",
+      "url": "/de/2026/motorcycle-isg-boost-explained.html",
+      "image": "/images/isg-motorcycle-system.webp",
+      "views": 225
+    },
+    {
+      "title": "Analyse der fatalen Schwächen von LTO-Autobatterien: Warum 5S überladen und 6S nicht voll werden?",
+      "url": "/de/2025/lto-analysis.html",
+      "image": "/images/battery-specs-lead-acid-vs-lto-vs-lifepo4-ln3.webp",
+      "views": 151
+    },
+    {
+      "title": "Automobilbatterie-Wechselanleitung ohne Stromunterbrechung: Hinweise zur Nutzung von OBD-Speichern und wichtige Tipps für den Heimwerker.",
+      "url": "/de/2025/memory-saving-battery.html",
+      "image": "https://img.youtube.com/vi/JV2daotkZhc/maxresdefault.jpg",
+      "views": 115
+    },
+    {
+      "title": "Reifenbeschriftungsübersicht (EU, Japan, Taiwan): Feuchtreibhaftigkeit und Energieeffizienz sowie Reifendruckumrechnungstabelle",
+      "url": "/de/2021/tyre-label.html",
+      "image": "/images/eu-tyre-energy-label-giti-synergy-h2.webp",
+      "views": 60
+    },
+    {
+      "title": "Warum verbraucht der Fahrzeug nach dem Wechsel auf leichte Aluminiumfelgen bei hohen Geschwindigkeiten mehr Kraftstoff und fährt nicht schneller?",
+      "url": "/de/2026/wheel-lug-pattern.html",
+      "image": "/images/pirelli-motorsport-car-Formula1.webp",
+      "views": 56
+    },
+    {
+      "title": "Japanische Autobatterien verstehen: JIS-Spezifikationen, Modellcodes & Leistungsrang erklärt",
+      "url": "/de/2026/jis-battery-spec-guide.html",
+      "image": "/images/Panasonic80B24L.webp",
+      "views": 54
+    },
+    {
+      "title": "Detaillierte Erklärung der API-SQ-Öl-Zertifizierung: Vergleichstabelle mit den Spezifikationen SP/SN/SM",
+      "url": "/de/2025/api-compare.html",
+      "image": "/images/20251007_122034.webp",
+      "views": 51
+    },
+    {
+      "title": "Motorrad-zertifizierte JASO MB-Öle versus Auto-zertifizierte API und Herstellerzertifikate",
+      "url": "/de/2026/api-vs-jaso-mb-comparison.html",
+      "image": "/images/versus-comparison-banner.webp",
+      "views": 40
+    },
+    {
+      "title": "Lithium-Eisen-Phosphat-Batterien versus Superkondensatoren: Wie wählt man?",
+      "url": "/de/2025/dont-use-supercap.html",
+      "image": "/images/versus-comparison-banner.webp",
+      "views": 39
+    }
+  ],
+  "es": [
+    {
+      "title": "Análisis de los defectos fatales de las baterías de arranque de ion de sodio (SIB) para automóviles: problemas de voltaje y riesgos de seguridad a alta temperatura",
+      "url": "/es/2026/sodium-ion-battery-analysis.html",
+      "image": "/images/sodium-battery-analysis.webp",
+      "views": 229
+    },
+    {
+      "title": "Análisis del sistema de asistencia eléctrica ISG en motocicletas: funcionamiento, mejora del rendimiento con baterías de litio-ferrofosfato y límites físicos",
+      "url": "/es/2026/motorcycle-isg-boost-explained.html",
+      "image": "/images/isg-motorcycle-system.webp",
+      "views": 225
+    },
+    {
+      "title": "Análisis de los defectos fatales de las baterías LTO para automóviles: ¿Por qué 5S se sobrecarga y 6S no se carga por completo?",
+      "url": "/es/2025/lto-analysis.html",
+      "image": "/images/battery-specs-lead-acid-vs-lto-vs-lifepo4-ln3.webp",
+      "views": 151
+    },
+    {
+      "title": "Guía de reemplazo sin desconexión del auto: notas sobre el uso de la memoria OBD y precauciones para hacer el trabajo en casa.",
+      "url": "/es/2025/memory-saving-battery.html",
+      "image": "https://img.youtube.com/vi/JV2daotkZhc/maxresdefault.jpg",
+      "views": 115
+    },
+    {
+      "title": "Etiquetas de neumáticos: tablas comparativas (UE, Japón, Taiwán) para clasificación de adherencia húmeda y eficiencia energética; conversión de presión de aire.",
+      "url": "/es/2021/tyre-label.html",
+      "image": "/images/eu-tyre-energy-label-giti-synergy-h2.webp",
+      "views": 60
+    },
+    {
+      "title": "¿Por qué al cambiar por llantas de aleación más ligeras se consume más combustible a alta velocidad y no va más rápido?",
+      "url": "/es/2026/wheel-lug-pattern.html",
+      "image": "/images/pirelli-motorsport-car-Formula1.webp",
+      "views": 56
+    },
+    {
+      "title": "¡Descifra el código de las baterías japonesas! Guía completa de especificaciones JIS y rango de rendimiento",
+      "url": "/es/2026/jis-battery-spec-guide.html",
+      "image": "/images/Panasonic80B24L.webp",
+      "views": 54
+    },
+    {
+      "title": "Explicación detallada de la certificación API SQ para aceites: tabla comparativa con las especificaciones SP/SN/SM",
+      "url": "/es/2025/api-compare.html",
+      "image": "/images/20251007_122034.webp",
+      "views": 51
+    },
+    {
+      "title": "Certificación JASO MB para motocicletas versus certificación API y de fabricantes para automóviles",
+      "url": "/es/2026/api-vs-jaso-mb-comparison.html",
+      "image": "/images/versus-comparison-banner.webp",
+      "views": 40
+    },
+    {
+      "title": "Baterías de hierro-litio versus supercondensadores: ¿cómo elegir?",
+      "url": "/es/2025/dont-use-supercap.html",
+      "image": "/images/versus-comparison-banner.webp",
+      "views": 39
+    }
+  ],
+  "fr": [
+    {
+      "title": "Défauts Rédhibitoires des Batteries Sodium-Ion (SIB) en Démarrage Automobile : Incompatibilité de Tension et Risques Thermiques",
+      "url": "/fr/2026/sodium-ion-battery-analysis.html",
+      "image": "/images/sodium-battery-analysis.webp",
+      "views": 229
+    },
+    {
+      "title": "Analyse du Système d'Assistance Électrique ISG Moto : Fonctionnement, Gains avec Batterie LiFePO4 et Limites Physiques",
+      "url": "/fr/2026/motorcycle-isg-boost-explained.html",
+      "image": "/images/isg-motorcycle-system.webp",
+      "views": 225
+    },
+    {
+      "title": "Analyse des Failles Fatales des Batteries LTO Automobiles : Pourquoi le 5S Surcharge et le 6S Sous-Charge ?",
+      "url": "/fr/2025/lto-analysis.html",
+      "image": "/images/battery-specs-lead-acid-vs-lto-vs-lifepo4-ln3.webp",
+      "views": 151
+    },
+    {
+      "title": "Guide du Boîtier Sauvegarde Mémoire de Batterie : Utilisation OBD-II et Précautions DIY",
+      "url": "/fr/2025/memory-saving-battery.html",
+      "image": "https://img.youtube.com/vi/JV2daotkZhc/maxresdefault.jpg",
+      "views": 115
+    },
+    {
+      "title": "Comparatif des Étiquettes de Pneus (UE, Japon, Taïwan) | Adhérence sur Sol Mouillé, Efficacité Énergétique et Conversion de Pression",
+      "url": "/fr/2021/tyre-label.html",
+      "image": "/images/eu-tyre-energy-label-giti-synergy-h2.webp",
+      "views": 60
+    },
+    {
+      "title": "Pourquoi des Jantes Forgées Légères Peuvent Augmenter Votre Consommation et Réduire la Vitesse de Pointe ?",
+      "url": "/fr/2026/wheel-lug-pattern.html",
+      "image": "/images/pirelli-motorsport-car-Formula1.webp",
+      "views": 56
+    },
+    {
+      "title": "Déchiffrez le code des batteries japonaises en quelques secondes ! Guide complet des normes JIS et des indices de performance",
+      "url": "/fr/2026/jis-battery-spec-guide.html",
+      "image": "/images/Panasonic80B24L.webp",
+      "views": 54
+    },
+    {
+      "title": "Décryptage de la Norme d'Huile API SQ : Tableau Comparatif avec SP, SN et SM",
+      "url": "/fr/2025/api-compare.html",
+      "image": "/images/20251007_122034.webp",
+      "views": 51
+    },
+    {
+      "title": "JASO MB pour Motos vs Normes API & Homologations Constructeurs Automobiles",
+      "url": "/fr/2026/api-vs-jaso-mb-comparison.html",
+      "image": "/images/versus-comparison-banner.webp",
+      "views": 40
+    },
+    {
+      "title": "Batterie LiFePO4 vs Supercondensateur : Quel Choix Faire pour Votre Voiture ?",
+      "url": "/fr/2025/dont-use-supercap.html",
+      "image": "/images/versus-comparison-banner.webp",
+      "views": 39
+    }
+  ],
+  "pt": [
+    {
+      "title": "Falhas Fatais das Baterias de Íon de Sódio (SIB) na Partida Automotiva: Tensão Incompatível e Riscos Térmicos",
+      "url": "/pt/2026/sodium-ion-battery-analysis.html",
+      "image": "/images/sodium-battery-analysis.webp",
+      "views": 229
+    },
+    {
+      "title": "Análise do Sistema de Assistência Elétrica ISG em Motos: Funcionamento, Ganhos com Bateria LiFePO4 e Limites Físicos",
+      "url": "/pt/2026/motorcycle-isg-boost-explained.html",
+      "image": "/images/isg-motorcycle-system.webp",
+      "views": 225
+    },
+    {
+      "title": "Análise das Falhas Críticas das Baterias LTO Automotivas: Por Que 5S Sobrecarga e 6S Não Carrega?",
+      "url": "/pt/2025/lto-analysis.html",
+      "image": "/images/battery-specs-lead-acid-vs-lto-vs-lifepo4-ln3.webp",
+      "views": 151
+    },
+    {
+      "title": "Guia do Salva-Memória Automotivo: Uso do Cabo OBD-II e Cuidados no DIY",
+      "url": "/pt/2025/memory-saving-battery.html",
+      "image": "https://img.youtube.com/vi/JV2daotkZhc/maxresdefault.jpg",
+      "views": 115
+    },
+    {
+      "title": "Comparativo de Etiquetas de Pneus (UE, Japão, Taiwan) | Aderência no Molhado, Eficiência e Conversão de Pressão",
+      "url": "/pt/2021/tyre-label.html",
+      "image": "/images/eu-tyre-energy-label-giti-synergy-h2.webp",
+      "views": 60
+    },
+    {
+      "title": "Por Que Rodas de Liga Leve Podem Aumentar o Consumo e Reduzir a Velocidade Final na Rodovia?",
+      "url": "/pt/2026/wheel-lug-pattern.html",
+      "image": "/images/pirelli-motorsport-car-Formula1.webp",
+      "views": 56
+    },
+    {
+      "title": "Decodifique a numeração das baterias japonesas em segundos! Guia completo das especificações JIS e índices de desempenho",
+      "url": "/pt/2026/jis-battery-spec-guide.html",
+      "image": "/images/Panasonic80B24L.webp",
+      "views": 54
+    },
+    {
+      "title": "Análise Profunda da Certificação API SQ: Tabela Comparativa com SP, SN e SM",
+      "url": "/pt/2025/api-compare.html",
+      "image": "/images/20251007_122034.webp",
+      "views": 51
+    },
+    {
+      "title": "JASO MB para Motos vs Normas API e Homologações Automotivas",
+      "url": "/pt/2026/api-vs-jaso-mb-comparison.html",
+      "image": "/images/versus-comparison-banner.webp",
+      "views": 40
+    },
+    {
+      "title": "Bateria LiFePO4 vs Supercapacitor: Qual a Melhor Escolha para o Seu Carro?",
+      "url": "/pt/2025/dont-use-supercap.html",
+      "image": "/images/versus-comparison-banner.webp",
+      "views": 39
+    }
+  ],
+  "ar": [
+    {
+      "title": "العيوب القاتلة لبطاريات الصوديوم أيون (SIB) في بدء تشغيل السيارات: أزمة الجهد ومخاطر الحرارة العالية",
+      "url": "/ar/2026/sodium-ion-battery-analysis.html",
+      "image": "/images/sodium-battery-analysis.webp",
+      "views": 229
+    },
+    {
+      "title": "تحليل منظومة الدعم الكهربائي ISG للدراجات النارية: مبدأ العمل، ومكاسب بطاريات LiFePO4، والحدود الفيزيائية",
+      "url": "/ar/2026/motorcycle-isg-boost-explained.html",
+      "image": "/images/isg-motorcycle-system.webp",
+      "views": 225
+    },
+    {
+      "title": "تحليل العيوب القاتلة لبطاريات تيتانات الليثيوم (LTO) للسيارات: لماذا تفرط 5S في الشحن وتعجز 6S عن الامتلاء؟",
+      "url": "/ar/2025/lto-analysis.html",
+      "image": "/images/battery-specs-lead-acid-vs-lto-vs-lifepo4-ln3.webp",
+      "views": 151
+    },
+    {
+      "title": "دليل جهاز حفظ ذاكرة كمبيوتر السيارة: كيفية استخدام منفذ OBD-II واحتياطات الصيانة الذاتية",
+      "url": "/ar/2025/memory-saving-battery.html",
+      "image": "https://img.youtube.com/vi/JV2daotkZhc/maxresdefault.jpg",
+      "views": 115
+    },
+    {
+      "title": "مقارنة بطاقات كفاءة الإطارات (الاتحاد الأوروبي، اليابان، تايوان) | تماسك المطر، كفاءة الوقود وتحويل ضغط الإطارات",
+      "url": "/ar/2021/tyre-label.html",
+      "image": "/images/eu-tyre-energy-label-giti-synergy-h2.webp",
+      "views": 60
+    },
+    {
+      "title": "لماذا قد تزيد الجنوط الرياضية خفيفة الوزن من استهلاك الوقود وتبطئ سيارتك على السرعات العالية؟",
+      "url": "/ar/2026/wheel-lug-pattern.html",
+      "image": "/images/pirelli-motorsport-car-Formula1.webp",
+      "views": 56
+    },
+    {
+      "title": "فك شفرة بطاريات السيارات اليابانية في ثوانٍ! الدليل الشامل لمواصفات JIS وتصنيفات الأداء",
+      "url": "/ar/2026/jis-battery-spec-guide.html",
+      "image": "/images/Panasonic80B24L.webp",
+      "views": 54
+    },
+    {
+      "title": "تحليل شامل لمواصفة زيت المحرك API SQ: جدول مقارنة تفصيلي مع SP و SN و SM",
+      "url": "/ar/2025/api-compare.html",
+      "image": "/images/20251007_122034.webp",
+      "views": 51
+    },
+    {
+      "title": "معيار JASO MB للدراجات النارية مقابل مواصفات API واعتمادات زيوت السيارات",
+      "url": "/ar/2026/api-vs-jaso-mb-comparison.html",
+      "image": "/images/versus-comparison-banner.webp",
+      "views": 40
+    },
+    {
+      "title": "بطاريات LiFePO4 مقابل المكثفات الفائقة (Supercapacitor): أيهما تختار لترقية سيارتك؟",
+      "url": "/ar/2025/dont-use-supercap.html",
+      "image": "/images/versus-comparison-banner.webp",
+      "views": 39
+    }
+  ],
+  "posts": [
+    {
+      "title": "車用鈉電池 (SIB) 致命缺點解析：電壓硬傷與安全隱患",
+      "url": "/2026/sodium-ion-battery-analysis.html",
+      "image": "/images/sodium-battery-analysis.webp",
+      "views": 229
+    },
+    {
+      "title": "機車 ISG 電推系統解析：運作原理、改裝鋰鐵電池的性能提升與物理極限",
+      "url": "/2026/motorcycle-isg-boost-explained.html",
+      "image": "/images/isg-motorcycle-system.webp",
+      "views": 225
+    },
+    {
+      "title": "車用鈦酸鋰 (LTO) 致命缺點解析：為何 5 串過充、6 串充不飽？",
+      "url": "/2025/lto-analysis.html",
+      "image": "/images/battery-specs-lead-acid-vs-lto-vs-lifepo4-ln3.webp",
+      "views": 151
+    },
+    {
+      "title": "汽車電池不斷電更換教學：OBD 記憶保存器使用須知與 DIY 注意事項",
+      "url": "/2025/memory-saving-battery.html",
+      "image": "https://img.youtube.com/vi/JV2daotkZhc/maxresdefault.jpg",
+      "views": 115
+    },
+    {
+      "title": "輪胎標籤對照(歐盟、日本、台灣）濕抓與節能等級對照表 & 胎壓換算",
+      "url": "/2021/tyre-label.html",
+      "image": "/images/eu-tyre-energy-label-giti-synergy-h2.webp",
+      "views": 60
+    },
+    {
+      "title": "為何換了輕量化鋁圈，高速更耗油還跑不快？",
+      "url": "/2026/wheel-lug-pattern.html",
+      "image": "/images/pirelli-motorsport-car-Formula1.webp",
+      "views": 56
+    },
+    {
+      "title": "一秒看懂日系車電瓶密碼！JIS 規格型號與性能指標全解析",
+      "url": "/2026/jis-battery-spec-guide.html",
+      "image": "/images/Panasonic80B24L.webp",
+      "views": 54
+    },
+    {
+      "title": "API SQ 機油認證詳解：與 SP/SN/SM 規格比較表",
+      "url": "/2025/api-compare.html",
+      "image": "/images/20251007_122034.webp",
+      "views": 51
+    },
+    {
+      "title": "機車用JASO MB認證 vs 汽車用API及車廠認證",
+      "url": "/2026/api-vs-jaso-mb-comparison.html",
+      "image": "/images/versus-comparison-banner.webp",
+      "views": 40
+    },
+    {
+      "title": "鋰鐵電池 vs. 超級電容：該如何選擇？",
+      "url": "/2025/dont-use-supercap.html",
+      "image": "/images/versus-comparison-banner.webp",
+      "views": 39
+    }
+  ]
+}

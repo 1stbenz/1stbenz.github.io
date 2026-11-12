@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: 'zh-Hant' }}" {% if page.lang == 'ar' %}dir="rtl"{% endif %}>
+
+  {% include head.html %}
+
+  <body {% if page.lang == 'ar' %}dir="rtl" class="rtl"{% endif %}>
+
+    {% include header.html %}
+
+    <div class="page-content">
+      <div class="wrapper">
+        {{ content }}
+      </div>
+    </div>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>
