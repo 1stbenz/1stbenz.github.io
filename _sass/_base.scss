@@ -1,0 +1,385 @@
+/**
+ * Reset some basic elements
+ */
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/**
+ * Basic styling
+ */
+ body {
+    font-family: $base-font-family;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+    font-weight: 400;
+    color: $text-color;
+    background-color: $background-color;
+    -webkit-text-size-adjust: 100%;
+    
+    letter-spacing: normal;
+    
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    @include media-query($on-palm) {
+        font-size: 15px;
+        line-height: 1.65;
+    }
+}
+
+
+
+
+/**
+ * Set `margin-bottom` to maintain vertical rhythm
+ */
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+ul, ol, dl, figure,
+%vertical-rhythm {
+    margin-bottom: $spacing-unit / 2;
+}
+
+
+
+/**
+ * Images
+ */
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%; 
+    height: auto;    
+
+    
+    @include media-query($on-laptop) {
+        max-width: 100%;
+    }
+}
+
+
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin: 25px 0;
+}
+
+table,
+.battery-table,
+.oil-table,
+.tint-table {
+    border-collapse: collapse;
+    width: 100%;
+    display: table;
+    word-wrap: normal;    
+    word-break: normal;
+    margin: 25px 0;
+    border: 1px solid #dcdcdc;
+    background-color: #ffffff;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.table-responsive > table,
+.table-responsive > .battery-table,
+.table-responsive > .oil-table,
+.table-responsive > .tint-table {
+    margin: 0;
+}
+
+th, td,
+.battery-table th, .battery-table td,
+.oil-table th, .oil-table td,
+.tint-table th, .tint-table td {
+    border: 1px solid #dcdcdc;
+    text-align: left;
+    padding: 10px 16px;
+    font-size: 0.95em;
+    color: $text-color;
+    vertical-align: top;
+    line-height: 1.5;
+}
+
+th,
+.battery-table th,
+.oil-table th,
+.tint-table th {
+    background-color: rgba($brand-color, 0.06);
+    color: $brand-color;
+    font-weight: 700;
+    border-bottom: 2px solid #dcdcdc;
+}
+
+.battery-table th {
+    text-align: center;
+}
+
+tr:nth-child(even),
+.battery-table tbody tr:nth-child(even),
+.oil-table tbody tr:nth-child(even),
+.tint-table tr:nth-child(even) {
+    background-color: #fafafa;
+}
+
+tr:nth-child(odd),
+.battery-table tbody tr:nth-child(odd),
+.oil-table tbody tr:nth-child(odd),
+.tint-table tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+tr:hover,
+.battery-table tbody tr:hover,
+.oil-table tbody tr:hover,
+.tint-table tr:hover {
+    background-color: rgba($brand-color, 0.03);
+}
+
+.tint-table thead.blue-head th {
+    background-color: rgba($brand-color, 0.06);
+    color: $brand-color;
+}
+
+.tint-table thead.green-head th {
+    background-color: rgba($accent-green, 0.1);
+    color: #065f46;
+}
+
+/* 推薦 (優) 與 警告 (劣) 語意高亮樣式 */
+th.recommend, td.recommend {
+    background-color: #e6f4ea !important;
+    color: #137333 !important;
+    font-weight: 700;
+}
+th.recommend {
+    background-color: #1e8e3e !important;
+    color: #ffffff !important;
+}
+tr:hover td.recommend,
+.battery-table tbody tr:hover td.recommend {
+    background-color: #d2ebd9 !important;
+}
+
+th.worst, td.worst {
+    background-color: #fce8e6 !important;
+    color: #c5221f !important;
+    font-weight: 700;
+}
+tr:hover td.worst,
+.battery-table tbody tr:hover td.worst {
+    background-color: #fad2cf !important;
+}
+
+
+/**
+ * Figures
+ */
+figure > img {
+    display: block;
+}
+
+figcaption {
+    font-size: $small-font-size;
+}
+
+
+
+/**
+ * Lists
+ */
+ul, ol {
+    margin-left: $spacing-unit;
+}
+
+li {
+    > ul,
+    > ol {
+         margin-bottom: 0;
+    }
+}
+
+
+
+/**
+ * Headings
+ */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    color: $brand-color;
+}
+
+
+
+/**
+ * Links
+ */
+ a {
+    color: $accent-link;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+
+    &:visited {
+        color: darken($accent-link, 8%);
+    }
+
+    &:hover {
+        color: darken($accent-link, 18%);
+        text-decoration: underline;
+    }
+}
+
+
+
+
+/**
+ * Blockquotes
+ */
+ blockquote {
+    color: #475569;
+    padding: 16px 20px;
+    margin-bottom: 30px;
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-left: 4px solid $brand-color;
+    border-radius: 6px;
+    
+    font-size: 16px;
+    font-style: normal;
+    letter-spacing: 0.03em;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+    
+    > :last-child {
+        margin-bottom: 0;
+    }
+}
+
+/**
+ * Code formatting
+ */
+ pre,
+ code {
+     font-family: 'JetBrains Mono', "Menlo", "Consolas", "Monaco", monospace;
+     font-size: 14px;
+     border-radius: 6px;
+ }
+ 
+ code {
+     padding: 2px 6px;
+     font-size: 0.9em;
+     background-color: #f1f5f9;
+     color: $brand-color;
+     border: 1px solid #e2e8f0;
+ }
+ 
+ pre {
+     padding: 20px;
+     position: relative;
+     overflow-x: auto;
+     background-color: #1e293b;
+     border: 1px solid #334155;
+     color: #f8fafc;
+     box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+     margin-bottom: 30px;
+     
+
+     &::before {
+         content: "";
+         display: block;
+         height: 12px;
+         background-image: radial-gradient(circle, #ff5f56 4px, transparent 5px),
+                           radial-gradient(circle, #ffbd2e 4px, transparent 5px),
+                           radial-gradient(circle, #27c93f 4px, transparent 5px);
+         background-size: 16px 12px;
+         background-repeat: no-repeat;
+         background-position: 0px 0px, 14px 0px, 28px 0px;
+         margin-bottom: 15px;
+         opacity: 0.85;
+     }
+ 
+     > code {
+         border: 0;
+         padding-right: 0;
+         padding-left: 0;
+         background-color: transparent;
+         color: #f8fafc;
+         border: none;
+     }
+ }
+ 
+
+
+
+/**
+ * Wrapper
+ */
+.wrapper {
+    max-width: -webkit-calc(1024px - (#{$spacing-unit} * 2));
+    max-width:         calc(1024px - (#{$spacing-unit} * 2));
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: $spacing-unit;
+    padding-left: $spacing-unit;
+    @extend %clearfix;
+
+    @include media-query($on-laptop) {
+        max-width: -webkit-calc(1024px - (#{$spacing-unit}));
+        max-width:         calc(1024px - (#{$spacing-unit}));
+        padding-right: $spacing-unit / 2;
+        padding-left: $spacing-unit / 2;
+    }
+
+    
+    @include media-query($on-palm) {
+        padding-right: 15px; 
+        padding-left: 15px;
+    }
+}
+
+
+/**
+ * Clearfix
+ */
+%clearfix {
+
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+
+
+/**
+ * Icons
+ */
+.icon {
+
+    > svg {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        vertical-align: middle;
+
+        path {
+            fill: $grey-color;
+        }
+    }
+}
+
+iframe[src*="youtube"] {
+    display: block;
+    width: 100%;           
+    max-width: 100%;       
+    height: auto;          
+    aspect-ratio: 16 / 9;  
+    margin-bottom: 30px;   
+}
